@@ -1,0 +1,592 @@
+.ns-pretext {
+  margin-bottom: 15px;
+}
+.ns-posttext {
+  margin-top: 15px;
+}
+.news-scroller {
+  margin: 0;
+  padding: 0;
+  /* position:relative; */
+  overflow: hidden;
+}
+
+.news-scroller .scroller-container {
+  display: block;
+  max-width: 100%;
+  min-width: 200px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.news-scroller .scroller-container .iviewSlider {
+  display: block;
+  /* width: 960px;
+ 	height: 400px; */
+  overflow: hidden;
+  border-radius: 4px;
+  /* 	margin-right:-10px; */
+}
+
+.news-scroller .scroller-container.nav-style1 .iview-controlNav {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  height: 44px;
+  float: left;
+}
+
+.news-scroller .scroller-container.nav-style1 .iview-controlNav a {
+  text-indent: -9999px;
+}
+
+.news-scroller
+  .scroller-container.nav-style1
+  .iview-controlNav
+  a.iview-controlPrevNav {
+  float: left;
+  width: 50px;
+  height: 44px;
+  background: url("../img/slider-controls.png") no-repeat;
+}
+
+.news-scroller
+  .scroller-container.nav-style1
+  .iview-controlNav
+  a.iview-controlNextNav {
+  float: left;
+  width: 50px;
+  height: 44px;
+  background: url("../img/slider-controls.png") no-repeat -50px 0px;
+}
+
+.news-scroller
+  .scroller-container.nav-style1
+  .iview-controlNav
+  div.iview-items {
+  float: left;
+  padding: 0px 10px 0px 10px;
+  height: 44px;
+  background: url("../img/nav-bg.png");
+}
+
+.news-scroller
+  .scroller-container.nav-style1
+  .iview-controlNav
+  a.iview-control {
+  padding: 0px;
+  float: left;
+  width: 11px;
+  height: 12px;
+  background: url("../img/bullets.png") no-repeat;
+  line-height: 0px;
+}
+
+.news-scroller
+  .scroller-container.nav-style1
+  .iview-controlNav
+  a.iview-control.active {
+  background-position: 0px -12px;
+}
+
+.news-scroller .scroller-container .iview-caption {
+  background: url("../img/caption-bg.png");
+  color: #fff;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-shadow: #000 1px 1px 0px;
+}
+
+.news-scroller .scroller-container .iview-caption a.ns-item-title {
+  font-weight: bold;
+  display: block;
+  white-space: nowrap;
+}
+
+.news-scroller
+  .scroller-container.nav-style1
+  .iview-controlNav
+  div.iview-items
+  ul
+  li {
+  padding: 0px;
+  float: left;
+  width: 11px;
+  height: 12px;
+  margin: 3px;
+  margin-top: 16px;
+  line-height: 0px;
+}
+.news-scroller .scroller-container.nav-style1 .iview-tooltip,
+.news-scroller .scroller-container.nav-style2 .iview-tooltip {
+  display: none;
+  position: absolute;
+  background: url("../img/tooltip.png") no-repeat;
+  width: 124px;
+  height: 90px;
+  bottom: 30px;
+  left: -67px;
+  padding: 10px;
+  z-index: 100;
+}
+.news-scroller .scroller-container.nav-style1 .iview-tooltip div.holder,
+.news-scroller .scroller-container.nav-style2 .iview-tooltip div.holder {
+  display: block;
+  width: 124px;
+  height: 84px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.news-scroller
+  .scroller-container.nav-style1
+  .iview-tooltip
+  div.holder
+  div.iview-container,
+.news-scroller
+  .scroller-container.nav-style2
+  .iview-tooltip
+  div.holder
+  div.iview-container {
+  display: block;
+  width: 4000px;
+  padding: 0;
+  border: 0;
+}
+.news-scroller
+  .scroller-container.nav-style1
+  .iview-tooltip
+  div.holder
+  div.iview-container
+  div,
+.news-scroller
+  .scroller-container.nav-style2
+  .iview-tooltip
+  div.holder
+  div.iview-container
+  div {
+  float: left;
+  display: block;
+  overflow: hidden;
+  width: 124px;
+  height: 84px;
+  left: -50%;
+  text-align: center;
+}
+.news-scroller
+  .scroller-container.nav-style1
+  .iview-tooltip
+  div.holder
+  div.iview-container
+  div
+  img,
+.news-scroller
+  .scroller-container.nav-style2
+  .iview-tooltip
+  div.holder
+  div.iview-container
+  div
+  img {
+  height: 84px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+}
+
+.news-scroller .scroller-container.nav-style2 div.iview-directionNav {
+  position: absolute;
+  top: 187px;
+  left: 0px;
+  z-index: 9;
+  width: 100%;
+}
+
+.news-scroller .scroller-container.nav-style2 div.iview-directionNav a {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background-image: url(../img/bg_direction_nav.png);
+  text-indent: -9999px;
+  -webkit-transition: left 0.3s ease-in-out;
+  -webkit-transition-property: left, right;
+  -moz-transition: left 0.3s ease-in-out;
+  -moz-transition-property: left, right;
+  -o-transition: left 0.3s ease-in-out;
+  -o-transition-property: left, right;
+  -ms-transition: left 0.3s ease-in-out;
+  -ms-transition-property: left, right;
+  transition: left 0.3s ease-in-out;
+  transition-property: left, right;
+}
+
+.news-scroller
+  .scroller-container.nav-style2
+  div.iview-directionNav
+  a.iview-nextNav {
+  right: -27px;
+  background-position: 27px 0px;
+}
+
+.news-scroller
+  .scroller-container.nav-style2
+  div.iview-directionNav
+  a.iview-prevNav {
+  left: -27px;
+  background-position: 0px 0px;
+}
+
+.news-scroller
+  .scroller-container.nav-style2.iview-hover
+  div.iview-directionNav
+  a.iview-nextNav {
+  right: 20px;
+}
+
+.news-scroller
+  .scroller-container.nav-style2.iview-hover
+  div.iview-directionNav
+  a.iview-prevNav {
+  left: 20px;
+}
+
+.news-scroller .scroller-container.nav-style2 .iview-controlNav {
+  position: absolute;
+  bottom: 20px;
+  left: 418px;
+}
+
+.news-scroller .scroller-container.nav-style2 .iview-controlNav a {
+  text-indent: -9999px;
+}
+
+.news-scroller
+  .scroller-container.nav-style2
+  .iview-controlNav
+  a.iview-control {
+  padding: 0px;
+  float: left;
+  width: 11px;
+  height: 11px;
+  background: url("../img/bullets_2.png") no-repeat 0px 0px;
+  line-height: 0px;
+  margin-right: 7px;
+}
+
+.news-scroller
+  .scroller-container.nav-style2
+  .iview-controlNav
+  a.iview-control.active {
+  background-position: 0px -11px;
+}
+
+.news-scroller .scroller-container.nav-style2 div.iview-directionNav {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  z-index: 9;
+  width: 100%;
+}
+
+.news-scroller .scroller-container.nav-style2 div.iview-directionNav a {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 100px;
+  background-image: url(../img/nav_paddles.png);
+  text-indent: -9999px;
+}
+
+.news-scroller .scroller-container.nav-style2 div.iview-directionNav a:active {
+  background-image: url(../img/nav_paddles_down.png);
+}
+
+.news-scroller
+  .scroller-container.nav-style2
+  div.iview-directionNav
+  a.iview-nextNav {
+  right: 20px;
+  background-position: 56px 0px;
+}
+
+.news-scroller
+  .scroller-container.nav-style2
+  div.iview-directionNav
+  a.iview-prevNav {
+  left: 20px;
+  background-position: -16px 0px;
+}
+
+.news-scroller .scroller-container.nav-style3 .iview-controlNav {
+  position: absolute;
+  text-align: center;
+  background: url("../img/navigation-bg.png");
+  border-radius: 0px 0px 4px 4px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.news-scroller .scroller-container.nav-style3 .iview-controlNav .iview-items {
+  display: block;
+  padding: 0px 20px;
+}
+
+.news-scroller .scroller-container.nav-style3 .iview-controlNav a img {
+  height: 30px;
+  border: #000 1px solid;
+  margin: 7px 7px 7px 0px;
+  border-radius: 2px;
+  width: 68px;
+}
+
+.news-scroller .scroller-container.nav-style3 .iview-controlNav a.active img {
+  border-color: #999;
+}
+
+.news-scroller .scroller-container.nav-style3 div.iview-directionNav a {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background-image: url(../img/bg_direction_nav.png);
+  text-indent: -9999px;
+  -webkit-transition: left 0.3s ease-in-out;
+  -webkit-transition-property: left, right;
+  -moz-transition: left 0.3s ease-in-out;
+  -moz-transition-property: left, right;
+  -o-transition: left 0.3s ease-in-out;
+  -o-transition-property: left, right;
+  -ms-transition: left 0.3s ease-in-out;
+  -ms-transition-property: left, right;
+  transition: left 0.3s ease-in-out;
+  transition-property: left, right;
+  top: 50%;
+  margin-top: -14px;
+}
+
+.news-scroller
+  .scroller-container.nav-style3
+  div.iview-directionNav
+  a.iview-nextNav {
+  right: -27px;
+  background-position: 27px 0px;
+}
+
+.news-scroller
+  .scroller-container.nav-style3
+  div.iview-directionNav
+  a.iview-prevNav {
+  left: -27px;
+  background-position: 0px 0px;
+}
+
+.news-scroller
+  .scroller-container.nav-style3.iview-hover
+  div.iview-directionNav
+  a.iview-nextNav {
+  right: 20px;
+}
+
+.news-scroller
+  .scroller-container.nav-style3.iview-hover
+  div.iview-directionNav
+  a.iview-prevNav {
+  left: 20px;
+}
+
+/* .news-scroller.lt-ie9 .scroller-container .iviewSlider{
+	width:100%;
+} */
+
+.news-scroller .scroller-container .ns-item .ns-item-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.news-scroller .scroller-container .iview-caption .ns-item-tags .tags span a {
+  display: inline-block;
+}
+
+.news-scroller
+  .scroller-container
+  .iview-caption
+  .ns-item-tags
+  .tags
+  span
+  a.label-info[href] {
+  background-color: #2d6987;
+}
+
+.news-scroller
+  .scroller-container
+  .iview-caption
+  .ns-item-tags
+  .tags
+  span
+  a.label-info {
+  background-color: #3a87ad;
+}
+.news-scroller
+  .scroller-container
+  .iview-caption
+  .ns-item-tags
+  .tags
+  span
+  a.label {
+  font-size: 10.998px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #fff;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #999;
+  padding: 1px 4px 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* .news-scroller .scroller-container .iview-caption .ns-description{
+	white-space:nowrap;
+} */
+
+.news-scroller
+  .scroller-container
+  .iview-caption
+  .ns-description
+  + .ns-item-tags {
+  margin-top: 10px;
+  display: block;
+}
+
+/* The slider */
+.news-scroller .iviewSlider {
+  overflow: hidden;
+}
+
+/* The timer in the Slider */
+.news-scroller .iview-timer {
+  position: absolute;
+  z-index: 100;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.news-scroller .iview-timer div {
+  border-radius: 3px;
+}
+
+/* The Preloader in the Slider */
+.news-scroller .iview-preloader {
+  position: absolute;
+  z-index: 1000;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: #000 1px solid;
+  padding: 1px;
+  width: 100px;
+  height: 3px;
+}
+.news-scroller .iview-preloader div {
+  float: left;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  height: 3px;
+  background: #000;
+  width: 0px;
+}
+
+/* The strips and boxes in the Slider */
+.news-scroller .iview-strip {
+  display: block;
+  position: absolute;
+  z-index: 5;
+}
+.news-scroller .iview-block {
+  display: block;
+  position: absolute;
+  z-index: 5;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.news-scroller .iview-directionNav a {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  z-index: 9;
+  cursor: pointer;
+}
+.news-scroller .iview-prevNav {
+  left: 0px;
+}
+.news-scroller .iview-nextNav {
+  right: 0px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.news-scroller .iview-controlNav {
+  position: absolute;
+  z-index: 9;
+}
+.news-scroller .iview-controlNav a {
+  z-index: 9;
+  cursor: pointer;
+}
+.news-scroller .iview-controlNav a.active {
+  font-weight: bold;
+}
+.news-scroller .iview-controlNav .iview-items ul {
+  list-style: none;
+  margin: 0;
+}
+.news-scroller .iview-controlNav .iview-items ul li {
+  display: inline;
+  position: relative;
+}
+.news-scroller .iview-controlNav .iview-tooltip {
+  position: absolute;
+}
+
+/* The captions in the Slider */
+.news-scroller .iview-caption {
+  position: absolute;
+  z-index: 4;
+  overflow: hidden;
+  cursor: default;
+  max-width: 80%;
+}
+
+.news-scroller.pre-load .iview-caption {
+  display: none;
+}
+
+@media all and (max-width: 479px) {
+  .iview-controlNav {
+    display: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .iview-caption {
+    display: none;
+  }
+  .news-scroller .scroller-container.nav-style3 .iview-controlNav {
+    display: none;
+  }
+}

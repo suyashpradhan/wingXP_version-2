@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../admin_update_pages/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+</head>
+
+<body style=" background: #59abe3;margin: 0;">
+    <div class="navigationBar">
+        <div class="logoBox">
+            <h1 class="logoBox-header"><a href="index.php" style="color:#fff; text-decoration:none">SPACEDTIMES</a></h1>
+        </div>
+        <div class="menu-wrapper">
+            <i class="fas fa-bars" onclick="openNav()"></i>
+        </div>
+        <div id="mySidenav" class="sidenav" style="width: 0px;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="button-wrapper">
+                <a href="?q=logout">Logout</a>
+                <a href="deployed_activities.php">Deployed Activities</a>
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="card-main main-c">
+            <h1 class="card-head">View Online Test Details</h1>
+        </div>
+        <table class="deploy-table">
+            <tr>
+                <th>test_id </th>
+                <th>test_name </th>
+                <th>test_type</th>
+                <th>test_creator</th>
+                <th>publish_state</th>
+                <th>test_data</th>
+                <th>duration</th>
+                <th>mrp_price</th>
+                <th>vendor_id</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>test_9</td>
+                <td>Text Analysis - Naive Bayes </td>
+                <td></td>
+                <td>Kiran</td>
+                <td>0</td>
+                <td>Naive Bayes is ____________ technique. Classification Regression The cost function used in Naive
+                    Bayes is __________ . Gradient Descent Sum of Squared Errors </td>
+                <td> 00:10:00 </td>
+                <td>150</td>
+                <td>VND_10 </td>
+                <td><a href="#" class="view-tb-link">View</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer ">
+        <div class="footerInner ">
+            <h1>SPACEDTIMES</h1>
+        </div>
+    </div>
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.0.10/css/all.css " integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg "
+        crossorigin="anonymous ">
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

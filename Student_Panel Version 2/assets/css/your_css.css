@@ -1,0 +1,14 @@
+.latestView span.latestItemDateCreated {
+  display: inline !important;
+}
+
+.tab-content .k2ItemsBlock ul li {
+  visibility: visible !important;
+}
+
+@media (max-width: 767px) {
+  #yt_logoposition {
+    padding: 12px 0 30px;
+    text-align: center;
+  }
+}

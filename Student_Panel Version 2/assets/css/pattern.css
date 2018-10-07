@@ -1,0 +1,70 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pattern1 {
+  background-image: url(../images/pattern/pattern1.png);
+}
+.pattern2 {
+  background-image: url(../images/pattern/pattern2.png);
+}
+.pattern3 {
+  background-image: url(../images/pattern/pattern3.png);
+}
+.pattern4 {
+  background-image: url(../images/pattern/pattern4.png);
+}
+.pattern5 {
+  background-image: url(../images/pattern/pattern5.png);
+}
+.pattern-wrap .pattern {
+  height: 22px;
+  width: 30px;
+  float: left;
+  text-indent: -999em;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+  background-color: #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
+}
+.pattern-wrap .pattern.active {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4) inset,
+    0 0 0 2px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4) inset,
+    0 0 0 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4) inset,
+    0 0 0 2px rgba(0, 0, 0, 0.08);
+  background-color: #eee;
+}

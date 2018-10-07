@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Effects for Drop-Down Lists</title>
+	<meta name="description" content="Simple Effects for Drop-Down Lists" />
+	<meta name="keywords" content="drop-down, select, jquery, plugin, fallback, transition, transform, 3d, css3" />
+	<meta name="author" content="Codrops" />
+	<link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+	<div class="select-box">
+		<label for="select-box1" class="label select-box1"><span class="label-desc">Choose your country</span> </label>
+		<select id="select-box1" class="select">
+			<option value="Choice 1">Falkland Islands</option>
+			<option value="Choice 2">Germany</option>
+			<option value="Choice 3">Neverland</option>
+		</select>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+	<script>
+		$("select").on("click", function () {
+
+			$(this).parent(".select-box").toggleClass("open");
+
+		});
+
+		$(document).mouseup(function (e) {
+			var container = $(".select-box");
+
+			if (container.has(e.target).length === 0) {
+				container.removeClass("open");
+			}
+		});
+
+
+		$("select").on("change", function () {
+
+			var selection = $(this).find("option:selected").text(),
+				labelFor = $(this).attr("id"),
+				label = $("[for='" + labelFor + "']");
+
+			label.find(".label-desc").html(selection);
+
+		});
+	</script>
+</body>
+
+</html>
