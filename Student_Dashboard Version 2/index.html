@@ -9,101 +9,217 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 
-    <!-- <style>
-        .owl-prev {
-            height: 54px;
-            position: absolute;
-            top: 50%;
-            width: 27px;
-            z-index: 1000;
-            left: 2%;
-            cursor: pointer;
-            color: transparent;
-            margin-top: -10px;
-            margin-left: -20px;
-            color: #000;
-            margin-right: -50px;
-        }
-        .owl-prev span,
-        .owl-next span {
-            font-size: 40px;
-            border: none !important;
-            color: #fff;
-            outline: none !important;
-        }
-        .owl-next {
-            height: 60px;
-            position: absolute;
-            top: 50%;
-            width: 30px;
-            z-index: 1000;
-            right: 2%;
-            cursor: pointer;
-            color: transparent;
-            margin-top: -10px;
-            margin-right: -20px;
-            color: #000;
-        }
-        .owl-prev:hover,
-        .owl-next:hover {
-            opacity: 0.5;
-        }
-        @media screen and (max-width:900px) and (min-width:100px){
-            .owl-prev {
-                margin-top: -10px;
-                margin-left: -10px;
-                color: #000;
-                margin-right: -20px;
-            }
-            .owl-next {
-                margin-top: -10px;
-                margin-left: -10px;
-                color: #000;
-                margin-right: -10px;
-            }
-        }
-    </style> -->
 
     <style>
-        .owl-carousel {
-            max-width: 320px;
+        .owl-dots {
+            display: none;
         }
+        input {
+  position: fixed;
+  opacity: 0;
+}
 
-        .owl-carousel .owl-nav {
-            padding-top: .4em;
-            font-family: sans-serif;
-            font-size: .8em;
-        }
+label {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+label::before {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(18, 67, 100, 0.6);
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 3;
+  width: 2em;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger::before,
+label .burger .bar, label .burger::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 12%;
+  background: #1b7ceb;
+  content: '';
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger .bar {
+  top: 44%;
+}
+label .burger::before {
+  top: 0;
+  transform-origin: top left;
+}
+label .burger::after {
+  bottom: 0;
+  transform-origin: bottom left;
+}
 
-        .owl-carousel .owl-nav>div {
-            padding: .4em 1.4em;
-            border: 1px solid #333;
-            background: #000;
-            color: white;
-            border-radius: .4em;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
-            box-shadow: 0.1em 0.1em 0.4em rgba(0, 0, 0, 0.5);
-        }
+input:focus + label .burger,
+label:hover .burger {
+  opacity: .75;
+}
 
-        .owl-carousel .owl-nav>div:hover {
-            background-color: #333;
-        }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translate3d(0, 0, 0);
+  transform: translateX(-100%);
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+nav::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 25em;
+  background: #ccc;
+  content: '';
+  transform: skewX(15deg) translateX(-100%);
+  transform-origin: bottom left;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+@media (min-width: 40em) {
+  nav::before {
+    width: 40em;
+  }
+}
+nav a {
+  margin: .5em 0;
+  padding: .2em 2em;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transform: translateX(-100%);
+  transition: color .15s, transform .5s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+nav a:nth-child(1) {
+  transition-delay: 0s, 100ms;
+}
+nav a:nth-child(2) {
+  transition-delay: 0s, 150ms;
+}
+nav a:nth-child(3) {
+  transition-delay: 0s, 200ms;
+}
+nav a:nth-child(4) {
+  transition-delay: 0s, 250ms;
+}
+nav a:nth-child(5) {
+  transition-delay: 0s, 300ms;
+}
+nav a:nth-child(6) {
+  transition-delay: 0s, 350ms;
+}
+nav a:hover, nav a:focus {
+  color: black;
+}
 
-        .owl-carousel .owl-nav .owl-prev {
-            float: left;
-        }
+main {
+  overflow: hidden;
+}
+main .content {
+  transform: translate3d(0, 0, 0);
+  will-change: transform, filter;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
 
-        .owl-carousel .owl-nav .owl-next {
-            float: right;
-        }
+[id="navcheck"]:checked + label::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+[id="navcheck"]:checked + label .burger::before, [id="navcheck"]:checked + label .burger::after {
+  width: 141.42%;
+}
+[id="navcheck"]:checked + label .burger::before {
+  transform: rotate(45deg) translateY(-50%);
+}
+[id="navcheck"]:checked + label .burger::after {
+  transform: rotate(-45deg) translateY(50%);
+}
+[id="navcheck"]:checked + label .burger .bar {
+  transform: scale(0.1);
+}
+[id="navcheck"]:checked ~ nav {
+  transform: translateX(0);
+}
+[id="navcheck"]:checked ~ nav::before {
+  transform: skewX(15deg) translateX(0);
+}
+[id="navcheck"]:checked ~ nav a {
+  transform: translateX(0);
+}
+[id="navcheck"]:checked ~ main .content {
+  transform: translateX(3em);
+  transform-origin: left center;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
     </style>
-
 </head>
 
 <body>
+    <input type="checkbox" id="navcheck" role="button" title="menu">
+    <label for="navcheck" aria-hidden="true" title="menu">
+        <span class="burger">
+            <span class="bar">
+                <span class="visuallyhidden">Menu</span>
+            </span>
+        </span>
+    </label>
+    <nav id="menu">
+        <h1 class="club-head">Welcome To Tech Club</h1>
+        <a href="#">My Profile.</a>
+        <a href="#">Dashboard!</a>
+        <a href="#">FAQs.</a>
+        <a href="#">Change Club.</a>
+    </nav>
     <div class="page-lay">
         <div class="name-wrap">
             <h1 class="name-text">Ankush Aggarwal</h1>
@@ -111,7 +227,7 @@
         <div class="navbar navbar-shadow">
             <div class="nav-main">
                 <div class="nav-first">
-                    <img src="cloud.png" alt="">
+                    <img src="assets/images/logo.png" alt="" class="logo-img">
                 </div>
                 <div class="nav-second">
                     <h1 class="club-head-text">Welcome To Tech Talk</h1>
@@ -127,7 +243,7 @@
     </div>
     <div class="page-lay-new">
         <div class="theme-section">
-            <ul class="theme-head">
+            <ul class="theme-head left-right-gap">
                 <li>
                     <h1 class="theme-head_text">Theme Of The Month</h1>
                 </li>
@@ -139,7 +255,7 @@
                 </li>
             </ul>
         </div>
-        <div class="video-section-wrap">
+        <div class="video-section-wrap left-right-gap">
             <div class="vd_sec first-sec">
                 <div>
                     <h1>First Video</h1>
@@ -161,7 +277,7 @@
                 </div>
             </div>
         </div>
-        <div class="xplore-section">
+        <div class="xplore-section left-right-gap">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                     <h1 class="row-head">Xplore</h1>
@@ -173,7 +289,7 @@
                     <div class="">
                         <div class="inner-row-sections">
                             <div class="row-image">
-                                <img src="../Student_Panel/assets/images/A1.jpg" alt="">
+                                <img src="assets/images/A1.jpg" alt="">
                             </div>
                             <div>
                                 <h1 class="row-text-head">Internet of Things (IoT)</h1>
@@ -181,13 +297,14 @@
                                 <h1 class="row-text-date">Apr 22 2015</h1>
                                 <i class="far fa-comments new-icon"></i>
                                 <p class="row-text-para">The internet of things (IoT) is a computing concept that
-                                    describes the idea of everyday physical objects being connected to the internet and
+                                    describes the idea of everyday physical objects being connected to the internet
+                                    and
                                     being able to identify themselves to other devices...</p>
                             </div>
                         </div>
                         <div class="inner-row-sections ">
                             <div class="row-image">
-                                <img src="pexels-photo-221185.jpeg" alt="">
+                                <img src="assets/images/pexels-photo-221185.jpeg" alt="">
                             </div>
                             <div>
                                 <h1 class="row-text-head">10 Real World Applications of Internet of Things (IoT)</h1>
@@ -195,30 +312,32 @@
                                 <h1 class="row-text-date">Aug 26 2016</h1>
                                 <i class="far fa-comments new-icon"></i>
                                 <p class="row-text-para">This new wave of connectivity is going beyond laptops and
-                                    smartphones, it’s going towards connected cars, smart homes, connected wearables,
+                                    smartphones, it’s going towards connected cars, smart homes, connected
+                                    wearables,
                                     smart cities and connected healthcare...</p>
                             </div>
                         </div>
                         <div class="inner-row-sections">
                             <div class="row-image">
-                                <img src="pexels-photo-1148820.jpeg" alt="">
+                                <img src="assets/images/pexels-photo-1148820.jpeg" alt="">
                             </div>
                             <div>
                                 <h1 class="row-text-head">6 internet of things trends that will dominate the market</h1>
                                 <h1 class="row-text-author">Thor Olavsrud</h1>
                                 <h1 class="row-text-date">Jan 10 2018</h1>
                                 <i class="far fa-comments new-icon"></i>
-                                <p class="row-text-para">The internet of things (IoT) and industrial internet of things
+                                <p class="row-text-para">The internet of things (IoT) and industrial internet of
+                                    things
                                     (IIoT) will breakout in 2018, with organizations ramping up deployments and
                                     incorporating IoT technologies into their products, processes and workflows...</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 top-bottom-gap">
                     <h1 class="row-head-right">Featured Article</h1>
                     <div class="main-article-div">
-                        <img src="internet_things_iot-100745968-large.jpg" alt="">
+                        <img src="assets/images/internet_things_iot-100745968-large.jpg" alt="">
                         <h1 class="row-text-head">Real Life Examples of Internet of Things</h1>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -226,47 +345,68 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="far fa-comments new-icon"></i>
-                        <p class="row-text-para">The effect technology has on our lives is something beyond words. We
-                            are smarter, growing faster, learning in innovative ways and experiencing things every day,
+                        <p class="row-text-para">The effect technology has on our lives is something beyond words.
+                            We
+                            are smarter, growing faster, learning in innovative ways and experiencing things every
+                            day,
                             all because of technology and science...</p>
-                        <img src="../Student_Panel/assets/images/A1.jpg" alt="">
+                        <img src="assets/images/A1.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="xperience-section">
+        <div class="xperience-section left-right-gap">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                     <h1 class="row-head-2">Xperience</h1>
-                    <p class="row-para"> Online live courses, workshops, webinars and projects run by experts to give
+                    <p class="row-para"> Online live courses, workshops, webinars and projects run by experts to
+                        give
                         students a headstart in learning a topic</p>
-                    <div class="row-second-grid">
-                        <div class="inner-col-grid-sec">
-                            <img src="Baby-mimo-meter.jpg" alt="">
-                            <h1 class="row-text-author">Mimo Monitor:</h1>
-                            <h1 class="row-text-date">Apr 22 2015</h1>
+                    <div class="row-second-grid owl-carousel">
+                        <div class="inner-col-grid-sec ">
+                            <img src="assets/images/Baby-mimo-meter.jpg" alt="">
+                            <h1 class="row-text-author-second">Mimo Monitor:</h1>
+                            <h1 class="row-text-date-second">Apr 22 2015</h1>
                             <i class="far fa-comments new-icon"></i>
+                            <h1 class="row-text-head-second">6 internet of things trends that will dominate the
+                                market</h1>
                             <p class="row-text-para">They have been around for some time now. Mimo Monitors are not
-                                only affordable but also presents a new technology. Used for several business purposes,
-                                this loT has been making things easier, simpler and is said to be very productive...
+                                only affordable but also presents a new technology.
                             </p>
                             <button class="row-btn">Register <i class="fas fa-chevron-right" style="font-size: 14px"></i></button>
                         </div>
                         <div class="inner-col-grid-sec">
-                            <img src="Phillips-Hue-bulbs.jpg" alt="">
-                            <h1 class="row-text-author">Philips-Hue Bulbs:
+                            <img src="assets/images/Phillips-Hue-bulbs.jpg" alt="">
+                            <h1 class="row-text-author-second">Philips-Hue Bulbs:
                             </h1>
-                            <h1 class="row-text-date">Apr 22 2015</h1>
+                            <h1 class="row-text-date-second">Apr 22 2015</h1>
                             <i class="far fa-comments new-icon"></i>
-                            <p class="row-text-para">Philips hue bulbs have now stepped into a new stage of innovation
-                                with these smart bulbs. Linked with your mobile phones, you can now actually control
-                                the intensity of lights on your fingertips. The combination of bulb with mobile
-                                technology is next thing for your home...</p>
+                            <h1 class="row-text-head-second">6 internet of things trends that will dominate the
+                                market</h1>
+                            <p class="row-text-para">Philips hue bulbs have now stepped into a new stage of
+                                innovation
+                                with these smart bulbs. Linked with your mobile phones...</p>
+                            <button class="row-btn">Register <i class="fas fa-chevron-right" style="font-size: 14px"></i></button>
+                        </div>
+                        <div class="inner-col-grid-sec">
+                            <img src="assets/images/Phillips-Hue-bulbs.jpg" alt="">
+                            <h1 class="row-text-author-second">Philips-Hue Bulbs:
+                            </h1>
+                            <h1 class="row-text-date-second">Apr 22 2015</h1>
+                            <i class="far fa-comments new-icon"></i>
+                            <h1 class="row-text-head-second">6 internet of things trends that will dominate the
+                                market</h1>
+                            <p class="row-text-para">Philips hue bulbs have now stepped into a new stage of
+                                innovation
+                                with these smart bulbs. Linked with your mobile phones...</p>
                             <button class="row-btn">Register <i class="fas fa-chevron-right" style="font-size: 14px"></i></button>
                         </div>
                     </div>
+                    <div class="banner-div">
+                        <h1>Wing Xp Banner Ad</h1>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 top-bottom-gap">
                     <h1 class="row-head-right">Message</h1>
                     <h1 class="row-second-head">From The Coordinator's Desk</h1>
                     <p class="row-second-para">If you have been following
@@ -295,7 +435,7 @@
                 </div>
             </div>
         </div>
-        <div class="xpress-section">
+        <div class="xpress-section left-right-gap">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                     <h1 class="row-head-3 ">Xpress</h1>
@@ -304,23 +444,27 @@
 
                     </p>
                     <div class="main-grid">
-                        <div class="inner-row-sections">
+                        <div class="inner-row-sections-three">
                             <div class="row-image">
-                                <img src="microchips.jpg" alt="">
+                                <img src="assets/images/microchips.jpg" alt="">
                             </div>
                             <div>
-                                <h1 class="row-text-head">Microchips: We are hearing about microchips for a long time
+                                <h1 class="row-text-head-third">Microchips: We are hearing about microchips for a
+                                    long
+                                    time
                                     and have their applications in some of the sensitive and dangerous fields like
                                     defense. </h1>
                                 <h1 class="row-text-date" style="margin: 0">Apr 22 2015</h1>
                             </div>
                         </div>
-                        <div class="inner-row-sections">
+                        <div class="inner-row-sections-three">
                             <div class="row-image">
-                                <img src="Smart-cars.jpg" alt="">
+                                <img src="assets/images/Smart-cars.jpg" alt="">
                             </div>
                             <div>
-                                <h1 class="row-text-head">The automotive companies like Ford, Tesla has already stepped
+                                <h1 class="row-text-head-third">The automotive companies like Ford, Tesla has
+                                    already
+                                    stepped
                                     into the world where Car would also the part of IoT. Tesla car is really a big
                                     achievement in this field.
                                 </h1>
@@ -331,12 +475,14 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <div class="inner-row-sections">
+                        <div class="inner-row-sections-three">
                             <div class="row-image">
-                                <img src="Smart-Phone.jpg" alt="">
+                                <img src="assets/images/Smart-Phone.jpg" alt="">
                             </div>
                             <div>
-                                <h1 class="row-text-head">Smart Phones are the most common example of IoT or we can say
+                                <h1 class="row-text-head-third">Smart Phones are the most common example of IoT or
+                                    we
+                                    can say
                                     Smart Phone is one of the first few “Things” in the ‘Internet of Things’.
                                 </h1>
                                 <h1 class="row-text-date" style="margin: 0">Apr 22 2015</h1>
@@ -344,11 +490,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 top-bottom-gap">
                     <h1 class="row-head-right">Pinboard</h1>
                     <h1 class="row-second-head">Wall Of Fame</h1>
                     <div class="pin-image">
-                        <img src="Internet-of-Things-examples.gif" alt="">
+                        <img src="assets/images/Internet-of-Things-examples.gif" alt="">
                     </div>
                     <h1 class="pin-text-head">Graphic Design Project
                         3D Bottle –
@@ -365,24 +511,44 @@
                 </div>
             </div>
         </div>
-        <div class="quiz-section">
+        <div class="quiz-section left-right-gap">
             <h1 class="row-head-4">Test Your Knowledge</h1>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div class="apester-media" data-media-id="5ba1f4e3d4b9a920936fbe09" height="362"></div>
-                    <script async src="https://static.apester.com/js/sdk/latest/apester-sdk.js"></script>
+                    <div class="apester-media apester-element" data-media-id="5ba1f4e3d4b9a920936fbe09" height="362"
+                        style="height: 362px;">
+                        <apester-layer class="apester-active apester-layer apester-layout" id="APESTER_1">
+                            <div class="apester-loading-container apester-hidden"><img src="https://static.apester.com/./js/assets/loader_100x100.gif"
+                                    class="interaction-loader"></div><iframe frameborder="0" allowtransparency="true"
+                                scrolling="no" data-interaction-id="5ba1f4e3d4b9a920936fbe09" name="http://www.iclubs.in/student_panel/new_design/index.html"
+                                class="apester-fill-content" src="about:blank"></iframe>
+                        </apester-layer>
+                    </div>
+                    <script async="" src="https://static.apester.com/js/sdk/latest/apester-sdk.js"></script>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div class="apester-media" data-media-id="5ba1eae4d4b9a935a36fbde3" height="362"></div>
-                    <script async src="https://static.apester.com/js/sdk/latest/apester-sdk.js"></script>
+                    <div class="apester-media apester-element" data-media-id="5ba1eae4d4b9a935a36fbde3" height="362"
+                        style="height: 362px;">
+                        <apester-layer class="apester-active apester-layer apester-layout" id="APESTER_1">
+                            <div class="apester-loading-container apester-hidden"><img src="https://static.apester.com/./js/assets/loader_100x100.gif"
+                                    class="interaction-loader"></div><iframe frameborder="0" allowtransparency="true"
+                                scrolling="no" data-interaction-id="5ba1eae4d4b9a935a36fbde3" name="http://www.iclubs.in/student_panel/new_design/index.html"
+                                class="apester-fill-content" src="about:blank"></iframe>
+                        </apester-layer>
+                    </div>
+                    <script async="" src="https://static.apester.com/js/sdk/latest/apester-sdk.js"></script>
                 </div>
             </div>
         </div>
+        <div class=" banner-div left-right-gap">
+            <h1>Wing Xp Banner Ad</h1>
+        </div>
+        <br><br>
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 left-right-gap">
                 <div class="info-wrap">
                     <div class="first-info">
-                        <img src="cloud.png" alt="" class="logo-image">
+                        <img src="assets/images/logo.png" alt="" class="logo-img-down">
                         <p class="club-info">iClubs are internet based school clubs that provide meaningful
                             opportunities for kids to
                             explore, experience and express themselves
@@ -398,7 +564,7 @@
                         <div class="main-grid">
                             <div class="inner-row-sections-new-info">
                                 <div class="row-image">
-                                    <img src="../Student_Panel/assets/images/A1.jpg" alt="" style="height: 80px">
+                                    <img src="assets/images/A1.jpg" alt="" style="height: 80px">
                                 </div>
                                 <div>
                                     <h1 class="row-text-head" style="font-size: 18px">Internet of Things (IoT)</h1>
@@ -409,11 +575,12 @@
                             </div>
                             <div class="inner-row-sections-new-info">
                                 <div class="row-image">
-                                    <img src="../Student_Panel/assets/images/A1.jpg" alt="" style="height: 80px">
+                                    <img src="assets/images/A1.jpg" alt="" style="height: 80px">
                                 </div>
                                 <div>
-                                    <h1 class="row-text-head" style="font-size: 18px">10 Real World Applications of Internet of Things (IoT)
-                                        </h1>
+                                    <h1 class="row-text-head" style="font-size: 18px">10 Real World Applications of
+                                        Internet of Things (IoT)
+                                    </h1>
                                     <h1 class="row-text-author" style="background-color:#1b7ceb;padding: 3px 5px ">
                                         Tips</h1>
                                     <h1 class="row-text-date">Apr 22 2015</h1>
@@ -421,11 +588,13 @@
                             </div>
                             <div class="inner-row-sections-new-info">
                                 <div class="row-image">
-                                    <img src="../Student_Panel/assets/images/A1.jpg" alt="" style="height: 80px">
+                                    <img src="assets/images/A1.jpg" alt="" style="height: 80px">
                                 </div>
                                 <div>
-                                    <h1 class="row-text-head" style="font-size: 18px">6 internet of things trends that will dominate the market
-                                        </h1>
+                                    <h1 class="row-text-head" style="font-size: 18px">6 internet of things trends
+                                        that
+                                        will dominate the market
+                                    </h1>
                                     <h1 class="row-text-author" style="background-color:#1b7ceb;padding: 3px 5px ">Tips</h1>
                                     <h1 class="row-text-date">Apr 22 2015</h1>
 
@@ -474,8 +643,61 @@
         crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
         crossorigin="anonymous "></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="owl.carousel.min.js"></script>
+    <script src="../Student_Panel/assets/js/owl.carousel.js"></script>
+    <script src="../Student_Panel/assets/js/owl.carousel.min.js"></script>
+
+    <script>
+        $(".owl-carousel ").owlCarousel({
+            loop: true,
+            margin: 40,
+            responsiveClass: true,
+            nav: true,
+            loop: true,
+            items: 1,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                526: {
+                    items: 1
+                },
+                651: {
+                    items: 2
+                },
+                900: {
+                    items: 2
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        });
+        $(".my-owl-carousel ").owlCarousel({
+            loop: true,
+            margin: 40,
+            responsiveClass: true,
+            nav: true,
+            loop: true,
+            items: 3,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                526: {
+                    items: 1
+                },
+                651: {
+                    items: 2
+                },
+                900: {
+                    items: 2
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        });
+    </script>
 
 </body>
 
