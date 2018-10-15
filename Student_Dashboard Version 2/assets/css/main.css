@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
   /* font-family: "Raleway", sans-serif; */
 }
 
@@ -429,7 +430,7 @@ body {
 .info-wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 40px;
   background-color: #000;
   padding-top: 20px;
 }
@@ -629,7 +630,7 @@ body {
   }
 }
 
-@media screen and (max-width: 650px) and (min-width: 100px) {
+@media screen and (max-width: 636px) and (min-width: 100px) {
   .video-section-wrap {
     display: grid;
     grid-template-columns: 1fr;
@@ -702,5 +703,9 @@ body {
 
   .next-wrap {
     margin-top: 50px;
+  }
+
+  .second-info-head {
+    padding: 15px 25px;
   }
 }
