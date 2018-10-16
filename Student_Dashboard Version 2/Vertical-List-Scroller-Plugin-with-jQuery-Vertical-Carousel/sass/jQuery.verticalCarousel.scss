@@ -1,0 +1,30 @@
+/*!
+ * jQuery Vertical Carousel
+ * https://github.com/haripaddu/jQuery-Vertical-Carousel
+ * Version: 1.0
+ * License: MIT
+ */
+
+@import "compass/css3";
+
+* {
+	@include box-sizing(border-box);
+}
+
+.vc_goUp, .vc_goDown{
+	display:block;
+	&.isDisabled{
+		@include opacity(0.3);
+		cursor: not-allowed;
+	}
+}
+.vc_container{
+	overflow:hidden;
+	@include transition(height 0.2s ease-in);
+}
+.vc_list{
+	margin:0;
+	padding:0;
+	list-style: none;
+	@include transition(transform 0.2s ease-in);
+}

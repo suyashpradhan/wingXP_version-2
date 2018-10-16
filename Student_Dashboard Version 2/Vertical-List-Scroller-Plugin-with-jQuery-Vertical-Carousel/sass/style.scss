@@ -1,0 +1,65 @@
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+
+$rhythm-unit: 'px';
+$base-font-size: 15px;
+$base-line-height: 5px;
+$font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+* {
+	@include box-sizing(border-box);
+}
+
+body{
+	@include adjust-font-size-to($base-font-size, 5);
+	font-family: $font-family;
+	font-weight: 300;
+}
+
+.recentArticles{
+	margin:50px auto;
+	max-width:500px;
+	background-color: #f1f1f1;
+}
+.recentArticlesHeader{
+	background: #e1e1e1;
+	@include rhythm-borders(0px, 3);
+	&:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+	h3{
+		float:left;
+		margin:0px;
+	}
+	.vc_goUp, .vc_goDown{
+		float:right;
+		display:block;
+		width:25px;
+		height:25px;
+		background: #fff;
+		text-align: center;
+		color: #000;
+		margin-left:5px;
+		&:active{
+			@include scale(.7, .7);
+		}
+	}
+}
+.recentArticlesGroup{
+	&.vc_list{
+		> li{
+			margin:15px;
+			@include rhythm-borders(0px, 3);
+			background-color: #fff;
+			@include box-shadow(1px 1px 2px rgba(0,0,0,0.05));
+			h4{
+				margin:0px 0px 15px;
+			}
+			p{
+				margin:0px 0px 0px;
+			}
+		}
+	}
+}

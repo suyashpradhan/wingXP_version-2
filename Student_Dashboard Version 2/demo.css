@@ -1,0 +1,33 @@
+.td-block-title-wrap {
+  position: relative;
+}
+
+.td-theme-wrap .td_uid_22_5bc5ad2e74f1d_rand .block-title {
+  border-color: #f9c100;
+}
+.td_block_template_1 .block-title {
+  text-align: left;
+}
+
+.block-title {
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 26px;
+  border-bottom: 2px solid #2abfd4;
+}
+
+.td_block_template_1 .block-title {
+  text-align: left;
+}
+
+.block-title a,
+.block-title span,
+.block-title label {
+  line-height: 17px;
+  display: inline-block;
+  padding: 7px 12px 4px;
+  background-color: #2abfd4;
+  color: #fff;
+}
