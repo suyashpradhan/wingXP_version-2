@@ -125,6 +125,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2px;
+  max-width: 1140px;
 }
 
 .vd_sec {
@@ -135,31 +136,31 @@ body {
 .first-sec {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
-  width: 565px;
+  width: 566px;
   height: 462px;
 }
 
 .vd_img img {
-  width: 565px;
+  width: 566px;
   height: 462px;
 }
 
 .second-sec {
   grid-column: span 2;
-  width: 571px;
-  height: 263px;
+  width: 572px;
+  height: 261px;
 }
 .vd_img-sec img {
-  width: 571px;
-  height: 263px;
+  width: 573px;
+  height: 261px;
 }
 .common-sec {
   width: 285px;
-  height: 197px;
+  height: 198px;
 }
 .vd_img-common img {
   width: 285px;
-  height: 197px;
+  height: 198px;
 }
 
 .xplore-section {
@@ -697,17 +698,17 @@ body {
 
 @media screen and (max-width: 1140px) and (min-width: 1019px) {
   .first-sec {
-    width: 488px;
-    height: 462px;
+    width: 522px;
+    height: 424px;
   }
 
   .vd_img img {
-    width: 488px;
-    height: 462px;
+    width: 522px;
+    height: 424px;
   }
 
   .second-sec {
-    width: 420px;
+    width: 276px;
     height: 233px;
   }
   .vd_img-sec img {
