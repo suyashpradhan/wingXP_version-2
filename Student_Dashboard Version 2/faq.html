@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+    <style>
+        body::after {
+            content: "";
+            display: block;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-lay-new">
+        <div class="page-lay-new">
+            <div class="navbar navbar-shadow">
+                <div class="nav-main">
+                    <div class="nav-first">
+                        <img src="assets/images/logo.png" alt="" class="logo-img">
+                    </div>
+                    <div class="nav-second">
+                        <h1 class="club-head-text">Welcome To Tech Talk</h1>
+                        <ul class="nav-list">
+                            <li> <a href="" class="nav-links"> My Profile </a></li>
+                            <li> <a href="" class="nav-links"> Dashboard</a></li>
+                            <li><a href="" class="nav-links">FAQs</a></li>
+                            <nav class="navbar">
+                                <ul class="nav">
+                                    <li>Change Clubs
+                                        <ul class="dropdown">
+                                            <li>Tech Talk</li>
+                                            <li>Coding</li>
+                                            <li>Chess Club</li>
+                                            <li>Environment Club</li>
+                                            <li>Understanding News</li>
+                                            <li>Geography</li>
+                                            <li>Science</li>
+                                            <li>History</li>
+                                            <li>Maths</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-div">
+                <div class="faq-div-item" style="position: relative">
+                    <a>What is iClubs?
+                        <i class="fas fa-chevron-down down-icon" style="position: absolute;right: 0;"></i>
+                    </a>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                            viverra suspendisse potenti.</p>
+                    </div>
+                </div><br>
+                <div class="faq-div-item" style="position: relative">
+                    <a>Why iClubs?
+                        <i class="fas fa-chevron-down down-icon" style="position: absolute;right: 0;"></i>
+                    </a>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                            viverra suspendisse potenti.</p>
+                    </div>
+                </div><br>
+                <div class="faq-div-item" style="position: relative">
+                    <a>What is the use of iClubs?
+                        <i class="fas fa-chevron-down down-icon" style="position: absolute;right: 0;"></i>
+                    </a>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                            viverra suspendisse potenti.</p>
+                    </div>
+                </div><br>
+                <div class="faq-div-item" style="position: relative">
+                    <a>Who Can Use iClubs?
+                        <i class="fas fa-chevron-down down-icon" style="position: absolute;right: 0;"></i>
+                    </a>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                            viverra suspendisse potenti.</p>
+                    </div>
+                </div><br>
+                <div class="faq-div-item" style="position: relative">
+                    <a>Prerequisites for iClubs?
+                        <i class="fas fa-chevron-down down-icon" style="position: absolute;right: 0;"></i>
+                    </a>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                            viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style=" position: absolute;bottom: 0;height: 60px;background-color: #000;margin-top: 30px;">
+        <div class="left-footer" style="padding: 15px">
+            &copy; Copyright – iCLUBS 2018
+        </div>
+        <div class="right-footer">
+            <ul class="footer-inner" style="padding: 15px">
+                <li>About</li>
+                <li>Contact</li>
+                <li>Domain</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous "></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <script>
+        const items = document.querySelectorAll(".faq-div a");
+        function toggleAccordion() {
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("active");
+        }
+        items.forEach(item => item.addEventListener("click", toggleAccordion));
+    </script>
+
+</body>
+
+</html>
