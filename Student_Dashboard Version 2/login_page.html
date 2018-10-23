@@ -23,7 +23,7 @@
 </head>
 
 <body style="background: #E0EAFC;  
-background: linear-gradient(to right, #CFDEF3, #E0EAFC); min-height: 100%;
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); min-height: 100%;
   padding: 0;
   margin: 0;
   position: relative; ">
@@ -37,7 +37,8 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); min-height: 100%;
     <div class="form-new">
         <ul class="tab-group">
             <li class="tab active"><a href="#signup">School Login</a></li>
-            <li class="tab"><a href="#login">School Coordinator Login</a></li>
+            <li class="tab "><a href="#login">School Coordinator Login</a></li>
+            <li class="tab"><a href="#school-login">Student Login</a></li>
         </ul>
         <div class="tab-content">
             <div id="signup">
@@ -55,20 +56,32 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); min-height: 100%;
                     <button type="submit" class="sch-btn button-block" />Login</button>
                 </form>
             </div>
-
-            <div id="login">
+            <div id="login" style="display: none;">
                 <h1 class="form-new-head">Login For School Coordinator !</h1>
                 <form action="/" method="post">
                     <div class="field-wrap">
                         <input type="text" required autocomplete="off" class="form-new-fields" placeholder="School ID" />
                     </div>
-
                     <div class="field-wrap">
-
                         <input type="text" required autocomplete="off" class="form-new-fields" placeholder="Username" />
                     </div>
                     <div class="field-wrap">
-
+                        <input type="password" required autocomplete="off" class="form-new-fields" placeholder="Password" />
+                    </div>
+                    <p class="forgot"><a href="#" class="forgot-link">Forgot Password?</a></p>
+                    <button class="sch-btn button-block" />Log In</button>
+                </form>
+            </div>
+            <div id="school-login">
+                <h1 class="form-new-head">Login For Student !</h1>
+                <form action="/" method="post">
+                    <div class="field-wrap">
+                        <input type="text" required autocomplete="off" class="form-new-fields" placeholder="School ID" />
+                    </div>
+                    <div class="field-wrap">
+                        <input type="text" required autocomplete="off" class="form-new-fields" placeholder="Username" />
+                    </div>
+                    <div class="field-wrap">
                         <input type="password" required autocomplete="off" class="form-new-fields" placeholder="Password" />
                     </div>
                     <p class="forgot"><a href="#" class="forgot-link">Forgot Password?</a></p>
