@@ -77,12 +77,17 @@ function autoPlayYouTubeModal() {
   });
 }
 
+//On Close Pause Yt Video
+jQuery("#videoModal").on("hidden.bs.modal", function(e) {
+  $("#videoModal iframe").attr("src", "");
+});
+
 //Autoplay Other Videos
 $(document).ready(function() {
-  $("#videoModal").on("shown.bs.modal", function() {
+  $("#videoModal2").on("shown.bs.modal", function() {
     $("#video1")[0].play();
   });
-  $("#videoModal").on("hidden.bs.modal", function() {
+  $("#videoModal2").on("hidden.bs.modal", function() {
     $("#video1")[0].pause();
   });
 });
@@ -133,7 +138,6 @@ function toggleAccordion() {
 }
 
 //Nav
-
 (function($) {
   $.fn.menumaker = function(options) {
     var cssmenu = $(this),
@@ -214,3 +218,20 @@ function toggleAccordion() {
     });
   });
 })(jQuery);
+
+//Logout Dropdown
+$("#dropdown").on("click", function(e) {
+  e.preventDefault();
+
+  if ($(this).hasClass("open")) {
+    $(this).removeClass("open");
+    $(this)
+      .children("ul")
+      .slideUp("fast");
+  } else {
+    $(this).addClass("open");
+    $(this)
+      .children("ul")
+      .slideDown("fast");
+  }
+});
