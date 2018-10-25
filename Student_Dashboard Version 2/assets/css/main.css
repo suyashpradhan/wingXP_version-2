@@ -491,10 +491,15 @@ ul li {
 
 .inner-row-sections-new-info {
   display: grid;
-  grid-template-columns: 100px 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 155px 1fr;
+  grid-gap: 10px;
   margin: 10px 0 10px 0;
-  color: #fff;
+  color: rgb(238, 210, 210);
+}
+
+.inner-row-sections-new-info img {
+  height: 95px ;
+  width: 150px;
 }
 
 .row-image img {
