@@ -315,12 +315,6 @@ select {
   }
 }
 
-nav {
-  height: 80px;
-  width: 100%;
-  background-color: #363636;
-}
-
 .navbar {
   height: auto;
   background: #fff;
@@ -333,6 +327,15 @@ nav {
   grid-template-columns: 1fr auto;
   align-items: center;
   grid-gap: 30px;
+  margin: 0;
+  width: 100%;
+}
+
+.newnavigationBar_2 {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  grid-gap: 10px;
   margin: 0;
   width: 100%;
 }
