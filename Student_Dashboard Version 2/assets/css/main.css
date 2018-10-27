@@ -605,6 +605,13 @@ ul li {
   margin-top: 20px;
 }
 
+.row-new-grid_2 {
+  display: grid;
+  grid-template-columns: 168px 1fr;
+  grid-gap: 2px;
+  margin: 20px;
+}
+
 .__one {
   background-color: #777;
   height: 95px;
@@ -762,6 +769,30 @@ ul li {
   padding: 5px 20px;
   width: 100%;
   border: 1px solid #2abfd4;
+}
+
+.row-new-inner p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.upload-button {
+  background-color: #ce1f36;
+  border: 1px solid #ce1f36;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 40px;
+}
+
+.last-text {
+  font-size: 16px;
+  color: #777;
+  text-align: center;
 }
 
 .inner-col-grid-sec {
