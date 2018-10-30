@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <nav>
+        <div class="brand">
+            <img src="../logo.png" alt="" height="70px;">
+        </div>
+        <div class="menu">
+            <span class="menu__middle" />
+        </div>
+        <ul class="links">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Change Club</a></li>
+            <li><a href="#"><i class="fas fa-user-alt"></i> Account</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul class="">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Change Club</a></li>
+            <li><a href="#"><i class="fas fa-user-alt"></i> Account</li>
+        </ul>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous "></script>
+    <script>
+        class Navbar {
+            constructor() {
+                this.logo = document.querySelector('.brand');
+                this.links = document.querySelectorAll('a');
+                this.activeBorder = document.querySelector('.active-border');
+                this.menu = document.querySelector('.menu');
+                this.mobileNav = document.querySelector('.mobile-nav');
+                this.animateBorder = this.animateBorder.bind(this);
+                this.events();
+            }
+
+            events() {
+                this.links.forEach(link => (
+                    link.addEventListener('click', () => this.animateBorder(link))
+                ));
+
+                this.logo.addEventListener('click', function () {
+                    this.activeBorder.style.left = "-30px";
+                    this.activeBorder.style.right = "30px";
+                    this.activeBorder.style.opacity = '0';
+                }.bind(this));
+
+                this.menu.addEventListener('click', this.openMobileNav.bind(this));
+            }
+
+            animateBorder(link) {
+                this.links.forEach(l => l.classList.remove('active'));
+                const linkIndex = [...this.links].indexOf(link);
+                this.activeBorder.style.left = `${linkIndex * 100}px`;
+                this.activeBorder.style.right = `${300 - linkIndex * 100}px`;
+                this.activeBorder.style.opacity = '1';
+                link.classList.add('active');
+            }
+
+            openMobileNav() {
+                this.mobileNav.classList.toggle('open');
+                this.menu.classList.toggle('open');
+            }
+
+            closeMobileNav() {
+                this.mobileNav.classList.remove('open');
+            }
+        }
+
+        const navbar = new Navbar();
+
+    </script>
+
+</body>
+
+</html>
