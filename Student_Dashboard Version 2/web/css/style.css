@@ -91,6 +91,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: Google Sans, Arial, sans-serif;
 }
 article,
 aside,
@@ -447,9 +448,9 @@ i.arrow {
 }
 /* Login Form */
 #loginForm {
-  width: 408px;
+  width: 300px;
   background: #07cbc7;
-  height: 285px;
+  height: 200px;
 }
 #loginForm fieldset {
   display: block;
@@ -831,4 +832,23 @@ fieldset#body {
     bottom: -26.5em;
     margin-bottom: 0em;
   }
+}
+
+.popup-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  padding: 0 20px;
+}
+
+.popup-list li {
+  margin: 5px 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.name-div {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
