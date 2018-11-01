@@ -1,7 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Google Sans, Arial, sans-serif;
+  /* font-family: Google Sans, Arial, sans-serif; */
+  /*  */
+  /*   font-family: "Raleway", sans-serif;*/
+  font-family: "Nunito", sans-serif;
 }
 
 html {
@@ -13,7 +16,8 @@ body {
   font-weight: 400;
   line-height: 1.4;
   /* font-family: "Nunito", sans-serif; */
-  font-family: Google Sans, Arial, sans-serif;
+  /*  font-family: "Raleway", sans-serif; */
+  /* font-family: Google Sans, Arial, sans-serif; */
   overflow-x: hidden;
   min-height: 100%;
   padding: 0;
@@ -902,7 +906,7 @@ ul li {
 }
 
 .next-head {
-  font-size: 30px;
+  font-size: 22px;
   color: #000;
   font-weight: 900;
   letter-spacing: 1px;
@@ -1822,7 +1826,6 @@ ul.dropdown > li {
 }
 
 .td_block_big_grid_3 .td-big-grid-post {
-  float: left;
 }
 
 .td-big-grid-post {
