@@ -10,102 +10,51 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.1.css">
 
     <style>
         body::after {
-        content: "";
-        display: block;
-        height: 60px;
+            content: "";
+            display: block;
+            height: 60px;
         }
     </style>
 
 </head>
 
-<body style="background: #E0EAFC;  
-    background: linear-gradient(to right, #CFDEF3, #E0EAFC); min-height: 100%;
+<body style=" min-height: 100%;background-color: #981a35;
   padding: 0;
   margin: 0;
   position: relative; ">
-    <div class="navbar navbar-shadow" style="height: 90px;">
-        <div class="nav-main">
-            <div class="nav-first">
-                <img src="assets/images/logo.png" alt="" class="logo-img" style="margin:15px;height: 80px;padding: 3px">
-            </div>
-        </div>
-    </div>
     <div class="form-new">
-        <ul class="tab-group">
-            <li class="tab active"><a href="#signup">School Login</a></li>
-            <li class="tab "><a href="#login">School Coordinator Login</a></li>
-            <li class="tab"><a href="#school-login">Student Login</a></li>
-        </ul>
-        <div class="tab-content">
-            <div id="signup">
-                <h1 class="form-new-head">Login For School !</h1>
-                <form action="/" method="post">
-                    <div class="top-row">
-                        <div class="field-wrap">
-                            <input type="text" required autocomplete="off" class="form-new-fields" placeholder="Username" />
-                        </div>
-                        <div class="field-wrap">
-                            <input type="password" required autocomplete="off" class="form-new-fields" placeholder="Password" />
-                        </div>
-                    </div>
-                    <p class="forgot"><a href="#" class="forgot-link">Forgot Password?</a></p>
-                    <button type="submit" class="sch-btn button-block" />Login</button>
-                </form>
+        <div class="row">
+            <div class="col-6">
+                <div class="col-image">
+                    <img src="assets/images/logo.png" alt="" height="80px">
+                </div>
+                <div class="col-description">
+                    <p>iclubs is internet based schools to provide meaningful exposure to the kids to Explore,
+                        Experience and Express themselves in the field/s of their choice.
+                    </p>
+                </div>
             </div>
-            <div id="login" style="display: none;">
-                <h1 class="form-new-head">Login For School Coordinator !</h1>
-                <form action="/" method="post">
-                    <div class="field-wrap">
-                        <input type="text" required autocomplete="off" class="form-new-fields" placeholder="School ID" />
-                    </div>
-                    <div class="field-wrap">
-                        <input type="text" required autocomplete="off" class="form-new-fields" placeholder="Username" />
-                    </div>
-                    <div class="field-wrap">
-                        <input type="password" required autocomplete="off" class="form-new-fields" placeholder="Password" />
-                    </div>
-                    <p class="forgot"><a href="#" class="forgot-link">Forgot Password?</a></p>
-                    <button class="sch-btn button-block" />Log In</button>
-                </form>
-            </div>
-            <div id="school-login">
-                <h1 class="form-new-head">Login For Student !</h1>
-                <form action="/" method="post">
-                    <div class="field-wrap">
-                        <input type="text" required autocomplete="off" class="form-new-fields" placeholder="School ID" />
-                    </div>
-                    <div class="field-wrap">
-                        <input type="text" required autocomplete="off" class="form-new-fields" placeholder="Username" />
-                    </div>
-                    <div class="field-wrap">
-                        <input type="password" required autocomplete="off" class="form-new-fields" placeholder="Password" />
-                    </div>
-                    <p class="forgot"><a href="#" class="forgot-link">Forgot Password?</a></p>
-                    <button class="sch-btn button-block" />Log In</button>
+            <div class="col-6 ">
+                <form action="#" class="login-diff-forms">
+                    <select name="" id="" class="login-select">
+                        <option value="">Student Login</option>
+                        <option value="">School Login</option>
+                        <option value="">Coordinator Login</option>
+                    </select>
+                    <input type="text" name="" id="" placeholder="School Id" class="diff-fields">
+                    <input type="text" name="" id="" placeholder="Username" class="diff-fields">
+                    <input type="text" name="" id="" placeholder="Password" class="diff-fields">
+                    <button class="diff-button">Submit</button>
+                    <a href="#" class="diff-link">Forgot Password?</a>
                 </form>
             </div>
         </div>
     </div>
-    <div class="footer" style=" position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px; 
-    background:#000;">
-        <div class="left-footer" style="padding: 15px">
-            &copy; Copyright – iCLUBS 2018
-        </div>
-        <div class="right-footer">
-            <ul class="footer-inner" style="padding: 15px">
-                <li>About</li>
-                <li>Contact</li>
-                <li>Domain</li>
-            </ul>
-        </div>
-    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous "></script>
     <script src="assets/js/script.js"></script>

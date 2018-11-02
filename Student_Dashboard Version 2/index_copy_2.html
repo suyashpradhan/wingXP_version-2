@@ -20,25 +20,16 @@
 </head>
 
 <body>
-    <!-- <div class="name-wrap ">
-        <div class="page-lay-new">
-            <div id="dropdown" class="ddmenu">
-                Hi Ankush Aggarwal
-                <ul>
-                    <li><a href="#">Log Out</a></li>
-                </ul>
+    <div class="name-wrap">
+        <div class="name-row-new">
+            <div class="name-row-text">
+                <h1>Ankush Aggarwal</h1>
             </div>
-        </div>
-    </div> -->
-    <div class="name-wrap ">
-        <div class="page-lay-new">
-            <div class="name-row-new">
-                <div class="name-row-text">
-                    <h1>Ankush Aggarwal</h1>
-                </div>
-                <div class="name-row-button">
-                    <a href="#" class="name-row-button">Logout</a>
-                </div>
+            <div class="name-row-button">
+                <a href="#" class="name-row-button">Logout</a>
+            </div>
+            <div>
+                <i class="fas fa-bars menu-bar" onclick="openNav()"></i>
             </div>
         </div>
     </div>
@@ -72,53 +63,55 @@
         </nav>
     </header>
     <div class="page-lay-new">
-        <div class="navbar navbar-shadow">
+        <div class="navbar">
             <div class="nav-main">
                 <div class="nav-first">
                     <img src="assets/images/logo.png" alt="" class="logo-img">
                 </div>
                 <div class="nav-second">
-                    <h1 class="club-head-text">Welcome To Tech Talk</h1>
-                    <ul class="nav-list">
-                        <li> <a href="" class="nav-links"> My Profile </a></li>
-                        <li> <a href="" class="nav-links"> Dashboard</a></li>
-                        <li><a href="" class="nav-links">FAQs</a></li>
-                        <nav class="navbar">
-                            <ul class="nav">
-                                <li>Change Clubs
-                                    <ul class="dropdown">
-                                        <li>Tech Talk</li>
-                                        <li>Coding</li>
-                                        <li>Chess Club</li>
-                                        <li>Environment Club</li>
-                                        <li>Understanding News</li>
-                                        <li>Geography</li>
-                                        <li>Science</li>
-                                        <li>History</li>
-                                        <li>Maths</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </ul>
+                    <nav class="navbar">
+                        <ul class="nav" style="display: block;">
+                            <h1 class="club-st-text">Club</h1>
+                            <li>Tech Talk <i class="fas fa-angle-down"></i>
+                                <ul class="dropdown">
+                                    <form action="#" method="POST" style="padding: 2px 15px;
+                                    font-size: 15px; margin: 10px 0;">
+                                        <li><a href="" class="dropdown-link">Coding</a></li>
+                                        <li><a href="" class="dropdown-link">Understanding News</a></li>
+                                        <li><a href="" class="dropdown-link">Environment</a></li>
+                                        <li><a href="" class="dropdown-link">Design</a></li>
+                                        <li><a href="" class="dropdown-link">History</a></li>
+                                        <li><a href="" class="dropdown-link">Geography</a></li>
+                                        <li><a href="" class="dropdown-link">Maths</a></li>
+                                        <li><a href="" class="dropdown-link">Science</a></li>
+                                    </form>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-        <div class="page-lay-new">
-            <div class="theme-section">
-                <ul class="theme-head left-right-gap">
-                    <li>
-                        <h1 class="theme-head_text">Theme Of The Month</h1>
-                    </li>
-                    <li>
-                        <p class="theme-head_para">Internet of Things (IOT) – Explore how scientists across the
-                            world
-                            are
-                            working
-                            towards connecting every part of your house</p>
-                    </li>
-                </ul>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidebar-links">
+                <a href="#">My Profile</a>
+                <a href="#">My Downloads</a>
+                <a href="#">My Uploads</a>
+                <a href="#">FAQ's</a>
             </div>
+        </div>
+
+        <div class="theme-div">
+            <h1 class="theme-text">Theme Of The Month</h1>
+            <h1 class="topic-wrap">Artifical Intelligence(AI)</h1>
+            <p class="topic-description">Artificial intelligence (AI) is an area of computer science that
+                emphasizes
+                the creation of intelligent machines that work and react like humans. Some of the activities
+                computers
+                with artificial intelligence are designed for include: Speech recognition</p>
+        </div>
+        <div class="page-lay-new">
             <div class="td-container tdc-row">
                 <div class="td_block_wrap td_block_big_grid_3 td_uid_19_5bcab222a8ccb_rand td-grid-style-1 td-hover-1 td-big-grids td-pb-border-top td_block_template_1"
                     data-td-block-uid="td_uid_19_5bcab222a8ccb">
@@ -138,8 +131,7 @@
                                                 the idea of everyday physical objects being connected to the</a></h3>
                                         </div>
                                         <div class="td-module-meta-info">
-                                            <span class="td-post-author-name">John Doe
-                                                </a> </span> <span class="td-post-date"><time class="entry-date updated td-module-date"
+                                            <span class="td-post-date"><time class="entry-date updated td-module-date"
                                                     datetime="2017-03-22T05:58:41+00:00">Mar
                                                     22, 2017</time></span> </div>
                                     </div>
@@ -158,8 +150,8 @@
                                                     IoT Boosts Predictive Maintenance</a></h3>
                                             </div>
                                             <div class="td-module-meta-info">
-                                                <span class="td-post-author-name">John Doe </span> <span class="td-post-date"><time
-                                                        class="entry-date updated td-module-date" datetime="2017-03-22T05:58:41+00:00">Mar
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date"
+                                                        datetime="2017-03-22T05:58:41+00:00">Mar
                                                         22, 2017</time></span> </div>
                                         </div>
                                     </div>
@@ -176,8 +168,7 @@
                                                     The Healthcare Industry Embraces IoT</a></h3>
                                             </div>
                                             <div class="td-module-meta-info">
-                                                <span class="td-post-author-name">John Doe
-                                                </span> <span class="td-post-date"><time class="entry-date updated td-module-date"
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date"
                                                         datetime="2017-03-22T05:58:41+00:00">Mar
                                                         22, 2017</time></span> </div>
                                         </div>
@@ -197,8 +188,7 @@
                                                     </a></h3>
                                             </div>
                                             <div class="td-module-meta-info">
-                                                <span class="td-post-author-name"><a href="https://demo.tagdiv.com/newspaper/author/admin/">John
-                                                        Doe</a> </span> <span class="td-post-date"><time class="entry-date updated td-module-date"
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date"
                                                         datetime="2017-03-22T05:58:41+00:00">Mar
                                                         22, 2017</time></span> </div>
                                         </div>
@@ -831,7 +821,6 @@
 
 
     </script>
-
 </body>
 
 </html>
