@@ -239,7 +239,7 @@ $("#dropdown").on("click", function(e) {
 //SideNav
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("mySidenav").style.width = "250px";
 }
 
 function closeNav() {

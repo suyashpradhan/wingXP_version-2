@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.1.css">
+</head>
+
+<body style="background-color: #981a35;
+  padding: 0;
+  margin: 0;
+  position: relative;overflow: hidden; ">
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-55 p-b-55">
+				<div class="form-new">
+					<div class="row">
+						<div class="col-6">
+							<div class="col-image">
+								<img src="assets/images/logo.png" alt="" height="80px">
+							</div>
+							<div class="col-description">
+								<p>iclubs is internet based schools to provide meaningful exposure to the kids to Explore,
+									Experience and Express themselves in the field/s of their choice.
+								</p>
+							</div>
+						</div>
+						<div class="col-6 ">
+							<form action="" method="post" class="login-diff-forms">
+								<select name="login_type" id="login_type" class="login-select" onchange="hide_field()">
+									<option value="student_login">Student Login</option>
+									<option value="school_login">School Login</option>
+									<option value="coordinator_login">Coordinator Login</option>
+								</select>
+								<input type="text" name="school_id" id="school_id" placeholder="School Id" class="diff-fields" required>
+								<input type="text" name="username" id="username" placeholder="Username" class="diff-fields">
+								<input type="text" name="password" id="password" placeholder="Password" class="diff-fields" required>
+								<button class="diff-button" id="sub" name="sub">Submit</button>
+								<a href="#" class="diff-link">Forgot Password?</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	 crossorigin="anonymous "></script>
+	<script src="assets/js/script.js"></script>
+	<script language='javascript'>
+		function hide_field() {
+			var type = $('#login_type').val();
+			if (type == 'school_login') {
+				$('#username').hide();
+			}
+			else {
+				$('#username').show();
+			}
+		}
+	</script>
+</body>
+
+</html>

@@ -1,9 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-family: Google Sans, Arial, sans-serif; */
-  /*  */
-  /*   font-family: "Raleway", sans-serif;*/
   font-family: "Nunito", sans-serif;
 }
 
@@ -15,14 +12,14 @@ body {
   font-size: 100%;
   font-weight: 400;
   line-height: 1.4;
-  /* font-family: "Nunito", sans-serif; */
-  /*  font-family: "Raleway", sans-serif; */
-  /* font-family: Google Sans, Arial, sans-serif; */
+  font-family: "Nunito", sans-serif;
+  /* font-family: Google Sans, Arial, sans-serif;*/
   overflow-x: hidden;
   min-height: 100%;
   padding: 0;
   margin: 0;
   position: relative;
+  transition: background-color .5s;
 }
 
 .local-video {
@@ -32,7 +29,7 @@ body {
 
 ul li {
   list-style: none;
-  margin-top:10px; 
+  margin-top: 10px;
 }
 
 .page-lay {
@@ -63,7 +60,6 @@ ul li {
   color: #000;
   cursor: pointer;
   padding-top: 14px;
-
 }
 
 .club-st-text {
@@ -860,8 +856,9 @@ ul li {
 .webinar-attend-two {
   font-size: 14px;
   text-align: justify;
-  margin: 5px 0 0 0;
+  margin: 10px 0 0 0;
   padding: 0;
+  height: 75px;
 }
 
 .webinar-attend-btn {
@@ -880,6 +877,7 @@ ul li {
 }
 
 .row-new-inner p {
+  height: 65px;
   font-size: 16px;
   color: #777;
   font-weight: 400;
@@ -942,10 +940,11 @@ ul li {
 
 .row-second-para {
   font-size: 18px;
-  margin: 25px 0;
+  margin: 10px 0;
   letter-spacing: 1px;
-  line-height: 1.7;
+  line-height: 1.5;
   text-align: justify;
+  height: 400px;
 }
 
 .next-wrap {
@@ -953,7 +952,7 @@ ul li {
   justify-content: flex-start;
   align-items: flex-start;
   flex-flow: column wrap;
-  margin-top: 60px;
+  margin: 80px 0 0 0;
 }
 
 .next-head {
@@ -1046,7 +1045,6 @@ ul li {
 }
 
 .footer {
-  border-top: 2px solid #fff;
   height: 60px;
   width: 100%;
   padding: 0;
@@ -1415,19 +1413,18 @@ ul li {
 }
 
 .icon-play {
-  bottom: 10px;
+  bottom: 7px;
   left: 0;
-  padding: 3px;
+  padding: 1px 2px;
   position: absolute;
   -webkit-transition: all 0.2s ease-out 0s;
   -o-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
   cursor: pointer;
   font-weight: 900;
-  letter-spacing: 1px;
   line-height: 1.2rem;
   display: inline;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.7);
@@ -2225,7 +2222,7 @@ ul.dropdown > li {
   text-decoration: none;
 }
 
-.form-new {
+/* .form-new {
   background: #fff;
   padding: 40px;
   max-width: 700px;
@@ -2236,7 +2233,7 @@ ul.dropdown > li {
   align-items: center;
   overflow: hidden !important;
 }
-
+ */
 .form-new ::placeholder {
   font-size: 16px;
   color: #fff;
@@ -2859,12 +2856,16 @@ header {
   }
 }
 
+.col-image {
+  margin: 10px 0;
+}
+
 .col-description p {
   color: #ce6969;
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: justify;
-  font-weight: 400;
-  line-height: 1.3;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .login-diff-forms {
@@ -2879,7 +2880,7 @@ header {
 .login-select {
   width: 100%;
   padding: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   color: #d0a2a2;
   font-weight: 400;
 }
@@ -2887,7 +2888,8 @@ header {
 .diff-fields {
   width: 100%;
   padding: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+  outline: none;
 }
 
 .diff-button {
@@ -2912,7 +2914,6 @@ header {
 .td_block_big_grid_3 .td-big-grid-post-3 {
   margin-left: 3px;
 }
-
 
 .sidenav {
   height: 100%;
@@ -2950,30 +2951,103 @@ header {
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 16px;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {
-      padding-top: 15px;
+    padding-top: 15px;
   }
 
   .sidenav a {
-      font-size: 18px;
+    font-size: 18px;
   }
 }
 
-.sidebar-links{
+.sidebar-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: baseline;
   flex-flow: column wrap;
-  height: 100%;
+  margin-top: 100px;
 }
 
-
-.club-header-st{
+.club-header-st {
   color: #fff;
   text-align: left;
+}
+
+.upload-table {
+  margin: 50px auto;
+}
+
+.upload--link {
+  text-decoration: none;
+  color: #777;
+  font-size: 17px;
+}
+
+.upload--link:hover {
+  color: #696969;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.wrap-login100 {
+  width: 700px;
+  background: #fff;
+  position: relative;
+  padding: 0 40px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.p-b-55 {
+  padding-bottom: 55px;
+}
+
+.p-t-55 {
+  padding-top: 40px;
+}
+
+.faq-header {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 30px 0 10px 0;
+  letter-spacing: 1px;
+  color: #696969;
+}
+
+.faq-header-sub {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+  color: #777;
 }
