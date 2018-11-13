@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../admin_pages/content_manager_pages/club_coordinator_pages/main.css"
+    />
+  </head>
+  <body style="background: none;">
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login100 p-t-55 p-b-55">
+          <h1 class="update-form-header">Add New Club Coordinator Account</h1>
+          <form action="" id="fileUploadForm" enctype="multipart/form-data">
+            <input
+              type="hidden"
+              name="institute_id"
+              id="institute_id"
+              required
+              value="INST_258"
+              class="diff-fields"
+            />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Club Coordinator Name"
+              required
+              class="diff-fields"
+            />
+
+            <input
+              type="email"
+              name="email"
+              required
+              id="email"
+              placeholder="Email Id"
+              class="diff-fields"
+            />
+
+            <input
+              type="text"
+              name="phone"
+              required
+              id="phone"
+              placeholder="Phone Number"
+              class="diff-fields"
+            />
+
+            <input
+              type="text"
+              name="username"
+              required
+              id="username"
+              placeholder="Username"
+              class="diff-fields"
+            />
+            <input
+              type="text"
+              name="password"
+              required
+              id="password"
+              placeholder="Password"
+              class="diff-fields"
+            />
+            <textarea
+              name="address"
+              required
+              id="address"
+              placeholder="Address"
+              class="diff-fields-textarea"
+            ></textarea>
+            <select
+              name="role"
+              required
+              id="role"
+              placeholder="Role"
+              class="diff-fields"
+            >
+              <option selected disabled>Select Role</option>
+              <option value="coordinator">Club Coordinator</option>
+              <option value="president">President</option>
+              <option value="bearer">Bearer</option>
+            </select>
+            <input type="hidden" name="status" id="status" value="Enabled" />
+            <br /><br />
+            <input
+              type="submit"
+              id="sub"
+              name="sub"
+              value="Add Creator"
+              class="update__btn-new"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
