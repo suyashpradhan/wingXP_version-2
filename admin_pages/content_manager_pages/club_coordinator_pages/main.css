@@ -3765,3 +3765,23 @@ select {
   margin: 10px 25px;
 }
 
+
+.main-club-head-wrap{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.main-club-head-wrap-one{
+  flex: 1;
+  font-size: 22px;
+  color: #777;
+  font-weight: 700;
+}
+
+.main-club-head-wrap-two{
+  font-size: 24px;
+  color: #696969;
+  font-weight: 900;
+}
