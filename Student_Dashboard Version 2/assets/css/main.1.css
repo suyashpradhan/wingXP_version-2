@@ -19,7 +19,7 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 .local-video {
@@ -2754,6 +2754,7 @@ header {
     border-top: 2px solid #363636;
     border-bottom: 2px solid #363636;
     content: "";
+    box-sizing: unset;
   }
   .cl-button:before {
     -webkit-transition: all 0.3s ease;
@@ -2767,6 +2768,7 @@ header {
     width: 20px;
     background: #363636;
     content: "";
+    box-sizing: unset;
   }
   .cl-button.menu-opened:after {
     -webkit-transition: all 0.3s ease;
@@ -3049,4 +3051,69 @@ header {
   margin: 0 0 10px 0;
   letter-spacing: 1px;
   color: #777;
+}
+
+@media screen and (max-width: 500px) and (min-width: 100px) {
+  .name-row-new {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 0px 15px;
+  }
+
+  .menu-div {
+    display: none;
+  }
+
+  .td_block_big_grid_3 .td-big-grid-post-3 {
+    margin-left: 0;
+  }
+  .td_block_big_grid_3 .td-big-grid-post {
+    margin-bottom: 3px;
+  }
+  .verticalCarousel {
+    max-width: 100%;
+    height: 500px !important;
+  }
+  .vc_container {
+    max-height: 500px !important;
+  }
+
+  .row-new-grid {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner-one-xper {
+    margin-bottom: 10px;
+  }
+  .webinar-details-row {
+    background-color: #777;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+  }
+  .webinar-speaker {
+    margin-bottom: 25px;
+  }
+  .speaker-desc h1 {
+    font-size: 18px;
+  }
+  .speaker-desc span {
+    font-size: 14px;
+  }
+  .webinar-desc p {
+    font-size: 16px;
+  }
+  .webinar-date {
+    margin-bottom: 25px;
+  }
+  .webinar-attend-one {
+    font-size: 24px;
+  }
+  .webinar-attend-two {
+    font-size: 16px;
+    height: auto;
+  }
 }
