@@ -1797,8 +1797,8 @@ ul.dropdown > li {
   margin-right: 5px;
   padding: 3px 6px 4px;
   display: block;
-  vertical-align: top;
-}
+/*   vertical-align: top;
+ */}
 
 .td-module-title {
   color: #fff;
@@ -1973,7 +1973,7 @@ ul.dropdown > li {
   margin-right: 5px;
   padding: 3px 6px 4px;
   display: block;
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 
 .td-grid-style-1 .td-medium-thumb .entry-title {
