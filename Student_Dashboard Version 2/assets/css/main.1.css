@@ -3116,4 +3116,11 @@ header {
     font-size: 16px;
     height: auto;
   }
+  .upload-button {
+    font-size: 16px;
+    padding: 5px 30px;
+    margin: 10px auto 3px auto;
 }
+}
+
+
