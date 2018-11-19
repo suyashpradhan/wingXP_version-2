@@ -87,7 +87,7 @@ input {
     left: 0;
     z-index: -1;
     width: 25em;
-    background: #d62956;
+    background: #777;
     content: '';
     transform: skewX(15deg) translateX(-100%);
     transform-origin: bottom left;

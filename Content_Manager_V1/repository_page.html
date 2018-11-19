@@ -13,49 +13,49 @@
 </head>
 
 <body>
-    <div class="navigationBar">
-        <div class="logoBox">
-            <h1 class="logoBox-header">SPACEDTIMES
-        </div>
-        <div class="menu-wrapper">
-            <i class="fas fa-bars" onclick="openNav()"></i>
-        </div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="button-wrapper">
-                <a href="#">Logout</a>
+    <div class="navbar navbar-shadow" style="height: 110px;">
+        <div class="newnavigationBar_2">
+            <a href="index.php">
+                <img src="http://www.iclubs.in/assets/images/logo.png" alt="" style="margin:10px;height: 90px;"></a>
+            <div class="menu-wrapper">
+                <a href="?q=logout" class="fancy-button bg-gradient2 logout-nav-link"><span>Logout</span></a>
+            </div>
+            <div class="menu-wrapper">
+                <a href="deployed_activities.php" class="fancy-button bg-gradient2 logout-nav-link"><span>View Deployed
+                        Activities</span></a>
             </div>
         </div>
     </div>
     <div class="full color" style="width:100%;height: 100%;">
         <div class="page">
             <div class="row">
-                <div class="col-8">
+                <div class="col-9">
                     <div class="vendor_wrapper">
-                        <select class="vendor__select" style="margin:40px 10px;width:300px;">
+                        <select class="vendor__select" style="margin:40px 10px;">
                             <option value="0" selected>Select Club Category</option>
                             <option value="1">Web </option>
                             <option value="2">Android </option>
                         </select>
-                        <select class="vendor__select" style="margin:20px 10px;width:300px;">
+                        <select class="vendor__select" style="margin:20px 10px;">
+                            <option value="0" selected>Select Club </option>
+                            <option value="1">Web </option>
+                            <option value="2">Android </option>
+                        </select>
+                        <select class="vendor__select" style="margin:20px 10px;">
                             <option value="0" selected>Select Club </option>
                             <option value="1">Web </option>
                             <option value="2">Android </option>
                         </select>
                     </div>
                 </div>
-                <div class="col-4">
-                    <h1 style="margin:45px 10px;font-size:26px;color:#363636;letter-spacing: 1px;">Hi Coordinator</h1>
+                <div class="col-3">
+                    <h1 class="user_name-wrap">Hi Ankush Aggarwal</h1>
                 </div>
             </div>
         </div>
     </div>
     <div class=" full color" style="width:100%; ">
         <div class="page " style="max-width:1200px ">
-            <!-- <div class="font row ">
-                <div class='col'>NEW ACTIVITY</div>
-            </div> -->
-
             <div class="main-club-head-wrap">
                 <h1 class="main-club-head-wrap-one">New Activity</h1>
             </div>

@@ -1,7 +1,7 @@
 //School Login
 $(".form")
   .find("input, textarea")
-  .on("keyup blur focus", function(e) {
+  .on("keyup blur focus", function (e) {
     var $this = $(this),
       label = $this.prev("label");
 
@@ -25,7 +25,7 @@ $(".form")
       }
     }
   });
-$(".tab a").on("click", function(e) {
+$(".tab a").on("click", function (e) {
   e.preventDefault();
 
   $(this)
@@ -46,15 +46,15 @@ $(".tab a").on("click", function(e) {
 });
 
 //Dropdown
-$(document).ready(function() {
+$(document).ready(function () {
   $("nav.navbar")
     .children("ul.nav")
     .children("li")
-    .each(function(indexCount) {
+    .each(function (indexCount) {
       $(this)
         .children("ul.dropdown")
         .children("li")
-        .each(function(index) {
+        .each(function (index) {
           var delay = 0.1 + index * 0.03;
 
           $(this).css("animation-delay", delay + "s");
@@ -66,28 +66,28 @@ $(document).ready(function() {
 autoPlayYouTubeModal();
 function autoPlayYouTubeModal() {
   var trigger = $("body").find('[data-toggle="modal"]');
-  trigger.click(function() {
+  trigger.click(function () {
     var theModal = $(this).data("target"),
       videoSRC = $(this).attr("data-theVideo"),
       videoSRCauto = videoSRC + "?autoplay=1";
     $(theModal + " iframe").attr("src", videoSRCauto);
-    $(theModal + " button.close").click(function() {
+    $(theModal + " button.close").click(function () {
       $(theModal + " iframe").attr("src", videoSRC);
     });
   });
 }
 
 //On Close Pause Yt Video
-jQuery("#videoModal").on("hidden.bs.modal", function(e) {
+jQuery("#videoModal").on("hidden.bs.modal", function (e) {
   $("#videoModal iframe").attr("src", "");
 });
 
 //Autoplay Other Videos
-$(document).ready(function() {
-  $("#videoModal2").on("shown.bs.modal", function() {
+$(document).ready(function () {
+  $("#videoModal2").on("shown.bs.modal", function () {
     $("#video1")[0].play();
   });
-  $("#videoModal2").on("hidden.bs.modal", function() {
+  $("#videoModal2").on("hidden.bs.modal", function () {
     $("#video1")[0].pause();
   });
 });
@@ -138,8 +138,8 @@ function toggleAccordion() {
 }
 
 //Nav
-(function($) {
-  $.fn.menumaker = function(options) {
+(function ($) {
+  $.fn.menumaker = function (options) {
     var cssmenu = $(this),
       settings = $.extend(
         {
@@ -148,10 +148,10 @@ function toggleAccordion() {
         },
         options
       );
-    return this.each(function() {
+    return this.each(function () {
       $(this)
         .find(".cl-button")
-        .on("click", function() {
+        .on("click", function () {
           $(this).toggleClass("menu-opened");
           var mainmenu = $(this).next("ul");
           if (mainmenu.hasClass("open")) {
@@ -167,11 +167,11 @@ function toggleAccordion() {
         .find("li ul")
         .parent()
         .addClass("has-sub");
-      multiTg = function() {
+      multiTg = function () {
         cssmenu
           .find(".has-sub")
           .prepend('<span class="submenu-button"></span>');
-        cssmenu.find(".submenu-button").on("click", function() {
+        cssmenu.find(".submenu-button").on("click", function () {
           $(this).toggleClass("submenu-opened");
           if (
             $(this)
@@ -193,7 +193,7 @@ function toggleAccordion() {
       if (settings.format === "multitoggle") multiTg();
       else cssmenu.addClass("dropdown");
       if (settings.sticky === true) cssmenu.css("position", "fixed");
-      resizeFix = function() {
+      resizeFix = function () {
         var mediasize = 1000;
         if ($(window).width() > mediasize) {
           cssmenu.find("ul").show();
@@ -211,8 +211,8 @@ function toggleAccordion() {
   };
 })(jQuery);
 
-(function($) {
-  $(document).ready(function() {
+(function ($) {
+  $(document).ready(function () {
     $("#cssmenu").menumaker({
       format: "multitoggle"
     });
@@ -220,7 +220,7 @@ function toggleAccordion() {
 })(jQuery);
 
 //Logout Dropdown
-$("#dropdown").on("click", function(e) {
+$("#dropdown").on("click", function (e) {
   e.preventDefault();
 
   if ($(this).hasClass("open")) {
@@ -245,3 +245,38 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+
+//Menu DropDown
+
+(function ($) {
+  $(function () {
+
+    // open and close nav
+    $('#navbar-toggle').click(function () {
+      $('nav ul').slideToggle();
+    });
+
+
+    // Hamburger toggle
+    $('#navbar-toggle').on('click', function () {
+      this.classList.toggle('active');
+    });
+
+
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function (e) {
+      $(this).siblings('.navbar-dropdown').slideToggle("slow");
+
+      // Close dropdown when select another dropdown
+      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
+      e.stopPropagation();
+    });
+
+
+    // Click outside the dropdown will remove the dropdown class
+    $('html').click(function () {
+      $('.navbar-dropdown').hide();
+    });
+  });
+})(jQuery);
