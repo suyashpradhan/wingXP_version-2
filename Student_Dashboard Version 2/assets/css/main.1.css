@@ -14,12 +14,13 @@ body {
   line-height: 1.4;
   font-family: "Nunito", sans-serif;
   /* font-family: Google Sans, Arial, sans-serif;*/
-  overflow-x: hidden;
-  min-height: 100%;
+/*   
+ */  min-height: 100%;
   padding: 0;
   margin: 0;
   position: relative;
   transition: background-color 0.5s;
+  overflow: auto;
 }
 
 .local-video {
@@ -2865,16 +2866,25 @@ header {
   }
 }
 
+/* .form-new-row{
+  margin-top: 45px;
+}
+ */
 .col-image {
-  margin: 10px 0;
+  margin: 0 0 20px 0;
+}
+
+.col-image img {
+  height: 100px;
 }
 
 .col-description p {
   color: #ce6969;
-  margin-top: 15px;
+  margin-top: 25px;
   text-align: justify;
-  font-weight: 500;
-  line-height: 1.5;
+  font-weight: 700;
+  line-height: 1.6;
+  font-size: 17px;
 }
 
 .login-diff-forms {
@@ -2918,6 +2928,215 @@ header {
 .diff-link:hover {
   color: #696969;
   text-decoration: none;
+}
+
+.wrap-login-header{
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 10px 40px;
+  text-align: left;
+}
+
+.wrap-login-form-header{
+  margin: 30px 0 20px 0;
+  display: block;
+  font-size: 32px;
+  color: #777;
+  font-weight: 700;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.inner_sc-form{
+  font-size: 26px;
+  font-weight: 700;
+  margin: 5px 0;
+  display: block;
+  color: #363636;
+}
+
+.wrap-login_span{
+border-style: solid;
+border-bottom-width: 3px;
+border-color: #696969;
+width: 80px;
+margin-top: 3px;
+display: block;
+margin-bottom: 5px;
+}
+
+.wrap-login__sc-form{
+  padding: 0 40px;
+}
+
+.form-group {
+  position: relative;
+  margin: 25px 0;
+}
+
+.form-inline > .form-group,
+.form-inline > .btn {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.checkbox .form-help {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.form-radio .form-help {
+  padding-top: 0.25rem;
+  margin-top: -1rem;
+}
+
+.form-group input {
+  height: 1.9rem;
+}
+
+.form-group .control-label {
+  position: absolute;
+  top: 0.25rem;
+  pointer-events: none;
+  padding-left: 0.125rem;
+  z-index: 1;
+  color: #b3b3b3;
+  font-size: 1rem;
+  font-weight: normal;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+}
+.form-group .bar {
+  position: relative;
+  border-bottom: 0.0625rem solid #999;
+  display: block;
+}
+.form-group .bar::before {
+  content: '';
+  height: 0.125rem;
+  width: 0;
+  left: 50%;
+  bottom: -0.0625rem;
+  position: absolute;
+  background: #ce1f36;
+  -webkit-transition: left 0.28s ease, width 0.28s ease;
+  transition: left 0.28s ease, width 0.28s ease;
+  z-index: 2;
+}
+.form-group input {
+  display: block;
+  background: none;
+  padding: 0.125rem 0.125rem 0.0625rem;
+  font-size: 1rem;
+  border-width: 0;
+  border-color: transparent;
+  line-height: 1.9;
+  width: 100%;
+  color: transparent;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+  box-shadow: none;
+}
+.form-group select,
+.form-group input:focus,
+.form-group input:valid,
+.form-group input.form-file,
+.form-group input.has-value,
+.form-group textarea:focus,
+.form-group textarea:valid,
+.form-group textarea.form-file,
+.form-group textarea.has-value {
+  color: #333;
+}
+.form-group select ~ .control-label,
+.form-group input:focus ~ .control-label,
+.form-group input:valid ~ .control-label,
+.form-group input.form-file ~ .control-label,
+.form-group input.has-value ~ .control-label,
+.form-group textarea:focus ~ .control-label,
+.form-group textarea:valid ~ .control-label,
+.form-group textarea.form-file ~ .control-label,
+.form-group textarea.has-value ~ .control-label {
+  font-size: 0.8rem;
+  color: gray;
+  top: -1rem;
+  left: 0;
+}
+.form-group select:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+.form-group select:focus ~ .control-label,
+.form-group input:focus ~ .control-label,
+.form-group textarea:focus ~ .control-label {
+  color: #777;
+}
+.form-group select:focus ~ .bar::before,
+.form-group input:focus ~ .bar::before,
+.form-group textarea:focus ~ .bar::before {
+  width: 100%;
+  left: 0;
+}
+
+.sc-btn {
+  position: relative;
+  background: currentColor;
+  border: 1px solid currentColor;
+  font-size: 1.1rem;
+  color: #ce1f36;
+  margin: 1rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  display: block;
+  margin: 20px auto;
+}
+.sc-btn span {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.sc-btn::before {
+  content: '';
+  position: absolute;
+  background: #071017;
+  border: 50vh solid #1d4567;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.sc-btn:hover {
+  color: #ee0d2b;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.sc-btn:active::before, .sc-btn:focus::before {
+  -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+.sc-btn:focus {
+  outline: none;
+}
+@media screen and (max-width:767px) and (min-width:100px){
+  .login-diff-forms {
+    margin-left: 0;
+}
 }
 
 .td_block_big_grid_3 .td-big-grid-post-3 {
@@ -3023,11 +3242,12 @@ header {
 }
 
 .wrap-login100 {
-  width: 700px;
+  width: 800px;
   background: #fff;
   position: relative;
   padding: 0 40px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  margin: 25px 0 25px 50px;
 }
 
 @media (max-width: 576px) {
@@ -3373,3 +3593,8 @@ header {
   margin-left: -150px !important;
   width: 200px;
 }
+
+
+
+
+

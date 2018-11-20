@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Allura);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+body{
+margin: 0;
+padding: 1em;
+background-image: url(http://subtlepatterns.com/patterns/type.png); background-position: initial initial; background-repeat: initial initial;
+}
+.title{
+  font-family: 'Allura', cursive;
+  font-weight: 400;
+  color: #999;
+  font-size: 4em;
+  text-align: center;
+  margin: 0;
+  padding: 0.8em 0;
+  @include text-shadow(0px 0px 5px black);
+}
+.container{
+  padding:0;
+  margin: 0 auto;
+  width: 410px;
+ }
+.ribbon{
+  float: left;
+  @include appearance(none);
+  @include border-radius(5px 5px 0px 0px);
+  @include transition(all 0.2s ease);
+  cursor: pointer;
+  border: none;
+  background: blue;
+  width: 150px;
+  height: 250px;
+  position: relative;
+  color: white;
+  padding: 5px;
+  margin-right: -20px;
+  -webkit-filter: drop-shadow(0 1px 10px rgba(0,0,0,.5));
+		-moz-filter: drop-shadow(0 1px 10px rgba(0,0,0,.5));
+		-ms-filter: drop-shadow(0 1px 10px rgba(0,0,0,.5));
+		-o-filter: drop-shadow(0 1px 10px rgba(0,0,0,.5));
+		filter: drop-shadow(0 1px 10px rgba(0,0,0,.5));
+&:hover{
+  margin-top: 20px;
+  color:white;
+}
+span{
+line-height: 20px;
+font-size: 5em;
+  }
+&::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0; 
+  	height: 0; 
+  	border-top: 50px solid blue; 
+  	border-right: 100px solid transparent;
+ }
+&::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0; 
+  	height: 0; 
+  	border-top: 50px solid blue; 
+  	border-left: 100px solid transparent;
+ }
+}
+.facebook{
+  margin-top: 10px;
+  background: #3b5998;
+  color: darken(#3b5998, 20%);
+  &::after{border-top-color: #3b5998}
+  &::before{border-top-color: #3b5998}
+  }
+.googleplus{
+  z-index: 999;
+  background:#c4302b;
+  color: darken(#c4302b, 20%);
+  &::after{border-top-color: #c4302b}
+  &::before{border-top-color: #c4302b}
+  }
+.twitter{
+  margin-top: 10px;
+  background: #00a0d1;
+  color: darken(#00a0d1, 20%);
+  &::after{border-top-color: #00a0d1}
+  &::before{border-top-color: #00a0d1}
+  }
+#author{
+  font-family: 'Allura', cursive;
+  position: absolute;
+  bottom: 25px;
+  right: 40px;
+  color: #999;
+  font-size: 2em;
+  
+  }
