@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
-
-<body>
-    <table style="width: 650px;margin:auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;">
+<?php        
+         $email1='ankush.aggarwal@domain-education.com,contact@domain-education.com';
+         $subject="iClub Invitation Updated 2";
+         $message= <<<EOF
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<table style="width: 650px;margin:auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse; border:1px solid #ccc;" >
+<tr><td>
+        <table style="width: 650px;margin:auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;">
         <tr>
             <td style="background-color: #e31e24">
                 <h1 style="font-size: 16px;color:#fff;padding: 20px 0 3px 15px;margin: 0">Dear Principal, </h1>
@@ -28,15 +25,15 @@
         <tr>
             <td>
                 <p>
-                    <img src="logo.png" alt="" style="display: block;margin: 0 auto;height: 100px;padding-top:2px;">
+                    <img src="http://www.iclubs.in/newsletter/logo.png" alt="" style="display: block;margin: 0 auto;height: 100px;padding-top:2px;">
                 </p>
                 <p style="color: #44546a;text-align: justify;font-size: 16px;margin-left: 15px;">
-                    iCLUBS is an free-for-all digital platform giving students age appropriate exposure
+                    iCLUBS is free-for-all digital platform giving students age appropriate exposure
                     to ways of expressing themselves in the real modern world and make them future
                     ready
                 </p>
-                <h1 style="display: block;margin: 0 auto;text-align: center;background: #44546a;color: #Fff;width: 200px;border-radius: 100px;font-size: 20px;letter-spacing: 1px;padding: 3px 0;
-                ">www.iclubs.in</h1>
+                <h1 style="display: block;margin: 0 auto; text-align: center; background: #44546a; color:#fff; width: 200px; border-radius: 100px; font-size: 20px; letter-spacing: 1px; padding: 3px 0;
+                "><a href="http://www.iclubs.in" style="color:#fff">www.iclubs.in</a></h1>
             </td>
         </tr>
     </table>
@@ -47,12 +44,13 @@
                     FRAMEWORK</h1>
             </td>
         </tr>
+		<tr><td>
         <table style="width: 650px;margin:0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;background-color:#eff0f2; ">
             <tr>
                 <td>
                     <h1 style="font-size: 18px;background-color:#e31e24;text-align: center;padding: 10px;margin-left: 10px;color: #fff">EXPLORE</h1>
                     <p style="margin-bottom: 3px;">
-                        <img src="xp_1.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
+                        <img src="http://www.iclubs.in/newsletter/xp_1.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
                         <span>
                             <p style="text-align: center;display: block;margin: 0 auto 0 10px;font-size: 16px;padding: 0;color: #556377;">
                                 Learn Through Ebooks And Videos
@@ -60,7 +58,7 @@
                         </span>
                     </p>
                     <p style="margin-bottom: 3px;">
-                        <img src="xp_2.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
+                        <img src="http://www.iclubs.in/newsletter/xp_2.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
                         <span>
                             <p style="text-align: center;display: block;margin: 0 auto 0 10px;font-size: 16px;color: #556377;">
                                 Take up engaging quizzes and polls.
@@ -68,7 +66,7 @@
                         </span>
                     </p>
                     <p style="margin-bottom: 3px;">
-                        <img src="xp_3.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
+                        <img src="http://www.iclubs.in/newsletter/xp_3.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
                         <span>
                             <p style="text-align: center;display: block;margin: 0 auto 0 10px;font-size: 16px;color: #556377;">
                                 Subscribe to new weekly/monthly articles.
@@ -79,7 +77,7 @@
                 <td>
                     <h1 style="font-size: 18px;background-color:#e31e24;text-align: center;padding: 10px;margin-left: 5px;color: #fff">EXPERIENCE</h1>
                     <p style="margin-bottom: 3px;">
-                        <img src="xpe_1.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
+                        <img src="http://www.iclubs.in/newsletter/xpe_1.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
                         <span>
                             <p style="text-align: center;display: block;margin: 0 auto 0 10px;font-size: 16px;padding: 0;color: #556377;">
                                 Delve deeper through Webinars by experts
@@ -87,7 +85,7 @@
                         </span>
                     </p>
                     <p style="margin-bottom: 3px;">
-                        <img src="xpe_2.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
+                        <img src="http://www.iclubs.in/newsletter/xpe_2.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
                         <span>
                             <p style="text-align: center;display: block;margin: 0 auto 0 10px;font-size: 16px;color: #556377;">
                                 Do along workshops <br>(Paid)
@@ -95,7 +93,7 @@
                         </span>
                     </p>
                     <p style="margin-bottom: 3px;">
-                        <img src="xpe_3.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
+                        <img src="http://www.iclubs.in/newsletter/xpe_3.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
                         <span>
                             <p style="text-align: center;display: block;margin: 0 auto 0 10px;font-size: 16px;color: #556377;">
                                 Attend live courses <br>(Paid)
@@ -106,7 +104,7 @@
                 <td>
                     <h1 style="font-size: 18px;background-color:#e31e24;text-align: center;padding: 10px;margin-left: 5px;color: #fff;margin-right: 10px;">EXPRESS</h1>
                     <p style="margin-bottom: 3px;">
-                        <img src="xpr_1.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
+                        <img src="http://www.iclubs.in/newsletter/xpr_1.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
                         <span>
                             <p style="text-align: center;display: block;margin: 0 auto;font-size: 16px;padding: 0;color: #556377;">
                                 Connect with your peers and share your learnings
@@ -114,7 +112,7 @@
                         </span>
                     </p>
                     <p style="margin-bottom: 3px;">
-                        <img src="xpr_2.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
+                        <img src="http://www.iclubs.in/newsletter/xpr_2.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
                         <span>
                             <p style="text-align: center;display: block;margin: 0 auto;font-size: 16px;color: #556377;">
                                 Publish your projects on school community
@@ -122,7 +120,7 @@
                         </span>
                     </p>
                     <p style="margin-bottom: 3px;">
-                        <img src="xpr_3.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
+                        <img src="http://www.iclubs.in/newsletter/xpr_3.PNG" alt="" style="height: 60px;display: block;margin: 0 auto;padding: 0">
                         <span>
                             <p style="text-align: center;display: block;margin: 0 auto;font-size: 16px;color: #556377;">
                                 Intra / Inter school <br> contests
@@ -132,7 +130,9 @@
                 </td>
             </tr>
         </table>
-    </table>
+	</td></tr>
+  </table>
+  
     <table style="width: 650px;margin:20px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;">
         <tr>
             <td>
@@ -149,16 +149,17 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td align="center">
                 <h1 style="background-color: #44546a;width: 250px;margin: 20px auto;padding: 5px 30px;border-radius: 100px">
-                    <img src="idea.png" alt="" height="40px;">
+                    <img src="http://www.iclubs.in/newsletter/idea.png" alt="" height="20px;">
                     <span style="padding-bottom: -20px">
                         <h1 style="font-size: 22px;color: #fff;display: inline;">EXPLORATORY</h1>
                     </span>
                 </h1>
             </td>
         </tr>
-        <table style="width: 650px;margin:5px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;">
+   <tr cellpadding="10px"><td >
+        <table style="width: 600px;margin:5px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;  border:1px solid #ccc;">
             <tr>
                 <td style="width: 160px">
                     <h1 style="margin: 5px 0;color: #44546a;font-size:14px;text-align: center">
@@ -224,10 +225,11 @@
                 </td>
             </tr>
         </table>
+		</td></tr>
         <tr>
-            <td>
+            <td align="center">
                 <h1 style="background-color: #44546a;width: 200px;margin: 20px auto;padding: 5px 30px;border-radius: 100px">
-                    <img src="laboratory.png" alt="" height="40px;">
+                    <img src="http://www.iclubs.in/newsletter/laboratory.png" alt="" height="20px;">
                     <span style="padding-bottom: -20px">
                         <h1 style="font-size: 22px;color: #fff;display: inline;">ACADEMICS</h1>
                     </span>
@@ -235,7 +237,7 @@
             </td>
         </tr>
     </table>
-    <table style="width: 650px;margin:5px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;">
+    <table style="width: 600px;margin:5px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse; border:1px solid #ccc;">
         <tr>
             <td style="width: 160px">
                 <h1 style="margin: 5px 0;color: #44546a;font-size:14px;text-align: center">
@@ -253,17 +255,19 @@
             </td>
         </tr>
     </table>
+    <table style="width: 650px;margin:5px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;">
     <tr>
-        <td>
+        <td align="center">
             <h1 style="background-color: #44546a;width: 250px;margin: 20px auto;padding: 5px 30px;border-radius: 100px">
-                <img src="plant.png" alt="" height="40px;">
+                <img src="http://www.iclubs.in/newsletter/plant.png" alt="" height="20px;">
                 <span style="padding-bottom: -20px">
                     <h1 style="font-size: 22px;color: #fff;display: inline;">MISCELLANEOUS</h1>
                 </span>
             </h1>
         </td>
     </tr>
-    <table style="width: 650px;margin:5px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;">
+	</table>
+    <table style="width: 600px;margin:5px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse; border:1px solid #ccc;">
         <tr>
             <td style="width: 160px">
                 <h1 style="margin: 5px 0;color: #44546a;font-size:14px;text-align: center">
@@ -280,12 +284,12 @@
                 <h1 style="margin: 5px 0;color: #44546a;font-size:14px;text-align: center;">EVENTS <br>CLUB</h1>
             </td>
         </tr>
-    </table>
-    <table style="width: 650px;margin:25px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;">
-        <tr style="padding-left: 35px;">
-            <td style="padding-left: 55px;">
-                <p style="padding: 0;margin: 5px 0">
-                    <img src="placeholder.png" alt="" height="40px" style="padding: 0;margin: 0">
+    </table> <br />
+     <table style="width:650px; margin:5px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;">
+        <tr style="padding-left:0px;">
+            <td style="padding-left: 0px;" align="center">  
+                <p style="padding:0; margin: 5px 0">
+                    <img src="http://www.iclubs.in/newsletter/placeholder.png" alt="" height="20px" style="padding: 0;margin: 0">
                     <span style="font-size: 20px;color: #44546a;margin-left: 5px;">Address</span>
                 </p>
                 <h1 style="font-size: 16px;color: #828d9c;padding: 0;margin: 0">AWFIS,Aston Building
@@ -293,19 +297,19 @@
                     Mumbai- 400053
                 </h1>
             </td>
-            <td>
+            <td align="center">
                 <p style="padding: 0;margin: 5px 0">
-                    <img src="mail.png" alt="" height="40px" style="padding: 0;margin: 0">
+                    <img src="http://www.iclubs.in/newsletter/mail.png" alt="" height="20px" style="padding: 0;margin: 0">
                     <span style="font-size: 20px;color: #44546a;margin-left: 5px;">Mail</span>
                 </p>
                 <h1 style="font-size: 16px;color: #828d9c;padding: 0;margin: 0">
-                    contact@iclubs.com<br><br><br>
+                    contact@iclubs.in<br><br><br>
 
                 </h1>
             </td>
-            <td>
+            <td align="center">
                 <p style="padding: 0;margin: 5px 0">
-                    <img src="phone-call.png" alt="" height="40px" style="padding: 0;margin: 0">
+                    <img src="http://www.iclubs.in/newsletter/phone-call.png" alt="" height="20px" style="padding: 0;margin: 0">
                     <span style="font-size: 20px;color: #44546a;margin-left: 5px;">Phone</span>
                 </p>
                 <h1 style="font-size: 16px;color: #828d9c;padding: 0;margin: 0">
@@ -315,26 +319,29 @@
             </td>
         </tr>
     </table>
-    <table style="width: 650px;margin:25px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:25px; border-collapse:collapse;">
+    <table style="width: 650px; margin:25px auto 0 auto;font-family: Arial, Helvetica, sans-serif; line-height:5px;  border-collapse:collapse;">
         <tr>
-            <td style="background-color: #828d9c;display: block;">
+            <td style="background-color: #e31e24;display: block;" align="center">
                 <p style="margin: 20px 30px;">
                     <h1 style="text-align: center;display: inline-block;font-size: 16px;margin-left: 15px;">
-                        <a href="" style="color: #fff;text-decoration: none;padding: 15px 5px"> Web Version</a>
-                    </h1>
-                    <h1 style="text-align: center;display: inline-block;font-size: 16px;">
-                        <a href="" style="color: #fff;text-decoration: none;padding: 15px 5px;"> About Us</a>
-                    </h1>
-                    <h1 style="text-align: center;display: inline-block;font-size: 16px;">
-                        <a href="" style="color: #fff;text-decoration: none;padding: 15px 5px"> Contact Us</a>
-                    </h1>
-                    <h1 style="text-align: center;display: inline-block;font-size: 16px;">
-                        <a href="" style="color: #fff;text-decoration: none;padding: 15px 5px"> Unsubscribe </a>
+                        <a href="" style="color: #fff;text-decoration: none;padding: 15px 5px">www.iclubs.in</a>
                     </h1>
                 </p>
             </td>
         </tr>
     </table>
-</body>
-
-</html>
+</td></tr>
+</table>
+EOF;
+$headers ="MIME-Version: 1.0"."\r\n";
+$headers.="Content-type:text/html;charset=iso-8859-1"."\r\n";
+$headers.="From:contact@livecbse.com";
+echo $message;
+ if(mail($email1,$subject,$message,$headers))
+{
+   echo $message;
+}
+else
+{
+   echo "error";
+} ?>

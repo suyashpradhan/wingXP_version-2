@@ -20,7 +20,7 @@ body {
   margin: 0;
   position: relative;
   transition: background-color 0.5s;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .local-video {
@@ -796,19 +796,19 @@ ul li {
 
 .webinar-speaker {
   display: grid;
-  grid-template-columns: 45px 1fr;
+  grid-template-columns: 40px 1fr;
   grid-gap: 1px;
 }
 
 .speaker-image img {
-  height: 40px;
+  height: 30px;
   margin-top: 20px;
   padding: 0;
 }
 
 .speaker-desc h1 {
   font-size: 12px;
-  margin: 25px 0 0 0;
+  margin: 20px 0 0 0;
   padding: 0;
   font-weight: 700;
 }
@@ -846,7 +846,7 @@ ul li {
 }
 
 .webinar-three {
-  font-size: 20px;
+  font-size: 18px;
   color: #696969;
   text-align: center;
   margin: 0;
@@ -951,7 +951,7 @@ ul li {
   letter-spacing: 1px;
   line-height: 1.5;
   text-align: justify;
-  height: 400px;
+  height: 212px;
 }
 
 .next-wrap {
@@ -2354,6 +2354,71 @@ new-label.highlight {
   margin: 0;
 }
 
+.contact-btn{
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 5px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3498db;
+  position: relative;
+  border: 2px solid #3498db;
+  cursor: pointer;
+  margin:2px 0 25px 0;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  border-color: #2980b9;
+  background-color: #2980b9;
+}
+
+.verify-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__btn{
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 5px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3498db;
+  position: relative;
+  border: 2px solid #3498db;
+  cursor: pointer;
+  margin:20px 0 0 0;
+  width: 100%;
+}
+
+.__btn--verify{
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #777;
+  position: relative;
+  border: 2px solid #777;
+  cursor: pointer;
+  margin:20px 0 0 0;
+  width: 100%;
+}
+
+.__btn--verify:hover{
+  background-color: #696969;
+  border: 2px solid #696969;
+
+}
+
 .sch-btn {
   border: 0;
   outline: none;
@@ -3358,7 +3423,7 @@ margin-bottom: 5px;
     margin: 12px auto 3px auto;
   }
 
-   .inner-one-xperess{
+   .inner-one-xpress{
     margin: 0;
     padding: 0;
     height: 150px;
@@ -3451,7 +3516,7 @@ margin-bottom: 5px;
     margin: 12px auto 3px auto;
   }
 
-   .inner-one-xperess{
+   .inner-one-xpress{
     margin: 0;
     padding: 0;
     height: 150px;
