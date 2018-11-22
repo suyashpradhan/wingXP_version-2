@@ -618,7 +618,7 @@ hr {
   height: 150px;
   width: 100%;
   background-color: #ce1f36;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .page-description-text {
@@ -1747,3 +1747,5 @@ select {
   color: #fff;
   margin: 30px 0 3px 0;
 }
+
+.

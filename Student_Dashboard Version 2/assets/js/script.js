@@ -280,3 +280,9 @@ function closeNav() {
     });
   });
 })(jQuery);
+
+
+//Button Animation
+$(".create-wrapper").hover(function () {
+  $(this).toggleClass("is-active");
+});

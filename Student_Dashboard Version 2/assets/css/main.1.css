@@ -2419,6 +2419,21 @@ new-label.highlight {
 
 }
 
+.back-link{
+  float: right;
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: #000;
+  color: #f8f8f8;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.back-link:hover{
+ text-decoration: none;
+ color: #fff;
+}
+
 .sch-btn {
   border: 0;
   outline: none;
@@ -2439,6 +2454,23 @@ new-label.highlight {
 .sch-btn:focus {
   border-color: #eb0d2b;
   background-color: #eb0d2b;
+}
+
+.terms{
+  text-align: center;
+  color: #777;
+  margin: 4px 0;
+  padding: 0;
+}
+
+.terms-link{
+  color: #000;
+  text-decoration: underline;
+}
+
+.terms-link:hover{
+  color: #363636;
+  text-decoration: underline;
 }
 
 .button-block {
@@ -2936,20 +2968,23 @@ header {
 }
  */
 .col-image {
-  margin: 0 0 20px 0;
+  margin: 20px 0 0 0;
 }
 
 .col-image img {
-  height: 100px;
+  height: 120px;
+  display: block;
+  margin: 0 auto;
 }
+
 
 .col-description p {
   color: #ce6969;
-  margin-top: 25px;
+  margin-top: 35px;
   text-align: justify;
   font-weight: 700;
-  line-height: 1.6;
-  font-size: 17px;
+  line-height: 1.7;
+  font-size: 20px;
 }
 
 .login-diff-forms {
@@ -3159,7 +3194,7 @@ margin-bottom: 5px;
   overflow: hidden;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   display: block;
-  margin: 20px auto;
+  margin: 10px auto 0 auto;
 }
 .sc-btn span {
   color: #fff;
@@ -3170,7 +3205,7 @@ margin-bottom: 5px;
   content: '';
   position: absolute;
   background: #071017;
-  border: 50vh solid #1d4567;
+  border: 50vh solid #ff0022;
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
@@ -3198,6 +3233,60 @@ margin-bottom: 5px;
 .sc-btn:focus {
   outline: none;
 }
+.or{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 10px 30px;
+  align-items: center;
+}
+
+._bar{
+  flex: auto;
+  border:none;
+  height: 2px;
+  background-color: #777;
+}
+
+.or span{
+  color: #696969;
+  padding: 0 0.5rem;
+}
+
+.create-wrapper {
+  width:auto;
+  height: 60px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  background: #696969;
+  padding: 15px 40px;
+  transition: all .5s ease;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0 0 0 30px;
+}
+
+.create-btn{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.create-btn:hover{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.create-btn i{
+  font-size:15px;
+}
+
+.is-active {
+  box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
+  transform: translateY(10px);
+}
+
+
 @media screen and (max-width:767px) and (min-width:100px){
   .login-diff-forms {
     margin-left: 0;
