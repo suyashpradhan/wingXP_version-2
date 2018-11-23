@@ -14,117 +14,28 @@
     <div class="page-container">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                <a class="nav-link active" id="school" data-toggle="tab" href="#tab-one" role="tab" aria-controls="tab-one"
                     aria-selected="true">Schools</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                <a class="nav-link" id="pending" data-toggle="tab" href="#tab-two" role="tab" aria-controls="tab-two"
                     aria-selected="false">Pending Schools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="approved" data-toggle="tab" href="#tab-three" role="tab" aria-controls="tab-three"
+                    aria-selected="false">Approved Schools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="rejected" data-toggle="tab" href="#tab-four" role="tab" aria-controls="tab-four"
+                    aria-selected="false">Rejected Schools</a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="page-container">
-                    <div style="overflow-x:auto;overflow-y:auto">
-                        <br><br>
-                        <h4>Schools Details</h4>
-                        <table id="page-table">
-                            <thead>
-                                <tr>
-                                    <th>Sno</th>
-                                    <th>School Id</th>
-                                    <th>School Name</th>
-                                    <th>Details</th>
-                                    <th>Address</th>
-                                    <th>Email Id </th>
-                                    <th>Phone Number</th>
-                                    <th>Username</th>
-                                    <th>Status</th>
-                                    <th>Add Club</th>
-                                    <th>Add Course</th>
-                                    <th>Update</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        1 </td>
-                                    <td>
-                                        Institute_1200 </td>
-                                    <td>
-                                        Testune Technology pvt Ltd </td>
-                                    <td>
-                                        Online Exam Based Platform </td>
-                                    <td>
-                                        Kota </td>
-                                    <td>
-                                        contact@domain-education.com </td>
-                                    <td>
-                                        9460394714 </td>
-                                    <td>
-                                        ankush6789 </td>
-                                    <td>
-                                        true </td>
-                                    <td><a href="add_club.php?id=Institute_1200" class="view_faculty_detail"> Add</td>
-                                    <td><a href="add_course.php?id=Institute_1200" class="view_faculty_detail"> Add</td>
-                                    <td><a href="update_school_detail.php?id=Institute_1200" class="view_faculty_detail">
-                                            Update</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <br><br>
-                <h4>Pending Schools Details</h4>
-                <div style="overflow-x:auto;overflow-y:auto">
-                    <table id="page-table">
-                        <thead>
-                            <tr>
-                                <th>Sno</th>
-                                <th>School Id</th>
-                                <th>School Name</th>
-                                <th>Details</th>
-                                <th>Address</th>
-                                <th>Email Id </th>
-                                <th>Phone Number</th>
-                                <th>Username</th>
-                                <th>Status</th>
-                                <th>Add Club</th>
-                                <th>Add Course</th>
-                                <th>Update</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    1 </td>
-                                <td>
-                                    Institute_1200 </td>
-                                <td>
-                                    Testune Technology pvt Ltd </td>
-                                <td>
-                                    Online Exam Based Platform </td>
-                                <td>
-                                    Kota </td>
-                                <td>
-                                    contact@domain-education.com </td>
-                                <td>
-                                    9460394714 </td>
-                                <td>
-                                    ankush6789 </td>
-                                <td>
-                                    true </td>
-                                <td><a href="add_club.php?id=Institute_1200" class="view_faculty_detail"> Add</td>
-                                <td><a href="add_course.php?id=Institute_1200" class="view_faculty_detail"> Add</td>
-                                <td><a href="update_school_detail.php?id=Institute_1200" class="view_faculty_detail">
-                                        Update</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="school">Schools</div>
+            <div class="tab-pane fade" id="tab-two" role="tabpanel" aria-labelledby="pending">Pending </div>
+            <div class="tab-pane fade" id="tab-three" role="tabpanel" aria-labelledby="approved">Approved</div>
+            <div class="tab-pane fade" id="tab-four" role="tabpanel" aria-labelledby="rejected">Rejected</div>
+
         </div>
     </div>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
