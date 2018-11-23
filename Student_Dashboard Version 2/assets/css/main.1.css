@@ -2457,7 +2457,7 @@ new-label.highlight {
 }
 
 .terms{
-  text-align: center;
+  text-align: left;
   color: #777;
   margin: 4px 0;
   padding: 0;
@@ -3412,7 +3412,7 @@ margin-bottom: 5px;
 }
 
 .p-b-55 {
-  padding-bottom: 55px;
+  padding-bottom: 25px;
 }
 
 .p-t-55 {
