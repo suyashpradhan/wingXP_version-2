@@ -3939,13 +3939,10 @@ header {
   line-height: 20px;
 }
 
-<<<<<<< HEAD
 .sidebar-nav ul li ul li a:hover {
   color: #ce1f36;
 }
 
-=======
->>>>>>> d8899c5605a5c20c1413cc74e1573492affca2f9
 .navbar-dropdown {
   position: absolute;
   display: none;
@@ -3954,7 +3951,6 @@ header {
   box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.25);
   margin-left: -150px !important;
   width: 200px;
-<<<<<<< HEAD
 }
 
 
@@ -4025,6 +4021,3 @@ header {
     margin-bottom: 0;
 }
 }
-=======
-}
->>>>>>> d8899c5605a5c20c1413cc74e1573492affca2f9
