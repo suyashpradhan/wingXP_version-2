@@ -630,12 +630,11 @@ ul li {
 
 .row-text-para_2 {
   font-size: 14px;
-  margin-top: 5px;
   font-weight: 400;
   text-align: justify;
   color: #777;
-  margin-top: 20px;
-  /* word-break: break-all; */
+  margin-top: 10px;
+  height: 70px;
 }
 
 .main-article-div img {
@@ -841,14 +840,19 @@ ul li {
 }
 
 .webinar-attend-btn {
-  background-color: #6cd9e7;
+  background-color: #3faef8;
   color: #f8f8f8;
   padding: 5px 20px;
   width: 230px;
-  border: 1px solid #6cd9e7;
+  border: 1px solid #3faef8;
   margin: 25px auto 0 auto;
   display: block;
   cursor: pointer;
+}
+
+.webinar-attend-btn a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .row-new-inner-desc {
@@ -909,12 +913,21 @@ ul li {
 }
 
 .row-second-head {
-  font-size: 20px;
-  color: #fff;
-  /* letter-spacing: 1px; */
-  font-weight: 700;
-  margin-top: 10px;
+  font-size: 18px;
+  color: #363636;
+  font-weight: 900;
+  margin: 10px 0 32px 0;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.row-second-head_2 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 900;
+  margin: 10px 0 18px 0;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .row-second-para {
@@ -931,7 +944,7 @@ ul li {
   justify-content: flex-start;
   align-items: flex-start;
   flex-flow: column wrap;
-  margin: 80px 0 0 0;
+  margin: 95px 0 0 0;
 }
 
 .next-head {
@@ -4147,9 +4160,11 @@ header {
 }
 
 .td-grid-style-1 .td-big-thumb .entry-title {
-  font-size: 27px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 34px;
+  line-height: 28px;
+  text-align: justify;
+  color:#fff;
 }
 .td-big-grid-post .entry-title {
   margin: 0;
@@ -4268,6 +4283,11 @@ header {
   z-index: 1;
 }
 
+.td-post-category:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
 .td-grid-style-1.td-hover-1 .td-post-category {
   -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
@@ -4305,6 +4325,7 @@ header {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  color:#fff;
 }
 .td-big-grid-post .entry-title {
   margin: 0;
@@ -4391,6 +4412,7 @@ header {
   font-size: 16px;
   line-height: 21px;
   font-weight: 500;
+  color:#fff;
 }
 .td-big-grid-post .entry-title {
   margin: 0;
