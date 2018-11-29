@@ -552,6 +552,11 @@ ul li {
   color: rgb(238, 210, 210);
 }
 
+.modal-body_image{
+  height: 100%;
+  width:100%;
+}
+
 .inner-row-sections-new-info img {
   height: 95px;
   width: 150px;
@@ -626,6 +631,18 @@ ul li {
   text-align: justify;
   color: #777;
   margin-top: 10px;
+}
+
+.row-text-para_xplore {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify;
+  margin-top: 10px;
+  /* overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto; */
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
 }
 
 .row-text-para_2 {
@@ -766,12 +783,13 @@ ul li {
 .webinar-speaker {
   display: grid;
   grid-template-columns: 40px 1fr;
-  grid-gap: 1px;
+  grid-gap: 5px;
 }
 
 .speaker-image img {
-  height: 30px;
+  height: 35px;
   margin-top: 20px;
+  width: 100%;
   padding: 0;
 }
 
@@ -4568,4 +4586,68 @@ header {
 .td_block_big_grid_3 .td-small-thumb .td-module-thumb {
   height: 140px!important;
 }
+}
+
+
+/*Terms And Condition*/
+
+.terms-head{
+  font-size:28px;
+  color: #696969;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 30px 0 10px 0;
+}
+
+.terms-head_sub{
+  font-size:20px;
+  color: #777;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.terms-desc{
+  font-size: 16px;
+  color: #999999;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.terms-desc_topic{
+  font-size: 16px;
+  color: #363636;
+  text-align: justify;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.term-topic{
+  font-size:24px;
+  color: #696969;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 30px 0 10px 0;
+}
+
+.terms_list{
+  list-style: none;
+  color: #363636;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 30px;
+  text-align: justify;
+}
+
+
+.terms_list_topic{
+  list-style-type:circle ;
+  color: #363636;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: justify;
+  margin-left: 30px;
 }
