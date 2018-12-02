@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+
 }
 
 
@@ -16,7 +21,7 @@
 
 .main-content {
     width: 100%;
-    background: #F3F8FB;
+    background-color: #f0f0f0;
 }
 
 .main-content-inner {
@@ -38,9 +43,7 @@
 }
 
 .sidebar-header {
-    padding: 19px 32px 20px;
-    background: #303641;
-    border-bottom: 1px solid #343e50;
+    padding: 50px 0 20px 0;
 }
 
 .sidebar-menu .logo {
@@ -49,5 +52,104 @@
 
 .logo a {
     display: inline-block;
+}
+
+.logo img{
     max-width: 120px;
 }
+
+.side-nav-wrapper{
+    height: 100vh;
+}
+
+.side-nav_list {
+    margin: 0 25px;
+  }
+  
+  .side-nav_list li {
+    list-style: none;
+    margin: 25px 0;
+  }
+  
+  .side-nav_list li:hover {
+    color: #fff !important;
+  }
+  
+  .side-icons {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+    color: #b4baca;
+    margin-right: 10px;
+
+  }
+  
+  .side-nav_links {
+    color: #b4baca;
+    font-size: 17px;
+    font-weight: 500;
+    /* margin: 0 10px; */
+    text-decoration: none;
+  }
+  
+  .footer-wrap {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 40px 25px;
+  }
+  
+  .copy-text {
+    font-size: 10px;
+    color: #b4baca;
+    padding: 0;
+  }
+  
+  .footer-wrap a {
+    color: #b4baca;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-wrap span {
+    color: #b4baca;
+  }
+  
+  .footer-wrap a:hover {
+    color: #fff;
+  }
+
+  .right_topNav {
+    box-shadow: 0 10px 6px -6px #777;
+    height: 80px;
+  }
+  
+  .topNav_first {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #86898e;
+    flex:1;
+    margin: 0 0 0 30px;
+  }
+  
+  .topNav_first span {
+    color: #d12d31;
+  }
+  
+  .icon-li {
+    margin: 0 3px;
+  }
+  
+  .topNav_name {
+    font-size: 14px;
+    color: #929196;
+    margin-left: 20px;
+    cursor: default;
+    
+  }
+  
+  .icon-wrap{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 80px;
+  }
