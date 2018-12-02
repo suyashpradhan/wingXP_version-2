@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  /*   font-family: "Montserrat", sans-serif;
+ */
+  font-family: 'Nunito', sans-serif;
+
 }
 
 body,
@@ -14,19 +19,26 @@ html {
 }
 
 #wrapper {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
 }
 
 #left {
   background-color: #495468;
-  height: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 100vh;
+  width: 280px;
+  overflow: hidden;
+  background: #303641;
+  box-shadow: 2px 0 32px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-.left-wrapper {
-  margin: 0 10px;
-  position: fixed;
-}
 
 .logo-wrapper img {
   height: 80px;
@@ -99,6 +111,7 @@ html {
 .right-body {
   background-color: #f0f0f0;
   height: 100vh;
+  width: 100%;
 }
 
 .right_topNav {
@@ -113,6 +126,7 @@ html {
   height: 60px;
   margin: 0 30px;
 }
+
 .right_topNav_list li {
   list-style: none;
 }
