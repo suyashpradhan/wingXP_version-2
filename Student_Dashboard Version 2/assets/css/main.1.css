@@ -22,6 +22,10 @@ body {
   overflow-x: hidden;
 }
 
+ol{
+  margin: 15px !important;
+}
+
 .local-video {
   max-width: 100%;
   height: auto;
@@ -514,6 +518,7 @@ ul li {
   text-align: justify;
   margin: 10px 3px;
   color: #696969;
+  height: 50px;
 }
 
 .row-grid {
@@ -3458,6 +3463,64 @@ header {
   margin: 50px auto;
 }
 
+.download-header{
+  font-size:18px;
+  color:#fff;
+  background-color: #ce1f36;
+  border: 1px solid #ce1f36;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 30px;
+  display: block;
+  margin: 30px auto 10px auto;
+  cursor: default;
+  text-transform: uppercase;
+}
+
+.download-right{
+  font-size:16px;
+}
+
+.download-table {
+  margin: 0 auto;
+}
+
+.download-table th{
+  color:#181818;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+.download-table td{
+  border: 2px solid #000;
+  color:#fff;
+  text-align: center;
+}
+
+.download-table thead th{
+  border: 2px solid #000;
+}
+
+
+
+.download-link{
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 15px !important;
+}
+
+.download-link:hover{
+  color:#fff;
+  text-decoration: none;
+}
+
+.download-icon{
+  color:#fff;
+  text-align: center;
+}
+
 .upload--link {
   text-decoration: none;
   color: #777;
@@ -3469,6 +3532,8 @@ header {
   text-decoration: none;
   font-weight: 900;
 }
+
+
 
 .limiter {
   width: 100%;
