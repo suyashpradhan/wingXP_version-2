@@ -48,14 +48,14 @@ ul li {
 
 .name-wrap {
   background-color: #ccc;
-  height: 90px;
+  height: 70px;
 }
 
 .name-row-new {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto auto auto;
   margin: 0px 35px;
-  padding: 10px 0;
+  padding: 0 0 5px 0;
   grid-gap: 15px;
   align-items: center;
 }
@@ -68,9 +68,9 @@ ul li {
 }
 
 .club-st-text {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
-  float: right;
+  /* float: right; */
   color: #777;
 }
 
@@ -199,10 +199,10 @@ ul li {
 } */
 
 .navbar {
-  height: auto;
+  height: 30px;
   background: #fff;
   padding: 0;
-  margin: 10px 40px;
+  margin: 15px 40px 25px 40px;
 }
 
 .navbar-shadow {
@@ -213,7 +213,9 @@ ul li {
 
 .nav-main {
   display: grid !important;
-  grid-template-columns: 1fr auto !important;
+  grid-template-columns: 1fr;
+  justify-items: flex-end;
+  align-items: center;
   width: 100%;
 }
 

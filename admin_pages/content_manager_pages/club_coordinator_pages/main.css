@@ -3841,3 +3841,28 @@ select {
   align-items: center;
   width: 100%;
 }
+
+.topic {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 60px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+}
+
+.topic_card{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.topic-link{
+  color:#ce1f36;
+  font-size:18px;
+  margin: 12px 0 10px 15px;
+}
+
+.topic-link:hover{
+  color: #ce1f36;
+  text-decoration: none;
+}
