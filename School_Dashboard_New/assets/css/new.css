@@ -87,6 +87,7 @@
   font-weight: 500;
   /* margin: 0 10px; */
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .side-nav_links:hover {
@@ -246,9 +247,9 @@
   top: calc(50% - 0.8em);
 }
 
-.sel.active::before {
+/* .sel.active::before {
   transform: rotateX(-180deg);
-}
+} */
 
 .sel__placeholder {
   display: block;
@@ -400,6 +401,7 @@
   background-color: #fff;
   padding: 15px 25px;
   margin: 10px 0;
+  text-transform: uppercase;
 }
 
 .inner-clubs-div li {
@@ -427,4 +429,10 @@
 .two_half {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+  .topNav_first {
+    font-size: 14px;
+  }
 }
