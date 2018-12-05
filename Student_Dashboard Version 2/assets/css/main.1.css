@@ -96,10 +96,10 @@ ul li {
   color: #fff;
 }
 
-.theme-div {
+/* .theme-div {
   margin: 20px 0;
 }
-
+ */
 .theme-text {
   font-size: 18px;
   font-weight: 400;
@@ -191,18 +191,11 @@ ul li {
   background: #e7f0f7;
 }
 
-/* .navbar {
-  height: auto;
-  background: #fff;
-  padding: 0;
-  margin: 20px 0 40px 0;
-} */
 
 .navbar {
-  height: 30px;
-  background: #fff;
-  padding: 0;
-  margin: 15px 40px 25px 40px;
+  /* margin: 15px 40px 25px 40px; */
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .navbar-shadow {
@@ -211,14 +204,21 @@ ul li {
   box-shadow: 0 10px 6px -6px #777;
 }
 
-.nav-main {
+/* .nav-main {
   display: grid !important;
   grid-template-columns: 1fr;
   justify-items: flex-end;
   align-items: center;
   width: 100%;
 }
+ */
 
+ .nav{
+   margin: 0;
+   padding: 0;
+ }
+
+ 
 .newnavigationBar {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -352,6 +352,14 @@ ul li {
   color: #2abfd4;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.theme-wrap{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-items: flex-start;
+  align-items: center;
+  height: 60px;
 }
 
 .theme-head {
@@ -4071,6 +4079,7 @@ header {
   width: 1068px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 2px;
 }
 
 .td-container:before,
