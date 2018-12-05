@@ -323,9 +323,9 @@ ul li {
 }
 
 .logo-img {
-  height: 80px;
-  display: block;
-  margin: 10px 0 0 30px;
+  margin: 10px 0 0 0;
+  vertical-align: top;
+  cursor: pointer;
 }
 
 .logo-img-down {
@@ -333,6 +333,20 @@ ul li {
   max-width: 100%;
   display: block;
   margin: 20px;
+}
+
+.logo-row-text{
+  display: inline-block;
+  font-size: 28px;
+  color: #ce1f36;
+  font-weight: 500;
+  padding: 0;
+  margin-top:8px;
+  cursor: pointer;
+}
+.logo-row-text:hover{
+  text-decoration: none;
+  color: #ce1f36;
 }
 
 .club-head-text {
