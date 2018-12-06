@@ -8,18 +8,18 @@ html {
   height: 100%;
 }
 
+
 body {
   font-size: 100%;
   font-weight: 400;
   line-height: 1.4;
   font-family: "Nunito", sans-serif;
   /* font-family: Google Sans, Arial, sans-serif;*/
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  transition: background-color 0.5s;
   overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding-bottom: 8rem;
+  min-height: 100%;
 }
 
 ol{
@@ -33,8 +33,8 @@ ol{
 
 ul li {
   list-style: none;
-  margin-top: 10px;
-}
+/*   margin-top: 10px;
+ */}
 
 .page-lay {
   max-width: 1068px;
@@ -48,23 +48,21 @@ ul li {
 
 .name-wrap {
   background-color: #ccc;
-  height: 70px;
+  height: 55px;
 }
 
 .name-row-new {
   display: grid;
   grid-template-columns: 1fr auto auto auto;
   margin: 0px 35px;
-  padding: 0 0 5px 0;
-  grid-gap: 15px;
-  align-items: center;
+  grid-gap: 10px;
 }
 
 .menu-bar {
   font-size: 20px;
   color: #000;
   cursor: pointer;
-  padding-top: 14px;
+  
 }
 
 .club-st-text {
@@ -76,22 +74,27 @@ ul li {
 
 .name-row-text h1 {
   font-size: 17px;
-  margin-top: 15px;
+  margin-top: 18px;
   color: #ce1f36;
 }
 
 .name-row-button {
   font-size: 17px;
-  margin-top: 5px;
+  margin-top: 10px;
   text-decoration: none;
   color: #fff;
   background-color: #ce1f36;
   border: 1px solid #ce1f36;
-  padding: 5px 20px;
+  padding: 3px 20px;
   border-radius: 100px;
+  height:30px;
 }
 
-.name-row-button:hover {
+.name-row-button a{
+  color:#fff;
+}
+
+.name-row-button a:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -1085,16 +1088,20 @@ ul li {
 }
 
 .footer {
-  height: 60px;
-  width: 100%;
-  padding: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+  background-color: #181818;
+  text-align: center;
 }
 
 .left-footer {
-  float: left;
   padding: 15px 0;
   font-size: 20px;
   color: #fff;
+  text-align: center;
 }
 
 .right-footer {
@@ -3434,7 +3441,7 @@ header {
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 0 0 0 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;

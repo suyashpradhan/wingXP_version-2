@@ -8,7 +8,7 @@
   font-family: "Noto Sans", sans-serif;
 }
 
-.page-container {
+.page-container__new {
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -48,12 +48,27 @@
   text-align: center;
 }
 
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h6 {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
 .logo a {
   display: inline-block;
 }
 
 .logo img {
-  max-width: 120px;
+  max-width: 40px;
+  vertical-align: center;
+  margin-right: 3px;
 }
 
 .side-nav-wrapper {
@@ -226,6 +241,17 @@
   font-size: 16px;
   display: inline-block;
   width: 295px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  margin: 25px 15px 5px 15px;
+  background-color: #fff;
+}
+
+.sel {
+  font-size: 16px;
+  display: inline-block;
+  width: 250px;
   background-color: transparent;
   position: relative;
   cursor: pointer;
@@ -675,4 +701,107 @@
 .row-submit-btn:hover {
   color: #363636;
   background-color: #fff;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: 1fr;
+  margin-bottom: 40px;
+}
+
+.img-section img {
+  height: 180px;
+  width: 100%;
+}
+
+.common {
+  margin: 20px 0 0 0;
+  border: 2px solid #dadada;
+}
+
+.section-info {
+  background-color: #f4f4f4;
+}
+
+.section--header {
+  padding: 3px 5px;
+  font-size: 22px;
+  text-align: center;
+  height: 60px;
+  text-transform: uppercase;
+}
+
+.section-sub-first {
+  font-size: 13px;
+  text-align: center;
+  width: 50%;
+  margin: 10px auto;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ccc;
+  color: #000 !important;
+  font-weight: 700;
+}
+
+.section-sub-first-new {
+  font-size: 12px;
+  text-align: center;
+  width: 50%;
+  margin: 10px auto;
+  color: #000 !important;
+  font-weight: 900;
+}
+
+.section-link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.section--link {
+  text-align: center;
+  background-color: #ce1f36;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section--link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.school-header {
+  font-size: 18px;
+  color: #777;
+  letter-spacing: 1px;
+  padding: 15px 0 2px 5px;
+}
+
+.footer-inner {
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  padding: 25px 0 0 0;
+  cursor: default;
+}
+
+.section--link:hover {
+  background-color: #f10020;
+  border: #f10020;
+  color: #fff;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/new.css" />
+    <link rel="stylesheet" href="../admin_pages/content_manager_pages/club_coordinator_pages/main.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <div class="page-container">
+    <div class="page-container__new">
       <div class="sidebar-menu">
         <div class="sidebar-header">
           <div class="logo">
@@ -21,266 +21,211 @@
                 src="../Student_Dashboard Version 2/assets/images/logo.png"
                 alt="logo"
             /></a>
+             <h6>clubs</h6>
           </div>
+          <div class="sel sel--black-panther sel-left">
+              <select
+                name="Select Club Category"
+               >
+                <option value="">Select Club</option>
+                <option value="">Design Club</option>
+
+              </select>
+              </div>
         </div>
         <div class="side-nav-wrapper">
           <ul class="side-nav_list">
             <li>
               <i class="fas fa-graduation-cap side-icons fa-fw"></i>
-              <a href="#" class="side-nav_links"> Clubs </a>
+              <a href="#" class="side-nav_links"> Clubs Management </a>
             </li>
             <li>
-              <i class="fas fa-book-open side-icons fa-fw"></i>
-              <a href="#" class="side-nav_links">Content</a>
+              <i class="fas fa-user side-icons fa-fw"></i>
+              <a href="#" class="side-nav_links"> Users Management </a>
             </li>
-            <li>
-              <i class="fas fa-tasks side-icons fa-fw"></i>
-              <a href="#" class="side-nav_links">Batches</a>
-            </li>
-            <li>
-              <i class="fas fa-users side-icons fa-fw"></i>
-              <a href="#" class="side-nav_links">Students</a>
-            </li>
-            <li>
-              <i class="fas fa-lightbulb side-icons fa-fw"></i>
-              <a href="#" class="side-nav_links">Submissions</a>
-            </li>
-            <li>
-              <i class="fas fa-wrench side-icons fa-fw"></i>
-              <a href="#" class="side-nav_links">Roles</a>
-            </li>
-            <li>
               <i class="fas fa-cog side-icons fa-fw"></i>
               <a href="#" class="side-nav_links">Settings</a>
             </li>
-            <li>
-              <i class="fas fa-envelope side-icons fa-fw"></i>
-              <a href="#" class="side-nav_links">Contact Help</a>
-            </li>
+            
           </ul>
         </div>
-        
-          <!-- <div class="footer-wrap">
-              <h1 class="copy-text">
-                  Copyright &copy; iClubs 2018 .All rights reserved
-              </h1>
-              <a href="#">Privacy Policy</a> <span>|</span> <a href="#">Feedback</a>
-          </div> -->
-       
+
+        <div class="footer-wrap">
+          <h1 class="copy-text">
+            Copyright &copy; iClubs 2018 .All rights reserved
+          </h1>
+          <a href="#">Privacy Policy</a> <span>|</span> <a href="#">Feedback</a>
+        </div>
       </div>
-      <div class="main-content" style="min-height: 616px;">
-        <nav class="right_topNav">
+      <div class="main-content" style="min-height: 100vh;">
+        <div class="right_topNav">
           <div class="inner-topNav">
-              <div class="row no-gutters ">
-                  <div class="col-6">
-                    <div class="icon-wrap">
-                      <h1 class="topNav_first">
-                        ST. XAVIER'S HIGH SCHOOL <span> DASHBOARD </span>
-                      </h1>
-                      <i class="fas fa-home nav-icons fa-fw"></i>
-                      <i class="fas fa-bell nav-icons fa-fw"></i>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="icon-wrap">
-                      <h1 class="topNav_first_name">
-                        Ankush Aggarwal | School Coordinator
-                      </h1>
-                      <img src="assets/images/user (1).png" alt="" height="40px">
-                      <i class="fas fa-bars fa-fw side-icons nav-icons menu"></i>
-                    </div>
-                  </div>
+            <div class="row no-gutters ">
+              <div class="col-6">
+                <div class="icon-wrap">
+                  <h1 class="topNav_first">
+                    ST. XAVIER'S HIGH SCHOOL <span> DASHBOARD </span>
+                  </h1>
+                  <i class="fas fa-home nav-icons fa-fw"></i>
+                  <i class="fas fa-bell nav-icons fa-fw"></i>
                 </div>
+              </div>
+              <div class="col-6">
+                <div class="icon-wrap">
+                  <h1 class="topNav_first_name">
+                    Ankush Aggarwal | School Coordinator
+                  </h1>
+                  <img src="assets/images/user (1).png" alt="" height="40px" />
+                  <i class="fas fa-bars fa-fw side-icons nav-icons menu"></i>
+                </div>
+              </div>
+            </div>
           </div>
-        </nav>
+        </div>
         <div class="new-container">
           <div class="row header-row">
             <div class="col-4">
               <h1 class="header-text"><span>10 </span> Clubs</h1>
-              <hr class="hr_under_one">
+              <hr class="hr_under_one" />
               <h6 class="header-text_subs">Users</h6>
             </div>
             <div class="col-8">
               <div class="sel sel--black-panther">
-                <select name="select-profession" id="select-profession">
-                  <option value="" disabled>Select Club Category</option>
-                  <option value="">Technology</option>
-                </select>
+              <select
+                name="Select Club Category"
+               >
+                <option value="">Technology</option>
+                <option value="">Design</option>
+              </select>
               </div>
               <div class="sel sel--black-panther">
-                <select name="select-profession" id="select-profession">
-                  <option value="" disabled>Select Club</option>
-                  <option value="">Tech Talk</option>
-                </select>
+              <select
+              name="Select Club"
+              class="sel sel--black-panther">
+              <option value="">Tech Talk</option>
+              <option value="">Coding</option>
+            </select>
               </div>
-              <hr class="hr_under"/>
+              <hr class="hr_under" />
               <div class="hr-new">
                   <h6 class="hr-new_one">Content</h6>
-                  <h6 class="hr-new_one one_margin">Students Project</h6>
-              </div>
+                  <h6 class="hr-new_one one_margin">Student Projects</h6>
+                </div>
             </div>
         </div>
-        <div class="row no-gutters">
-                <div class="col-4">
-                  <ul class="inner-clubs-div">
-                    <li>
-                        <h1 class="inner-clubs_text">
-                            <span class="inner-clubs_text_span">
-                            3
-                        </span>
-                    Grades <span class="inner_span">
-                            <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                    </span></h1>
-                    </li>
-                    <li>
-                            <h1 class="inner-clubs_text">
-                                <span class="inner-clubs_text_span">
-                                15
-                            </span>
-                        Batches <span class="inner_span">
-                                <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                        </span></h1>
-                        <li>
-                                <h1 class="inner-clubs_text">
-                                    <span class="inner-clubs_text_span">
-                                    700
-                                </span>
-                            Students <span class="inner_span">
-                                    <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                            </span></h1>
-                            <li>
-                                    <h1 class="inner-clubs_text">
-                                        <span class="inner-clubs_text_span">
-                                        20
-                                    </span>
-                                Admins <span class="inner_span">
-                                        <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                                </span></h1>
-                                <li>
-                                        <h1 class="inner-clubs_text">
-                                            <span class="inner-clubs_text_span">
-                                            
-                                        </span>
-                                    Assign Clubs <span class="inner_span">
-                                            <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                                    </span></h1>
-                                    </li>
-                                    
-                  </ul>
+      <div class="sections">
+        <div class="common">
+            <div class="img-section">
+                <img src="assets/images/design.png">
+            </div>
+            <div class="section-info">
+                <h1 class="section--header">DIGITAL DESIGN</h1>
+                <h2 class="section-sub-first">Real World Exposure</h2>
+                <h3 class="section-sub-first">Learn With Experts</h3>
+                <h4 class="section-sub-first-new">Make</h4>
+                <div class="section-link-wrapper">
+                    <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N1">Enter</a>
                 </div>
-        <div class="col-8">
-            <div class="two_half">
-                <div>
-                        <ul class="inner-clubs-div">
-                                <li>
-                                    <h1 class="inner-clubs_text">
-                                        <span class="inner-clubs_text_span">
-                                        30
-                                    </span>
-                                Topics <span class="inner_span">
-                                        <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                                </span></h1>
-                                </li>
-                                <li>
-                                        <h1 class="inner-clubs_text">
-                                            <span class="inner-clubs_text_span">
-                                            120
-                                        </span>
-                                    Articles <span class="inner_span">
-                                             <i class="fas fa-plus club-inner_icons"></i>
-                                    </span></h1>
-                                </li>
-                                    <li>
-                                            <h1 class="inner-clubs_text">
-                                                <span class="inner-clubs_text_span">
-                                                120
-                                            </span>
-                                        Video <span class="inner_span">
-                                                 <i class="fas fa-plus club-inner_icons"></i>
-                                        </span></h1>
-                                        </li>
-                                        <li>
-                                                <h1 class="inner-clubs_text">
-                                                    <span class="inner-clubs_text_span">
-                                                    60
-                                                </span>
-                                            Quiz <span class="inner_span">
-                                                    <i class="fas fa-plus club-inner_icons"></i>
-                                            </span></h1>
-                                            </li>
-                                            <li>
-                                                    <h1 class="inner-clubs_text">
-                                                        <span class="inner-clubs_text_span">
-                                                        70
-                                                    </span>
-                                                Ebooks <span class="inner_span">
-                                                       <i class="fas fa-plus club-inner_icons"></i>
-                                                </span></h1>
-                                                </li>
-                                                
-                                                <li>
-                                                        <h1 class="inner-clubs_text">
-                                                            <span class="inner-clubs_text_span">
-                                                            60
-                                                        </span>
-                                                    Factoids <span class="inner_span">
-                                                             <i class="fas fa-plus club-inner_icons"></i>
-                                                    </span></h1>
-                                                    </li>
-                              </ul>
-                </div>
-            <div>
-                    <ul class="inner-clubs-div">
-                            <li>
-                                <h1 class="inner-clubs_text">
-                                    <span class="inner-clubs_text_span">
-                                    240
-                                </span>
-                            Submitted <span class="inner_span">
-                                    <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                            </span></h1>
-                            </li>
-                            <li>
-                                    <h1 class="inner-clubs_text">
-                                        <span class="inner-clubs_text_span">
-                                        120
-                                    </span>
-                                Reviewed <span class="inner_span">
-                                        <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                                </span></h1>
-                            </li>
-                                <li>
-                                        <h1 class="inner-clubs_text">
-                                            <span class="inner-clubs_text_span">
-                                            120
-                                        </span>
-                                    Pending <span class="inner_span">
-                                            <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                                    </span></h1>
-                                    </li>
-                                    <li>
-                                            <h1 class="inner-clubs_text">
-                                                <span class="inner-clubs_text_span">
-                                                100 
-                                            </span>
-                                            Rejected <span class="inner_span">
-                                                <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                                        </span></h1>
-                                       </li>
-                                       <li>
-                                            <h1 class="inner-clubs_text">
-                                                <span class="inner-clubs_text_span">
-                                                20 
-                                            </span>
-                                            Showcased<span class="inner_span">
-                                             <i class="fas fa-filter club-inner_icons"></i> <i class="fas fa-plus club-inner_icons"></i>
-                                        </span></h1>
-                                       </li>
-                                            
-                          </ul>
             </div>
         </div>
-      </div>
+        <div class="common">
+            <div class="img-section">
+                <img src="assets/images/tech.png">
+            </div>
+            <div class="section-info">
+                <h1 class="section--header">TECH TALK</h1>
+                <h2 class="section-sub-first">Real World Exposure</h2>
+                <h3 class="section-sub-first">Learn With Experts</h3>
+                <h4 class="section-sub-first-new">Make</h4>
+                <div class="section-link-wrapper">
+                    <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N2">Enter</a>
+                </div>
+            </div>
+        </div>
+        <div class="common">
+            <div class="img-section">
+                <img src="assets/images/creative.png">
+            </div>
+            <div class="section-info">
+                <h1 class="section--header">SMARTER MINDS</h1>
+                <h2 class="section-sub-first">Real World Exposure</h2>
+                <h3 class="section-sub-first">Learn With Experts</h3>
+                <h4 class="section-sub-first-new">Engage</h4>
+                <div class="section-link-wrapper">
+                    <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N3">Enter</a>
+                </div>
+            </div>
+        </div>
+        <div class="common">
+            <div class="img-section">
+                <img src="assets/images/environment.jpg">
+            </div>
+            <div class="section-info">
+                <h1 class="section--header">ENVIRONMENT</h1>
+                <h2 class="section-sub-first">Real World Exposure</h2>
+                <h3 class="section-sub-first">Learn With Experts</h3>
+                <h4 class="section-sub-first-new">Engage</h4>
+                <div class="section-link-wrapper">
+                    <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N4">Enter</a>
+                </div>
+            </div>
+        </div>
+        <div class="common">
+            <div class="img-section">
+                <img src="assets/images/coding.png">
+            </div>
+            <div class="section-info">
+                <h1 class="section--header">CODING</h1>
+                <h2 class="section-sub-first">Real World Exposure</h2>
+                <h3 class="section-sub-first">Learn With Experts</h3>
+                <h4 class="section-sub-first-new">Make</h4>
+                <div class="section-link-wrapper">
+                    <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N5">Enter</a>
+                </div>
+            </div>
+        </div>
+        <div class="common">
+            <div class="img-section">
+                <img src="assets/images/astro.png">
+            </div>
+            <div class="section-info">
+                <h1 class="section--header">ASTRONOMY</h1>
+                <h2 class="section-sub-first">Real World Exposure</h2>
+                <h3 class="section-sub-first">Learn With Experts</h3>
+                <h4 class="section-sub-first-new">Make</h4>
+                <div class="section-link-wrapper">
+                    <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N6">Enter</a>
+                </div>
+            </div>
+        </div>
+        <div class="common">
+            <div class="img-section">
+                <img src="assets/images/english.png">
+            </div>
+            <div class="section-info">
+                <h1 class="section--header">ENGLISH EXPRESSION</h1>
+                <h2 class="section-sub-first">Real World Exposure</h2>
+                <h3 class="section-sub-first">Learn With Experts</h3>
+                <h4 class="section-sub-first-new">Engage</h4>
+                <div class="section-link-wrapper">
+                    <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N7">Enter</a>
+                </div>
+            </div>
+        </div>
+        <div class="common">
+            <div class="img-section">
+                <img src="assets/images/news.png">
+            </div>
+            <div class="section-info">
+                <h1 class="section--header">UNDERSTANDING NEWS</h1>
+                <h2 class="section-sub-first">Real World Exposure</h2>
+                <h3 class="section-sub-first">Learn With Experts</h3>
+                <h4 class="section-sub-first-new">Engage</h4>
+                <div class="section-link-wrapper">
+                    <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N8">Enter</a>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
     <link
@@ -304,69 +249,6 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
       crossorigin="anonymous "
     ></script>
-    <script>
-      /* ===== Logic for creating fake Select Boxes ===== */
-      $(".sel").each(function() {
-        $(this)
-          .children("select")
-          .css("display", "none");
-
-        var $current = $(this);
-
-        $(this)
-          .find("option")
-          .each(function(i) {
-            if (i == 0) {
-              $current.prepend(
-                $("<div>", {
-                  class: $current.attr("class").replace(/sel/g, "sel__box")
-                })
-              );
-
-              var placeholder = $(this).text();
-              $current.prepend(
-                $("<span>", {
-                  class: $current
-                    .attr("class")
-                    .replace(/sel/g, "sel__placeholder"),
-                  text: placeholder,
-                  "data-placeholder": placeholder
-                })
-              );
-
-              return;
-            }
-
-            $current.children("div").append(
-              $("<span>", {
-                class: $current
-                  .attr("class")
-                  .replace(/sel/g, "sel__box__options"),
-                text: $(this).text()
-              })
-            );
-          });
-      });
-
-      // Toggling the `.active` state on the `.sel`.
-      $(".sel").click(function() {
-        $(this).toggleClass("active");
-      });
-
-      // Toggling the `.selected` state on the options.
-      $(".sel__box__options").click(function() {
-        var txt = $(this).text();
-        var index = $(this).index();
-
-        $(this)
-          .siblings(".sel__box__options")
-          .removeClass("selected");
-        $(this).addClass("selected");
-
-        var $currentSel = $(this).closest(".sel");
-        $currentSel.children(".sel__placeholder").text(txt);
-        $currentSel.children("select").prop("selectedIndex", index + 1);
-      });
-    </script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

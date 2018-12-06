@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 
 html {
-  font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
@@ -12,7 +16,6 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
   position: relative;
   margin: 0;
   padding-bottom: 6rem;
@@ -1406,6 +1409,3 @@ select {
   -webkit-filter: brightness(0.75) contrast(1.7);
   filter: brightness(0.75) contrast(1.7);
 }
-
-
-
