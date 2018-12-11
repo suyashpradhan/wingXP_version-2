@@ -1,139 +1,100 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
 
-body {
-  background: #2d2c41;
-  font-family: "Open Sans", Arial, Helvetica, Sans-serif, Verdana, Tahoma;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  color: #b63b4d;
-  text-decoration: none;
-}
-
-/** =======================
-   * Contenedor Principal
-   ===========================*/
-
-h1 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 80px;
-}
-
-h1 a {
-  color: #c12c42;
-  font-size: 16px;
-}
-
-.container {
-  max-width: 1140px;
-  margin: auto;
-}
-
-.list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
-.accordion {
-  background: #fff;
-}
-
-.accordion .link {
-  cursor: pointer;
-  display: block;
-  padding: 15px 15px 15px 10px;
-  color: #4d4d4d;
-  font-size: 14px;
-  font-weight: 700;
-  border-bottom: 1px solid #ccc;
+.dropdown {
   position: relative;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  display: inline-block;
 }
 
-.accordion li:last-child .link {
-  border-bottom: 0;
-}
-
-.accordion li i {
+.dropdown > input[type="checkbox"] {
   position: absolute;
-  top: 16px;
-  left: 12px;
-  font-size: 18px;
-  color: #595959;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  left: -100vw;
 }
 
-.accordion li i.fa-chevron-down {
-  right: 12px;
-  left: auto;
-  background-color: #d12d31;
-  padding: 6px;
-  border-radius: 100px;
-  color: #fff;
-  font-size: 16px;
-  margin-top: -5px;
-}
-
-.accordion li.open .link {
-  color: #b63b4d;
-}
-
-.accordion li.open i {
-  color: #b63b4d;
-}
-
-.accordion li.open i.fa-chevron-down {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  color: #fff;
-}
-
-/**
-   * Submenu
-   -----------------------------*/
-
-.submenu {
-  display: none;
-  background: #444359;
-  font-size: 14px;
-}
-
-.submenu li {
-  border-bottom: 1px solid #4b4a5e;
-}
-
-.submenu a {
-  display: block;
+.dropdown > label,
+.dropdown > a[role="button"] {
+  display: inline-block;
+  padding: 6px 15px;
+  color: #333;
+  line-height: 1.5em;
   text-decoration: none;
-  color: #d9d9d9;
-  padding: 12px;
-  padding-left: 42px;
-  -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  border: 1px solid #8c8c8c;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: 300px;
 }
 
-.submenu a:hover {
-  background: #b63b4d;
-  color: #fff;
+.dropdown > label:hover,
+.dropdown > a[role="button"]:hover,
+.dropdown > a[role="button"]:focus {
+  border-color: #333;
+}
+
+.dropdown > ul {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  left: -100vw;
+  top: calc(1.5em + 14px);
+  border: 1px solid #8c8c8c;
+  background: #fff;
+  padding: 6px 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown > ul a {
+  display: block;
+  padding: 6px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown > ul a:hover,
+.dropdown > ul a:focus {
+  background: #ececec;
+}
+
+.dropdown > input[type="checkbox"]:checked ~ ul,
+.dropdown > ul:target {
+  left: 0;
+}
+
+.dropdown a.close {
+  display: none;
+}
+
+.dropdown > ul:target ~ a.close {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-indent: -100vw;
+  z-index: 1000;
+}
+
+.new-icon {
+  float: right;
+  margin: 3px 0;
+  font-size: 18px;
+}
+
+.dropdown__list li a span {
+  float: right;
+}
+
+.dropdown__list li a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #696969;
 }
