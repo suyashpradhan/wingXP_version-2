@@ -1,100 +1,19 @@
-@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown > input[type="checkbox"] {
-  position: absolute;
-  left: -100vw;
-}
-
-.dropdown > label,
-.dropdown > a[role="button"] {
-  display: inline-block;
-  padding: 6px 15px;
-  color: #333;
-  line-height: 1.5em;
-  text-decoration: none;
-  border: 1px solid #8c8c8c;
-  cursor: pointer;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  width: 300px;
-}
-
-.dropdown > label:hover,
-.dropdown > a[role="button"]:hover,
-.dropdown > a[role="button"]:focus {
-  border-color: #333;
-}
-
-.dropdown > ul {
-  position: absolute;
-  z-index: 999;
-  display: block;
-  left: -100vw;
-  top: calc(1.5em + 14px);
-  border: 1px solid #8c8c8c;
-  background: #fff;
-  padding: 6px 0;
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+* {
   margin: 0;
-  list-style: none;
-  width: 100%;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.dropdown > ul a {
-  display: block;
-  padding: 6px 15px;
+a {
+  color: #666;
   text-decoration: none;
-  color: #333;
+}
+a:hover {
+  color: #4fda8c;
 }
 
-.dropdown > ul a:hover,
-.dropdown > ul a:focus {
-  background: #ececec;
-}
-
-.dropdown > input[type="checkbox"]:checked ~ ul,
-.dropdown > ul:target {
-  left: 0;
-}
-
-.dropdown a.close {
-  display: none;
-}
-
-.dropdown > ul:target ~ a.close {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  text-indent: -100vw;
-  z-index: 1000;
-}
-
-.new-icon {
-  float: right;
-  margin: 3px 0;
-  font-size: 18px;
-}
-
-.dropdown__list li a span {
-  float: right;
-}
-
-.dropdown__list li a {
-  font-size: 20px;
-  font-weight: 400;
-  color: #696969;
+body {
+  color: #666;
+  background-color: #f1f2f2;
 }
