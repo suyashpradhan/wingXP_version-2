@@ -3361,9 +3361,6 @@ header {
   height: auto;
 }
 
-.td-big-grid-post .entry-thumb {
-}
-
 .td-module-thumb .entry-thumb {
   display: block;
 }
@@ -3521,8 +3518,6 @@ header {
   width: 100%;
 }
 
-.td-grid-style-1 .td-big-thumb .td-module-meta-info {
-}
 .td-big-grid-post .td-module-meta-info {
   margin: 11px 0 20px 20px;
   min-height: 0;
@@ -3562,8 +3557,6 @@ header {
   overflow: hidden;
 }
 
-.td_block_wrap .td-big-grid-wrapper .td-big-grid-scroll .td-module-thumb {
-}
 
 .td-grid-style-1.td-hover-1 .td-module-thumb a:last-child:before {
   bottom: 0;
@@ -3607,10 +3600,6 @@ header {
   width: 100%;
 }
 
-/* .td-big-grid-post.td-medium-thumb .td-big-grid-meta {
-  font-size: 24px;
-} */
-
 .td-grid-style-1 .td-medium-thumb .td-big-grid-meta {
   width: 100%;
   margin: 5px 0 20px 19px;
@@ -3639,9 +3628,6 @@ header {
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
-}
-
-.td_block_wrap .td-big-grid-wrapper .td-big-grid-scroll .td-big-grid-post {
 }
 
 .td_block_big_grid_3 .td-big-grid-post {
@@ -4032,8 +4018,6 @@ header {
     height: 140px !important;
   }
 }
-
-
 
 /*Terms And Condition*/
 
