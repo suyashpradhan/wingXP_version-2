@@ -1,115 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="assets/css/new.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="../admin_pages/content_manager_pages/club_coordinator_pages/main.css" />
+</head>
+
+<body>
+
     <body style="background-color: #981a35;
     padding: 0;
     margin: 0;
     position: relative; ">
-      <div class="limiter">
-          <div class="container-login100">
-              <div class="wrap-login100 p-t-55 p-b-55" style="width: 800px;">
-                <h1 class="__head">Add Batch </h1>
-                <div class="row-wrapper">
-                    <h1 class="row--head">Class 6</h1>
-                    <label class="pure-material-checkbox">
-                            <input type="checkbox">
-                            <span></span>
-                    </label>
-                    <ul class="row--list">
-                        <li>A</li>
-                        <li>B</li>
-                        <li>C</li>
-                    </ul>
-                    <a href="#" class="row--link">Add Batch</a>
-                </div>
-                <div class="row-wrapper">
-                        <h1 class="row--head">Class 7</h1>
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100 p-t-55 p-b-55">
+                    <h1 class="__head">Add Batch </h1>
+                    <div class="row-wrapper">
+                        <h1 class="row--head">Class 6</h1>
                         <label class="pure-material-checkbox">
-                                <input type="checkbox">
-                                <span></span>
+                            <input type="checkbox" id="class-6" checked="" onclick="remove_class(6);">
+                            <span></span>
                         </label>
-                        <ul class="row--list">
-                            <li>A</li>
-                            <li>B</li>
-                            <li>C</li>
+                        <ul class="row--list" id="batch-6">
+                            <li id="A">A</li>
+                            <li id="B">B</li>
+                            <li id="C">C</li>
+                            <li id="D">D</li>
+                            <li id="D">D</li>
+                            <li id="D">D</li>
+                            <li id="D">D</li>
+                            <li id="D">D</li>
                         </ul>
-                        <a href="#" class="row--link">Add Batch</a>
+                        <span><a href="#" class="row--link" onclick="add_batch(6);">+</a>
+                            <a href="#" class="row--link" onclick="remove_batch(6);">-</a></span>
                     </div>
                     <div class="row-wrapper">
-                            <h1 class="row--head">Class 8</h1>
-                            <label class="pure-material-checkbox">
-                                    <input type="checkbox">
-                                    <span></span>
-                            </label>
-                            <ul class="row--list">
-                                <li>A</li>
-                                <li>B</li>
-                                <li>C</li>
-                            </ul>
-                            <a href="#" class="row--link">Add Batch</a>
-                        </div>
-                        <div class="row-wrapper">
-                                <h1 class="row--head">Class 9</h1>
-                                <label class="pure-material-checkbox">
-                                        <input type="checkbox">
-                                        <span></span>
-                                </label>
-                                <ul class="row--list">
-                                    <li>A</li>
-                                    <li>B</li>
-                                    <li>C</li>
-                                </ul>
-                                <a href="#" class="row--link">Add Batch</a>
-                            </div>
-                            <div class="row-wrapper">
-                                    <h1 class="row--head">Class 10</h1>
-                                    <label class="pure-material-checkbox">
-                                            <input type="checkbox">
-                                            <span></span>
-                                    </label>
-                                    <ul class="row--list">
-                                        <li>A</li>
-                                        <li>B</li>
-                                        <li>C</li>
-                                    </ul>
-                                    <a href="#" class="row--link">Add Batch</a>
-                            </div>
-                                <div class="row-wrapper">
-                                        <h1 class="row--head">Class 11</h1>
-                                        <label class="pure-material-checkbox">
-                                                <input type="checkbox">
-                                                <span></span>
-                                        </label>
-                                        <ul class="row--list">
-                                            <li>A</li>
-                                            <li>B</li>
-                                            <li>C</li>
-                                        </ul>
-                                        <a href="#" class="row--link">Add Batch</a>
-                                </div>
-                                    <div class="row-wrapper">
-                                            <h1 class="row--head">Class 12</h1>
-                                            <label class="pure-material-checkbox">
-                                                    <input type="checkbox">
-                                                    <span></span>
-                                            </label>
-                                            <ul class="row--list">
-                                                <li>A</li>
-                                                <li>B</li>
-                                                <li>C</li>
-                                                
-                                            </ul>
-                                            <a href="#" class="row--link">Add Batch</a>
-                                            <a href="#" class="row--link">Remove Batch</a>
-                                    </div>
-                                        </div></div>
+                        <h1 class="row--head">Class 7</h1>
+                        <label class="pure-material-checkbox">
+                            <input type="checkbox" id="class-7" checked="" onclick="remove_class(7);">
+                            <span></span>
+                        </label>
+                        <ul class="row--list" id="batch-7">
+                        </ul>
+                        <span><a href="#" class="row--link" onclick="add_batch(7);">+</a>
+                            <a href="#" class="row--link" onclick="remove_batch(7);">-</a></span>
+                    </div>
+                    <div class="row-wrapper">
+                        <h1 class="row--head">Class 8</h1>
+                        <label class="pure-material-checkbox">
+                            <input type="checkbox" id="class-8" checked="" onclick="remove_class(8);">
+                            <span></span>
+                        </label>
+                        <ul class="row--list" id="batch-8">
+                        </ul>
+                        <span><a href="#" class="row--link" onclick="add_batch(8);">+</a>
+                            <a href="#" class="row--link" onclick="remove_batch(8);">-</a></span>
+                    </div>
+                    <div class="row-wrapper">
+                        <h1 class="row--head">Class 9</h1>
+                        <label class="pure-material-checkbox">
+                            <input type="checkbox" id="class-9" checked="" onclick="remove_class(9);">
+                            <span></span>
+                        </label>
+                        <ul class="row--list" id="batch-9">
+                        </ul>
+                        <span><a href="#" class="row--link" onclick="add_batch(9);">+</a>
+                            <a href="#" class="row--link" onclick="remove_batch(9);">-</a></span>
+                    </div>
+                    <div class="row-wrapper">
+                        <h1 class="row--head">Class 10</h1>
+                        <label class="pure-material-checkbox">
+                            <input type="checkbox" id="class-10" checked="" onclick="remove_class(10);">
+                            <span></span>
+                        </label>
+                        <ul class="row--list" id="batch-10">
+                        </ul>
+                        <span><a href="#" class="row--link" onclick="add_batch(10);">+</a>
+                            <a href="#" class="row--link" onclick="remove_batch(10);">-</a></span>
+                    </div>
+                    <div class="row-wrapper">
+                        <h1 class="row--head">Class 11</h1>
+                        <label class="pure-material-checkbox">
+                            <input type="checkbox" id="class-11" checked="" onclick="remove_class(11);">
+                            <span></span>
+                        </label>
+                        <ul class="row--list" id="batch-11">
+                        </ul>
+                        <span><a href="#" class="row--link" onclick="add_batch(11);">+</a>
+                            <a href="#" class="row--link" onclick="remove_batch(11);">-</a></span>
+                    </div>
+                    <div class="row-wrapper">
+                        <h1 class="row--head">Class 12</h1>
+                        <label class="pure-material-checkbox">
+                            <input type="checkbox" id="class-12" checked="" onclick="remove_class(12);">
+                            <span></span>
+                        </label>
+                        <ul class="row--list" id="batch-12">
+                        </ul>
+                        <span><a href="#" class="row--link" onclick="add_batch(12);">+</a>
+                            <a href="#" class="row--link" onclick="remove_batch(12);">-</a></span>
+                    </div>
+
+                </div>
             </div>
         </div>
-  </body>
+    </body>
+
 </html>
