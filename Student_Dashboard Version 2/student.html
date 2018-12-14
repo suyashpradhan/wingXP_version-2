@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Dashboard- IClubs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+    <link rel="stylesheet" href="assets/css/main.1.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+</head>
+
+<body>
+    <div class="name-wrap ">
+        <div class="name-row-new">
+            <div class="logo-row">
+                <img src="assets/images/logo_1.png" alt="" height="30px" class="logo-img">
+                <a href="#" class="logo-row-text"> clubs </a>
+            </div>
+            <div class="name-row-text">
+                <h1>Kiran Nambiar</h1>
+            </div>
+            <div class="name-row-button">
+                <a href="?q=logout">Logout</a>
+            </div>
+            <div class="menu-div">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fas fa-bars menu-bar"></i></a>
+                            <ul class="navbar-dropdown">
+                                <li>
+                                    <a href="./my_uploads.php?id=club_23">My Uploads</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <header class="navbar-shadow" style="background-color: #fff;">
+        <nav id='cssmenu'>
+            <div id="head-mobile"></div>
+            <div class="cl-button"></div>
+            <ul style="border: 1px solid #a2a2a2;
+            background-color: #f4f4f4;
+            box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+            border-radius: 5px;
+            color: #000">
+                <h1 class="club-head-text" style="color: #34495e;text-align: left;padding: 10px;font-size: 24px;">Welcome
+                    To Environment</h1>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>My Profile</a></li>
+                <li><a href='#'>Dashboard</a></li>
+                <li><a href='#'>FAQ's</a></li>
+                <li><a href='#'>Change Club</a>
+                    <ul>
+                        <form action="#" method="POST">
+                            <li><a id="club_18" href="?id=club_18" target="_self">Digital Design</a></li>
+                            <li><a id="club_21" href="?id=club_21" target="_self">Tech Talk</a></li>
+                            <li><a id="club_22" href="?id=club_22" target="_self">Smarter Minds</a></li>
+                            <li><a id="club_23" href="?id=club_23" target="_self">Environment</a></li>
+                            <li><a id="club_24" href="?id=club_24" target="_self">Coding</a></li>
+                            <li><a id="club_26" href="?id=club_26" target="_self">English Expression</a></li>
+                            <li><a id="club_27" href="?id=club_27" target="_self">Understanding News</a></li>
+                            <li><a id="club_25" href="?id=club_25" target="_self">Astronomy</a></li>
+                        </form>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="page-lay-new">
+        <div class="theme-div left-right-gap">
+            <div class="theme-wrap">
+                <h1 class="theme-text ">Theme Of The Month</h1>
+                <nav class="navbar">
+                    <ul class="nav" style="display: block;">
+                        <li> <span class="club-st-text">Club</span> Environment<i class="fas fa-angle-down"></i>
+                            <ul class="dropdown">
+                                <form action="#" method="POST" style="padding: 2px 15px; font-size:15px; margin:10px 0px;">
+                                    <li><a class="dropdown-link" id="club_18" href="?id=club_18" target="_self">Digital
+                                            Design</a></li>
+                                    <li><a class="dropdown-link" id="club_21" href="?id=club_21" target="_self">Tech
+                                            Talk</a></li>
+                                    <li><a class="dropdown-link" id="club_22" href="?id=club_22" target="_self">Smarter
+                                            Minds</a></li>
+                                    <li><a class="dropdown-link" id="club_23" href="?id=club_23" target="_self">Environment</a></li>
+                                    <li><a class="dropdown-link" id="club_24" href="?id=club_24" target="_self">Coding</a></li>
+                                    <li><a class="dropdown-link" id="club_26" href="?id=club_26" target="_self">English
+                                            Expression</a></li>
+                                    <li><a class="dropdown-link" id="club_27" href="?id=club_27" target="_self">Understanding
+                                            News</a></li>
+                                    <li><a class="dropdown-link" id="club_25" href="?id=club_25" target="_self">Astronomy</a></li>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <h1 class="topic-wrap">Reduce Reuse Recycle </h1>
+        <p class="topic-description">The three R's – reduce, reuse and recycle – all help to cut down on the amount of
+            waste we throw away. They conserve natural resources, landfill space and energy.</p>
+
+        <div class="td-container tdc-row ">
+            <div class="td_block_wrap td_block_big_grid_3 td_uid_19_5c0febf1624bf_rand td-grid-style-1 td-hover-1 td-big-grids td-pb-border-top td_block_template_1"
+                data-td-block-uid="td_uid_19_5c0febf1624bf">
+                <div id="td_uid_19_5c0febf1624bf" class="td_block_inner">
+                    <div class="td-big-grid-wrapper">
+                        <div class="td_module_mx5 td-animation-stack td-big-grid-post-0 td-big-grid-post td-big-thumb">
+                            <div class="td-module-thumb" style="background-repeat:no-repeat;
+                                background-size:cover;background-position: center;background-image:url(../../../assets/article/121953am108.jpg);">
+                                <a href="https://www.veolia.co.uk/nottinghamshire/recycling/recycle-nottinghamshire/3rs-reduce-reuse-and-recycle"
+                                    target="_blank" rel="bookmark" class="td-image-wrap"></a></div>
+                            <div class="td-meta-info-container">
+                                <div class="td-meta-align">
+                                    <div class="td-big-grid-meta">
+                                        <a href="" class="td-post-category">Reduce Reuse Recycle </a>
+                                        <h3 class="entry-title td-module-title">3Rs - Reduce, Reuse and Recycle</a></h3>
+                                    </div>
+                                    <div class="td-module-meta-info"><span class="td-post-date"> </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="td-big-grid-scroll">
+                            <div class="td_module_mx11 td-animation-stack td-big-grid-post-1 td-big-grid-post td-medium-thumb">
+                                <div class="td-module-thumb" style="background-repeat:no-repeat;background-position: center;background-size:cover;background-image:url(../../../assets/article/123747am80.jpeg);">
+                                    <a href="http://www.organicandnaturalchoices.com/recycling/" target="_blank" rel="bookmark"
+                                        class="td-image-wrap"></a>
+                                </div>
+                                <div class="td-meta-info-container">
+                                    <div class="td-meta-align">
+                                        <div class="td-big-grid-meta">
+                                            <a href="" class="td-post-category">Reduce Reuse Recycle </a>
+                                            <h3 class="entry-title td-module-title">Importance of Recycling</a></h3>
+                                        </div>
+                                        <div class="td-module-meta-info">
+                                            <span class="td-post-date"> </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="td_module_mx6 td-animation-stack td-big-grid-post-2 td-big-grid-post td-small-thumb">
+                                <div class="td-module-thumb" style="background-repeat:no-repeat;background-position: center;background-size:cover;background-image:
+                                    url(../../../assets/article/015554am79.jpg);">
+                                    <a href="https://soapboxie.com/social-issues/Top-Five-Reasons-Why-You-Need-to-Recycle"
+                                        target="_blank" rel="bookmark" class="td-image-wrap"></a></div>
+                                <div class="td-meta-info-container">
+                                    <div class="td-meta-align">
+                                        <div class="td-big-grid-meta">
+                                            <a href="" class="td-post-category">Reduce Reuse Recycle </a>
+                                            <h3 class="entry-title td-module-title">Top Five Reasons Why You Need to
+                                                Recycle</a></h3>
+                                        </div>
+                                        <div class="td-module-meta-info">
+                                            <span class="td-post-date"> </span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="td_module_mx6 td-animation-stack td-big-grid-post-3 td-big-grid-post td-small-thumb">
+                                <div class="td-module-thumb" style="background-repeat:no-repeat;background-position: center;background-size:cover;background-image:
+                                    url(../../../assets/article/124453am34.jpg);">
+                                    <a href="https://www.conserve-energy-future.com/reduce-reuse-recycle.php" target="_blank"
+                                        rel="bookmark" class="td-image-wrap"></a></div>
+                                <div class="td-meta-info-container">
+                                    <div class="td-meta-align">
+                                        <div class="td-big-grid-meta">
+                                            <a href="" class="td-post-category">Reduce Reuse Recycle </a>
+                                            <h3 class="entry-title td-module-title">The ‘Reduce, Reuse, Recycle’ Waste
+                                                Hierarchy</a></h3>
+                                        </div>
+                                        <div class="td-module-meta-info">
+                                            <span class="td-post-date"> </span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="xplore-section left-right-gap">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                    <div class="td-block-title-wrap">
+                        <h4 class="block-title td-block-title" style="border-bottom: 2px solid #2abfd4;"><span class="
+                            td-pulldown-size">XPLORE</span></h4>
+                    </div>
+                    <p class="
+                                    row-para"> </p>
+                    <div class="verticalCarousel">
+                        <ul class="verticalCarouselGroup vc_list">
+                            <div class="inner-row-sections">
+                                <div class="row-image">
+                                    <img src="https://img.youtube.com/vi/loeHhmUh-nE/mqdefault.jpg">
+                                    <div class="video-icon ">
+                                        <a href="#" data-toggle="modal" data-target="#videoModal1" data-theVideo="https://www.youtube.com/embed/loeHhmUh-nE">
+                                            <span class="icon-play">
+                                                ▶&nbsp;02:57 </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h1 class="row-text-head">Reduce, Reuse, Recycle!</h1>
+
+                                    <p class="row-text-para">Song for Reduce, Reuse and Recycle.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inner-row-sections ">
+                                <div class="row-image">
+                                    <img src="https://img.youtube.com/vi/pF72px2R3Hg/mqdefault.jpg">
+                                    <div class="video-icon">
+                                        <a href="#" data-toggle="modal" data-target="#videoModal2" data-theVideo="https://www.youtube.com/embed/pF72px2R3Hg">
+                                            <span class="icon-play">
+                                                ▶&nbsp;13:30 </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h1 class="row-text-head">Living a zero waste life - Lauren Singer</h1>
+
+                                    <p class="row-text-para">Lauren Singer is author of the Zero Waste blog, Trash is
+                                        for Tossers and founder of organic cleaning product company,
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inner-row-sections">
+                                <div class="row-image">
+                                    <img src="https://img.youtube.com/vi/14r7f9khK70/mqdefault.jpg">
+                                    <div class="video-icon">
+                                        <a href="#" data-toggle="modal" data-target="#videoModal3" data-theVideo="https://www.youtube.com/embed/14r7f9khK70">
+                                            <span class="icon-play">
+                                                ▶&nbsp;10:20 </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h1 class="row-text-head">How Sweden is turning its waste into gold</h1>
+
+                                    <p class="row-text-para">How sweden works on waste management
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inner-row-sections">
+                                <div class="row-image">
+                                    <img src="https://img.youtube.com/vi/V0lQ3ljjl40/mqdefault.jpg">
+                                    <div class="video-icon">
+                                        <a href="#" data-toggle="modal" data-target="#videoModal4" data-theVideo="https://www.youtube.com/embed/V0lQ3ljjl40">
+                                            <span class="icon-play">
+                                                ▶&nbsp;08:33 </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h1 class="row-text-head">Science Video for Kids: How to Care for the Environment</h1>
+
+                                    <p class="row-text-para">The difference between a biodegradable and a
+                                        non-biodegradable waste
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inner-row-sections">
+                                <div class="row-image">
+                                    <img src="https://img.youtube.com/vi/7UuUeoyYmxI/mqdefault.jpg">
+                                    <div class="video-icon">
+                                        <a href="#" data-toggle="modal" data-target="#videoModal5" data-theVideo="https://www.youtube.com/embed/7UuUeoyYmxI">
+                                            <span class="icon-play">
+                                                ▶&nbsp;05:43 </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h1 class="row-text-head">Recycling Facts for Kids - Recycling for Kids - Why is
+                                        Recycling Important? - About Recycling</h1>
+
+                                    <p class="row-text-para">Importance of Recycling&nbsp;
+
+                                        How recycling is important
+                                    </p>
+                                </div>
+                            </div>
+                        </ul>
+                        <div class="verticalCarouselHeader">
+                            <button type="button" role="presentation" class="vc_goDown"><span aria-label="Previous"><i
+                                        class="fas fa-angle-down"></i></span></button><button type="button" role="presentation"
+                                class="vc_goUp"><span aria-label="Next"><i class="fas fa-angle-up"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 top-bottom-gap">
+                    <div class="td-block-title-wrap">
+                        <h4 class="block-title td-block-title" style="border-bottom: 2px solid #000"><span class="td-pulldown-size"
+                                style="margin-right: 0px;background-color: #000;">FEATURED
+                                ARTICLE</span>
+                        </h4>
+                    </div>
+                    <div class="main-article-div">
+                        <a href="https://www.omicsonline.org/open-access/clean-india-swacha-bharat-through-reuse-and-recycling-of-wastes-2375-4397-1000202-96106.html"
+                            target="_blank">
+                            <img src="../../../assets/article/122254am68.jpg" alt="">
+                        </a>
+                    </div>
+                    <div style="background-color: #2abfd4;color: #fff;height: 350px; padding: 10px;border-radius: 2px;">
+                        <h1 class="row-text-head">Clean India</h1>
+                        <p class="row-text-para" style="color:#fff;word-break:break-all;">Lets pledge for clean, green
+                            and smarter India
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="xperience-section left-right-gap">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                    <div class="td-block-title-wrap">
+                        <h4 class="block-title td-block-title" style="border-bottom:  2px solid #ffc000 "><span class="td-pulldown-size"
+                                style="margin-right: 0px;background-color:#ffc000;">XPERIENCE</span></h4>
+                    </div>
+                    <p class="row-para"> </p>
+                    <div class="row-new-grid">
+                        <div class="inner-one-xper">
+                            <div class="__one">
+                                <div class="video-row" style="background-image: url(https://img.youtube.com/vi/edXimuzIVhk/mqdefault.jpg);background-size: contain;">
+
+                                    <div class="play-row">
+                                        <a href="#" data-toggle="modal" data-target="#learningVideoModal1"
+                                            data-theVideo="https://www.youtube.com/embed/edXimuzIVhk">
+                                            <i class="fas fa-play play-new"></i>
+                                        </a>
+                                    </div>
+                                    <div class="date-row">
+                                        <span class="date-wrap">
+                                            09:08 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="row-text-para_2">Reusing plastic bottles to make something creative and useful
+                            </p>
+                        </div>
+                        <div class="inner-one-xper">
+                            <div class="__one">
+                                <div class="video-row" style="background-image: url(https://img.youtube.com/vi/OagTXWfaXEo/mqdefault.jpg);background-size: contain;">
+
+                                    <div class="play-row">
+                                        <a href="#" data-toggle="modal" data-target="#learningVideoModal2"
+                                            data-theVideo="https://www.youtube.com/embed/OagTXWfaXEo">
+                                            <i class="fas fa-play play-new"></i>
+                                        </a>
+                                    </div>
+                                    <div class="date-row">
+                                        <span class="date-wrap">
+                                            07:16 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="row-text-para_2">Beginner&#39;s guide to zero waste -&nbsp;10 tips for reducing
+                                waste
+                            </p>
+                        </div>
+                    </div>
+                    <div class="webinar-details-row" style="display:none;">
+                        <div class="inner-details">
+                            <h1 class="inner-details-head">Webinar</h1>
+                            <h1 class="inner-details-sub-head"></h1>
+                        </div>
+                        <div class="inner-webinar-info">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                                    <div class="webinar-speaker">
+                                        <div class="speaker-image">
+                                            <img src="../../../assets/webinar/" alt="">
+                                        </div>
+                                        <div class="speaker-desc">
+                                            <h1></h1>
+                                            <span></span>
+                                        </div>
+                                        <div class="webinar-desc">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                                    <div class="webinar-date">
+                                        <h1 class="webinar-one"></h1>
+                                        <h1 class="webinar-two"></h1>
+                                        <h1 class="webinar-three"> - </h1>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="webinar-attend">
+                                        <h1 class="webinar-attend-one">Who Should Attend</h1>
+                                        <p class="webinar-attend-two"></p>
+                                        <button class="webinar-attend-btn"> <a href="">I am interested</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 top-bottom-gap">
+                    <div class="td-block-title-wrap">
+                        <h4 class="block-title td-block-title" style="border-bottom: 2px solid #000"><span class="td-pulldown-size"
+                                style="margin-right: 0px;background-color: #000;">MESSAGE</span>
+                        </h4>
+                    </div>
+                    <div style="background-color: #ffc000;padding: 10px;height: 695px">
+                        <h1 class="row-second-head">From The Coordinator's Desk</h1>
+                        <p class="row-second-para" style="font-size:16px;"><a href="#" data-toggle="modal" data-target="#message">read
+                                more</a></p>
+                        <div class="next-wrap">
+                            <h1 class="next-head" style="margin-bottom: 10px;">Upcoming Themes:</h1>
+                            <p class="next-topic"></p>
+                            <p class="next-topic"></p>
+                            <p class="next-topic"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="xpress-section left-right-gap">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                    <div class="td-block-title-wrap">
+                        <h4 class="block-title td-block-title" style="border-bottom: 2px solid #0a6bb4"><span class="td-pulldown-size"
+                                style="margin-right: 0px;background-color: #0a6bb4">XPRESS</span></h4>
+                    </div>
+                    <p class="row-para"></p>
+                    <div class="webinar-details-row" style="height:auto">
+                        <div class="inner-details">
+                            <h1 class="inner-details-head">Activity</h1>
+                            <h1 class="inner-details-sub-head">Best from Waste </h1>
+                        </div>
+                        <div class="row-new-grid_2">
+                            <div class="inner-one-xpress">
+                                <div class="__one_2" style="background-color: #000;">
+                                    <div class="video-row_2" style="background-image: url(https://img.youtube.com/vi/MSnchVZLNCo/mqdefault.jpg);
+                                            background-size: cover;background-repeat:no-repeat;">
+                                        <div class="play-row">
+                                            <a href="#" data-toggle="modal" data-target="#sampleworkmodal1"
+                                                data-theVideo="https://www.youtube.com/embed/MSnchVZLNCo">
+                                                <i class="fas fa-play play-new"></i>
+                                            </a>
+                                        </div>
+                                        <div class="date-row">
+                                            <span class="date-wrap" style="background: #777;">
+                                                07:45 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-new-inner" style="background-color: #fff;height:150px;margin-top: 20px;">
+                                <div class="row-new-inner-desc">
+                                    <p>Reuse old bottles to make different things
+
+                                        Try to make one of it..&nbsp;
+                                        <a href="#" data-target="#sample-1-more" data-toggle="modal">read more</a></p>
+
+                                    <button class="upload-button" data-toggle="modal" data-target="#sampleworkupload1">UPLOAD</button>
+
+                                    <h1 class="last-text">Last Day Of Upload: Nov 30 2018</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <div class="webinar-details-row" style="height:auto">
+                        <div class="inner-details">
+                            <h1 class="inner-details-head">Activity</h1>
+                            <h1 class="inner-details-sub-head">Make a Cereal Box House</h1>
+                        </div>
+                        <div class="row-new-grid_2">
+                            <div class="inner-one-xpress">
+                                <div class="__one_2" style="background-color: #000;">
+                                    <div class="video-row_2" style="background-image: url(../../../assets/sample_work/);background-size: cover;background-repeat:no-repeat;">
+                                        <div class="play-row">
+                                            <a href="#" data-toggle="modal" data-target="#sampleworkmodal2"
+                                                data-theVideo="">
+                                                <i class="fas fa-play play-new"></i>
+                                            </a>
+                                        </div>
+                                        <div class="date-row">
+                                            <span class="date-wrap" style="background: #777;">
+                                                00:10 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-new-inner" style="background-color: #fff;height: 150px;margin-top: 20px;">
+                                <div class="row-new-inner-desc">
+                                    <p>Recycle your cereal boxes to make a beautiful house from it.
+                                        <a href="#" data-target="#sample-2-more" data-toggle="modal">read more</a></p>
+
+                                    <button class="upload-button" data-toggle="modal" data-target="#sampleworkupload2">UPLOAD</button>
+
+                                    <h1 class="last-text">Last Day Of Upload : Nov 30 2018</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 top-bottom-gap">
+                    <div class="td-block-title-wrap">
+                        <h4 class="block-title td-block-title" style="border-bottom: 2px solid #000"><span class="td-pulldown-size"
+                                style="margin-right: 0px;background-color: #000;">PIN
+                                BOARD</span>
+                        </h4>
+                    </div>
+                    <div style="background-color: #0a6bb4;padding: 10px;height: 570px;">
+                        <h1 class="row-second-head_2">Wall Of Fame</h1>
+
+                        <h1 class="pin-text-head" style="font-size:18px; text-align:justify">COMING SOON: If your's or
+                            your friend's projects are selected by the admin. they will appear on the Club's Wall of
+                            Fame. So start expressing and submitting your projects/activity.
+                        </h1>
+                        <div style="display:none;">
+                            <h1 class="download-header">Download</h1>
+                            <table class="table table-hover table-bordered download-table">
+                                <thead style="background-color: #f8f8f8;color: #181818;">
+                                    <tr>
+                                        <th scope="col">Topic</th>
+                                        <th scope="col">Download</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="display:none;">
+                                        </td>
+                                        <td style="display:none;">
+                                            <a target="_blank" href="" class="download-link">Click Here <i class="fas fa-download download-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="display:none;">
+                                        </td>
+                                        <td style="display:none;">
+                                            <a target="_blank" href="" class="download-link"> Click Here <i class="fas fa-download download-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="display:none;">
+                                        </td>
+                                        <td style="display:none;">
+                                            <a target="_blank" href="" class="download-link"> Click Here <i class="fas fa-download download-icon"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="display:none;">
+                                        </td>
+                                        <td style="display:none;">
+                                            <a target="_blank" href="" class="download-link"> Click Here <i class="fas fa-download download-icon"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="quiz-section left-right-gap" style="">
+            <h1 class="row-head-4">Test Your Knowledge</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="apester-media" data-media-id="5bd1ab9782434b2ef65d8dee" height="362"></div>
+                    <script async src="https://static.apester.com/js/sdk/latest/apester-sdk.js"></script>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="apester-media" data-media-id="5bc6e23fc17e5d033d2b472d" height="362"></div>
+                    <script async src="https://static.apester.com/js/sdk/latest/apester-sdk.js"></script>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+    </div>
+    </div>
+
+    <div class="footer" style="background-color:#444">
+        <div class="page-lay-new">
+            <div class="left-footer" style="color:#ccc;">
+                &copy; Copyright – iCLUBS 2018
+            </div>
+            <div class="right-footer">
+                <ul class="footer-inner">
+                    <li style="color:#ccc;">feedback@iclubs.in</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--VIDEO MODALS-->
+    <!--MODAL1-->
+    <div class="modal fade" id="videoModal1" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">Reduce, Reuse, Recycle!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000" id="yt-player">
+                    <div>
+                        <iframe width="100%" height="650px" src="" frameborder="0" encrypted-media allowfullscreen
+                            allow="autoplay" ;></iframe> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL2-->
+    <div class="modal fade" id="videoModal2" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">Living a zero waste life - Lauren Singer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000">
+                    <div>
+                        <iframe width="100%" height="650px" src="" frameborder="0" encrypted-media allowfullscreen
+                            allow="autoplay" ;></iframe> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL3-->
+    <div class="modal fade" id="videoModal3" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">How Sweden is turning its waste into gold</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000">
+                    <div>
+                        <iframe width="100%" height="650px" src="" frameborder="0" encrypted-media allowfullscreen
+                            allow="autoplay" ;></iframe> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL4-->
+    <div class="modal fade" id="videoModal4" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">Science Video for Kids: How to Care for the
+                        Environment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000">
+                    <div>
+                        <iframe width="100%" height="650px" src="" frameborder="0" encrypted-media allowfullscreen
+                            allow="autoplay" ;></iframe> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL5-->
+    <div class="modal fade" id="videoModal5" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">Recycling Facts for Kids - Recycling for Kids - Why is
+                        Recycling Important? - About Recycling</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000">
+                    <div>
+                        <iframe width="100%" height="650px" src="" frameborder="0" encrypted-media allowfullscreen
+                            allow="autoplay" ;></iframe> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END OF VIDEO MODALS-->
+    <!--LEARNING VIDEO MODALS-->
+    <!--MODAL1-->
+    <div class="modal fade" id="learningVideoModal1" tabindex="-1" role="dialog" aria-labelledby="videoModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">10 DIY Creative Ways to Reuse / Recycle Plastic
+                        Bottles</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000" id="yt-player">
+                    <div>
+                        <iframe width="100%" height="650px" src="" frameborder="0" encrypted-media allowfullscreen
+                            allow="autoplay" ;></iframe> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL2-->
+    <div class="modal fade" id="learningVideoModal2" tabindex="-1" role="dialog" aria-labelledby="videoModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">10 Ways to Reduce Waste</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000">
+                    <div>
+                        <iframe width="100%" height="650px" src="" frameborder="0" encrypted-media allowfullscreen
+                            allow="autoplay" ;></iframe> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END OF LEARNING VIDEO MODALS-->
+    <!--SAMPLE WORK MODALS-->
+    <!--MODAL1-->
+    <div class="modal fade" id="sampleworkmodal1" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">Best from Waste </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000" id="yt-player">
+                    <div>
+                        <iframe width="100%" height="650px" src="" frameborder="0" encrypted-media allowfullscreen
+                            allow="autoplay" ;></iframe> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL2-->
+    <div class="modal fade" id="sampleworkmodal2" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">Make a Cereal Box House</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000">
+                    <div>
+                        <div style="height:600px;" id="ebookfile2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END OF SAMPLE WORK MODALS-->
+    <!--SAMPLE WORK UPLOAD MODALS-->
+    <!--MODAL1-->
+    <div class="modal fade" id="sampleworkupload1" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">Best from Waste </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000" id="yt-player">
+                    <div><br>
+                        <form action="" id="form1" enctype="multipart/form-data">
+                            <input type="file" name="work"><br>
+                            <input type="hidden" name="club_id" value="club_23">
+                            <input type="hidden" name="sid" value="ST_258_2">
+                            <input type="hidden" name="inst_id" value="INST_258">
+                            <input type="hidden" name="sample_work_id" value="s_work_5">
+                            <button class="upload-button" onclick="upload1()">UPLOAD</button>
+                        </form>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL2-->
+    <div class="modal fade" id="sampleworkupload2" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">Make a Cereal Box House</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;background-color: #000">
+                    <div><br>
+                        <form action="" id="form2" enctype="multipart/form-data">
+                            <input type="file" name="work"><br>
+                            <input type="hidden" name="club_id" value="club_23">
+                            <input type="hidden" name="sid" value="ST_258_2">
+                            <input type="hidden" name="inst_id" value="INST_258">
+                            <input type="hidden" name="sample_work_id" value="s_work_8">
+                            <button class="upload-button" onclick="upload2()">UPLOAD</button><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END OF SAMPLE WORK UPLOAD MODALS-->
+    <!--Coordinator Message Readmore-->
+    <div class="modal fade" id="message" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true"
+        style="padding-right:17px;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">FROM THE COORDINATOR'S DESK</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Coordinator Message End-->
+    <!--Sample Work Read More-->
+    <div class="modal fade" id="sample-1-more" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true"
+        style="padding-right:17px;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background:#1b7ceb; border-bottom:none;">
+                    <h5 class="mod-title" id="exampleModalLabel">
+                        Best from Waste </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div><br>
+                        <p>Reuse old bottles to make different things</p>
+
+                        <p>Try to make one of it..&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="sample-2-more" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true"
+        style="padding-right:17px;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1b7ceb;border-bottom: none;">
+                    <h5 class="mod-title" id="exampleModalLabel">
+                        Make a Cereal Box House</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times-circle close-button"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div><br>
+                        <p>Recycle your cereal boxes to make a beautiful house from it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sample Work Read More Ends-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/v_carousel.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.0.201604172/pdfobject.min.js"></script>
+    <script>
+        PDFObject.embed("../../../assets/sample_work/", "#ebookfile1");
+        PDFObject.embed("../../../assets/sample_work/010724am14.pdf", "#ebookfile2");
+    </script>
+    <script language="javascript">
+        function upload1() {
+            event.preventDefault();
+            var form = $('#form1')[0];
+            var data = new FormData(form);
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "s_work_submission_back.php",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    console.log(data);
+                    if (data == 'success') {
+                        alert('Published Successfully !');
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        }
+
+        function upload2() {
+            event.preventDefault();
+            var form = $('#form2')[0];
+            var data = new FormData(form);
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "s_work_submission_back.php",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    console.log(data);
+                    if (data == 'success') {
+                        alert('Published Successfully !');
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        }
+    </script>
+    <script>
+        jQuery('#videoModal').on('hidden.bs.modal', function (e) {
+            $('#videoModal iframe').attr('src', '');
+        });
+    </script>
+</body>
+
+</html>

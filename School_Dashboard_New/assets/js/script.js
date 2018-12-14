@@ -1,4 +1,4 @@
-$(".sel").each(function() {
+$(".sel").each(function () {
   $(this)
     .children("select")
     .css("display", "none");
@@ -7,7 +7,7 @@ $(".sel").each(function() {
 
   $(this)
     .find("option")
-    .each(function(i) {
+    .each(function (i) {
       if (i == 0) {
         $current.prepend(
           $("<div>", {
@@ -36,11 +36,11 @@ $(".sel").each(function() {
     });
 });
 
-$(".sel").click(function() {
+$(".sel").click(function () {
   $(this).toggleClass("active");
 });
 
-$(".sel__box__options").click(function() {
+$(".sel__box__options").click(function () {
   var txt = $(this).text();
   var index = $(this).index();
 
@@ -55,10 +55,10 @@ $(".sel__box__options").click(function() {
 });
 
 /*Form*/
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   tab = $(".tabs h3 a");
 
-  tab.on("click", function(event) {
+  tab.on("click", function (event) {
     event.preventDefault();
     tab.removeClass("active");
     $(this).addClass("active");
@@ -68,3 +68,10 @@ jQuery(document).ready(function($) {
     $(tab_content).addClass("active");
   });
 });
+
+$(window).on("load resize ", function () {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({
+    'padding-right': scrollWidth
+  });
+}).resize();

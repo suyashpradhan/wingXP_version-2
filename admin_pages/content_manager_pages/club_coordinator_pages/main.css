@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
 
 * {
@@ -1739,7 +1737,7 @@ select {
   margin: 10px 0;
 }
 
-table,
+/* table,
 th,
 td {
   border: 1px solid black;
@@ -1747,7 +1745,7 @@ td {
   padding: 5px;
   background-color: white;
   width: 70%;
-}
+} */
 
 .tableProperty {
   width: 50%;
@@ -1755,11 +1753,11 @@ td {
   font-size: 20px;
 }
 
-td {
+/* td {
   width: 10%;
   text-align: center;
   font-size: 20px;
-}
+} */
 
 .repo-wrapper {
   display: grid;
@@ -2494,6 +2492,7 @@ nav {
   letter-spacing: 2px;
   font-weight: 900;
 }
+
 .secondary-icons {
   margin-left: 3px;
 }
@@ -4602,7 +4601,7 @@ select {
 .inner-clubs-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 30px 0 15px 0 ;
+  margin: 30px 0 15px 0;
   grid-gap: 20px;
 }
 
@@ -5070,30 +5069,30 @@ select {
   margin: 30px 0;
 }
 
-.li-body{
+.li-body {
   background-color: #fff;
   margin-bottom: 25px;
 }
 
-.li-body_list{
+.li-body_list {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin: 0 25px;
   padding: 8px 0 8px 0;
   align-items: center;
 }
 
-.li-body_list li{
+.li-body_list li {
   font-size: 20px;
-  color:#777;
+  color: #777;
   padding: 10px 0 0 0;
   font-weight: 700;
   justify-self: center;
 }
 
-.li-body_list li span{
-  color:#ce1f36;
+.li-body_list li span {
+  color: #ce1f36;
   font-size: 20px;
   font-weight: 900;
   margin-left: 5px;
@@ -5106,11 +5105,11 @@ select {
   margin-top: 30px;
 }
 
-.webinar-details-row_sub{
+.webinar-details-row_sub {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  align-items:center;
+  align-items: center;
   margin-top: 40px;
 }
 
@@ -5232,40 +5231,40 @@ select {
   cursor: pointer;
 }
 
-.webinar-attend-btn:hover{
+.webinar-attend-btn:hover {
   background-color: #0096fa;
-  border:1px solid #0096fa;
+  border: 1px solid #0096fa;
 }
 
-.webinar-attend-btn a{
+.webinar-attend-btn a {
   text-decoration: none;
   color: #fff;
 }
 
-.webinar-attend-btn a:hover{
+.webinar-attend-btn a:hover {
   text-decoration: none;
-  color: #fff;  
+  color: #fff;
 }
 
-.webinar-details-row_sub--one{
-  color:#696969;
+.webinar-details-row_sub--one {
+  color: #696969;
   font-size: 26px;
   margin-left: 20px;
 }
 
-.webinar-details-row_sub--one span{
+.webinar-details-row_sub--one span {
   color: #ce1f36;
   margin-left: 40px;
   font-size: 32px;
 }
 
-.webinar-details-row_sub--two{
-  color:#696969;
+.webinar-details-row_sub--two {
+  color: #696969;
   font-size: 26px;
   margin-left: 20px;
 }
 
-.webinar-details-row_sub--two span{
+.webinar-details-row_sub--two span {
   color: #ce1f36;
   margin-left: 40px;
   font-size: 32px;
@@ -5279,13 +5278,16 @@ select {
   -webkit-box-shadow: 0px 1px 8px #bebebe;
   -moz-box-shadow: 0px 1px 8px #bebebe;
 }
+
 .form-wrap .tabs {
   overflow: hidden;
 }
+
 .form-wrap .tabs h3 {
   float: left;
   width: 50%;
 }
+
 .form-wrap .tabs h3 a {
   padding: 0.5em 0;
   text-align: center;
@@ -5294,23 +5296,27 @@ select {
   display: block;
   color: #666;
 }
+
 .form-wrap .tabs h3 a.active {
   background-color: #fff;
 }
+
 .form-wrap .tabs-content {
   padding: 1.5em;
 }
+
 .form-wrap .tabs-content div[id$="tab-content"] {
   display: none;
 }
+
 .form-wrap .tabs-content .active {
   display: block !important;
 }
+
 .form-wrap form .input {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   color: inherit;
-  font-family: inherit;
   padding: 0.8em 0 10px 0.8em;
   border: 1px solid #cfcfcf;
   outline: 0;
@@ -5319,6 +5325,7 @@ select {
   padding-right: 2em;
   width: 100%;
 }
+
 .form-wrap form .button {
   width: 100%;
   padding: 0.8em 0 10px 0.8em;
@@ -5328,24 +5335,29 @@ select {
   cursor: pointer;
   text-transform: uppercase;
 }
+
 .form-wrap form .button:hover {
   background-color: #4fda8c;
 }
+
 .form-wrap form .checkbox {
   visibility: hidden;
   padding: 20px;
   margin: 0.5em 0 1.5em;
 }
-.form-wrap form .checkbox:checked + label:after {
+
+.form-wrap form .checkbox:checked+label:after {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
 }
+
 .form-wrap form label[for] {
   position: relative;
   padding-left: 20px;
   cursor: pointer;
 }
+
 .form-wrap form label[for]:before {
   content: "";
   position: absolute;
@@ -5355,6 +5367,7 @@ select {
   top: 0px;
   left: -14px;
 }
+
 .form-wrap form label[for]:after {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -5375,9 +5388,11 @@ select {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
 .form-wrap .help-text {
   margin-top: 0.6em;
 }
+
 .form-wrap .help-text p {
   text-align: center;
   font-size: 14px;
@@ -5443,7 +5458,7 @@ select {
   border: 1px solid #f80021;
 }
 
-.tab-content-form_btn > * {
+.tab-content-form_btn>* {
   position: relative;
 }
 
@@ -5489,4 +5504,70 @@ select {
 .import_btn:hover {
   background-color: #696969 !important;
   border: 1px solid #696969 !important;
+}
+
+.select-new-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.new_select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #696969;
+  color: #fff;
+  background-image: none;
+}
+
+.new_select {
+  position: relative;
+  display: block;
+  width: 350px;
+  height: 50px;
+  line-height: 3;
+  background: #777;
+  overflow: hidden;
+  border-radius: .25em;
+  margin: 40px 40px 40px 0;
+}
+
+.new_select select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.new_select::-ms-expand {
+  display: none;
+}
+
+.new_select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #ccc;
+  pointer-events: none;
+}
+
+.new_select:hover::after {
+  color: #ce1f36;
+}
+
+.new_select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
 }
