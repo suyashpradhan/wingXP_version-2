@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../admin_pages/content_manager_pages/club_coordinator_pages/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="page-container__new">
+        <div class="sidebar-menu">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="#"><img src="../Student_Dashboard Version 2/assets/images/logo.png" alt="logo" /></a>
+                    <h6>clubs</h6>
+                </div>
+            </div>
+            <div class="side-nav-wrapper">
+                <ul class="side-nav_list">
+                    <li>
+                        <i class="fas fa-graduation-cap side-icons fa-fw"></i>
+                        <a href="#" class="side-nav_links"> Clubs Management </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-user side-icons fa-fw"></i>
+                        <a href="#" class="side-nav_links"> Users Management </a>
+                    </li>
+                    <i class="fas fa-cog side-icons fa-fw"></i>
+                    <a href="#" class="side-nav_links">Settings</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-sign-out-alt side-icons fa-fw"></i>
+                        <a href="#" class="side-nav_links">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-wrap">
+                <h1 class="copy-text">
+                    Copyright &copy; iClubs 2018 .All rights reserved
+                </h1>
+                <a href="#">Privacy Policy</a> <span>|</span> <a href="#">Feedback</a>
+            </div>
+        </div>
+        <div class="main-content" style="min-height: 100vh;">
+            <div class="right_topNav">
+                <div class="inner-topNav">
+                    <div class="row no-gutters ">
+                        <div class="col-6">
+                            <div class="icon-wrap">
+                                <h1 class="topNav_first">
+                                    ST. XAVIER'S HIGH SCHOOL <span> DASHBOARD </span>
+                                </h1>
+                                <i class="fas fa-home nav-icons fa-fw"></i>
+                                <i class="fas fa-bell nav-icons fa-fw"></i>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="icon-wrap">
+                                <h1 class="topNav_first_name">
+                                    Ankush Aggarwal | School Coordinator
+                                </h1>
+                                <img src="assets/images/user (1).png" alt="" height="40px" />
+                                <i class="fas fa-bars fa-fw side-icons nav-icons menu"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-container">
+                <div class="batch-card assign_card batch-card_2">
+                    <h1 class="update-form-header">Assign Club</h1>
+                    <hr class="hr_under_one hr_new">
+                    <form action="" method="post" id="fileUploadForm" enctype="multipart/form-data" class="assign-form">
+                        <input type="hidden" id="creator_id" name="creator_id" value="TC_258_1" />
+                        <select id="club_category" name="club_category" class="diff-fields" onchange="get_club()">
+                            <option disabled selected>Select Club Category</option>
+                            <option value="CCI_3">Testing</option>
+                            <option value="CCI_4">Artificial Intelligence</option>
+                            <option value="CCI_5">Academic</option>
+                            <option value="CCI_6">Non Academic</option>
+                            <option value="No data"></option>
+                        </select>
+                        <input type="submit" id="sub" name="sub" value="Assign Club" class="update__btn-new assign-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -2307,46 +2307,70 @@ body {
   padding-top: 40px;
 }
 
+.coordinator-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+
+  padding: 20px;
+}
+
 .update-form-header {
-  font-size: 28px;
+  font-size: 32px;
   color: #696969;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  padding: 20px 0 2px 20px;
   font-weight: 900;
 }
 
 .diff-fields {
   padding: 8px;
-  width: 315px;
-  margin: 10px 0;
-  border: 1px solid #777;
+  width: 100%;
+  margin: 5px 0;
+  border: 1px solid #696969;
   outline: none;
+  height: 42px;
 }
 
 .diff-fields-textarea {
+  width: 100%;
   padding: 8px;
-  width: 315px;
-  margin: 10px 0;
-  border: 1px solid #777;
+  margin: 5px 0;
+  border: 1px solid #696969;
   outline: none;
   resize: none;
+  height: 42px;
+}
+
+.diff-fields-textarea ::placeholder {
+  padding: 8px;
 }
 
 .update__btn-new {
   background-color: #ce1f36;
   color: #fff;
-  width: 315px;
+  width: 100%;
   border: 1px solid #ce1f36;
-  padding: 8px;
+  padding: 12px;
   cursor: pointer;
+  transition: all 1s ease;
+  grid-column: span 2;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.update__btn-new:hover {
+  background-color: #ff0022;
+  transition: all .5s ease;
 }
 
+.assign-btn {
+  margin-top: 30px !important;
+}
+
+.assign-form {
+  padding: 20px;
+}
 
 nav {
   height: 80px;
@@ -3704,8 +3728,14 @@ select {
 .club-cb-section {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-gap: 10px;
   align-items: center;
+}
+
+.club-cb-header {
+  margin: 30px 0 10px 50px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #696969;
 }
 
 .club-cb-head {
@@ -3718,12 +3748,23 @@ select {
 .club-cb-section-sub {
   background-color: #ce1f36;
   padding: 5px 20px;
-  border-radius: 100px
+  border-radius: 100px;
+   transform: all .1s ease;
 }
 
 .club-cb-link {
   text-decoration: none;
   color: #fff;
+}
+
+.club-cb-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.club-cb-section-sub:hover {
+  background-color: #696969;
+
 }
 
 .club-cb-link i {
@@ -3757,7 +3798,7 @@ select {
   list-style: none;
   font-size: 18px;
   color: #777;
-  margin: 20px 0 50px 20px;
+  margin: 20px 0 20px 20px;
   font-weight: 900;
 }
 
@@ -3780,22 +3821,43 @@ select {
   margin: 50px 20px 20px 30px !important;
 }
 
+.club-cd-add-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .club-cb-desc-add-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
+  margin: 20px 0;
 }
 
 .club-cb-desc-add-list li {
   list-style: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #777;
   margin: 15px 20px 5px 20px;
-  font-weight: 700;
+  font-weight: 600;
   cursor: default;
 }
 
+.club-delete-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.club-cb-desc-add-list li p {
+  text-align: right;
+  display: inline-block;
+}
+
+.club-cb-desc-add-list li i {
+  color: #ce1f36;
+  margin-left: 10px;
+}
 
 .middleWrapper_Academic {
   background-color: #00695C;
@@ -4551,7 +4613,18 @@ select {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   background: none !important;
+}
 
+.hr_new {
+  border-bottom: 8px solid #d12d31;
+  margin-bottom: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background: none !important;
+  width: 15%;
+  margin: 0 20px;
 }
 
 .hr-new {
@@ -5608,6 +5681,17 @@ select {
   position: relative;
   width: 100%;
 }
+
+.assign_card {
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+  height: auto;
+  position: relative;
+  width: 50%;
+  margin: 30px auto;
+}
+
 
 .batch-card_2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
