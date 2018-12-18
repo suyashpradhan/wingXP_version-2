@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 * {
   margin: 0;
   padding: 0;
@@ -2707,6 +2709,73 @@ header {
     margin-left: 0;
   }
 }
+
+/*Webinar Details*/
+
+.webinar-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  height: 70px;
+  padding: 0 40px;
+  background-color: #363636;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  align-items: center;
+}
+
+.webinar-header-main {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.webinar-header-sub {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.webinar_second {
+  padding: 0 0 0 40px;
+}
+
+.webinar_second-head {
+  text-align: center;
+  padding: 20px 0 10px 0;
+  color: #696969;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.webinar_second-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.webinar_second-list li {
+  font-size: 14px;
+  padding: 12px 0 12px 5px;
+  display: block;
+  color: #696969;
+  font-weight: 700;
+}
+
+.li-hr {
+  border: 1px solid #696969;
+  font-weight: 900;
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+}
+
+.webinar_second-list span {}
 
 /* .td_block_big_grid_3 .td-big-grid-post-3 {
   margin-left: 3px;
