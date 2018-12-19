@@ -230,6 +230,12 @@ video {
   grid-auto-rows: 1fr;
 }
 
+.sections_two {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
 .img-section img {
   height: 180px;
   width: 100%;

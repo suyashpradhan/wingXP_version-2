@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #EDF1F3;
+        }
+
+        .bar {
+            color: #FFF;
+            background-color: #a047c6;
+            padding: 35px;
+            width: 400px;
+            margin: 50px auto 0;
+            font: 35px/50px 'Bree Serif', Courier, monospaced;
+            text-align: center;
+            position: relative;
+            text-transform: uppercase;
+            border: 2px transparent solid;
+            box-shadow: 0 10px 30px -10px gray;
+        }
+
+        .bar span {
+            position: absolute;
+        }
+
+        .bar span:nth-child(1),
+        .bar span:nth-child(3) {
+            border-style: solid;
+            border-width: 15px;
+            z-index: -1;
+        }
+
+        .bar span:nth-child(1) {
+            border-color: #000 #000 transparent transparent;
+            top: 120px;
+            left: -2px;
+        }
+
+        .bar span:nth-child(3) {
+            border-color: #000 transparent transparent #000;
+            top: 120px;
+            left: 442px;
+        }
+
+        .bar span:nth-child(2),
+        .bar span:nth-child(4) {
+            top: 30px;
+            border-style: solid;
+            border-width: 60px;
+            z-index: -2;
+        }
+
+        .bar span:nth-child(2) {
+            border-color: #6f3289 #6f3289 #6f3289 transparent;
+            left: -90px;
+            box-shadow: 20px 20px 30px -10px grey;
+        }
+
+        .bar span:nth-child(4) {
+            border-color: #6f3289 transparent #6f3289 #6f3289;
+
+            left: 440px;
+            box-shadow: -20px 19px 30px -10px grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bar">
+        Register For Webinar
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+
+</html>
