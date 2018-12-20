@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <section class="top-nav">
+    <!-- <section class="top-nav">
         <div>
             <img src="assets/images/logo_1.png" alt="" height="30px;">
             <h1 class="logo-txt">clubs</h1>
@@ -28,17 +28,17 @@
             <div class='menu-button'></div>
         </label>
         <ul class="menu">
-            <!--<li>One</li>
+            <li>One</li>
             <li>Two</li>
             <li>Three</li>
             <li>Four</li>
-            <li>Five</li> -->
+            <li>Five</li> 
         </ul>
     </section>
     <div class="time-wrapper">
         <div class="page-container">
             <div class="inner-time">
-                <!--<i class="far fa-clock secondary-icons time-icon" style="color:#fff;"> <span id="current_time"> </span></i> -->
+                <i class="far fa-clock secondary-icons time-icon" style="color:#fff;"> <span id="current_time"> </span></i> 
             </div>
         </div>
     </div>
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <!-- <div class="w3-display-container mySlides">
+        <div class="w3-display-container mySlides">
             <img src="assets/c_images/slider-3_NF-min.png" style="width:100%;height: 100%;">
             <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
                 <div class="slide-inner">
@@ -115,10 +115,80 @@
                     <a href="#" class="slide-link">Know More</a>
                 </div>
             </div>
-        </div> -->
-    </div>
+        </div>
+    </div> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">iclubs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!--  <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol> -->
+
+            <div class="carousel-indicators arrow bounce">
+                <a href="#new_two"><i class="fa fa-arrow-down fa-2x arrow-icon active"></i></a>
+            </div>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" style="background-image: url('assets/images/slider_1.jpg')">
+                    <div class="carousel-caption  d-md-block">
+                        <h2 class="display-4">Internet usage for students</h2>
+                        <p class="lead">From Distraction to Production</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('assets/images/slider_2.jpg')">
+                    <div class="carousel-caption  d-md-block">
+                        <h2 class="display-4">What comprises of</h2>
+                        <p class="lead">World Class Co-Curriculars?</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('assets/images/slider_3.png')">
+                    <div class="carousel-caption  d-md-block">
+                        <h2 class="display-4">Harnessing Co-Curricular</h2>
+                        <p class="lead">Expertise from world over.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('assets/images/slider_4.jpg')">
+                    <div class="carousel-caption  d-md-block">
+                        <!-- <h2 class="display-4">iclubs</h2>
+                        <p class="lead">The World’s Best Co-curricular Platform.</p> -->
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
     <div class="page-container">
-        <div class="button-wrapper owl-carousel owl-theme" id="one">
+        <!--  <div class="button-wrapper " id="one">
             <div class="first-button flex-bttn">
                 <a href="#" class="bttn-dark" data-toggle="modal" data-target="#exampleModalCenter-1">XPLORE</a>
             </div>
@@ -128,8 +198,8 @@
             <div class="third-button flex-bttn">
                 <a href="#" class="bttn-dark bttn " data-toggle="modal" data-target="#exampleModalCenter-3">XPRESS</a>
             </div>
-        </div>
-        <div class="loading_wrapper ">
+        </div> -->
+        <div class="loading_wrapper " id="new_two">
             <div class="inner_loading">
                 <div class="loading-header">
                     <h1>iclubs</h1>
@@ -143,9 +213,12 @@
                 </div>
                 <div class="section-info">
                     <h1 class="section--header">DIGITAL DESIGN</h1>
-                    <h2 class="section-sub-first">Real World Exposure</h2>
-                    <h3 class="section-sub-first">Learn With Experts</h3>
-                    <h4 class="section-sub-first-new">Make</h4>
+                    <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-1"></i></h2>
+                    <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-2"></i></h3>
+                    <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-3"></i></h4>
                     <div class="section-link-wrapper">
                         <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N1">Enter</a>
                     </div>
@@ -157,9 +230,12 @@
                 </div>
                 <div class="section-info">
                     <h1 class="section--header">TECH TALK</h1>
-                    <h2 class="section-sub-first">Real World Exposure</h2>
-                    <h3 class="section-sub-first">Learn With Experts</h3>
-                    <h4 class="section-sub-first-new">Make</h4>
+                    <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-1"></i></h2>
+                    <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-2"></i></h3>
+                    <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-3"></i></h4>
                     <div class="section-link-wrapper">
                         <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N2">Enter</a>
                     </div>
@@ -171,9 +247,12 @@
                 </div>
                 <div class="section-info">
                     <h1 class="section--header">SMARTER MINDS</h1>
-                    <h2 class="section-sub-first">Real World Exposure</h2>
-                    <h3 class="section-sub-first">Learn With Experts</h3>
-                    <h4 class="section-sub-first-new">Engage</h4>
+                    <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-1"></i></h2>
+                    <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-2"></i></h3>
+                    <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-3"></i></h4>
                     <div class="section-link-wrapper">
                         <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N3">Enter</a>
                     </div>
@@ -185,9 +264,12 @@
                 </div>
                 <div class="section-info">
                     <h1 class="section--header">ENVIRONMENT</h1>
-                    <h2 class="section-sub-first">Real World Exposure</h2>
-                    <h3 class="section-sub-first">Learn With Experts</h3>
-                    <h4 class="section-sub-first-new">Engage</h4>
+                    <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-1"></i></h2>
+                    <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-2"></i></h3>
+                    <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-3"></i></h4>
                     <div class="section-link-wrapper">
                         <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N4">Enter</a>
                     </div>
@@ -199,9 +281,12 @@
                 </div>
                 <div class="section-info">
                     <h1 class="section--header">CODING</h1>
-                    <h2 class="section-sub-first">Real World Exposure</h2>
-                    <h3 class="section-sub-first">Learn With Experts</h3>
-                    <h4 class="section-sub-first-new">Make</h4>
+                    <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-1"></i></h2>
+                    <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-2"></i></h3>
+                    <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-3"></i></h4>
                     <div class="section-link-wrapper">
                         <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N5">Enter</a>
                     </div>
@@ -213,9 +298,12 @@
                 </div>
                 <div class="section-info">
                     <h1 class="section--header">ASTRONOMY</h1>
-                    <h2 class="section-sub-first">Real World Exposure</h2>
-                    <h3 class="section-sub-first">Learn With Experts</h3>
-                    <h4 class="section-sub-first-new">Make</h4>
+                    <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-1"></i></h2>
+                    <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-2"></i></h3>
+                    <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-3"></i></h4>
                     <div class="section-link-wrapper">
                         <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N6">Enter</a>
                     </div>
@@ -227,9 +315,12 @@
                 </div>
                 <div class="section-info">
                     <h1 class="section--header">ENGLISH EXPRESSION</h1>
-                    <h2 class="section-sub-first">Real World Exposure</h2>
-                    <h3 class="section-sub-first">Learn With Experts</h3>
-                    <h4 class="section-sub-first-new">Engage</h4>
+                    <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-1"></i></h2>
+                    <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-2"></i></h3>
+                    <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-3"></i></h4>
                     <div class="section-link-wrapper">
                         <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N7">Enter</a>
                     </div>
@@ -241,9 +332,12 @@
                 </div>
                 <div class="section-info">
                     <h1 class="section--header">UNDERSTANDING NEWS</h1>
-                    <h2 class="section-sub-first">Real World Exposure</h2>
-                    <h3 class="section-sub-first">Learn With Experts</h3>
-                    <h4 class="section-sub-first-new">Engage</h4>
+                    <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-1"></i></h2>
+                    <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-2"></i></h3>
+                    <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon" data-toggle="modal"
+                            data-target="#exampleModalCenter-3"></i></h4>
                     <div class="section-link-wrapper">
                         <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N8">Enter</a>
                     </div>
@@ -258,33 +352,82 @@
                 </div>
             </div>
             <!-- <div class="inner-info-wrapper owl-carousel owl-theme left-right-gap" id="three">
-            <div class="sections-div">
-                <h1 class="div-head">School Club 1</h1>
-                <div class="sections-img">
-                    <img src="assets/c_images/science-min.png" alt="">
+                <div class="sections-div">
+                    <h1 class="div-head">School Club 1</h1>
+                    <div class="sections-img">
+                        <img src="assets/c_images/science-min.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="sections-div ">
-                <h1 class="div-head">School Club 2</h1>
-                <div class="sections-img">
-                    <img src="assets/c_images/maths-min.png" alt="">
+                <div class="sections-div ">
+                    <h1 class="div-head">School Club 2</h1>
+                    <div class="sections-img">
+                        <img src="assets/c_images/maths-min.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="sections-div">
-                <h1 class="div-head">School Club 3</h1>
-                <div class="sections-img">
-                    <img src="assets/c_images/history-min.png" alt="">
+                <div class="sections-div">
+                    <h1 class="div-head">School Club 3</h1>
+                    <div class="sections-img">
+                        <img src="assets/c_images/history-min.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="sections-div">
-                <h1 class="div-head">School Club 4</h1>
-                <div class="sections-img">
-                    <img src="assets/c_images/geography-min.png" alt="">
+                <div class="sections-div">
+                    <h1 class="div-head">School Club 4</h1>
+                    <div class="sections-img">
+                        <img src="assets/c_images/geography-min.png" alt="">
+                    </div>
                 </div>
-            </div>
-        </div> -->
+            </div> -->
 
-            <div class="sections_two">
+            <div class="sections_last owl-carousel owl-theme" id="one">
+                <div class="common">
+                    <div class="img-section">
+                        <img src="assets/images/school.png">
+                    </div>
+                    <div class="section-info">
+                        <h1 class="section--header">SciFi</h1>
+                        <div class="section-link-wrapper">
+                            <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N9">Enter</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="common">
+                    <div class="img-section">
+                        <img src="assets/images/school.png">
+                    </div>
+                    <div class="section-info">
+                        <h1 class="section--header">Mathemagic</h1>
+                        <div class="section-link-wrapper">
+                            <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N10">Enter</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="common">
+                    <div class="img-section">
+                        <img src="assets/images/school.png">
+                    </div>
+                    <div class="section-info">
+                        <h1 class="section--header">Hist Story </h1>
+                        <div class="section-link-wrapper">
+                            <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N11">Enter</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="common">
+                    <div class="img-section">
+                        <img src="assets/images/school.png">
+                    </div>
+                    <div class="section-info">
+                        <h1 class="section--header">Jio Graphy</h1>
+                        <div class="section-link-wrapper">
+                            <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N12">Enter</a>
+
+                        </div>
+                    </div>
+
+                    <!-- <div class="sections_two">
                 <div class="sections-div">
                     <h1 class="div-head">School Club 1</h1>
                     <div class="sections-img">
@@ -308,6 +451,8 @@
                     <div class="sections-img">
                         <img src="assets/c_images/geography-min.png" alt="">
                     </div>
+                </div>
+            </div> -->
                 </div>
             </div>
         </div>
@@ -378,7 +523,8 @@
                                 <div>
                                     <img src="assets/images/xperience-1.png" alt="" class="xplore-fav">
                                 </div>
-                                <p class="xplore-desc">Develop deeper into the topic through Webinars by experts
+                                <p class="xplore-desc">Develop deeper into the topic through Webinars by
+                                    experts
                                 </p>
                             </div>
                             <div class="col-one">
@@ -393,7 +539,8 @@
                                 </p>
                             </div>
                         </div>
-                        <p class="div-desc">Online live courses, workshops, webinars and projects run by experts to
+                        <p class="div-desc">Online live courses, workshops, webinars and projects run by
+                            experts to
                             give students a headstart in learning a topic
 
                         </p>
@@ -437,7 +584,8 @@
                                 </p>
                             </div>
                         </div>
-                        <p class="div-desc">Inter-school platform to showcase student creations allowing them to
+                        <p class="div-desc">Inter-school platform to showcase student creations allowing them
+                            to
                             learn
                             with their peers
 
@@ -460,22 +608,25 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <h1 class="mod-title-new">Club Info</h1>
                                 <p class="mod-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis,
-                                    voluptatum nesciunt quod officia quam laborum vitae quo aliquam eos nam
-                                    repellendus
-                                    recusandae modi error dicta aliquid distinctio asperiores deleniti.
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
                                 </p>
                             </div>
-                            <div class="col-md-6 border-left">
+                            <!--  <div class="col-md-6 border-left">
                                 <h1 class="mod-title-new">Login Here</h1><br>
                                 <form action="" class="login__form">
                                     <input type="text" name="" id="" placeholder="Type your username" class="form-field">
                                     <input type="password" name="" id="" placeholder="Type your password" class="form-field">
                                     <button class="login_btn">Login</button>
                                 </form>
+                            </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
                             </div>
                         </div>
                     </div>
@@ -496,27 +647,29 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <h1 class="mod-title-new">Club Info</h1>
                                 <p class="mod-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis,
-                                    voluptatum nesciunt quod officia quam laborum vitae quo aliquam eos nam
-                                    repellendus
-                                    recusandae modi error dicta aliquid distinctio asperiores deleniti.
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
                                 </p>
                             </div>
-                            <div class="col-md-6 border-left">
+                            <!--  <div class="col-md-6 border-left">
                                 <h1 class="mod-title-new">Login Here</h1><br>
                                 <form action="" class="login__form">
                                     <input type="text" name="" id="" placeholder="Type your username" class="form-field">
                                     <input type="password" name="" id="" placeholder="Type your password" class="form-field">
                                     <button class="login_btn">Login</button>
                                 </form>
+                            </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -533,27 +686,29 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <h1 class="mod-title-new">Club Info</h1>
                                 <p class="mod-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis,
-                                    voluptatum nesciunt quod officia quam laborum vitae quo aliquam eos nam
-                                    repellendus
-                                    recusandae modi error dicta aliquid distinctio asperiores deleniti.
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
                                 </p>
                             </div>
-                            <div class="col-md-6 border-left">
-                                <h1 class="mod-title-new">Login Here</h1><br>
-                                <form action="" class="login__form">
-                                    <input type="text" name="" id="" placeholder="Type your username" class="form-field">
-                                    <input type="password" name="" id="" placeholder="Type your password" class="form-field">
-                                    <button class="login_btn">Login</button>
-                                </form>
+                            <!--  <div class="col-md-6 border-left">
+                            <h1 class="mod-title-new">Login Here</h1><br>
+                            <form action="" class="login__form">
+                                <input type="text" name="" id="" placeholder="Type your username" class="form-field">
+                                <input type="password" name="" id="" placeholder="Type your password" class="form-field">
+                                <button class="login_btn">Login</button>
+                            </form>
+                        </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -570,27 +725,29 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <h1 class="mod-title-new">Club Info</h1>
                                 <p class="mod-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis,
-                                    voluptatum nesciunt quod officia quam laborum vitae quo aliquam eos nam
-                                    repellendus
-                                    recusandae modi error dicta aliquid distinctio asperiores deleniti.
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
                                 </p>
                             </div>
-                            <div class="col-md-6 border-left">
+                            <!--  <div class="col-md-6 border-left">
                                 <h1 class="mod-title-new">Login Here</h1><br>
                                 <form action="" class="login__form">
                                     <input type="text" name="" id="" placeholder="Type your username" class="form-field">
                                     <input type="password" name="" id="" placeholder="Type your password" class="form-field">
                                     <button class="login_btn">Login</button>
                                 </form>
+                            </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -607,27 +764,29 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <h1 class="mod-title-new">Club Info</h1>
                                 <p class="mod-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis,
-                                    voluptatum nesciunt quod officia quam laborum vitae quo aliquam eos nam
-                                    repellendus
-                                    recusandae modi error dicta aliquid distinctio asperiores deleniti.
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
                                 </p>
                             </div>
-                            <div class="col-md-6 border-left">
-                                <h1 class="mod-title-new">Login Here</h1><br>
-                                <form action="" class="login__form">
-                                    <input type="text" name="" id="" placeholder="Type your username" class="form-field">
-                                    <input type="password" name="" id="" placeholder="Type your password" class="form-field">
-                                    <button class="login_btn">Login</button>
-                                </form>
+                            <!--  <div class="col-md-6 border-left">
+                            <h1 class="mod-title-new">Login Here</h1><br>
+                            <form action="" class="login__form">
+                                <input type="text" name="" id="" placeholder="Type your username" class="form-field">
+                                <input type="password" name="" id="" placeholder="Type your password" class="form-field">
+                                <button class="login_btn">Login</button>
+                            </form>
+                        </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -644,27 +803,29 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <h1 class="mod-title-new">Club Info</h1>
                                 <p class="mod-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis,
-                                    voluptatum nesciunt quod officia quam laborum vitae quo aliquam eos nam
-                                    repellendus
-                                    recusandae modi error dicta aliquid distinctio asperiores deleniti.
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
                                 </p>
                             </div>
-                            <div class="col-md-6 border-left">
-                                <h1 class="mod-title-new">Login Here</h1><br>
-                                <form action="" class="login__form">
-                                    <input type="text" name="" id="" placeholder="Type your username" class="form-field">
-                                    <input type="password" name="" id="" placeholder="Type your password" class="form-field">
-                                    <button class="login_btn">Login</button>
-                                </form>
+                            <!--  <div class="col-md-6 border-left">
+                        <h1 class="mod-title-new">Login Here</h1><br>
+                        <form action="" class="login__form">
+                            <input type="text" name="" id="" placeholder="Type your username" class="form-field">
+                            <input type="password" name="" id="" placeholder="Type your password" class="form-field">
+                            <button class="login_btn">Login</button>
+                        </form>
+                    </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -681,27 +842,29 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <h1 class="mod-title-new">Club Info</h1>
                                 <p class="mod-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis,
-                                    voluptatum nesciunt quod officia quam laborum vitae quo aliquam eos nam
-                                    repellendus
-                                    recusandae modi error dicta aliquid distinctio asperiores deleniti.
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
                                 </p>
                             </div>
-                            <div class="col-md-6 border-left">
-                                <h1 class="mod-title-new">Login Here</h1><br>
-                                <form action="" class="login__form">
-                                    <input type="text" name="" id="" placeholder="Type your username" class="form-field">
-                                    <input type="password" name="" id="" placeholder="Type your password" class="form-field">
-                                    <button class="login_btn">Login</button>
-                                </form>
+                            <!--  <div class="col-md-6 border-left">
+                        <h1 class="mod-title-new">Login Here</h1><br>
+                        <form action="" class="login__form">
+                            <input type="text" name="" id="" placeholder="Type your username" class="form-field">
+                            <input type="password" name="" id="" placeholder="Type your password" class="form-field">
+                            <button class="login_btn">Login</button>
+                        </form>
+                    </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -718,30 +881,189 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <h1 class="mod-title-new">Club Info</h1>
                                 <p class="mod-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis,
-                                    voluptatum nesciunt quod officia quam laborum vitae quo aliquam eos nam
-                                    repellendus
-                                    recusandae modi error dicta aliquid distinctio asperiores deleniti.
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
                                 </p>
                             </div>
-                            <div class="col-md-6 border-left">
-                                <h1 class="mod-title-new">Login Here</h1><br>
-                                <form action="" class="login__form">
-                                    <input type="text" name="" id="" placeholder="Type your username" class="form-field">
-                                    <input type="password" name="" id="" placeholder="Type your password" class="form-field">
-                                    <button class="login_btn">Login</button>
-                                </form>
+                            <!--  <div class="col-md-6 border-left">
+                        <h1 class="mod-title-new">Login Here</h1><br>
+                        <form action="" class="login__form">
+                            <input type="text" name="" id="" placeholder="Type your username" class="form-field">
+                            <input type="password" name="" id="" placeholder="Type your password" class="form-field">
+                            <button class="login_btn">Login</button>
+                        </form>
+                    </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+    <div class="modal fade" id="exampleModalCenter-N9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #ce1f36;border-bottom: none">
+                    <h5 class="mod-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="font-size: 30px;"><i class="fas fa-times-circle" style="margin-top: 15px;  color: #fff;"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="mod-title-new">Club Info</h1>
+                                <p class="mod-info">
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
+                                </p>
+                            </div>
+                            <!--  <div class="col-md-6 border-left">
+                        <h1 class="mod-title-new">Login Here</h1><br>
+                        <form action="" class="login__form">
+                            <input type="text" name="" id="" placeholder="Type your username" class="form-field">
+                            <input type="password" name="" id="" placeholder="Type your password" class="form-field">
+                            <button class="login_btn">Login</button>
+                        </form>
+                    </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter-N10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #ce1f36;border-bottom: none">
+                    <h5 class="mod-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="font-size: 30px;"><i class="fas fa-times-circle" style="margin-top: 15px;  color: #fff;"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="mod-title-new">Club Info</h1>
+                                <p class="mod-info">
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
+                                </p>
+                            </div>
+                            <!--  <div class="col-md-6 border-left">
+                        <h1 class="mod-title-new">Login Here</h1><br>
+                        <form action="" class="login__form">
+                            <input type="text" name="" id="" placeholder="Type your username" class="form-field">
+                            <input type="password" name="" id="" placeholder="Type your password" class="form-field">
+                            <button class="login_btn">Login</button>
+                        </form>
+                    </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter-N11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #ce1f36;border-bottom: none">
+                    <h5 class="mod-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="font-size: 30px;"><i class="fas fa-times-circle" style="margin-top: 15px;  color: #fff;"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="mod-title-new">Club Info</h1>
+                                <p class="mod-info">
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
+                                </p>
+                            </div>
+                            <!--  <div class="col-md-6 border-left">
+                        <h1 class="mod-title-new">Login Here</h1><br>
+                        <form action="" class="login__form">
+                            <input type="text" name="" id="" placeholder="Type your username" class="form-field">
+                            <input type="password" name="" id="" placeholder="Type your password" class="form-field">
+                            <button class="login_btn">Login</button>
+                        </form>
+                    </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter-N12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #ce1f36;border-bottom: none">
+                    <h5 class="mod-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="font-size: 30px;"><i class="fas fa-times-circle" style="margin-top: 15px;  color: #fff;"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="mod-title-new">Club Info</h1>
+                                <p class="mod-info">
+                                    You need to register for free access to all the clubs. Meanwhile you can
+                                    see
+                                    framework for a typical club.
+                                </p>
+                            </div>
+                            <!--  <div class="col-md-6 border-left">
+                        <h1 class="mod-title-new">Login Here</h1><br>
+                        <form action="" class="login__form">
+                            <input type="text" name="" id="" placeholder="Type your username" class="form-field">
+                            <input type="password" name="" id="" placeholder="Type your password" class="form-field">
+                            <button class="login_btn">Login</button>
+                        </form>
+                    </div> -->
+                            <div class="modal-button-wrapper">
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
+                                <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -754,7 +1076,7 @@
         crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
+    <!-- <script src="assets/js/owl.carousel.js"></script> -->
 
     <script>
         setInterval(function () {
@@ -904,6 +1226,16 @@
 
         postsCarousel();
         $(window).resize(postsCarousel);
+    </script>
+
+    <script>
+        $('.carousel-indicators a').on('click', function (e) {
+            var href = $(this).attr('div');
+            $('html, body').animate({
+                scrollTop: $(href).offset().top
+            }, '300');
+            e.preventDefault();
+        });
     </script>
 
 </body>

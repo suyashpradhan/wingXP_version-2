@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            background: #2d2d37;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .arrow {
+            text-align: center;
+            margin: 8% 0;
+        }
+
+        .bounce {
+            -webkit-animation: bounce 2s infinite;
+            animation: bounce 2s infinite;
+        }
+
+        @-webkit-keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            40% {
+                -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+            }
+
+            60% {
+                -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            40% {
+                -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+            }
+
+            60% {
+                -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="arrow bounce">
+        <a class="fa fa-arrow-down fa-2x" href="#"></a>
+    </div>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</body>
+
+</html>
