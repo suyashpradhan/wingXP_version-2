@@ -18,127 +18,25 @@
 </head>
 
 <body>
-    <!-- <section class="top-nav">
-        <div>
-            <img src="assets/images/logo_1.png" alt="" height="30px;">
-            <h1 class="logo-txt">clubs</h1>
-        </div>
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-            <li>One</li>
-            <li>Two</li>
-            <li>Three</li>
-            <li>Four</li>
-            <li>Five</li> 
-        </ul>
-    </section>
-    <div class="time-wrapper">
-        <div class="page-container">
-            <div class="inner-time">
-                <i class="far fa-clock secondary-icons time-icon" style="color:#fff;"> <span id="current_time"> </span></i> 
-            </div>
-        </div>
-    </div>
-    <div class="module subcribe">
-        <div class="modcontent" style="float:right;background-color: #ce1f36">
-            <div class="page-container">
-                <div class="head login-header">Student Login</div>
-                <form class="student_form" method="#">
-                    <input type="text" placeholder="@username" />
-                    <input type="password" placeholder="@password" />
-                    <button class="btn-subcribe" type="submit">Login <i class="fas fa-sign-in-alt"></i></button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="topnav" id="myTopnav">
-        <div class="page-container">
-            <a href="#contact" style="font-weight: 900;font-size: 15px;background-color: #ce1f36;color: #fff;"><i class="fas fa-home"></i></a>
-            <a href="#" style="font-size: 15px;font-weight: 900" class="webinar">Admission</a>
-            <a href="#" style="font-size: 15px;font-weight: 900" class="webinar">About Us</a>
-            <a href="#" style="font-size: 15px;font-weight: 900" class="webinar">Academic</a>
-            <a href="#" style="font-size: 15px;font-weight: 900" class="webinar">Contact Us</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars" style="color:#ce1f36;font-size: 18px;"></i></a>
-        </div>
-    </div>
-
-    <div class="w3-content w3-display-container">
-        <div class="w3-display-container mySlides">
-            <img src="assets/c_images/slider-1_NF-min.png" style="width:100%;height: 100%;">
-            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                <div class="slide-inner">
-                    <h1 class="slide-head">Internet usage for students<br>
-                        From Distraction to Production</h1>
-                    <a href="#" class="slide-link">Know More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-display-container mySlides">
-            <img src="assets/c_images/slider-5F-min.png" style="width:100%;height: 100%;">
-            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-                <div class="slide-inner-right">
-                    <h1 class="slide-head slide-right">What comprises of <br>World Class Co-Curriculars?</h1>
-                    <a href="#" class="slide-link-right">Know More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-display-container mySlides">
-            <img src="assets/c_images/slider_4_NF.jpg" style="width:100%;height: 100%;">
-            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                <div class="slide-inner">
-                    <h1 class="slide-head">Harnessing Co-Curricular<br> Expertise from world over.</h1>
-                    <a href="#" class="slide-link">Know More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-display-container mySlides">
-            <img src="assets/c_images/slider-3_NF-min.png" style="width:100%;height: 100%;">
-            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-                <div class="slide-inner">
-                    <h1 class="slide-head slide-right">..from <br> the comfort <br>of your home</h1>
-                    <a href="#" class="slide-link-right">Know More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-display-container mySlides">
-            <img src="assets/c_images/slider-2_NF-min.png" style="width:100%;height: 100%;">
-            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                <div class="slide-inner">
-                    <h1 class="slide-head">Learn with <br>your peers</h1>
-                    <a href="#" class="slide-link">Know More</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">iclubs</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id='navbar-hide' style="display: none;">
+        <a class="navbar-brand" href="#"><img src="assets/images/logo_1.png" alt="" height="30px"> <span>clubs</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+            </ul>
         </div>
     </nav>
-
     <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <!--  <ol class="carousel-indicators">
@@ -146,34 +44,33 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol> -->
-
             <div class="carousel-indicators arrow bounce">
                 <a href="#new_two"><i class="fa fa-arrow-down fa-2x arrow-icon active"></i></a>
             </div>
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active" style="background-image: url('assets/images/slider_1S.jpg')">
+                <div class="carousel-item active" id="sl1">
                     <div class="carousel-caption  d-md-block">
                         <h2 class="display-4">Internet usage for students</h2>
                         <p class="lead">From Distraction to Production</p>
                     </div>
                 </div>
 
-                <div class="carousel-item" style="background-image: url('assets/images/slider_2S.jpg')">
+                <div class="carousel-item" id="sl2">
                     <div class="carousel-caption  d-md-block">
                         <h2 class="display-4">What comprises of</h2>
                         <p class="lead">World Class Co-Curriculars?</p>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('assets/images/slider_3S.png')">
+                <div class="carousel-item" id="sl3">
                     <div class="carousel-caption  d-md-block">
                         <h2 class="display-4">Harnessing Co-Curricular</h2>
                         <p class="lead">Expertise from world over.</p>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('assets/images/slider_4S.jpg')">
+                <div class="carousel-item" id="sl4">
                     <div class="carousel-caption  d-md-block">
-                        <!-- <h2 class="display-4">iclubs</h2>
-                        <p class="lead">The World’s Best Co-curricular Platform.</p> -->
+                        <h2 class="display-4">iclubs</h2>
+                        <p class="lead">The World’s Best Co-curricular Platform.</p>
                     </div>
                 </div>
             </div>
@@ -187,7 +84,7 @@
             </a>
         </div>
     </header>
-    <div class="page-container">
+    <div class="page-container" id="new_two">
         <!--  <div class="button-wrapper " id="one">
             <div class="first-button flex-bttn">
                 <a href="#" class="bttn-dark" data-toggle="modal" data-target="#exampleModalCenter-1">XPLORE</a>
@@ -199,10 +96,10 @@
                 <a href="#" class="bttn-dark bttn " data-toggle="modal" data-target="#exampleModalCenter-3">XPRESS</a>
             </div>
         </div> -->
-        <div class="loading_wrapper " id="new_two">
+        <div class="loading_wrapper ">
             <div class="inner_loading">
                 <div class="loading-header">
-                    <h1>iclubs</h1>
+                    <h1>WingXP iCLUBS</h1>
                 </div>
             </div>
         </div>
@@ -344,50 +241,29 @@
                 </div>
             </div>
         </div>
-        <br><br>
         <div class="loading_wrapper ">
             <div class="inner_loading">
                 <div class="loading-header">
-                    <h1>School Clubs</h1>
+                    <h1>Your School Clubs</h1>
                 </div>
             </div>
-            <!-- <div class="inner-info-wrapper owl-carousel owl-theme left-right-gap" id="three">
-                <div class="sections-div">
-                    <h1 class="div-head">School Club 1</h1>
-                    <div class="sections-img">
-                        <img src="assets/c_images/science-min.png" alt="">
-                    </div>
-                </div>
-                <div class="sections-div ">
-                    <h1 class="div-head">School Club 2</h1>
-                    <div class="sections-img">
-                        <img src="assets/c_images/maths-min.png" alt="">
-                    </div>
-                </div>
-                <div class="sections-div">
-                    <h1 class="div-head">School Club 3</h1>
-                    <div class="sections-img">
-                        <img src="assets/c_images/history-min.png" alt="">
-                    </div>
-                </div>
-                <div class="sections-div">
-                    <h1 class="div-head">School Club 4</h1>
-                    <div class="sections-img">
-                        <img src="assets/c_images/geography-min.png" alt="">
-                    </div>
-                </div>
-            </div> -->
-
             <div class="sections_last owl-carousel owl-theme" id="one">
                 <div class="common">
                     <div class="img-section">
                         <img src="assets/images/school.png">
                     </div>
                     <div class="section-info">
-                        <h1 class="section--header">SciFi</h1>
-                        <div class="section-link-wrapper">
-                            <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N9">Enter</a>
-
+                        <div class="section-info">
+                            <h1 class="section--header">School Club One</h1>
+                            <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-1"></i></h2>
+                            <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-2"></i></h3>
+                            <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-3"></i></h4>
+                            <div class="section-link-wrapper">
+                                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N5">Enter</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -396,10 +272,17 @@
                         <img src="assets/images/school.png">
                     </div>
                     <div class="section-info">
-                        <h1 class="section--header">Mathemagic</h1>
-                        <div class="section-link-wrapper">
-                            <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N10">Enter</a>
-
+                        <div class="section-info">
+                            <h1 class="section--header">School Club Two</h1>
+                            <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-1"></i></h2>
+                            <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-2"></i></h3>
+                            <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-3"></i></h4>
+                            <div class="section-link-wrapper">
+                                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N5">Enter</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -408,10 +291,17 @@
                         <img src="assets/images/school.png">
                     </div>
                     <div class="section-info">
-                        <h1 class="section--header">Hist Story </h1>
-                        <div class="section-link-wrapper">
-                            <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N11">Enter</a>
-
+                        <h1 class="section--header">School Club Three</h1>
+                        <div class="section-info">
+                            <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-1"></i></h2>
+                            <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-2"></i></h3>
+                            <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-3"></i></h4>
+                            <div class="section-link-wrapper">
+                                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N5">Enter</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -420,46 +310,28 @@
                         <img src="assets/images/school.png">
                     </div>
                     <div class="section-info">
-                        <h1 class="section--header">Jio Graphy</h1>
-                        <div class="section-link-wrapper">
-                            <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N12">Enter</a>
-
+                        <h1 class="section--header">School Club Four</h1>
+                        <div class="section-info">
+                            <h2 class="section-sub-first">Xplore <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-1"></i></h2>
+                            <h3 class="section-sub-first">Xperience <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-2"></i></h3>
+                            <h4 class="section-sub-first-new">Xpress <i class="fas fa-info-circle info-new-icon"
+                                    data-toggle="modal" data-target="#exampleModalCenter-3"></i></h4>
+                            <div class="section-link-wrapper">
+                                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N5">Enter</a>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- <div class="sections_two">
-                <div class="sections-div">
-                    <h1 class="div-head">School Club 1</h1>
-                    <div class="sections-img">
-                        <img src="assets/images/" alt="">
-                    </div>
-                </div>
-                <div class="sections-div ">
-                    <h1 class="div-head">School Club 2</h1>
-                    <div class="sections-img">
-                        <img src="assets/c_images/maths-min.png" alt="">
-                    </div>
-                </div>
-                <div class="sections-div">
-                    <h1 class="div-head">School Club 3</h1>
-                    <div class="sections-img">
-                        <img src="assets/c_images/history-min.png" alt="">
-                    </div>
-                </div>
-                <div class="sections-div">
-                    <h1 class="div-head">School Club 4</h1>
-                    <div class="sections-img">
-                        <img src="assets/c_images/geography-min.png" alt="">
-                    </div>
-                </div>
-            </div> -->
                 </div>
             </div>
         </div>
     </div>
+    <div class='scrolltop'>
+        <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+    </div>
     <section style="background-color:#363636;height: 60px">
-        <h1 class="footer-inner"> Powered by <span style="color:#2abfd4"> <a href="www.wingxp.com" class="footer-link">
-                    iclubs.in </a></span></h1>
+        <h1 class="footer-inner"> © Copyright – iCLUBS 2018</h1>
     </section>
     <div class="modal fade" id="exampleModalCenter-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
@@ -889,14 +761,6 @@
                                     framework for a typical club.
                                 </p>
                             </div>
-                            <!--  <div class="col-md-6 border-left">
-                        <h1 class="mod-title-new">Login Here</h1><br>
-                        <form action="" class="login__form">
-                            <input type="text" name="" id="" placeholder="Type your username" class="form-field">
-                            <input type="password" name="" id="" placeholder="Type your password" class="form-field">
-                            <button class="login_btn">Login</button>
-                        </form>
-                    </div> -->
                             <div class="modal-button-wrapper">
                                 <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
                                 <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
@@ -928,14 +792,6 @@
                                     framework for a typical club.
                                 </p>
                             </div>
-                            <!--  <div class="col-md-6 border-left">
-                        <h1 class="mod-title-new">Login Here</h1><br>
-                        <form action="" class="login__form">
-                            <input type="text" name="" id="" placeholder="Type your username" class="form-field">
-                            <input type="password" name="" id="" placeholder="Type your password" class="form-field">
-                            <button class="login_btn">Login</button>
-                        </form>
-                    </div> -->
                             <div class="modal-button-wrapper">
                                 <button class="modal-btn btnPush btnBlueGreen"><a href="">Sample Demo</a></button>
                                 <button class="modal-btn btnPush btnBlueGreen"><a href="">Register</a></button>
@@ -1140,22 +996,17 @@
         function postsCarousel() {
             var checkWidth = $(window).width();
             var owlPost = $("#one");
-            if (checkWidth > 636) {
+            if (checkWidth > 501) {
                 if (typeof owlPost.data('owl.carousel') != 'undefined') {
                     owlPost.data('owl.carousel').destroy();
                 }
                 owlPost.removeClass('owl-carousel');
-            } else if (checkWidth < 636) {
+            } else if (checkWidth < 500) {
                 owlPost.addClass('owl-carousel');
                 owlPost.owlCarousel({
                     items: 1,
                     slideSpeed: 500,
-                    animateOut: 'fadeOut',
-                    touchDrag: true,
-                    mouseDrag: true,
-                    autoplay: true,
-                    autoplaySpeed: 8000,
-                    autoplayTimeout: 8000,
+
                     dots: true,
                     margin: 0,
                     loop: true
@@ -1172,22 +1023,18 @@
         function postsCarousel() {
             var checkWidth = $(window).width();
             var owlPost = $("#two");
-            if (checkWidth > 600) {
+            if (checkWidth > 501) {
                 if (typeof owlPost.data('owl.carousel') != 'undefined') {
                     owlPost.data('owl.carousel').destroy();
                 }
                 owlPost.removeClass('owl-carousel');
-            } else if (checkWidth < 600) {
+            } else if (checkWidth < 500) {
                 owlPost.addClass('owl-carousel');
                 owlPost.owlCarousel({
                     items: 1,
                     slideSpeed: 500,
-                    animateOut: 'fadeOut',
                     touchDrag: true,
                     mouseDrag: true,
-                    autoplay: true,
-                    autoplaySpeed: 8000,
-                    autoplayTimeout: 8000,
                     dots: true,
                     loop: true
                 });
@@ -1202,22 +1049,16 @@
         function postsCarousel() {
             var checkWidth = $(window).width();
             var owlPost = $("#three");
-            if (checkWidth > 526) {
+            if (checkWidth > 501) {
                 if (typeof owlPost.data('owl.carousel') != 'undefined') {
                     owlPost.data('owl.carousel').destroy();
                 }
                 owlPost.removeClass('owl-carousel');
-            } else if (checkWidth < 768) {
+            } else if (checkWidth < 500) {
                 owlPost.addClass('owl-carousel');
                 owlPost.owlCarousel({
                     items: 1,
                     slideSpeed: 500,
-                    animateOut: 'fadeOut',
-                    touchDrag: true,
-                    mouseDrag: true,
-                    autoplay: true,
-                    autoplaySpeed: 8000,
-                    autoplayTimeout: 8000,
                     dots: true,
                     loop: true
                 });
@@ -1237,7 +1078,23 @@
             e.preventDefault();
         });
     </script>
+    <script>
+        $(document).scroll(function () {
+            $('#navbar-hide').css('display', 'flex');
+            setTimeout(function () {
+                $('#navbar-hide').css('display', 'none');
+            }, 5000)
+        })
+    </script>
 
+    <script>
+        $(document).on('keydown', 'body', function () {
+            $('#navbar-hide').css('display', 'flex');
+            setTimeout(function () {
+                $('#navbar-hide').css('display', 'none');
+            }, 1000)
+        });
+    </script>
 </body>
 
 </html>
