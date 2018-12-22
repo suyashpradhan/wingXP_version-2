@@ -2305,22 +2305,22 @@ a.bttn-dark:focus {
 
 @media screen and (min-width: 0px) and (max-width: 526px) {
   #sl1 {
-      background-image: url("../images/book_small.jpg");
+      background-image: url("assets/images/book_small.jpg");
       background-size: cover;
   }
 
   #sl2 {
-      background-image: url("../images/student_small.jpg");
+      background-image: url("assets/images/student_small.jpg");
       background-size: cover;
   }
 
   #sl3 {
-      background-image: url("../images/harness_small.jpg");
+      background-image: url("assets/images/harness_small.jpg");
       background-size: cover;
   }
 
   #sl4 {
-    background-image: url("../images/library_small.jpg");
+    background-image: url("assets/images/library_small.jpg");
     background-size: cover;
 }
 }
@@ -2349,19 +2349,19 @@ a.bttn-dark:focus {
 
 @media screen and (min-width: 768px) and (max-width: 140000px) {
     #sl1 {
-        background-image: url("../images/book_large.jpeg");
+        background-image: url("assets/images/book_large.jpeg");
     }
 
     #sl2 {
-        background-image: url("../images/student_large.jpeg");
+        background-image: url("assets/images/student_large.jpeg");
     }
 
     #sl3 {
-        background-image: url("../images/harness_large.jpeg");
+        background-image: url("assets/images/harness_large.jpeg");
     }
 
     #sl4 {
-      background-image: url("../images/library_large.jpeg");
+      background-image: url("assets/images/library_large.jpeg");
       background-size: cover;
   }
 }
