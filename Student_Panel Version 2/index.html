@@ -45,26 +45,26 @@
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" id="sl1">
                     <div class="carousel-caption  d-md-block">
-                        <h2 class="display-4">Internet usage for students</h2><br>
-                        <p class="lead">From Distraction to Production</p>
+                        <h2 class="display-4">Expand Co-Curricular Offering</h2><br>
+                        <p class="lead">by Outsourcing Expertise</p>
                     </div>
                 </div>
                 <div class="carousel-item " id="sl3">
                     <div class="carousel-caption  d-md-block">
-                        <h2 class="display-4">Harnessing Co-Curricular</h2><br>
-                        <p class="lead">Expertise from world over.</p>
+                        <h2 class="display-4">Match Students Interest and Flair</h2><br>
+                        <p class="lead">with the right iclub.</p>
                     </div>
                 </div>
                 <div class="carousel-item" id="sl2">
                     <div class="carousel-caption  d-md-block">
-                        <h2 class="display-4">What comprises of</h2><br>
-                        <p class="lead">World Class Co-Curriculars?</p>
+                        <h2 class="display-4">Heart of World’s Best Co-Curriculars</h2><br>
+                        <p class="lead">The 3XP Framework.</p>
                     </div>
                 </div>
                 <div class="carousel-item" id="sl4">
                     <div class="carousel-caption  d-md-block">
-                        <h2 class="display-4">iclubs</h2><br>
-                        <p class="lead">The World’s Best Co-curricular Platform.</p>
+                        <h2 class="display-4">Harnessing Network of Experts</h2><br>
+                        <p class="lead">for School Co-Curriculars.</p>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
             </a>
         </div>
     </header>
-    <div class="page-container" id="new_two">
+    <div class="page-container">
         <!--  <div class="button-wrapper " id="one">
             <div class="first-button flex-bttn">
                 <a href="#" class="bttn-dark" data-toggle="modal" data-target="#exampleModalCenter-1">XPLORE</a>
@@ -90,7 +90,7 @@
                 <a href="#" class="bttn-dark bttn " data-toggle="modal" data-target="#exampleModalCenter-3">XPRESS</a>
             </div>
         </div> -->
-        <div class="loading_wrapper ">
+        <div class="loading_wrapper " id="new_two">
             <div class="inner_loading">
                 <div class="loading-header">
                     <h1>WingXP iCLUBS</h1>
@@ -1086,6 +1086,23 @@
             }, 1000)
         });
     </script> -->
+
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>

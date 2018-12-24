@@ -200,7 +200,8 @@ ul li {
 
 .navbar {
   /* margin: 15px 40px 25px 40px; */
-  padding-bottom: 20px;
+  /*   padding-bottom: 20px;
+ */
   margin: 0;
 }
 
@@ -2855,8 +2856,6 @@ header {
   font-weight: 900;
 }
 
-
-
 .limiter {
   width: 100%;
   margin: 0 auto;
@@ -4172,14 +4171,10 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 80px 15px 40px 15px;
   background: #EFEFBB;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #D4D3DD, #EFEFBB);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding-bottom: 80px;
 }
 
 .wrap-login100_one {
@@ -4194,8 +4189,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding: 25px 20px;
-
+  padding-bottom: 30px;
 }
 
 .login100-pic {
@@ -4877,4 +4871,13 @@ header {
   width: 100%;
   padding: 5px 15px;
   margin: 0;
+}
+
+.footer-inner {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 0 0 0;
+  cursor: default;
 }
