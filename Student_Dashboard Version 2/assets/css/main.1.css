@@ -197,18 +197,23 @@ ul li {
   background: #e7f0f7;
 }
 
-
-.navbar {
-  /* margin: 15px 40px 25px 40px; */
-  /*   padding-bottom: 20px;
- */
-  margin: 0;
-}
-
 .navbar-shadow {
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
+}
+
+@media screen and (max-width:140000px) and (min-width:768px) {
+  .display-none {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width:767px) and (min-width:0px) {
+  .display-none {
+    display: none !important;
+
+  }
 }
 
 /* .nav-main {
@@ -2099,9 +2104,6 @@ header {
 }
 
 @media screen and (max-width: 768px) and (min-width: 100px) {
-  .navbar {
-    display: none;
-  }
 
   .logo {
     position: absolute;
@@ -4171,10 +4173,9 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 80px 15px 40px 15px;
-  background: #EFEFBB;
-  background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
-  background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+  padding: 80px 15px 80px 15px;
+  background: linear-gradient(to left, #e1e1e1, #e1e1e1);
+
 }
 
 .wrap-login100_one {
@@ -4747,6 +4748,13 @@ header {
   }
 }
 
+@media screen and (max-width:700px) and (min-width:0px) {
+  .row__new-desc {
+    font-size: 12px;
+    border-radius: 0;
+  }
+}
+
 @media screen and (max-width:526px) and (min-width:0px) {
   .wrap-login100_one {
     padding-left: 15px;
@@ -4771,11 +4779,6 @@ header {
 
   .webinar_main--head {
     font-size: 28px;
-  }
-
-  .row__new-desc {
-    font-size: 12px;
-    border-radius: 0;
   }
 
   .webinar_info--row {

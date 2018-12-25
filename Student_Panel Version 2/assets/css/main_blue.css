@@ -2304,12 +2304,12 @@ a.bttn-dark:focus {
 
 @media screen and (min-width: 0px) and (max-width: 526px) {
     #sl1 {
-        background-image: url("assets/images/1_small.png");
+        background-image: url("assets/images/1_small.jpg");
         background-size: cover;
     }
 
     #sl2 {
-        background-image: url("assets/images/2_small.jpeg");
+        background-image: url("assets/images/2_small.jpg");
         background-size: cover;
     }
 
@@ -2319,19 +2319,19 @@ a.bttn-dark:focus {
     }
 
     #sl4 {
-        background-image: url("assets/images/4_small.jpg");
+        background-image: url("assets/images/4_small.png");
         background-size: cover;
     }
 }
 
 @media screen and (min-width: 527px) and (max-width: 767px) {
     #sl1 {
-        background-image: url("assets/images/1_medium.png");
+        background-image: url("assets/images/1_medium.jpg");
         background-size: cover;
     }
 
     #sl2 {
-        background-image: url("assets/images/2_medium.jpeg");
+        background-image: url("assets/images/2_medium.jpg");
         background-size: cover;
     }
 
