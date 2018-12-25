@@ -2304,12 +2304,12 @@ a.bttn-dark:focus {
 
 @media screen and (min-width: 0px) and (max-width: 526px) {
     #sl1 {
-        background-image: url("assets/images/book_small.jpg");
+        background-image: url("assets/images/1_small.png");
         background-size: cover;
     }
 
     #sl2 {
-        background-image: url("assets/images/student_small.jpg");
+        background-image: url("assets/images/2_small.jpeg");
         background-size: cover;
     }
 
@@ -2319,19 +2319,19 @@ a.bttn-dark:focus {
     }
 
     #sl4 {
-        background-image: url("assets/images/library_small.jpg");
+        background-image: url("assets/images/4_small.jpg");
         background-size: cover;
     }
 }
 
 @media screen and (min-width: 527px) and (max-width: 767px) {
     #sl1 {
-        background-image: url("assets/images/book_medium.jpeg");
+        background-image: url("assets/images/1_medium.png");
         background-size: cover;
     }
 
     #sl2 {
-        background-image: url("assets/images/student_medium.jpg");
+        background-image: url("assets/images/2_medium.jpeg");
         background-size: cover;
     }
 
@@ -2341,7 +2341,7 @@ a.bttn-dark:focus {
     }
 
     #sl4 {
-        background-image: url("assets/images/library_medium.jpg");
+        background-image: url("assets/images/4_medium.jpg");
         background-size: cover;
     }
 }
@@ -2349,19 +2349,19 @@ a.bttn-dark:focus {
 
 @media screen and (min-width: 768px) and (max-width: 140000px) {
     #sl1 {
-        background-image: url("../images/book_large.jpeg");
+        background-image: url("assets/images/1_large.png");
     }
 
     #sl2 {
-        background-image: url("../images/student_large.jpeg");
+        background-image: url("assets/images/2.jpeg");
     }
 
     #sl3 {
-        background-image: url("../images/harness_large.jpeg");
+        background-image: url("assets/images/harness_large.jpeg");
     }
 
     #sl4 {
-        background-image: url("../images/library_large.jpeg");
+        background-image: url("assets/images/4_large.jpg");
         background-size: cover;
     }
 }
