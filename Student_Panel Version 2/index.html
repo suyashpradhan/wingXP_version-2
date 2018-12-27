@@ -9,12 +9,8 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main_blue.css">
-    <!--     <link href="assets/css/template-purple.css" rel="stylesheet" type="text/css" />
- -->
     <link rel="icon" href="http://www.wingxp.com/favicon.ico" type="image/gif" sizes="16x16">
     <link rel="icon" href="http://www.wingxp.com/favicon.ico" type="image/gif" sizes="16x16">
-    <!--     <link rel="stylesheet" href="assets/css/w3.css">
- -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 </head>
@@ -81,8 +77,83 @@
             </a>
         </div>
     </header>
-    <div class="page-container">
-        <div class="loading_wrapper " id="new_two">
+
+    <div class="page-container" id="new_two">
+        <div class="about_info-wrap ">
+                <h1 class="about--header">WingXP
+                        <span style="border-style: solid;
+                        border-bottom-width: 5px;
+                        border-color: #17a2b8;
+                        width: 55px;
+                        margin: 5px auto;
+                        display: block;
+                    "></span>
+                </h1>
+                <div class="info_card card-2">
+                        <p>In modern times schools need to emphasise on Co-Curriculars to build an all round person.
+                                Some schools offer the same in form of clubs to the students...so far so good. But in some
+                                cases the schools often face the challenge of getting then right expertise and balance with
+                                Curriculum.</p>
+                </div>
+                <div class="owl-carousel owl-theme" id="info">
+                  <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <span class="sr-no"><img src="assets/images/number-one-in-a-circle.png" ></span>
+                            <h1 class="row__head" style="text-align:center">Why WingXP?
+                                <span>To Give World Class Co
+                                        Curriculars</span>
+                            </h1>
+                            <p class="row__para">
+                                    To be more effective the next
+                                    generation need to have
+                                    augmented skills with<br>
+                                    (1) Creativity
+                                    <br>(2) Expression <br>(3)
+                                    Psychological
+                                    Evolution<br>
+                                    (4)Exploratory Predisposition.
+                                    A restructured framework is
+                                    to have bigger role of
+                                    Co-Curriculars
+                                    without
+                                    disrupting the core curriculum
+                                    boundaries is the new world
+                                    order for forward looking
+                                    educationists.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <span class="sr-no"><img src="assets/images/number-two-in-a-circle.png" alt=""></span>
+                            <h1 class="row__head" style="text-align:center">What is WingXP?
+                                <span>A Network of Experts</span></h1>
+                            <p class="row__para">
+                                    WingXP creates a network of
+                                    experts that help schools to
+                                    offer
+                                    Co-Curriculars
+                                    of
+                                    choice, interest and flair to its
+                                    students.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <span class="sr-no"><img src="assets/images/number-three-in-a-circle.png" alt=""></span>
+                            <h1 class="row__head" style="text-align:center">How does it work?
+                                <span>Taking School Clubs Online</span></h1>
+                            <p class="row__para">
+                                    WingXP takes the school club
+                                    structure online based on the
+                                    3 XP framework -
+                                    <br>
+                                    1. Experts Guided Exploration
+                                    <br>2. Experiencing with Experts
+                                    <br>3. Real world Expressions.
+                            </p>
+                        </div>
+                    </div>
+             </div>
+        </div>
+        <div class="loading_wrapper " >
             <div class="inner_loading">
                 <div class="loading-header">
                     <h1>WingXP iCLUBS</h1>
@@ -1159,24 +1230,6 @@
             e.preventDefault();
         });
     </script>
-    <!--  <script>
-        $(document).scroll(function () {
-            $('#navbar-hide').css('display', 'flex');
-            setTimeout(function () {
-                $('#navbar-hide').css('display', 'none');
-            }, 5000)
-        })
-    </script>
-
-    <script>
-        $(document).on('keydown', 'body', function () {
-            $('#navbar-hide').css('display', 'flex');
-            setTimeout(function () {
-                $('#navbar-hide').css('display', 'none');
-            }, 1000)
-        });
-    </script> -->
-
     <script>
         $(document).ready(function () {
             $("a").on('click', function (event) {
@@ -1191,6 +1244,32 @@
                 }
             });
         });
+    </script>
+
+<script>
+        function postsCarousel() {
+            var checkWidth = $(window).width();
+            var owlPost = $("#info");
+            if (checkWidth > 601) {
+                if (typeof owlPost.data('owl.carousel') != 'undefined') {
+                    owlPost.data('owl.carousel').destroy();
+                }
+                owlPost.removeClass('owl-carousel');
+            } else if (checkWidth < 601) {
+                owlPost.addClass('owl-carousel');
+                owlPost.owlCarousel({
+                    items: 1,
+                    slideSpeed: 500,
+                    touchDrag: true,
+                    mouseDrag: true,
+                    dots: true,
+                    loop: true
+                });
+            }
+        }
+
+        postsCarousel();
+        $(window).resize(postsCarousel);
     </script>
 
 </body>

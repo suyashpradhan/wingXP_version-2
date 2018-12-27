@@ -2442,3 +2442,59 @@ a.bttn-dark:focus {
     width: 100%;
     cursor: pointer;
 }
+
+.about--header{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+    color: #17a2b8;
+    margin: 20px 0;
+}
+
+.row__head {
+    font-size: 20px;
+    margin: 15px 0;
+    padding: 0 ;
+   color: #4e4e4e;
+   font-weight: 900;
+}
+.row__head span {
+    display: block;
+}
+
+.row__para {
+    font-size: 15px;
+    text-align: justify;
+    color: #555;
+    font-weight:700;
+}
+
+.sr-no img{
+    margin: 0 auto !important;
+    display: block;
+    padding: 10px 0 0 0;
+    width: auto !important; 
+}
+
+.info_card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: auto;
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.info_card p{
+    padding: 8px 15px;
+    color: #555;
+    font-size: 17px;
+    margin: 0;
+    text-align: justify;
+    border-left: 5px solid #17a2b8;
+}
+
+  .card-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
