@@ -2425,6 +2425,47 @@ a.bttn-dark:focus {
     margin: 0;
 }
 
+.description-wrap a{
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #888;
+    padding: 3px 4px;
+    border-radius: 100px;
+    animation-name: shake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    cursor: pointer;
+    position: relative;
+
+}
+
+@keyframes shakeAnim {
+    0% {left: 0}
+    1% {left: -3px}
+    2% {left: 5px}
+    3% {left: -8px}
+    4% {left: 8px}
+    5% {left: -5px}
+    6% {left: 3px}
+    7% {left: 0}
+  }
+  
+  @keyframes shake {
+    0% {left: 0}
+    1% {left: -3px}
+    2% {left: 5px}
+    3% {left: -8px}
+    4% {left: 8px}
+    5% {left: -5px}
+    6% {left: 3px}
+    7% {left: 0}
+}
 
 .demo_new-wrap{
     display: grid;
