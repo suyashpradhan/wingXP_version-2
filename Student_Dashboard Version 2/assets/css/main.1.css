@@ -16,7 +16,6 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: "Nunito", sans-serif;
-  /* font-family: Google Sans, Arial, sans-serif;*/
   overflow-x: hidden;
   position: relative;
   margin: 0;
@@ -28,15 +27,9 @@ ol {
   margin: 15px !important;
 }
 
-.local-video {
-  max-width: 100%;
-  height: auto;
-}
-
 ul li {
   list-style: none;
-  /*   margin-top: 10px;
- */
+
 }
 
 .page-lay {
@@ -1007,9 +1000,8 @@ ul li {
 }
 
 .next-topic {
-  text-transform: uppercase;
   color: #000;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .pin-image img {
@@ -2390,8 +2382,8 @@ header {
   padding: 8px;
   margin-bottom: 7px;
   color: #696969;
-  background-color: #ccc;
-  border: 1px solid #ccc;
+  background-color: #fff;
+  border: 1px solid #fff;
   font-weight: 700;
   outline: none;
 }
@@ -2404,21 +2396,22 @@ header {
 }
 
 .diff-button {
-  background-color: #ce1f36;
-  color: #fff;
-  border: 1px solid #ce1f36;
+  background-color: #FDCD2F;
+  color: #363636;
+  font-size: 18px;
+  border: 1px solid#FDCD2F;
   padding: 5px 20px;
   cursor: pointer;
 }
 
 .diff-link {
   float: right;
-  color: #777;
+  color: #fff;
   margin-top: 5px;
 }
 
 .diff-link:hover {
-  color: #696969;
+  color: #ccc;
   text-decoration: none;
 }
 
@@ -2657,11 +2650,11 @@ header {
   flex: auto;
   border: none;
   height: 2px;
-  background-color: #777;
+  background-color: #fff;
 }
 
 .or span {
-  color: #696969;
+  color: #fff;
   padding: 0 0.5rem;
 }
 
@@ -2882,7 +2875,7 @@ header {
   background: #fff;
   position: relative;
   padding: 0 40px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  /* box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3); */
   margin: 25px 0 25px 0;
 }
 
@@ -3287,7 +3280,7 @@ header {
 
 .sidebar-nav ul li a {
   background: transparent;
-  color: #fff;
+  color: #696969;
 }
 
 .navbar-dropdown li a {
@@ -3306,10 +3299,6 @@ header {
 .sidebar-nav ul li ul li a {
   padding: 5px 10px 10px 10px;
   line-height: 20px;
-}
-
-.sidebar-nav ul li ul li a:hover {
-  color: #ce1f36;
 }
 
 .navbar-dropdown {
@@ -4600,20 +4589,6 @@ header {
   outline: none;
 }
 
-.back-link {
-  float: right;
-  text-decoration: none;
-  padding: 5px 15px;
-  background-color: #000;
-  color: #f8f8f8;
-  margin: 15px 0 30px 0;
-  font-size: 14px;
-}
-
-.back-link:hover {
-  text-decoration: none;
-  color: #fff;
-}
 
 .inner_form-new {
   display: grid;
@@ -4774,7 +4749,7 @@ header {
   }
 
   .webinar-header-sub {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .webinar_main--head {
@@ -4796,7 +4771,7 @@ header {
   }
 
   .webinar_info--two-number {
-    width: 60%;
+    width: 73%;
     margin: 0 auto;
     font-size: 14px;
   }
@@ -4804,7 +4779,7 @@ header {
   .inner_form-head {
     text-align: center;
     display: block;
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .inner_form-new {
@@ -4824,6 +4799,7 @@ header {
 
   .webinar_second-head {
     text-align: center;
+    font-size: 24px;
   }
 }
 
