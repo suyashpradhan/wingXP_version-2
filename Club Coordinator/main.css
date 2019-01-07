@@ -20,7 +20,6 @@ body {
     margin: 0;
     padding-bottom: 6rem;
     min-height: 100%;
-    /* background: linear-gradient(to left, #6190e8, #a7bfe8); */
 }
 
 .banner {
@@ -1764,28 +1763,6 @@ td {
     margin: 20px 0 0 0;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: "Nunito", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
-    height: 100%;
-}
-
-body {
-    font-family: "Nunito", sans-serif;
-    position: relative;
-    margin: 0;
-    padding-bottom: 6rem;
-    min-height: 100%;
-}
-
 .banner {
     position: relative;
     overflow: hidden;
@@ -2396,6 +2373,11 @@ nav {
     width: 100%;
 }
 
+.newnavigationBar a {
+    text-decoration: none;
+
+}
+
 .bg-gradient2 span,
 .bg-gradient2:before {
     background: #2abfd4;
@@ -2432,7 +2414,6 @@ nav {
 }
 
 .fancy-button span {
-    display: inline-block;
     padding: 10px 40px;
     border-radius: 50em;
     position: relative;
@@ -2531,8 +2512,8 @@ nav {
 
 hr {
     height: 5px;
-    background-color: #ce1f36;
-    border: 1px solid #ce1f36;
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -2567,7 +2548,7 @@ hr {
 }
 
 .gap:hover {
-    background-color: #ce1f36;
+    background-color: #17a2b8;
     color: #fff !important;
 }
 
@@ -2631,7 +2612,7 @@ hr {
 .page-description-header {
     height: 150px;
     width: 100%;
-    background-color: #ce1f36;
+    background-color: #17a2b8;
 }
 
 .page-description-text {
@@ -2695,8 +2676,8 @@ select {
 .submit__btn {
     width: 100%;
     padding: 12px 10px;
-    background-color: #ce1f36;
-    border: 1px solid #ce1f36;
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
     color: #fff;
     font-size: 20px;
     outline: none;
@@ -2708,7 +2689,7 @@ select {
 }
 
 .submit__btn:hover {
-    background-color: #ec102d;
+    background-color: #0c8ca0;
 }
 
 #page-table {
@@ -2802,40 +2783,7 @@ select {
     }
 }
 
-.admin-form {
-    width: 340px;
-    height: 400px;
-    background: #e6e6e6;
-    border-radius: 8px;
-    box-shadow: 0 0 40px -10px #000;
-    margin: calc(40vh - 230px) auto;
-    padding: 20px 30px;
-    max-width: calc(100vw - 40px);
-    box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
-    position: relative;
-}
 
-.admin-head {
-    margin: 10px 0;
-    padding-bottom: 10px;
-    width: 180px;
-    color: #78788c;
-    border-bottom: 3px solid #78788c;
-}
-
-.admin-field {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    border: 0;
-    font-family: "Nunito", sans-serif;
-    transition: all 0.3s;
-    border-bottom: 2px solid #bebed2;
-}
 
 .admin-field:focus {
     border-bottom: 2px solid #78788c;

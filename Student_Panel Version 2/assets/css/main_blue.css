@@ -2135,7 +2135,7 @@ a.bttn-dark:focus {
 
 @media screen and (max-width: 600px) and (min-width: 100px) {
   .display-4 {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .lead {
@@ -2350,7 +2350,7 @@ a.bttn-dark:focus {
 
   #sl3 {
     background-image: url("assets/images/03_small.png");
-    background-size: contain;
+    background-size: cover;
   }
 
   #sl4 {
@@ -2360,7 +2360,7 @@ a.bttn-dark:focus {
 
   #sl5 {
     background-image: url("assets/images/5_small.png");
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -2400,8 +2400,12 @@ a.bttn-dark:focus {
     background-image: url("assets/images/slider-03_large.png");
   }
 
+  #sl4 {
+    background-image: url("../images/4_largessss.jpg");
+  }
+
   #sl5 {
-    background-image: url("../images/5_large.png");
+    background-image: url("assets/images/5_large.png");
     background-size: cover;
   }
 }
@@ -2652,8 +2656,7 @@ a.bttn-dark:focus {
   background-size: contain;
 }
 
-
-img {
+.hero img {
   width: 100%;
   max-width: 100%;
 }
