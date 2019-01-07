@@ -27,7 +27,6 @@ img {
 }
 
 /*Menu*/
-
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -2488,7 +2487,6 @@ a.bttn-dark:focus {
   grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
   width: 100%;
-  height: 100%;
 }
 
 .form-name {
@@ -2587,20 +2585,6 @@ a.bttn-dark:focus {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
   color: #fff;
-}
-
-.demo_new-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
-  width: 100%;
-  height: 100%;
-}
-
-@media screen and (max-width:600px) and (min-width:100px) {
-  .demo_new-wrap {
-    grid-template-columns: 1fr;
-  }
 }
 
 .limiter {

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* font-family: Google Sans, Arial, sans-serif; */
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Nunito", sans-serif;
 
 }
 
@@ -3749,7 +3749,7 @@ select {
   background-color: #ce1f36;
   padding: 5px 20px;
   border-radius: 100px;
-   transform: all .1s ease;
+  transform: all .1s ease;
 }
 
 .club-cb-link {
@@ -4298,20 +4298,14 @@ select {
   align-items: center;
 }
 
-.logo h6 {
-  color: #fff;
-  font-size: 24px;
-  margin-top: 10px;
-}
-
 .logo a {
-  display: inline-block;
+  color: #fff;
+  font-size: 32px;
 }
 
-.logo img {
-  max-width: 40px;
-  vertical-align: center;
-  margin-right: 3px;
+.logo a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .side-nav-wrapper {
@@ -4377,6 +4371,8 @@ select {
 
 .footer-wrap a:hover {
   color: #fff;
+  text-decoration: none;
+
 }
 
 .right_topNav {
@@ -4404,10 +4400,11 @@ select {
   color: #86898e;
   flex: 1;
   margin: 0 0 0 30px;
+
 }
 
 .topNav_first span {
-  color: #d12d31;
+  color: #0052b7;
 }
 
 .nav-icons {
@@ -4418,7 +4415,7 @@ select {
 }
 
 .nav-icons:hover {
-  color: #d12d31;
+  color: #0052b7;
 }
 
 .icon-li {
@@ -4455,18 +4452,17 @@ select {
 }
 
 .header-text {
-  margin: 30px 0 0 0px;
+  margin: 10px 0 0 0px;
   font-size: 28px;
   font-weight: 700;
   color: #303641;
-  text-transform: uppercase;
-  padding-bottom: 15px;
+  padding-bottom: 2px;
   border-radius: 2px;
+  display: block;
 }
 
 .header-text span {
   color: #d12d31;
-  margin-left: 10px;
 }
 
 .header-text_subs {
@@ -4596,13 +4592,16 @@ select {
 }
 
 .hr_under_one {
-  border-bottom: 8px solid #d12d31;
+  border-bottom: 8px solid #17a2b8;
   margin-bottom: 0;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   background: none !important;
+  margin: 0;
+  padding: 0;
+  width: 60px;
 }
 
 .hr_under {
@@ -4975,12 +4974,11 @@ select {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  grid-auto-rows: 1fr;
   margin-bottom: 40px;
 }
 
 .img-section img {
-  height: 180px;
+  height: 150px;
   width: 100%;
 }
 
@@ -4994,32 +4992,12 @@ select {
 }
 
 .section--header {
-  padding: 3px 5px;
-  font-size: 20px;
+  padding: 5px;
+  font-size: 18px;
   text-align: center;
-  height: 60px;
+  height: 40px;
   color: #696969;
   font-weight: 700;
-}
-
-.section-sub-first {
-  font-size: 13px;
-  text-align: center;
-  width: 60%;
-  margin: 10px auto;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #ccc;
-  color: #777 !important;
-  font-weight: 700;
-}
-
-.section-sub-first-new {
-  font-size: 12px;
-  text-align: center;
-  width: 50%;
-  margin: 10px auto;
-  color: #696969 !important;
-  font-weight: 900;
 }
 
 .section-link-wrapper {
@@ -5036,20 +5014,22 @@ select {
 
 .section--link {
   text-align: center;
-  background-color: #ce1f36;
+  background-color: #fddf65;
   font-size: 18px;
   text-decoration: none;
-  color: #fff;
+  color: #363636;
   padding: 5px 15px;
   text-transform: uppercase;
   margin: 10px 0;
   font-weight: 700;
   letter-spacing: 1px;
+  transition: all 1s ease;
 }
 
 .section--link:hover {
   text-decoration: none;
-  color: #fff;
+  color: #363636;
+  background-color: #f7c80f;
 }
 
 .school-header {
@@ -5068,13 +5048,6 @@ select {
   padding: 25px 0 0 0;
   cursor: default;
 }
-
-.section--link:hover {
-  background-color: #f10020;
-  border: #f10020;
-  color: #fff;
-}
-
 
 /*CSS TAB PANEL*/
 
@@ -5692,7 +5665,177 @@ select {
   margin: 30px auto;
 }
 
-
 .batch-card_2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.club-st-text {
+  font-size: 22px;
+  font-weight: 700;
+  /* float: right; */
+  color: #777;
+}
+
+#dropdown {
+  display: block;
+  float: right;
+  padding: 13px 16px;
+  width: 266px;
+  position: relative;
+  cursor: pointer;
+  border-left: 4px solid #739cda;
+  background: #fff;
+  font-size: 1.1em;
+  color: #656565;
+  font-weight: normal;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  z-index: 10000;
+}
+
+#dropdown:hover {
+  color: #898989;
+}
+
+#dropdown.open {
+  background: #5a90e0;
+  color: #fff;
+  border-left-color: #6c6d70;
+}
+
+#dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: -4px;
+  width: 266px;
+  padding: 5px 0px;
+  display: none;
+  border-left: 4px solid #8e9196;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  z-index: 1000000;
+}
+
+#dropdown ul li {
+  font-size: 0.9em;
+}
+
+#dropdown ul li a {
+  text-decoration: none;
+  display: block;
+  color: #447dd3;
+  padding: 7px 15px;
+}
+
+#dropdown ul li a:hover {
+  color: #6fa0e9;
+  background: #e7f0f7;
+}
+
+ul.nav>li {
+  position: relative;
+  margin: 30px 0 0 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ce1f36;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+ul.nav>li:hover ul.dropdown {
+  visibility: visible;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+  z-index: 1000;
+}
+
+ul.nav>li:hover ul.dropdown>li {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+ul.nav>li:first-child {
+  border-top-left-radius: 6px;
+}
+
+ul.nav>li:last-child {
+  border-top-right-radius: 6px;
+}
+
+ul.dropdown {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  list-style: none;
+  color: #363636 !important;
+  background: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.15),
+    0px 4px 14px -1px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate(0, -60px);
+  transform: translate(0, -60px);
+  transition: opacity 0.2s, z-index 0s 0.2s, -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, opacity 0.2s, z-index 0s 0.2s;
+  transition: transform 0.2s ease-out, opacity 0.2s, z-index 0s 0.2s,
+    -webkit-transform 0.2s ease-out;
+  opacity: 0;
+  z-index: 99999;
+  width: 250px;
+}
+
+ul.dropdown>li {
+  margin-top: 10px;
+  padding: 2px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #f6c016 !important;
+}
+
+.dropdown-link {
+  color: #777;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.dropdown-link:hover {
+  color: #696969;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.upload-table {
+  margin: 50px auto;
+}
+
+.upload-table thead {
+  background-color: #981a35 !important;
+  color: #fff !important;
+}
+
+.upload-table td {
+  font-size: 16px;
+  text-align: left;
 }
