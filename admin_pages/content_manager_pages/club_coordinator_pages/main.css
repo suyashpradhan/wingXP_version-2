@@ -4299,7 +4299,7 @@ select {
 }
 
 .logo a {
-  color: #fff;
+  color: #fddf65;
   font-size: 32px;
 }
 
@@ -4684,7 +4684,7 @@ select {
   padding: 15px 25px;
   text-transform: uppercase;
   margin: 0;
-  border-bottom: 2px solid #ce1f36;
+  border-bottom: 2px solid #17a2b8;
 }
 
 .inner-clubs-div li {
@@ -4702,7 +4702,7 @@ select {
 }
 
 .club-inner_icons {
-  background-color: #d12d31;
+  background-color: #17a2b8;
   padding: 6px;
   border-radius: 100px;
   color: #fff;
@@ -5093,19 +5093,19 @@ select {
 
 .tabset>label:hover,
 .tabset>input:focus+label {
-  color: #ce1f36;
+  color: #17a2b8;
 }
 
 .tabset>label:hover::after,
 .tabset>input:focus+label::after,
 .tabset>input:checked+label::after {
-  background: #ce1f36;
+  background: #17a2b8;
 }
 
 .tabset>input:checked+label {
   margin-bottom: -1px;
-  color: #ce1f36;
-  border-top: 2px solid #ce1f36;
+  color: #696969;
+  border-top: 2px solid #17a2b8;
 }
 
 .tab-panel {
@@ -5141,7 +5141,7 @@ select {
 }
 
 .li-body_list li span {
-  color: #ce1f36;
+  color: #002451;
   font-size: 20px;
   font-weight: 900;
   margin-left: 5px;
