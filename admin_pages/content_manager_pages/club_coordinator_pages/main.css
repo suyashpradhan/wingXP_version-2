@@ -3746,7 +3746,7 @@ select {
 }
 
 .club-cb-section-sub {
-  background-color: #ce1f36;
+  background-color: #17a2b8;
   padding: 5px 20px;
   border-radius: 100px;
   transform: all .1s ease;
@@ -3812,7 +3812,7 @@ select {
 }
 
 .club-cd-add-link {
-  background-color: #ce1f36;
+  background-color: #17a2b8;
   color: #fff;
   padding: 4px 12px;
   border-radius: 100px;
@@ -3855,7 +3855,7 @@ select {
 }
 
 .club-cb-desc-add-list li i {
-  color: #ce1f36;
+  color: #0052b7;
   margin-left: 10px;
 }
 
@@ -4034,7 +4034,8 @@ select {
   padding: 40px;
   max-width: 700px;
   margin: 120px auto;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  /*   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+ */
 }
 
 .club-header-st {
@@ -4772,7 +4773,7 @@ select {
 
 .__head {
   font-size: 34px;
-  color: #ce1f36;
+  color: #17a2b8;
   font-weight: 900;
   text-decoration: underline;
   text-align: left;
@@ -4945,11 +4946,22 @@ select {
 .row--link {
   color: #fff;
   font-size: 18px;
-  background-color: #d12d31;
+  background-color: #17a2b8;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
 }
+
+.row--link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.row--link a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 
 .row-submit-btn {
   margin: 40px auto 10px auto;
@@ -5517,8 +5529,8 @@ select {
   outline: none;
   border-radius: 2px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  background-color: #ce1f36;
-  border: 1px solid #ce1f36;
+  background-color: #17a2b8;
+  border: 1px solid #17a2b8;
   color: #fff;
   transition: background-color 0.3s;
   width: 100%;
