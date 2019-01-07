@@ -2636,7 +2636,7 @@ hr {
 .page-description-header {
   height: 150px;
   width: 100%;
-  background-color: #ce1f36;
+  background-color: #17a2b8;
   margin-bottom: 30px;
 }
 
@@ -2699,8 +2699,8 @@ select {
 .submit__btn {
   width: 100%;
   padding: 12px 10px;
-  background-color: #ce1f36;
-  border: 1px solid #ce1f36;
+  background-color: #17a2b8;
+  border: 1px solid #17a2b8;
   color: #fff;
   font-size: 20px;
   outline: none;
@@ -2711,7 +2711,7 @@ select {
 }
 
 .submit__btn:hover {
-  background-color: #ec102d;
+  background-color: #19b1c9;
 }
 
 #page-table {
@@ -4462,7 +4462,7 @@ select {
 }
 
 .header-text span {
-  color: #d12d31;
+  color: #17a2b8;
 }
 
 .header-text_subs {
