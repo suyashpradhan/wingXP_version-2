@@ -2348,7 +2348,7 @@ a.bttn-dark:focus {
   }
 
   #sl3 {
-    background-image: url("assets/images/03_small.png");
+    background-image: url("assets/images/3_small.png");
     background-size: cover;
   }
 
@@ -2373,7 +2373,7 @@ a.bttn-dark:focus {
   }
 
   #sl3 {
-    background-image: url("assets/images/slider-03_large.png");
+    background-image: url("assets/images/3_large.png");
   }
 
   #sl4 {
@@ -2396,11 +2396,11 @@ a.bttn-dark:focus {
   }
 
   #sl3 {
-    background-image: url("assets/images/slider-03_large.png");
+    background-image: url("assets/images/3_large.png");
   }
 
   #sl4 {
-    background-image: url("../images/4_largessss.jpg");
+    background-image: url("assets/images/4_large.jpg");
   }
 
   #sl5 {
