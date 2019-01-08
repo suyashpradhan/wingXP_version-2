@@ -64,6 +64,7 @@ $(document).ready(function () {
 
 //Autoplay Youtube Videos
 autoPlayYouTubeModal();
+
 function autoPlayYouTubeModal() {
   var trigger = $("body").find('[data-toggle="modal"]');
   trigger.click(function () {
@@ -106,7 +107,7 @@ $(".verticalCarousel-2").verticalCarousel({
 //Owl Carousel
 $(".owl-carousel ").owlCarousel({
   loop: true,
-  margin: 40,
+  margin: 10,
   responsiveClass: true,
   nav: true,
   loop: true,
@@ -119,19 +120,20 @@ $(".owl-carousel ").owlCarousel({
       items: 1
     },
     651: {
-      items: 2
+      items: 1
     },
     900: {
-      items: 2
+      items: 1
     },
     1000: {
-      items: 2
+      items: 1
     }
   }
 });
 
 //FAQ
 const items = document.querySelectorAll(".faq-div a");
+
 function toggleAccordion() {
   this.classList.toggle("active");
   this.nextElementSibling.classList.toggle("active");
@@ -141,8 +143,7 @@ function toggleAccordion() {
 (function ($) {
   $.fn.menumaker = function (options) {
     var cssmenu = $(this),
-      settings = $.extend(
-        {
+      settings = $.extend({
           format: "dropdown",
           sticky: false
         },
@@ -175,8 +176,8 @@ function toggleAccordion() {
           $(this).toggleClass("submenu-opened");
           if (
             $(this)
-              .siblings("ul")
-              .hasClass("open")
+            .siblings("ul")
+            .hasClass("open")
           ) {
             $(this)
               .siblings("ul")

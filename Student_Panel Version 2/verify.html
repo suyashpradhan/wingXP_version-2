@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id='navbar-hide' style="background-color:#17a2b8; color:#fff;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar-hide" style="background-color:#17a2b8; color:#fff;">
         <a class="navbar-brand" href="http://www.wingxp.com">
             <span style="color: #fff !important; font-weight:1000; font-size: 26px;margin: 0;padding: 0;">wingxp</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -27,22 +27,27 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://www.wingxp.com/login">Login</a>
+                    <a class="nav-link" href="http://www.wingxp.com">Login</a>
                 </li>
-                <li class="nav-item"> <a class="nav-link" href="http://www.wingxp.com/login/school_registration.php">Sign
-                        Up</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="http://iclubs.in/school_registration.php">Sign Up</a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
-                <h1 style="font-size: 32px;color:#696969;text-align: center;margin: 25px 0;">Enter One Time Password
-                    Here</h1>
+                <h1 style="font-size: 32px;color:#696969;text-align: center;margin: 25px 0;">Contact Details
+                </h1>
                 <form id="demo_detail" action="verify.php" method="POST" class="demo_new-wrap">
                     <div class="form-group">
-                        <input class="form-control" type="number" name="mob_otp" id="mob_otp" placeholder="Enter OTP"
-                            required style="height: 47px;border-radius: 0">
+                        <input class="form-control" placeholder="Name" required style="height: 47px;border-radius: 0">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="School Name" required style="height: 47px;border-radius: 0">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Phone Number" required style="height: 47px;border-radius: 0">
                     </div>
                     <div class="form-group">
                         <button type="submit" class="submit-modal-btn">Verify</button>
@@ -51,6 +56,9 @@
             </div>
         </div>
     </div>
+    <section style="background-color:#696969;height: 45px">
+        <h1 class="footer-inner"> © Copyright – WingXP 2018</h1>
+    </section>
 </body>
 
 </html>
