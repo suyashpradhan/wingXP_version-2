@@ -105,7 +105,7 @@ $(".verticalCarousel-2").verticalCarousel({
 });
 
 //Owl Carousel
-$(".owl-carousel ").owlCarousel({
+$(".row-new-grid ").owlCarousel({
   loop: true,
   margin: 10,
   responsiveClass: true,
@@ -126,10 +126,39 @@ $(".owl-carousel ").owlCarousel({
       items: 1
     },
     1000: {
+      items: 2
+    }
+  }
+});
+
+$("#owl-demo ").owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  navigation: true, // Show next and prev buttons
+  slideSpeed: 300,
+  paginationSpeed: 400,
+  singleItem: true,
+  items: 1,
+  responsive: {
+    0: {
+      items: 1
+    },
+    526: {
+      items: 1
+    },
+    651: {
+      items: 1
+    },
+    900: {
+      items: 1
+    },
+    1000: {
       items: 1
     }
   }
 });
+
 
 //FAQ
 const items = document.querySelectorAll(".faq-div a");
