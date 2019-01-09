@@ -669,7 +669,7 @@ ul li {
   text-align: justify;
   color: #777;
   margin-top: 10px;
-  height: 70px;
+  height: 50px;
 }
 
 .main-article-div img {
@@ -764,6 +764,7 @@ ul li {
   background-color: #777;
   max-width: 100%;
   height: 295px;
+
 }
 
 .inner-details {
@@ -1381,36 +1382,26 @@ ul li {
 
 .verticalCarouselHeader .vc_goUp,
 .verticalCarouselHeader .vc_goDown {
-  float: left;
-  font-size: 32px;
-  background-color: #fff;
-  margin: 10px 3px;
-  width: 50px;
-  height: 50px;
-  border-radius: 0;
-  color: #777;
-  border: 3px solid #ccc;
-  outline: none;
-  padding: -3px 20px -3px 20px;
-  display: block;
+  display: inline-block;
+  margin-right: 7px;
+  width: 30px;
+  height: 30px;
+  line-height: 24px;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 900;
+  color: #696969;
+  cursor: pointer;
 }
 
 .verticalCarouselHeader .vc_goUp:hover,
 .verticalCarouselHeader .vc_goDown:hover {
-  background-color: #fff;
-  color: #363636;
-  font-weight: 900;
+  background-color: #17a2b8;
+  color: #fff;
 }
 
-.verticalCarouselHeader .vc_goDown:active,
-.verticalCarouselHeader .vc_goDown:active {
-  border: none;
-  outline: none;
-  -moz-transform: scale(0.7, 0.7);
-  -ms-transform: scale(0.7, 0.7);
-  -webkit-transform: scale(0.7, 0.7);
-  transform: scale(0.7, 0.7);
-}
 
 .verticalCarouselGroup_.vc_list_>li {
   border-width: 0px;
@@ -1437,7 +1428,7 @@ ul li {
 .verticalCarouselHeader_2 .vc_goDown_2 {
   float: left;
   font-size: 32px;
-  background-color: #fff;
+  background: none;
   margin: 10px 3px;
   width: 50px;
   height: 50px;
@@ -3039,7 +3030,6 @@ header {
     max-width: 100%;
     height: auto;
     padding-bottom: 5px;
-    margin-top: 15px;
   }
 
   .webinar-speaker {
@@ -3160,7 +3150,6 @@ header {
     max-width: 100%;
     height: auto;
     padding-bottom: 5px;
-    margin-top: 15px;
   }
 
   .webinar-speaker {
@@ -3273,7 +3262,6 @@ header {
     max-width: 100%;
     height: auto;
     padding-bottom: 5px;
-    margin-top: 15px;
   }
 
   .webinar-speaker {

@@ -109,8 +109,9 @@ $(".row-new-grid ").owlCarousel({
   loop: true,
   margin: 10,
   responsiveClass: true,
-  nav: true,
   loop: true,
+  slideSpeed: 300,
+  paginationSpeed: 400,
   items: 1,
   responsive: {
     0: {

@@ -37,13 +37,14 @@
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 10px
+    margin: 0 0 15px 0
 }
 
 .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
     margin-right: 5px;
+    all: unset;
 }
 
 .owl-theme .owl-dots .owl-dot span {
