@@ -105,7 +105,7 @@ $(".verticalCarousel-2").verticalCarousel({
 });
 
 //Owl Carousel
-$(".row-new-grid ").owlCarousel({
+$("#learning_video").owlCarousel({
   loop: true,
   margin: 10,
   responsiveClass: true,
@@ -132,11 +132,11 @@ $(".row-new-grid ").owlCarousel({
   }
 });
 
-$("#owl-demo ").owlCarousel({
+$("#webinar_slider").owlCarousel({
   loop: true,
   margin: 10,
   responsiveClass: true,
-  navigation: true, // Show next and prev buttons
+  navigation: false, // Show next and prev buttons
   slideSpeed: 300,
   paginationSpeed: 400,
   singleItem: true,
