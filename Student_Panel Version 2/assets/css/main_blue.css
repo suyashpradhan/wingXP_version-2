@@ -2538,6 +2538,7 @@ a.bttn-dark:focus {
 
 .row__head span {
   display: block;
+  color: #696969;
 }
 
 .row__para {
@@ -2551,6 +2552,7 @@ a.bttn-dark:focus {
   margin: 0 auto !important;
   display: block;
   padding: 10px 0 0 0;
+  height: 100px;
   width: auto !important;
 }
 
