@@ -2698,9 +2698,9 @@ select {
 .submit__btn {
     width: 100%;
     padding: 12px 10px;
-    background-color: #17a2b8;
-    border: 1px solid #17a2b8;
-    color: #fff;
+    background-color: #fddf65;
+    border: 1px solid #fddf65;
+    color: #363636;
     font-size: 20px;
     outline: none;
     letter-spacing: 1px;
@@ -2710,7 +2710,7 @@ select {
 }
 
 .submit__btn:hover {
-    background-color: #19b1c9;
+    background-color: #f7c80f;
 }
 
 #page-table {
@@ -4030,16 +4030,53 @@ select {
 
 .form-new {
     background: #fff;
-    padding: 40px;
+    padding: 20px;
     max-width: 700px;
     margin: 120px auto;
     /*   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
  */
 }
 
+.back__link {
+    background-color: #474747;
+    color: #fff !important;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.back__link:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.form-new_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    margin: 20px 0;
+}
+
+.form-new_grid a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form-new_grid a:hover {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
 .club-header-st {
     font-size: 28px;
-    color: #fff;
+    color: #f8f8f8;
     font-weight: 700;
 }
 
@@ -4056,17 +4093,17 @@ select {
 }
 
 .new-check {
-    color: #fff;
+    color: #f8f8f8;
     padding: 5px 0px !important;
     margin: 10px 0;
 }
 
 .add-club-btn {
     display: block;
-    background-color: #fff;
-    border: 1px solid #fff;
-    color: #777;
-    margin: 50px auto;
+    background: #fddf65;
+    border: 1px solid #fddf65;
+    color: #363636;
+    margin: 15px auto;
     padding: 10px 40px;
     cursor: pointer;
     font-weight: 700;
@@ -4087,20 +4124,26 @@ select {
 
 .row-head-new {
     font-size: 20px;
-    color: #fff;
-    margin: 30px 0 3px 0;
+    color: #f8f8f8;
+    margin: 10px 0 3px 0;
 }
 
 .row-fields {
     padding: 3px;
     width: 180px;
     margin: 10px 0;
+    border: 1px solid #f8f8f8;
+    display: block;
+}
+
+textarea {
+    border: 1px solid #f8f8f8;
 }
 
 .row-head-new-two {
     font-size: 26px;
-    color: #fff;
-    margin: 30px 0 3px 0;
+    color: #f8f8f8;
+    margin: 15px 0 5px 0;
 }
 
 .first-half-wrapper {
@@ -4381,6 +4424,32 @@ select {
     width: 100%;
 }
 
+.btn_logout {
+    color: #363636;
+    text-align: center;
+    font-weight: 900;
+    padding: 8px 40px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: all 1s ease;
+    text-transform: uppercase;
+}
+
+.btn_logout:hover {
+    -moz-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.16), 0 6px 30px 0 rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.16), 0 6px 30px 0 rgba(0, 0, 0, 0.29);
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.16), 0 6px 30px 0 rgba(0, 0, 0, 0.29);
+    text-decoration: none;
+    color: #363636;
+    background-color: #f7c80f;
+}
+
+.indigo {
+    background: #fddf65;
+}
+
 .inner-topNav {
     max-width: 1000px;
     margin: auto;
@@ -4429,9 +4498,11 @@ select {
     cursor: default;
 }
 
+
+
 .icon-wrap {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     height: 80px;
 }
@@ -4459,6 +4530,15 @@ select {
     padding-bottom: 2px;
     border-radius: 2px;
     display: block;
+}
+
+.page__header {
+    margin: 25px 0 0 0;
+    padding: 0;
+    font-size: 32px;
+    text-align: left;
+    color: #424242;
+    font-weight: 900;
 }
 
 .header-text span {
@@ -5327,6 +5407,14 @@ select {
     margin: 30px 0 0 0;
 }
 
+.batch-section_new {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 30px 0 0 0;
+}
+
 .batch-section_link {
     margin-right: 40px;
     text-decoration: none;
@@ -5335,6 +5423,10 @@ select {
     padding: 10px 40px;
     border-radius: 2px;
     font-size: 18px;
+}
+
+.batch-section_link:last-child {
+    margin-right: 0;
 }
 
 .batch-section_link:hover {
@@ -5517,9 +5609,9 @@ select {
     outline: none;
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-    background-color: #17a2b8;
-    border: 1px solid #17a2b8;
-    color: #fff;
+    background-color: #fddf65;
+    border: 1px solid #fddf65;
+    color: #363636;
     transition: background-color 0.3s;
     width: 100%;
     cursor: pointer;
@@ -5527,8 +5619,8 @@ select {
 
 .tab-content-form_btn:hover,
 .tab-content-form_btn:focus {
-    background-color: #f80021;
-    border: 1px solid #f80021;
+    background-color: #f7c80f;
+    border: 1px solid #f7c80f;
 }
 
 .tab-content-form_btn>* {
@@ -5540,31 +5632,17 @@ select {
     padding: 12px 24px;
 }
 
-.tab-content-form_btn:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    width: 0;
-    padding-top: 0;
-    border-radius: 100%;
-    background-color: rgba(236, 240, 241, 0.3);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.tab-content-form_btn:active:before {
-    width: 120%;
-    padding-top: 120%;
-    transition: width 0.2s ease-out, padding-top 0.2s ease-out;
-}
-
 .tab-content-import_header {
     font-size: 24px;
+    display: inline-block;
+    color: #696969;
+    font-weight: 900;
+    margin: 0 10px 25px 0;
+}
+
+.tab-content-import_header_new {
+    font-size: 24px;
+    display: block;
     color: #696969;
     font-weight: 900;
 }
@@ -5572,6 +5650,10 @@ select {
 .import_btn {
     background-color: #777 !important;
     border: 1px solid #777 !important;
+}
+
+.download-link {
+    display: inline;
 }
 
 .import_btn:hover {
@@ -5585,6 +5667,7 @@ select {
     justify-content: flex-start;
     align-items: center;
 }
+
 
 .new_select select {
     -webkit-appearance: none;
@@ -5661,8 +5744,8 @@ select {
     display: block;
     height: auto;
     position: relative;
-    width: 50%;
-    margin: 30px auto;
+    width: 90%;
+    margin: 15px auto;
 }
 
 .batch-card_2 {
