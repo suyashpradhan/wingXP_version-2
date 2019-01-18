@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../Club Coordinator/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous" />
+    <title>Aditya Birla Public School - School Dashboard</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
+</head>
+
+<body style="background-color:#f0f0f0">
+    <div class="page-container__new">
+        <div class="sidebar-menu">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="inst_dashboard.php">
+                        wingxp</a>
+                </div>
+            </div>
+            <div class="side-nav-wrapper">
+                <ul class="side-nav_list">
+                    <li>
+                        <i class="fas fa-graduation-cap side-icons fa-fw"></i>
+                        <a href="club.php" class="side-nav_links"> Clubs Management </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-user side-icons fa-fw"></i>
+                        <a href="add_class1.php" class="side-nav_links"> Users Management </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cog side-icons fa-fw"></i>
+                        <a href="#" class="side-nav_links">Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-wrap">
+                <h1 class="copy-text">
+                    Copyright &copy; WingXP 2018 .All rights reserved
+                </h1>
+                <a href="#">Privacy Policy</a> <span>|</span> <a href="#">Feedback</a>
+            </div>
+        </div>
+        <div class="main-content" style="min-height: 100vh;">
+            <div class="right_topNav">
+                <div class="inner-topNav">
+                    <div class="row no-gutters ">
+                        <div class="col-10">
+                            <div class="icon-wrap">
+                                <h1 class="topNav_first">
+                                    Aditya Birla Public School <span> DASHBOARD </span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="icon-wrap">
+                                <a href="?q=logout" class="btn_logout indigo wave">Logout</a>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-container">
+                <div class="new-container">
+                    <h1 class="update-form-header">Create Club Coordinator</h1>
+                    <hr class="hr_under_one hr_new">
+                    <div class="club-cb-section">
+                        <div>
+                        </div>
+                        <div class="club-cb-section-sub">
+                            <a href="add_creator.php" class="club-cb-link "><i class="fas fa-plus"></i>
+                                Add New Club Coordinator Here</a>
+                        </div>
+                    </div>
+
+
+                    <div class="club-cb-desc club-cb-effect">
+                        <ul class="club-cb-desc-list">
+                            <li>Kiran Nambiar</li>
+                            <li>Username : kiran</li>
+                            <li>Password : kiran</li>
+                            <li>Role : coordinator</li>
+                        </ul>
+                        <h1 class="club-cb-add">Club Registered For</h1>
+                        <a href="javascript:void(0);" data-href="assign_coordinator_club.php?creator_id=TC_258_1"
+                            onClick="openModal('TC_258_1');" id="TC_258_1" class="club-cd-add-link teacher_login_form"><i
+                                class="fas fa-plus"></i> Add Club</a>
+                        <ul class="club-cb-desc-add-list" style="justify-items: left; ">
+                            <li>Physics Academic <p align='right' style='display:inline'> <i class='fas fa-times' style='cursor:pointer;'
+                                        onclick='delete_assigned_subject("TC_258_1","club_34")'></i> </p>
+                            </li>
+                            <li>Deep Learning Artificial Intelligence <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","CI_15")'></i>
+                                </p>
+                            </li>
+                            <li>Natural Language Processing Artificial Intelligence <p align='right' style='display:inline'>
+                                    <i class='fas fa-times' style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","CI_17")'></i>
+                                </p>
+                            </li>
+                            <li>History Academic <p align='right' style='display:inline'> <i class='fas fa-times' style='cursor:pointer;'
+                                        onclick='delete_assigned_subject("TC_258_1","club_20")'></i> </p>
+                            </li>
+                            <li>Science Academic <p align='right' style='display:inline'> <i class='fas fa-times' style='cursor:pointer;'
+                                        onclick='delete_assigned_subject("TC_258_1","club_28")'></i> </p>
+                            </li>
+                            <li>Geography Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_29")'></i>
+                                </p>
+                            </li>
+                            <li>Maths Academic <p align='right' style='display:inline'> <i class='fas fa-times' style='cursor:pointer;'
+                                        onclick='delete_assigned_subject("TC_258_1","club_30")'></i> </p>
+                            </li>
+                            <li>demo Academic <p align='right' style='display:inline'> <i class='fas fa-times' style='cursor:pointer;'
+                                        onclick='delete_assigned_subject("TC_258_1","club_31")'></i> </p>
+                            </li>
+                            <li>Digital Design Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_18")'></i>
+                                </p>
+                            </li>
+                            <li>Tech Talk Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_21")'></i>
+                                </p>
+                            </li>
+                            <li>Smarter Minds Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_22")'></i>
+                                </p>
+                            </li>
+                            <li>Environment Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_23")'></i>
+                                </p>
+                            </li>
+                            <li>Coding Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_24")'></i>
+                                </p>
+                            </li>
+                            <li>Console Gaming Gaming <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_39")'></i>
+                                </p>
+                            </li>
+                            <li>English Expression Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_26")'></i>
+                                </p>
+                            </li>
+                            <li>Understanding News Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_27")'></i>
+                                </p>
+                            </li>
+                            <li>Science School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_37")'></i>
+                                </p>
+                            </li>
+                            <li>Maths School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_1","club_38")'></i>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="club-cb-desc club-cb-effect">
+                        <ul class="club-cb-desc-list">
+                            <li>Kiran Pres</li>
+                            <li>Username : kiranpres</li>
+                            <li>Password : kiranpres</li>
+                            <li>Role : president</li>
+                        </ul>
+                        <h1 class="club-cb-add">Club Registered For</h1>
+                        <a href="javascript:void(0);" data-href="assign_coordinator_club.php?creator_id=TC_258_2"
+                            onClick="openModal('TC_258_2');" id="TC_258_2" class="club-cd-add-link teacher_login_form"><i
+                                class="fas fa-plus"></i> Add Club</a>
+                        <ul class="club-cb-desc-add-list" style="justify-items: left; ">
+                            <li>Machine Learning Artificial Intelligence <p align='right' style='display:inline'> <i
+                                        class='fas fa-times' style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","CI_14")'></i>
+                                </p>
+                            </li>
+                            <li>Deep Learning Artificial Intelligence <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","CI_15")'></i>
+                                </p>
+                            </li>
+                            <li>Natural Language Processing Artificial Intelligence <p align='right' style='display:inline'>
+                                    <i class='fas fa-times' style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","CI_17")'></i>
+                                </p>
+                            </li>
+                            <li>History Academic <p align='right' style='display:inline'> <i class='fas fa-times' style='cursor:pointer;'
+                                        onclick='delete_assigned_subject("TC_258_2","club_20")'></i> </p>
+                            </li>
+                            <li>Science Academic <p align='right' style='display:inline'> <i class='fas fa-times' style='cursor:pointer;'
+                                        onclick='delete_assigned_subject("TC_258_2","club_28")'></i> </p>
+                            </li>
+                            <li>Geography Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_29")'></i>
+                                </p>
+                            </li>
+                            <li>Maths Academic <p align='right' style='display:inline'> <i class='fas fa-times' style='cursor:pointer;'
+                                        onclick='delete_assigned_subject("TC_258_2","club_30")'></i> </p>
+                            </li>
+                            <li>demo Academic <p align='right' style='display:inline'> <i class='fas fa-times' style='cursor:pointer;'
+                                        onclick='delete_assigned_subject("TC_258_2","club_31")'></i> </p>
+                            </li>
+                            <li>Physics Academic <p align='right' style='display:inline'> <i class='fas fa-times' style='cursor:pointer;'
+                                        onclick='delete_assigned_subject("TC_258_2","club_34")'></i> </p>
+                            </li>
+                            <li>Chemistry Club Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_36")'></i>
+                                </p>
+                            </li>
+                            <li>Digital Design Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_18")'></i>
+                                </p>
+                            </li>
+                            <li>Tech Talk Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_21")'></i>
+                                </p>
+                            </li>
+                            <li>Smarter Minds Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_22")'></i>
+                                </p>
+                            </li>
+                            <li>Environment Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_23")'></i>
+                                </p>
+                            </li>
+                            <li>Coding Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_24")'></i>
+                                </p>
+                            </li>
+                            <li>Astronomy Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_25")'></i>
+                                </p>
+                            </li>
+                            <li>English Expression Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_26")'></i>
+                                </p>
+                            </li>
+                            <li>Understanding News Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_27")'></i>
+                                </p>
+                            </li>
+                            <li>Science School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_37")'></i>
+                                </p>
+                            </li>
+                            <li>Maths School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","club_38")'></i>
+                                </p>
+                            </li>
+                            <li>SciFi School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","school_club_28")'></i>
+                                </p>
+                            </li>
+                            <li>Mathemagic School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","school_club_29")'></i>
+                                </p>
+                            </li>
+                            <li>Jio Graphy School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_2","school_club_31")'></i>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="club-cb-desc club-cb-effect">
+                        <ul class="club-cb-desc-list">
+                            <li>Suyash</li>
+                            <li>Username : suyash</li>
+                            <li>Password : suyash123</li>
+                            <li>Role : coordinator</li>
+                        </ul>
+                        <h1 class="club-cb-add">Club Registered For</h1>
+                        <a href="javascript:void(0);" data-href="assign_coordinator_club.php?creator_id=TC_258_3"
+                            onClick="openModal('TC_258_3');" id="TC_258_3" class="club-cd-add-link teacher_login_form"><i
+                                class="fas fa-plus"></i> Add Club</a>
+                        <ul class="club-cb-desc-add-list" style="justify-items: left; ">
+                            <li>Machine Learning Artificial Intelligence <p align='right' style='display:inline'> <i
+                                        class='fas fa-times' style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_3","CI_14")'></i>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="club-cb-desc club-cb-effect">
+                        <ul class="club-cb-desc-list">
+                            <li>Digital Design Coord</li>
+                            <li>Username : sudocoord</li>
+                            <li>Password : sudocoord</li>
+                            <li>Role : coordinator</li>
+                        </ul>
+                        <h1 class="club-cb-add">Club Registered For</h1>
+                        <a href="javascript:void(0);" data-href="assign_coordinator_club.php?creator_id=TC_258_4"
+                            onClick="openModal('TC_258_4');" id="TC_258_4" class="club-cd-add-link teacher_login_form"><i
+                                class="fas fa-plus"></i> Add Club</a>
+                        <ul class="club-cb-desc-add-list" style="justify-items: left; ">
+                            <li>English Expression Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_4","club_26")'></i>
+                                </p>
+                            </li>
+                            <li>Understanding News Non Academic <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_4","club_27")'></i>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="club-cb-desc club-cb-effect">
+                        <ul class="club-cb-desc-list">
+                            <li>Ankush Aggarwal</li>
+                            <li>Username : ankush</li>
+                            <li>Password : ankush</li>
+                            <li>Role : president</li>
+                        </ul>
+                        <h1 class="club-cb-add">Club Registered For</h1>
+                        <a href="javascript:void(0);" data-href="assign_coordinator_club.php?creator_id=TC_258_5"
+                            onClick="openModal('TC_258_5');" id="TC_258_5" class="club-cd-add-link teacher_login_form"><i
+                                class="fas fa-plus"></i> Add Club</a>
+                        <ul class="club-cb-desc-add-list" style="justify-items: left; ">
+                            <li>SciFi School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_5","school_club_28")'></i>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="club-cb-desc club-cb-effect">
+                        <ul class="club-cb-desc-list">
+                            <li>Kiran Bearer</li>
+                            <li>Username : kiranbearer</li>
+                            <li>Password : kiranbearer</li>
+                            <li>Role : bearer</li>
+                        </ul>
+                        <h1 class="club-cb-add">Club Registered For</h1>
+                        <a href="javascript:void(0);" data-href="assign_coordinator_club.php?creator_id=TC_258_6"
+                            onClick="openModal('TC_258_6');" id="TC_258_6" class="club-cd-add-link teacher_login_form"><i
+                                class="fas fa-plus"></i> Add Club</a>
+                        <ul class="club-cb-desc-add-list" style="justify-items: left; ">
+                            <li>SciFi School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_6","school_club_28")'></i>
+                                </p>
+                            </li>
+                            <li>Mathemagic School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_6","school_club_29")'></i>
+                                </p>
+                            </li>
+                            <li>Hist Story School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_6","school_club_30")'></i>
+                                </p>
+                            </li>
+                            <li>Jio Graphy School Clubs <p align='right' style='display:inline'> <i class='fas fa-times'
+                                        style='cursor:pointer;' onclick='delete_assigned_subject("TC_258_6","school_club_31")'></i>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalIframe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body mb-0 p-0">
+                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                    <iframe class="embed-responsive-item" src="#" allowfullscreen id="modal_iframe"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+                    crossorigin="anonymous" />
+</body>
+
+</html>
+
+<script type="text/javascript">
+    function openModal(p) {
+        var dataURL = $('#' + p).attr('data-href');
+        $('#modal_iframe').attr('src', dataURL);
+        $('#modalIframe').modal({
+            show: true
+        });
+    }
+
+    function delete_assigned_subject(p, q) {
+        var r = confirm("Do you confirm to unassign this Club from Club Coordinator");
+        if (r == true) {
+            $.ajax({
+                type: 'POST',
+                url: 'delete_assigned_subject.php?creator_id=' + p + '&club_id=' + q,
+                data: '',
+                beforeSend: function () {},
+                success: function (response) {
+                    if (response == 'error') {
+                        alert("Error in the system. Please try it later");
+                    } else {
+                        location.reload();
+                    }
+                }
+            });
+        } else {}
+    }
+
+    function delete_creator(p) {
+        var r = confirm("Do you confirm to delete Test Creator");
+        if (r == true) {
+            $.ajax({
+                type: 'POST',
+                url: 'delete_test_creator.php?creator_id=' + p,
+                data: '',
+                beforeSend: function () {},
+                success: function (response) {
+                    if (response == 'error') {
+                        alert("Error in the system. Please try it later");
+                    } else {
+                        location.reload();
+                    }
+                }
+            });
+        } else {}
+    }
+
+    function creator_update() {
+        location.reload();
+    }
+</script>

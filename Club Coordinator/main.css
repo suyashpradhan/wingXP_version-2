@@ -3772,8 +3772,8 @@ select {
 
 .club-cb-desc {
     width: 100%;
-    background: #FFF;
-    margin: 40px auto 80px auto;
+    background: #17a2b8;
+    margin: 40px auto;
 }
 
 .club-cb-effect {
@@ -3796,7 +3796,7 @@ select {
     flex: 1;
     list-style: none;
     font-size: 18px;
-    color: #777;
+    color: #fff;
     margin: 20px 0 20px 20px;
     font-weight: 900;
 }
@@ -3805,13 +3805,13 @@ select {
     font-size: 24px;
     margin: 50px 20px 20px 20px !important;
     padding-top: 50px;
-    color: #696969;
+    color: #fff;
     font-weight: 900;
     display: inline;
 }
 
 .club-cd-add-link {
-    background-color: #17a2b8;
+    background-color: #363636;
     color: #fff;
     padding: 4px 12px;
     border-radius: 100px;
@@ -3836,7 +3836,7 @@ select {
 .club-cb-desc-add-list li {
     list-style: none;
     font-size: 14px;
-    color: #777;
+    color: #fff;
     margin: 15px 20px 5px 20px;
     font-weight: 600;
     cursor: default;
@@ -3854,7 +3854,7 @@ select {
 }
 
 .club-cb-desc-add-list li i {
-    color: #17a2b8;
+    color: #363636;
     margin-left: 10px;
 }
 
@@ -4852,7 +4852,7 @@ textarea {
 
 .__head {
     font-size: 34px;
-    color: #17a2b8;
+    color: #fff;
     font-weight: 900;
     text-decoration: underline;
     text-align: left;
@@ -5003,7 +5003,7 @@ textarea {
 
 .row--head {
     font-size: 24px;
-    color: #777;
+    color: #fff;
     font-weight: 700;
 }
 
@@ -5017,17 +5017,21 @@ textarea {
 
 .row--list li {
     margin: 0 15px;
-    color: #777;
+    color: #fff;
     font-size: 20px;
     font-weight: 500;
 }
 
 .row--link {
-    color: #fff;
+    color: #363636;
     font-size: 18px;
-    background-color: #17a2b8;
+    background-color: #fff;
     padding: 5px 10px;
     text-align: center;
+    text-decoration: none;
+}
+
+.row--link:hover {
     text-decoration: none;
 }
 
@@ -5648,8 +5652,8 @@ textarea {
 }
 
 .import_btn {
-    background-color: #777 !important;
-    border: 1px solid #777 !important;
+    background-color: #fddf65 !important;
+    border: 1px solid #fddf65 !important;
 }
 
 .download-link {
@@ -5657,8 +5661,8 @@ textarea {
 }
 
 .import_btn:hover {
-    background-color: #696969 !important;
-    border: 1px solid #696969 !important;
+    background-color: #f7c80f !important;
+    border: 1px solid #f7c80f !important;
 }
 
 .select-new-wrap {
@@ -5729,7 +5733,7 @@ textarea {
 }
 
 .batch-card {
-    background: #fff;
+    background: #17a2b8;
     border-radius: 2px;
     display: inline-block;
     height: auto;
