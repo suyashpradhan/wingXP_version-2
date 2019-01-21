@@ -2681,3 +2681,64 @@ a.bttn-dark:focus {
   text-decoration: none;
   color: #fff;
 }
+
+
+.block {
+  overflow: hidden;
+  background-color: #17a2b8;
+  position: fixed;
+  bottom: 0;
+  width: auto;
+  right: 25px;
+  padding: 10px 25px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.block a {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.chat_span-1 {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.chat_span-1:hover {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.chat_span-2 {
+  color: #fff;
+  display: none;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.chat_span-2 i {
+  z-index: 999997 !important;
+}
+
+.chat_span-2:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width:700px) and (min-width:100px) {
+  .chat_span-1 {
+    display: none;
+  }
+
+  .chat_span-2 {
+    display: block;
+  }
+
+  .block {
+    background: none;
+  }
+}
+
+/* .embed-responsive-16by9::before {
+  padding: 0;
+} */
