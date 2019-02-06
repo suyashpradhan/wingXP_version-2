@@ -17,7 +17,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar-hide" style="background-color:#17a3b877;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar-hide" style="background-color:#52535426;">
         <a class="navbar-brand" href="http://www.wingxp.com">
             <span style="color: #fff !important; font-weight:1000; font-size: 26px;margin: 0;padding: 0;">wingxp</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -1317,7 +1317,18 @@
         postsCarousel();
         $(window).resize(postsCarousel);
     </script>
-
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar-hide").style.top = "0";
+            } else {
+                document.getElementById("navbar-hide").style.top = "-60px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>
