@@ -1533,7 +1533,7 @@ select {
     height: 40px;
     width: 40px;
     position: absolute;
-    content: "âœ”";
+    content: "Ã¢Å“â€";
     display: inline-block;
     font-size: 26.66667px;
     text-align: center;
@@ -1742,7 +1742,6 @@ td {
     border-collapse: collapse;
     padding: 5px;
     background-color: white;
-    width: 70%;
 }
 
 .tableProperty {
@@ -3618,7 +3617,7 @@ select {
     height: 40px;
     width: 40px;
     position: absolute;
-    content: "âœ”";
+    content: "Ã¢Å“â€";
     display: inline-block;
     font-size: 26.66667px;
     text-align: center;
@@ -6051,4 +6050,12 @@ ul.dropdown>li {
 
 .container .message-body p {
     margin: 0;
+}
+
+.tbl-content {
+    overflow-x: auto;
+    overflow-y: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 450px;
 }

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../admin_pages/content_manager_pages/club_coordinator_pages/main.css">
+    <link rel="stylesheet" href="../Club Coordinator/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 </head>
@@ -31,12 +31,198 @@
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="school">Schools</div>
-            <div class="tab-pane fade" id="tab-two" role="tabpanel" aria-labelledby="pending">Pending </div>
-            <div class="tab-pane fade" id="tab-three" role="tabpanel" aria-labelledby="approved">Approved</div>
-            <div class="tab-pane fade" id="tab-four" role="tabpanel" aria-labelledby="rejected">Rejected</div>
+            <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="school">
+                <div style="overflow-x:auto;overflow-y:auto">
+                    <div class="tbl-header">
+                        <table class="table table-bordered" style="margin: 0;padding:0">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">S No</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Message</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Comments</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content">
+                        <table class="table table-bordered ">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        1 </td>
+                                    <td>
+                                        Kiran Nambiar </td>
+                                    <td>
+                                        9167164221 </td>
+                                    <td>
+                                        ABPS </td>
+                                    <td>
+                                        MESSAGE </td>
+                                    <td>
+                                        28/12/2018 </td>
+                                    <td>
+                                        <button data-target="#comment" id="contact20" value="20" data-toggle="modal"
+                                            class="btn btn-primary" onclick="get_comments('contact','20');">
+                                            Add</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        2 </td>
+                                    <td>
+                                        Kiran Nambiar </td>
+                                    <td>
+                                        913745036 </td>
+                                    <td>
+                                        nkirandroid@gmail.com </td>
+                                    <td>
+                                        TESTING IF MODAL CLOSES </td>
+                                    <td>
+                                        28/12/2018 </td>
+                                    <td>
+                                        <button data-target="#comment" id="contact28" value="28" data-toggle="modal"
+                                            class="btn btn-primary" onclick="get_comments('contact','28');">
+                                            Add</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        3 </td>
+                                    <td>
+                                        KIRAN MANOJ NAMBIAR </td>
+                                    <td>
+                                        9167164221 </td>
+                                    <td>
+                                        NAMBIAR </td>
+                                    <td>
+                                        hihi </td>
+                                    <td>
+                                        30/12/2018 </td>
+                                    <td>
+                                        <button data-target="#comment" id="contact39" value="39" data-toggle="modal"
+                                            class="btn btn-primary" onclick="get_comments('contact','39');">
+                                            Add</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        8 </td>
+                                    <td>
+                                        SALES FIREFOX EVENT REMOVE </td>
+                                    <td>
+                                        123 </td>
+                                    <td>
+                                        a@a.com </td>
+                                    <td>
+                                        SALES FIREFOX EVENT REMOVE </td>
+                                    <td>
+                                        31/12/2018 </td>
+                                    <td>
+                                        <button data-target="#comment" id="contact87" value="87" data-toggle="modal"
+                                            class="btn btn-primary" onclick="get_comments('contact','87');">
+                                            Add</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        8 </td>
+                                    <td>
+                                        SALES FIREFOX EVENT REMOVE </td>
+                                    <td>
+                                        123 </td>
+                                    <td>
+                                        a@a.com </td>
+                                    <td>
+                                        SALES FIREFOX EVENT REMOVE </td>
+                                    <td>
+                                        31/12/2018 </td>
+                                    <td>
+                                        <button data-target="#comment" id="contact87" value="87" data-toggle="modal"
+                                            class="btn btn-primary" onclick="get_comments('contact','87');">
+                                            Add</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        39 </td>
+                                    <td>
+                                        Randy </td>
+                                    <td>
+                                        416-385-3200 </td>
+                                    <td>
+                                        randy@talkwithlead.com </td>
+                                    <td>
+                                        Hi,
 
+                                        My name is Randy and I was looking at a few different sites online and came
+                                        across your site wingxp.com. I must say - your website is very impressive.
+                                        I found your website on the first page of the Search Engine.
+
+                                        Have you noticed that 70 percent of visitors who leave your website will
+                                        never return? In most cases, this means that 95 percent to 98 percent of
+                                        your marketing efforts are going to waste, not to mention that you are
+                                        losing more money in customer acquisition costs than you need to.
+                                        As a business person, the time and money you put into your marketing
+                                        efforts is extremely valuable. So why let it go to waste? Our users have
+                                        seen staggering improvements in conversions with insane growths of 150
+                                        percent going upwards of 785 percent. Are you ready to unlock the highest
+                                        conversion revenue from each of your website visitors?
+
+                                        TalkWithLead is a widget which captures a website visitor’s Name, Email
+                                        address and Phone Number and then calls you immediately, so that you can
+                                        talk to the Lead exactly when they are live on your website — while they're
+                                        hot! Best feature of all, we offer FREE International Long Distance
+                                        Calling!
+
+                                        Try the TalkWithLead Live Demo now to see exactly how it works. Visit:
+                                        http://www.talkwithcustomer.com
+
+                                        When targeting leads, speed is essential - there is a 100x decrease in
+                                        Leads when a Lead is contacted within 30 minutes vs being contacted within
+                                        5 minutes.
+
+                                        If you would like to talk to me about this service, please give me a call.
+                                        We do offer a 14 days free trial.
+
+                                        Thanks and Best Regards,
+                                        Randy
+
+                                        If you'd like to unsubscribe click here.
+                                        http://liveserveronline.com/talkwithcustomer.aspx?d=wingxp.com
+
+                                    </td>
+                                    <td>
+                                        04/01/2019 </td>
+                                    <td>
+                                        <button data-target="#comment" id="contact178" value="178" data-toggle="modal"
+                                            class="btn btn-primary" onclick="get_comments('contact','178');">
+                                            Add</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="tab-pane fade" id="tab-two" role="tabpanel" aria-labelledby="pending">Pending</div>
+        <div class="tab-pane fade" id="tab-three" role="tabpanel" aria-labelledby="approved">Approved</div>
+        <div class="tab-pane fade" id="tab-four" role="tabpanel" aria-labelledby="rejected">Rejected</div>
+    </div>
     </div>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
@@ -46,6 +232,12 @@
         crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
         crossorigin="anonymous "></script>
+
+    <script>
+        $(window).on("load resize ", function () {
+            var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+        }).resize();
+    </script>
 </body>
 
 </html>
