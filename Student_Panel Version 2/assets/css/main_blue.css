@@ -390,6 +390,18 @@ video {
   line-height: 1.3 !important;
 }
 
+@media screen and (max-width: 374px) and (min-width: 100px) {
+
+  .section-sub-first {
+    font-size: 10px;
+  }
+
+  .section-sub-first-new {
+    font-size: 10px;
+  }
+}
+
+
 @media screen and (max-width: 600px) and (min-width: 100px) {
   .footer-inner {
     font-size: 14px;
@@ -405,6 +417,7 @@ video {
   .common {
     margin: 5px;
   }
+
 
   .content {
     padding: 0 !important;
