@@ -588,15 +588,6 @@ nav {
     padding: 35px 20px 20px 20px;
 }
 
-.form-field {
-    display: block;
-    padding: 12px 10px;
-    width: 100%;
-    border: 2px solid #7b627f;
-    outline: none;
-    border-radius: 3px;
-}
-
 .form-textarea {
     display: block;
     padding: 12px 10px;
@@ -6058,4 +6049,11 @@ ul.dropdown>li {
     margin-top: 0px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     height: 450px;
+}
+
+.btn_wraps {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-gap: 20px;
+    margin: 5px 10px 5px 0;
 }
