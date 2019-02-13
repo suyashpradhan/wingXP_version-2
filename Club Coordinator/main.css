@@ -19,9 +19,6 @@ body {
     position: relative;
     margin: 0;
     padding-bottom: 6rem;
-    font-size: 100%;
-    font-weight: 400;
-    line-height: 1.4;
     min-height: 100%;
     padding: 0;
     position: relative;
@@ -523,6 +520,17 @@ nav {
     align-items: center;
     flex-flow: row wrap;
     margin: 30px 10px;
+}
+
+@media screen and (max-width:600px) and (min-width:100px) {
+    .first-column-wrapper {
+        display: block !important;
+        margin: 30px auto;
+    }
+
+    .gap {
+        margin: 15px 0 !important;
+    }
 }
 
 .gap {
@@ -1755,26 +1763,6 @@ td {
     margin: 20px 0 0 0;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
-    height: 100%;
-}
-
-body {
-    position: relative;
-    margin: 0;
-    padding-bottom: 6rem;
-    min-height: 100%;
-}
-
 .banner {
     position: relative;
     overflow: hidden;
@@ -2368,10 +2356,10 @@ nav {
 }
 
 .navbar {
-    height: auto;
+    height: 55px !important;
     background: #fff;
     padding: 0;
-    margin-top: 15px;
+
 }
 
 .navbar-shadow {
@@ -2395,6 +2383,10 @@ nav {
     width: 100%;
 }
 
+.newnavigationBar a {
+    text-decoration: none;
+}
+
 .bg-gradient2 span,
 .bg-gradient2:before {
     background: #2abfd4;
@@ -2403,7 +2395,7 @@ nav {
 
 .fancy-button {
     display: inline-block;
-    margin: 20px;
+    margin: 5px;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.07em;
@@ -4543,122 +4535,6 @@ textarea {
     padding: 0;
     margin-top: 4px;
     font-weight: 700;
-}
-
-/* ===== Select Box ===== */
-.sel {
-    font-size: 16px;
-    display: inline-block;
-    width: 295px;
-    background-color: transparent;
-    position: relative;
-    cursor: pointer;
-    margin: 25px 15px 5px 15px;
-    background-color: #fff;
-}
-
-.sel {
-    font-size: 16px;
-    display: inline-block;
-    width: 250px;
-    background-color: transparent;
-    position: relative;
-    cursor: pointer;
-    margin: 25px 15px 5px 15px;
-    background-color: #fff;
-}
-
-.sel::before {
-    position: absolute;
-    content: "\f0b0";
-    font-family: "Font Awesome\ 5 Free";
-    font-weight: 700;
-    color: #838e95;
-    right: 8px;
-    font-size: 20px;
-    padding: 0;
-    margin-bottom: 10px !important;
-    top: calc(50% - 0.8em);
-}
-
-/* .sel.active::before {
-  transform: rotateX(-180deg);
-} */
-
-.sel__placeholder {
-    display: block;
-    font-size: 18px;
-    color: #838e95;
-    padding: 10px 15px;
-    text-align: left;
-    pointer-events: none;
-    user-select: none;
-    visibility: visible;
-}
-
-.sel.active .sel__placeholder {
-    visibility: hidden;
-}
-
-.sel__placeholder::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0.2em 0.5em;
-    content: attr(data-placeholder);
-    visibility: hidden;
-}
-
-.sel.active .sel__placeholder::before {
-    visibility: visible;
-}
-
-.sel__box {
-    position: absolute;
-    top: calc(100% + 4px);
-    left: -4px;
-    display: none;
-    list-style-type: none;
-    text-align: left;
-    font-size: 1em;
-    background-color: #fff;
-    width: calc(100% + 8px);
-    box-sizing: border-box;
-}
-
-.sel.active .sel__box {
-    display: block;
-    animation: fadeInUp 500ms;
-}
-
-.sel__box__options {
-    display: list-item;
-    font-size: 1.5em;
-    color: #838e95;
-    padding: 0.5em 1em;
-    user-select: none;
-}
-
-.sel__box__options::after {
-    content: "\f00c";
-    font-family: "FontAwesome";
-    font-size: 0.5em;
-    margin-left: 5px;
-    display: none;
-}
-
-.sel__box__options.selected::after {
-    display: inline;
-}
-
-.sel__box__options:hover {
-    background-color: #ebedef;
-}
-
-.sel--black-panther {
-    z-index: 3;
 }
 
 .info__new-wrap {
