@@ -136,6 +136,21 @@
                     </div>
                 </div>
             </div>
+            <div class="row" style="text-align:center;  color:#fff; padding-top:0px; margin:0px;background-color: #e7f5f7">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <span class="sr-no"><img src="assets/images/1.png"></span>
+                    <h5 class="row__head" style="text-align:center;"> <span>Expert Led School Clubs</span> </h5>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <span class="sr-no"><img src="assets/images/2.png" alt=""></span>
+                    <h5 class="row__head" style="text-align:center;"> <span> Plug and Play</span></h5>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <span class="sr-no"><img src="assets/images/3.png" alt=""></span>
+                    <h5 class="row__head" style="text-align:center;"> <span>Free Registration for Session 2019-20</span></h5>
+                </div>
+            </div>
             <div class="sections owl-carousel owl-theme" id="two">
                 <div class="common">
                     <div class="img-section">
@@ -280,7 +295,7 @@
                         <h1 style="color: #000;">Take Your School Clubs Online</h1>
                     </div>
                 </div>
-                <div class="row" style="text-align:center;  color:#fff; padding-top:0px; margin:0px;">
+                <div class="row" style="text-align:center;  color:#fff; padding-top:0px; margin:0px;background-color: #fef0c0">
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                         <span class="sr-no"><img src="assets/images/1.png"></span>
                         <h5 class="row__head" style="text-align:center;"> <span>Ease of deployment</span> </h5>
@@ -1317,18 +1332,17 @@
         postsCarousel();
         $(window).resize(postsCarousel);
     </script>
+
     <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar-hide").style.top = "0";
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > (window.innerHeight)) {
+                $('.navbar').hide();
             } else {
-                document.getElementById("navbar-hide").style.top = "-60px";
+                $('.navbar').show();
             }
-            prevScrollpos = currentScrollPos;
-        }
+        });
     </script>
+
 </body>
 
 </html>

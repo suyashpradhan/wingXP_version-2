@@ -16,7 +16,6 @@ body {
   font-family: "Nunito", sans-serif;
   background-color: #f8f8f8;
   cursor: default;
-  min-height: 100vh - 40px;
 }
 
 i span {
@@ -24,7 +23,6 @@ i span {
 }
 
 img {
-  vertical-align: baseline;
   font-weight: 900;
 }
 
@@ -232,6 +230,7 @@ video {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   grid-auto-rows: 1fr;
+  background-color: #e7f5f7;
 }
 
 .section-grid {
@@ -245,6 +244,7 @@ video {
   grid-gap: 20px;
   grid-auto-rows: 1fr;
   margin-bottom: 50px;
+  background-color: #fef0c0;
 }
 
 .sections_two {
@@ -261,6 +261,7 @@ video {
 .common {
   margin: 20px 0 0 0;
   border: 2px solid #dadada;
+
 }
 
 .section-info {
@@ -2403,23 +2404,23 @@ a.bttn-dark:focus {
 
 @media screen and (min-width: 768px) and (max-width:140000px) {
   #sl1 {
-    background-image: url("assets/images/1_large.png");
+    background-image: url("../images/1_large.png");
   }
 
   #sl2 {
-    background-image: url("assets/images/2_large.png");
+    background-image: url("../images/2_large.png");
   }
 
   #sl3 {
-    background-image: url("assets/images/3_large.png");
+    background-image: url("../images/3_large.png");
   }
 
   #sl4 {
-    background-image: url("assets/images/4_large.png");
+    background-image: url("../images/4_large.png");
   }
 
   #sl5 {
-    background-image: url("assets/images/5_large.png");
+    background-image: url("../images/5_large.png");
     background-size: cover;
   }
 }
