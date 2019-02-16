@@ -231,6 +231,7 @@ video {
   grid-gap: 20px;
   grid-auto-rows: 1fr;
   background-color: #e7f5f7;
+  padding: 15px;
 }
 
 .section-grid {
@@ -245,6 +246,7 @@ video {
   grid-auto-rows: 1fr;
   margin-bottom: 50px;
   background-color: #fef0c0;
+  padding: 15px;
 }
 
 .sections_two {
@@ -1088,7 +1090,7 @@ a.bttn-dark:focus {
 
   .sections_last img {
     margin: 0;
-    padding: 0 20px;
+   /*  padding: 0 20px; */
   }
 
   .div-head {
@@ -1152,19 +1154,6 @@ a.bttn-dark:focus {
     grid-template-columns: 1fr;
   }
 
-  /* .button-wrapper {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 25px 0;
-  }
-
-  .bttn-dark {
-    font-size: 14px;
-    letter-spacing: 1px;
-    width: 100%;
-    font-weight: bold;
-    padding: 10px 0;
-  } */
 }
 
 @media screen and (max-width: 636px) and (min-width: 501px) {
@@ -2404,23 +2393,23 @@ a.bttn-dark:focus {
 
 @media screen and (min-width: 768px) and (max-width:140000px) {
   #sl1 {
-    background-image: url("../images/1_large.png");
+    background-image: url("assets/images/1_large.png");
   }
 
   #sl2 {
-    background-image: url("../images/2_large.png");
+    background-image: url("assets/images/2_large.png");
   }
 
   #sl3 {
-    background-image: url("../images/3_large.png");
+    background-image: url("assets/images/3_large.png");
   }
 
   #sl4 {
-    background-image: url("../images/4_large.png");
+    background-image: url("assets/images/4_large.png");
   }
 
   #sl5 {
-    background-image: url("../images/5_large.png");
+    background-image: url("assets/images/5_large.png");
     background-size: cover;
   }
 }
@@ -2552,7 +2541,7 @@ a.bttn-dark:focus {
 
 .row__head span {
   display: block;
-  color: #696969;
+  color: #363636;
 }
 
 .row__para {
