@@ -187,16 +187,30 @@ video {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  background-color: #17a2b8;
+  background-color: #e4f5f7;
   height: 70px;
-  border-radius: 1px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.loading-header{
+  width: 100%;
+
 }
 
 .loading-header h1 {
   font-size: 28px;
   color: #fff;
-  margin: 20px 0 0 25px;
+  margin: 14px 10px 25px;
   cursor: default;
+  display: block;
+  background-color: #17a2b8;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:5px 15px;
 }
 
 .inner_list li {
@@ -232,6 +246,8 @@ video {
   grid-auto-rows: 1fr;
   background-color: #e7f5f7;
   padding: 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .section-grid {
@@ -247,6 +263,8 @@ video {
   margin-bottom: 50px;
   background-color: #fef0c0;
   padding: 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .sections_two {
@@ -2754,3 +2772,12 @@ a.bttn-dark:focus {
   color: #FFF;
   border-color: #FFF;
 }
+
+.carousel-control-prev-icon{
+  background-image: url(../images/left_gray.png);
+}
+
+.carousel-control-next-icon{
+  background-image: url(../images/right_gray.png);
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner {
+            background-color: #1a579e;
+            color: #fff;
+            height: 80px;
+            clip-path: polygon(87% 0, 100% 51%, 82% 100%, 0% 100%, 0 50%, 0% 0%);
+        }
+
+        .main{
+            z-index: 9999999;
+            position: absolute;
+        }
+
+        ._inside{
+            position: relative;
+            margin-left: -40px;
+            background-color: #696969;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="inner _main">1</div>
+            <div class="inner _inside">2</div>
+            <div class="inner _inside">3</div>
+            <div class="inner _inside">4</div>
+        </div>
+    </div>
+</body>
+
+</html>
