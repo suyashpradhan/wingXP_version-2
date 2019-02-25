@@ -6166,3 +6166,80 @@ ul.dropdown>li {
 .highlight{
     border:1px solid #17a2b8;
 }
+
+.modal__body-card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.30), 0 5px 3px rgba(0,0,0,0.22);
+}
+
+  .webinar__header{
+      font-size:20px;
+      color:#696969;
+      font-weight:700;
+      text-align: center;
+  }
+
+  .webinar__header span{
+      color: #11639d;
+  }
+
+  .webinar__agenda{
+      color: #777;
+      padding:5px 0;
+      font-size: 15px;
+      text-align: justify;
+      margin: 0;
+      line-height: 1.3;
+  }
+
+  .info__wrap{
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      text-align: center;
+      grid-gap: 10px;
+      align-items: center;
+      margin: 10px 0 0 0;
+      border-top:1px solid #ccc;
+  }
+
+  .info__wrap-head{
+    padding: 15px 0 0 0;
+    font-size:16px;
+    color:#696969;
+    font-weight: 700;
+  }
+
+  .info__wrap-head span{
+      color:#11639d;
+      display: block;
+  }
+ 
+
+  .grid__new{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+      align-items: center; 
+  }
+/* 
+  .modal__body-card > input{ 
+    visibility: hidden;
+    position: absolute; 
+} */
+
+.option
+{
+   /*  margin: 20px 0; */
+}
+
+.option.active
+{
+    border: 1px solid #17a2b8;
+}
