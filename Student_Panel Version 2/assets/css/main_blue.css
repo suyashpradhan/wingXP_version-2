@@ -2796,3 +2796,21 @@ a.bttn-dark:focus {
   line-height: 1.4;
   font-weight: 700;
 }
+
+.pd-100 {
+  padding: 100px 0;
+}
+
+.club__wrapper--headerMain {
+  font-size: 40px;
+  color: #696969;
+  text-align: center;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.club__wrapper--headerSub {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
