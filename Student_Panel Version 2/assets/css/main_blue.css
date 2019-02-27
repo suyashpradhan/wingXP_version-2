@@ -2856,6 +2856,7 @@ a.bttn-dark:focus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+  justify-items: center;
   grid-gap: 60px;
   margin: 55px 0;
 }
