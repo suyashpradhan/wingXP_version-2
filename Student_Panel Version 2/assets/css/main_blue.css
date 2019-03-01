@@ -2768,7 +2768,7 @@ a.bttn-dark:focus {
 /*New Design*/
 
 .banner__wrapper {
-    background-image: url(assets/images/banner.png);
+    background-image: url('assets/images/banner.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
