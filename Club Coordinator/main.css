@@ -6020,20 +6020,21 @@ ul.dropdown>li {
     background: #fff;
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
-    padding: 20px;
-    height: 120px;
+    padding:10px;
     margin: 15px 0;
 }
 
 .timeline_card-first {
-    height: 120px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
 }
 
 /* .timeline_card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-}
- */
+} */
+
 .timeline_card span {
     color: #696969;
     font-weight: 500;
@@ -6050,12 +6051,6 @@ ul.dropdown>li {
 
 .timeline_card p {
     color: #777;
-}
-
-.timeline_button-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .pulse-button {
@@ -6159,7 +6154,15 @@ ul.dropdown>li {
 .col_image span {
     font-size: 18px;
     color: #17a2b8;
-    font-weight: 700;
+    font-weight: 700;   
+    margin-left: 10px;
+   
+}
+
+.col_check{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .highlight {
@@ -6305,4 +6308,8 @@ ul.dropdown>li {
     height: 10px;
     transform: scale(0);
     background: #337ab7;
+}
+
+.check-click{
+    display: flex;
 }
