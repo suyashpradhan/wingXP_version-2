@@ -6110,11 +6110,12 @@ ul.dropdown>li {
 .modal__head-sub {
     font-size: 16px;
     color: #fff;
+    width: 140px;
     background-color: #17a2b8;
     font-weight: 700;
     display: inline-block;
-    padding: 10px 20px 10px 5px;
-    margin: 10px 0;
+    padding: 10px ;
+    margin: 5px 0;
     clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
 }
 
@@ -6122,8 +6123,65 @@ ul.dropdown>li {
     font-size: 17px;
     color: #777;
     line-height: 1.4;
+    font-weight: 700;
+    margin: 2rem 0;
     text-align: justify;
 }
+
+.info-icon{
+    padding:20px 0 0 3px !important;
+    position: relative;
+    color: #696969;
+    cursor: pointer;
+}
+
+.info-icon:hover{
+    color: #000;
+}
+
+.info-tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .info-tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    z-index: 1;
+    top: 20%;
+    opacity: 0;
+    margin-left: 10px;
+    transition: opacity 0.3s;
+    font-size: 15px;
+  }
+  
+  .info-tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent
+  }
+
+  .tooltip-right {
+    top: -5px;
+    left: 125%;
+}
+
+  
+  .info-tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 
 .modal__fields {
     padding: 3px;
@@ -6156,7 +6214,6 @@ ul.dropdown>li {
     color: #17a2b8;
     font-weight: 700;   
     margin-left: 10px;
-   
 }
 
 .col_check{
