@@ -6013,8 +6013,9 @@ ul.dropdown > li {
 }
 
 .timeline_row{
-    background-color: rgb(143, 140, 140);
+    background-color: #cccbcb;
     border: 2px solid #000;
+    margin-bottom: 15px !important;
 }
 
 .timeline_row h1{
@@ -6034,7 +6035,7 @@ ul.dropdown > li {
 }
 
 .row__grid_img{
-    background-color: #696969;
+    background-color: #989898;
     height: 100px;
     padding: 15px;
     margin-top: 15px;
@@ -6056,12 +6057,84 @@ ul.dropdown > li {
     font-size: 12px;
 }
 
+.timeline_rowSub{
+    background-color:#ccedf7; 
+    margin: 10px 0;
+}
+
+.first__inner-row{
+    background-color: #3b53b4;
+    padding: 5px;
+    margin: 15px 5px;
+}
+
+.first__inner-row h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+}
+
+.second__inner-row {
+    margin: 25px 0;
+}
+
+.second__inner-row h1 {
+    font-size: 16px;
+}
+
+.second__inner-row ul{
+    margin-left: 25px;
+}
+
+.third__inner-row{
+    margin: 25px 0 0 0;
+}
+
+.third__inner-row h1{
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+
+.third__inner-row h2{
+    text-align: center;
+    font-size: 16px;
+    margin: 10px auto 10px auto;
+    padding: 0;
+    border-top: 1px solid #696969;
+    width: 45%;
+    padding-top: 10px;
+}
+
+.third__inner-row a{
+    background-color: #ffd700;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-size: 18px;
+    padding: 1px 5px;
+    color: #000 !important; 
+    margin: 0 auto;
+    text-decoration: none;
+    width: 200px !important;
+    display: block;
+    text-align: center;
+}
+
+.third__inner-row a:hover{
+    text-decoration: none;
+
+}
+
+
+
 .timeline_cardHeaderSub h1{
     font-size: 24px;
     padding-top: 10px;
     font-weight: 700;
 }
-
 
 .timeline_card span {
     color: #696969;
