@@ -1090,13 +1090,6 @@ ul li {
     text-align: center;
 }
 
-.left-footer {
-    padding: 15px 0;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-}
-
 .right-footer {
     padding: 25px 0;
     text-align: right;
@@ -1106,6 +1099,7 @@ ul li {
     font-size: 20px;
     color: #fff;
     padding: 25px 0;
+    text-align: left;
 }
 
 .right-footer ul li {
@@ -1123,56 +1117,15 @@ ul li {
 
 .footer-inner {
     padding: 15px 0 !important;
-    margin: 0 25px;
     font-size: 20px;
-}
-
-.footer-inner li {
-    padding-left: 25px;
 }
 
 .footer-width {
     width: 1140px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: flex-start;
-}
-
-#lab_social_icon_footer a {
-    color: #333;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-#lab_social_icon_footer .social:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
-#lab_social_icon_footer .social {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-}
-
-#lab_social_icon_footer #social-lk:hover {
-    color: #0274b3;
-    cursor: pointer;
-}
-
-#lab_social_icon_footer #social-fb:hover {
-    color: #3B5998;
-    cursor: pointer;
-}
-
-#lab_social_icon_footer #social-tw:hover {
-    color: #4099FF;
-    cursor: pointer;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
 }
 
 .banner-div {
@@ -5006,12 +4959,7 @@ header {
         height: auto !important;
     }
 
-    .left-footer {
-        padding: 0px 0px;
-        font-size: 20px;
-        color: #fff;
-        text-align: center;
-    }
+
 }
 
 .owl-nav {
@@ -5123,25 +5071,25 @@ header {
 }
 
 .nav_header-one {
-    background-color: #ffc000;
+    background-color: #17a2b8;
     padding: 10px 40px;
     font-weight: 700;
     border-radius: 2px;
     cursor: pointer;
+    color: #fff;
 }
 
 .nav_header-two {
-    background-color: #2abfd4;
+    background-color: #d3d0d0;
     padding: 10px 40px;
     font-weight: 700;
     border-radius: 2px;
-    color: #fff;
     cursor: pointer;
-
+    color: #fff;
 }
 
 .nav_header-three {
-    background-color: #0a6bb4;
+    background-color: #d3d0d0;
     padding: 10px 40px;
     font-weight: 700;
     border-radius: 2px;
@@ -5480,4 +5428,67 @@ header {
 
 .form-control {
     border: 1px solid #696969;
+}
+
+#msform {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#progressbar {
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: #696969;
+    font-size: 16px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    display: block;
+    font-size: 16px;
+    color: #696969;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;
+    /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #17a2b8;
+    color: white;
 }
