@@ -4246,7 +4246,8 @@ header {
 
 .wrap-login100_one {
   width: 1068px;
-  background: #981a35;
+  /*   background: #981a35;
+ */
   border-radius: 10px;
   overflow: hidden;
   display: -webkit-box;
@@ -5170,29 +5171,35 @@ header {
 
 .row__grid {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 120px 1fr;
   grid-gap: 10px;
+  border-right: 1px solid #5c5b5b;
 }
 
 .row__grid img {
-  height: 70px;
+  height: 80px;
+  margin: 5px 12px;
 }
 
 .row__grid_img {
   background-color: #989898;
-  height: 100px;
+  height: 120px;
   padding: 15px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .row__grid_list li {
   list-style: none;
   font-size: 14px;
+  color: #363636;
+  font-weight: 700;
 }
 
 .new__col h2 {
   font-size: 18px;
   margin: 0;
+  font-weight: 900;
+  color: #000;
   padding: 0;
 }
 
@@ -5200,6 +5207,8 @@ header {
   margin-left: 15px;
   font-size: 14px;
   list-style: unset;
+  color: #363636;
+  font-weight: 700;
 }
 
 .timeline_rowSub {
@@ -5216,15 +5225,17 @@ header {
 .first__inner-row h1 {
   color: #FFF;
   text-align: center;
-  font-size: 28px;
+  font-size: 34px;
 }
 
 .second__inner-row {
-  margin: 25px 0;
+  margin: 30px 0 0 0;
 }
 
 .second__inner-row h1 {
-  font-size: 16px;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 2px;
 }
 
 .second__inner-row ul {
@@ -5233,48 +5244,42 @@ header {
 
 .second__inner-row li {
   list-style: unset;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .third__inner-row {
-  margin: 20px 0 0 0;
+  margin: 30px 0 15px 0;
 }
 
 .third__inner-row h1 {
   text-align: center;
-  font-size: 32px;
-  margin: 0;
-  padding: 0;
+  font-size: 16px;
+  padding: 3px 0;
+  color: #5c5b5b;
   font-weight: 900;
+  width: 70%;
+  border-bottom: 1px solid #5c5b5b;
+  margin: 0 auto;
 }
 
 .third__inner-row h2 {
   text-align: center;
   font-size: 16px;
-  margin: 10px auto 10px auto;
+  margin: 10px auto;
   padding: 0;
-  border-top: 1px solid #696969;
-  width: 45%;
-  padding-top: 10px;
-}
-
-.third__inner-row a {
-  background-color: #ffd700;
-  border: 2px solid #000;
-  text-transform: uppercase;
+  width: 50%;
+  border: 2px solid #5c5b5b;
   border-radius: 100px;
-  font-size: 18px;
-  padding: 1px 5px;
-  color: #000 !important;
-  margin: 0 auto 10px auto;
-  text-decoration: none;
-  width: 200px !important;
-  display: block;
-  text-align: center;
+  padding: 3px 5px;
 }
 
-.third__inner-row a:hover {
-  text-decoration: none;
-
+.third__inner-row span {
+  color: #ce1f36 !important;
+  display: block !important;
+  margin: 0 auto !important;
+  font-weight: 500 !important;
+  text-align: center;
 }
 
 .timeline_card span {
