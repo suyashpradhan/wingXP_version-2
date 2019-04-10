@@ -15,12 +15,11 @@
     <link rel="icon" href="http://www.wingxp.com/favicon.ico" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="1.css">
 </head>
 
 <body>
     <div class="banner__wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light" id="navbar-hide" style="color:#fff;">
+        <nav class="navbar navbar-expand-lg navbar-light navbar__mobile-hide" id="navbar-hide" style="color:#fff;">
             <a class="navbar-brand" href="http://www.wingxp.com">
                 <span
                     style="color: #17a2b8 !important; font-weight:1000; font-size: 26px;margin: 0;padding: 0;">wingxp</span></a>
@@ -53,23 +52,51 @@
         <div class="carousel-indicators arrow bounce">
             <a href="#new_two" class=""><i class="fa fa-arrow-down fa-2x arrow-icon"></i></a>
         </div>
-        <div id="carousel" class="carousel slide carousel-fade mobile__carousel" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" id="mobile__carousel--one">
-                </div>
-                <div class="carousel-item" id="mobile__carousel--two">
-                </div>
-                <div class="carousel-item" id="mobile__carousel--three">
-                </div>
-                <div class="carousel-item" id="mobile__carousel--four">
-                </div>
-                <div class="carousel-item" id="mobile__carousel--five">
-                </div>
-                <div class="carousel-item" id="mobile__carousel--six">
-                </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light navbar__mobile-show" id="navbar-hide" style="color:#fff;">
+        <a class="navbar-brand" href="http://www.wingxp.com">
+            <span
+                style="color: #17a2b8 !important; font-weight:1000; font-size: 26px;margin: 0;padding: 0;">wingxp</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive_1"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive_1">
+            <ul class="navbar-nav ml-auto" style="color:#fff;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://www.wingxp.com" style="color: #696969;
+                    font-size: 20px;
+                    font-weight: 900;">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.wingxp.com/login" style="color: #696969;
+                    font-size: 20px;
+                    font-weight: 900;">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.wingxp.com/login/contact_us.php" style="color: #696969;
+                        font-size: 20px;
+                        font-weight: 900;">Contact Sales</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="carousel" class="carousel slide carousel-fade mobile__carousel" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="mobile__carousel--one">
             </div>
-            <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+            <div class="carousel-item" id="mobile__carousel--two">
+            </div>
+            <div class="carousel-item" id="mobile__carousel--three">
+            </div>
+            <div class="carousel-item" id="mobile__carousel--four">
+            </div>
+            <div class="carousel-item" id="mobile__carousel--five">
+            </div>
+            <div class="carousel-item" id="mobile__carousel--six">
+            </div>
         </div>
     </div>
 
@@ -645,16 +672,27 @@
             </div>
         </div>
     </div>
-    <nav class="navbar fixed-bottom navbar-dark bg-dark bottom__navbarWrapHeight"
+    <nav class="navbar fixed-bottom navbar-light bg-light"
         style="height: 60px;padding: 0; box-shadow: 0 -2px 5px -2px #333;">
         <div class="container">
-            <div class="bottom__navbarWrap">
-                <div class="bottom__navbarWrapInner">
-                    <a href="#">See Demo</a>
+            <div class="sticky__nav">
+                <h1 class="sticky__nav--header">Reach Us</h1>
+                <div class="sticky__navInner">
+                    <a href="" class="sticky__navInnerOne"><i class="fab fa-whatsapp sticky__icons"></i>
+                    </a>
                 </div>
-                <div class="bottom__navbarWrapInner">
-                    <a href="#">Chat With Us On Whatsapp</a>
+                <div class="sticky__navInner">
+                    <a href=" #" class="sticky__navInnerTwo"><i class="fas fa-envelope sticky__icons"></i></a>
+
                 </div>
+                <div class="sticky__navInner">
+                    <a href=" #" class="sticky__navInnerThree"><i class="fas fa-phone sticky__icons"></i></a>
+
+                </div>
+                <div class="sticky__navInner">
+                    <a href=" #" class="sticky__navInnerFour"><i class="fas fa-external-link-alt sticky__icons"></i></a>
+                </div>
+                <h1 class="sticky__nav--headerSub"><a href="#">See Demo</a></h1>
             </div>
         </div>
     </nav>

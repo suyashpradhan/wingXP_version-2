@@ -2723,7 +2723,7 @@ a.bttn-dark:focus {
 /*New Design*/
 
 .banner__wrapper {
-    background-image: url('assets/images/banner.png');
+    background-image: url('../images/banner.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -3338,20 +3338,28 @@ textarea.input100 {
         display: block;
     }
 
+    .navbar__mobile-hide {
+        display: none;
+    }
+
+    .banner__wrapper {
+        display: none;
+    }
+
     #mobile__carousel--one {
-        background-image: url('assets/images/slider_one.png');
+        background-image: url('../images/slider_one.png');
         background-size: contain;
         height: 85vh;
     }
 
     #mobile__carousel--two {
-        background-image: url('assets/images/slider_two.png');
+        background-image: url('../images/slider_two.png');
         background-size: contain;
         height: 85vh;
     }
 
     #mobile__carousel--three {
-        background-image: url('assets/images/slider_three.png');
+        background-image: url('../images/slider_three.png');
         background-size: contain;
         height: 85vh;
     }
@@ -3391,15 +3399,61 @@ textarea.input100 {
         display: block;
         font-size: 12px !important;
     }
+
+
+}
+
+@media screen and (max-width:526px) and (min-width:100px) {
+    .sticky__nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .sticky__nav--header {
+        font-size: 14px !important;
+    }
+
+    .sticky__nav--headerSub {
+        font-size: 14px !important;
+        padding: 3px 10px 3px 10px !important;
+    }
+}
+
+
+@media screen and (max-width:700px) and (min-width:527px) {
+    .sticky__nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .sticky__nav--header {
+        font-size: 18px !important;
+    }
+
+    .sticky__nav--headerSub {
+        font-size: 18px !important;
+
+    }
+}
+
+
+@media screen and (max-width:1000000000px) and (min-width:701px) {
+    .navbar__mobile-show {
+        display: none;
+    }
+
+    .mobile__carousel {
+        display: none;
+    }
 }
 
 .bottom__navbarWrap {
     display: grid;
     justify-items: center;
+    justify-content: center;
     align-items: center;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+    grid-gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .bottom__navbarWrapInner a {
@@ -3408,7 +3462,6 @@ textarea.input100 {
     color: #fff;
     border-radius: 2px;
     font-size: 20px;
-    width: 100%;
     text-align: center;
 }
 
@@ -3423,4 +3476,155 @@ textarea.input100 {
 
 .carousel-inner .item {
     height: 100vh;
+}
+
+.sticky__nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin: 0 0 18px 0;
+}
+
+.sticky__nav--header {
+    font-size: 28px;
+    margin: 10px 10px 0 0;
+    color: #5c5b5b;
+    font-weight: 900
+}
+
+.sticky__nav--headerSub {
+    font-size: 28px;
+    margin: 10px 0 0 10px;
+    color: #5c5b5b;
+    font-weight: 900
+}
+
+.sticky__navInner {
+    text-decoration: none;
+    text-align: center;
+    color: #Fff;
+    padding: 3px 0;
+}
+
+.sticky__icons {
+    font-size: 24px;
+    padding: 15px 15px 0 15px;
+}
+
+.sticky__navInnerOne {
+    background-color: #00e676 !important;
+    color: #FFf !important;
+    text-decoration: none;
+    padding: 12px 0 5px 0;
+}
+
+.sticky__navInnerTwo {
+    background-color: #d32e2a;
+    color: #FFf !important;
+    text-decoration: none;
+    padding: 12px 0 5px 0;
+}
+
+.sticky__navInnerThree {
+    background-color: #5c5b5b;
+    color: #FFf !important;
+    text-decoration: none;
+    padding: 12px 0 5px 0;
+}
+
+.sticky__navInnerFour {
+    background-color: #17a2b8;
+    color: #FFf !important;
+    text-decoration: none;
+    padding: 12px 0 5px 0;
+}
+
+.sticky__nav--headerSub {
+    background-color: #11679a;
+    color: #fff;
+    padding: 6px 15px 6px 15px;
+    margin-top: 12px;
+    font-size: 22px;
+    position: relative;
+    animation-name: shake;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    cursor: pointer;
+    animation-name: shakeAnim;
+}
+
+.sticky__nav--headerSub a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@keyframes shakeAnim {
+    0% {
+        left: 0
+    }
+
+    1% {
+        left: -3px
+    }
+
+    2% {
+        left: 5px
+    }
+
+    3% {
+        left: -8px
+    }
+
+    4% {
+        left: 8px
+    }
+
+    5% {
+        left: -5px
+    }
+
+    6% {
+        left: 3px
+    }
+
+    7% {
+        left: 0
+    }
+}
+
+@keyframes shake {
+    0% {
+        left: 0
+    }
+
+    1% {
+        left: -3px
+    }
+
+    2% {
+        left: 5px
+    }
+
+    3% {
+        left: -8px
+    }
+
+    4% {
+        left: 8px
+    }
+
+    5% {
+        left: -5px
+    }
+
+    6% {
+        left: 3px
+    }
+
+    7% {
+        left: 0
+    }
 }
