@@ -2446,8 +2446,8 @@ a.bttn-dark:focus {
 
 .demo_new-wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
     width: 100%;
 }
 
