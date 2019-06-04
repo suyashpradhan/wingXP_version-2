@@ -736,6 +736,675 @@
           </div>
         </div>
       </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12" id="s1" style="display:none;">
+            <div class="timeline_card">
+              <h4><span>Stage One :</span> Onboarding Starts</h4>
+              <div class="timeline_card-first">
+                <p>Greetings from WingXP!
+                  Lets get you onboarded on
+                  World's best Co-curricular
+                  Platform.
+                  To begin with please
+                  complete the onbarding form
+                  to have better future
+                  engagements.</p>
+                <!-- <div class="timeline_button-wrapper">
+                  <button class="pulse-button" data-toggle="modal" data-target="#exampleModalCenter">Proceed</button>
+                </div> -->
+              </div>
+            </div>
+            <!--Onboarding Form start-->
+            <div class="timeline_card">
+              <span class="required">* Required Field</span>
+              <h1 class="modal__header">Welcome to WingXP! Please fill the form and help us serve you better.</h1>
+              <h1 class="modal__head-sub">School Owner </h1><i class="fas fa-info-circle info-icon info-tooltip">
+                <span class="tooltiptext tooltip-right">For understanding the School's Vision. For expectation setting
+                  for this partnership</span>
+              </i>
+              <br>
+              <form id="stage-1-form" action="index.php" method="POST">
+                <div class="row">
+                  <div class="col-4">
+                    <label for="">Owner Name</label>
+                    <input type="text" name="owner_name" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Owner Phone Number</label>
+                    <input type="text" name="owner_phone" class="modal__fields" maxlength="10" required=""
+                      autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Owner Email</label>
+                    <input type="email" name="owner_email" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                </div>
+                <h1 class="modal__head-sub">Principal</h1><i class="fas fa-info-circle info-icon info-tooltip">
+                  <span class="tooltiptext tooltip-right">For overall monitoring and support. For Selection of clubs
+                    that will be offered to Students. For appointing a Master Co-ordinator to foresee Implementation and
+                    Service.</span>
+                </i><br>
+                <div class="row">
+                  <div class="col-4">
+                    <label for="">Principal Name</label>
+                    <input type="text" name="principal_name" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Principal Mobile No</label>
+                    <input type="text" maxlength="10" name="principal_phone" class="modal__fields" required=""
+                      autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Principal Email Id</label>
+                    <input type="email" name="principal_email" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                </div>
+                <h1 class="modal__head-sub">Coordinator</h1><i class="fas fa-info-circle info-icon info-tooltip">
+                  <span class="tooltiptext tooltip-right">For overall execution of the program. For Co-ordination
+                    between School and WingXP. For Onboarding of Students on Platform and roll-out of Clubs.</span>
+                </i>
+                <div class="row">
+                  <div class="col-4">
+                    <label for="">Coordinator Name</label>
+                    <input type="text" name="coordinator_name" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Coordinator Mobile No</label>
+                    <input type="text" maxlength="10" name="coordinator_phone" class="modal__fields" required=""
+                      autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Coordinator Email Id</label>
+                    <input type="email" name="coordinator_email" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <label for="">Address</label>
+                    <textarea type="text" name="address2" class="modal__fields" required=""></textarea>
+                  </div>
+                  <div class="col-3">
+                    <label for="">City</label>
+                    <input type="text" name="city" class="modal__fields" required="">
+                  </div>
+                  <div class="col-3">
+                    <label for="">State</label>
+                    <input type="text" name="state" class="modal__fields" required="">
+                  </div>
+                  <div class="col-3">
+                    <label for="">Pin code</label>
+                    <input type="number" name="pincode" class="modal__fields" required="">
+                  </div>
+                  <div class="col-3">
+                    <label for="">Select Board</label>
+                    <select name="board" class="modal__fields" required="" autocomplete="none">
+                      <option value="cbse">CBSE</option>
+                      <option value="icse">ICSE</option>
+                      <option value="state">STATE</option>
+                    </select>
+                  </div>
+                  <div class="col-3">
+                    <label for="">Session 2019-20 End Date</label>
+
+                    <input type="date" name="sess_end_date" placeholder="Session 2019-20 End Date" class="modal__fields"
+                      required="" autocomplete="none">
+                  </div>
+                  <div class="col-3">
+                    <label for="">Session 2019-20 Start Date</label>
+
+                    <input type="date" name="sess_start_date" class="modal__fields" required="" autocomplete="none">
+                  </div>
+
+                  <div class="col-3">
+                    <label for="">Launch Date</label>
+                    <select name="club_launch_date" class="modal__fields" required="" autocomplete="none">
+                      <option value="2019-04-01">1st April</option>
+                      <option value="2019-05-01">1st May</option>
+                      <option value="2019-06-01">1st June</option>
+                    </select>
+                  </div>
+                  <div class="col-3">
+                    <label for="">Current Student Count</label>
+                    <input type="number" name="student_count" placeholder="" class="modal__fields" required=""
+                      autocomplete="none">
+                  </div>
+                </div>
+                <button type="submit" class="save__btn">Save</button>
+              </form>
+            </div>
+            <!--Onboarding Form end-->
+
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-12" id="s2" style="display:none;">
+            <div class="timeline_card">
+              <h4><span>Stage Two :</span> Vision Syncing</h4>
+              <div class="timeline_card-first">
+                <p>Management &amp; Principal
+                  Session.
+                  Agreement.
+                  Speak with WingXP Head -
+                  what to expect from this
+                  session.</p>
+                <div class="timeline_button-wrapper">
+                  <!-- <button class="pulse-button" data-toggle="modal" data-toggle="modal" data-target="#exampleModalCenter-3">Already Attended ?</button> -->
+                  <!-- <button class="pulse-button" data-toggle="modal" data-target="#exampleModalCenter-3">Proceed</button> -->
+
+                </div>
+              </div>
+            </div>
+            <!--Vision Syncing Form Start-->
+            <!--Vision Syncing-->
+            <div class="timeline_card">
+              <div class="timeline_card">
+                <div class="timeline_cardHeader">
+                  <h1>WORLD CLASS CO-CURRICULAR FRAMEWORK</h1>
+                </div>
+                <div class="timeline_cardHeaderSub">
+                  <h1>Webinar For Educators</h1>
+                </div>
+                <div class="timeline__desciption">
+                  <h1>Objective</h1>
+                  <p>The challenge for educators today is to design and education framework that keep peace with new
+                    world order,empowering students with modern day tools &amp; techniques of expression . Core
+                    academics is necessity,but it may not be all encompassing.
+                    <br><br>
+                    <span> Can Co-Curriculars bridge the gap? </span>
+                    <span> OR </span>
+                    The boundaries of core Curriculum framework and Co-Curricular framework must be assessed,aligned and
+                    merged.
+                  </p>
+                </div>
+                <div class="row timeline_row" style="margin: 0;">
+                  <div class="col-6">
+                    <h1>AGENDA</h1>
+                    <div class="row__grid">
+                      <div class="row__grid_img">
+                        <img src="assets/images/newspaper.png" alt="">
+                      </div>
+                      <ul class="row__grid_list">
+                        <li>1.Introduction</li>
+                        <li>2.New-Age Expressions &amp; Untapped Potential of Co-curricular</li>
+                        <li>3.Challenge for Schools &amp; Students</li>
+                        <li>4.Solution-Expert-led Co-curricular Clubs</li>
+                        <li>5.Benefits for your School,Students &amp; Teachers <br>
+                          Followed by feedback and Q &amp; A</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6 new__col">
+                    <h1>OBJECTIVE</h1>
+                    <h2>A Webinar for School Leaders for</h2>
+                    <ul class="row__grid_listNew">
+                      <li>Vision Syncing and Expectation Setting</li>
+                      <li>Understanding What comprises of World Class Co-Curricular framework?</li>
+                      <li>A briefing on the Product and its features</li>
+                      <li>4.Solution-Expert-led Co-curricular Clubs</li>
+                      <li>Roles And Responsibilities of Wing XP and that of School Co-ordinator<br>
+                      </li>
+                      <li>Power of expression to the students</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row timeline_rowSub" style="margin: 0;">
+                  <div class="col-2">
+                    <div class="first__inner-row">
+                      <h1>who<br>should<br>attend?</h1>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="second__inner-row">
+                      <h1>The Webinar is for WingXP Sign-up Schools:</h1>
+                      <ul>
+                        <li>School Management</li>
+                        <li>School Coordinator</li>
+                        <li>SPOC between School &amp; WingXP</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="third__inner-row">
+                      <form id="stage-2-form">
+
+                        <select name="web_id" id="web_schedule">
+                        </select>
+                        <h2 class="pl-3" style="display:flex;"><span id="web_start_time_span"></span><span
+                            style="margin:0em 5px 0em 5px;">-</span><span id="web_end_time_span"></span></h2>
+                        <button type="submit">REGISTER NOW</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--Vision Syncing Form End-->
+        </div>
+        <div class="col-md-12" id="s3">
+          <div class="timeline_card">
+            <h4><span>Stage Three :</span> Club Selection &amp;
+              Class Assign</h4>
+            <div class="timeline_card-first">
+              <p>Form to be filled by the
+                school's Appointed Club
+                Admin.<br>
+                We will guide you to
+                select which clubs are
+                suitable for your school
+                (already covered in
+                previous stage - vision
+                syncing).</p>
+              <div class="timeline_button-wrapper">
+                <!-- <button class="pulse-button" data-toggle="modal" data-target="#exampleModalCenter-2">Proceed</button> -->
+              </div>
+            </div>
+          </div>
+          <!--Club Selection-->
+          <div class="timeline_card">
+            <span class="required">* Required Field</span>
+            <h1 class="modal__header">Please select the clubs to chose from WingXP iclubs and mention the
+              existing
+              clubs
+              you would like to take online on WingXP Platform.</h1>
+            <h1 class="modal__header">Please select from the below mentioned 8 WingXP iclubs. *</h1>
+            <form id="stage-3-form">
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_43" class="check-click">
+                      <span> CBSE Physics IX</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_43[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_44" class="check-click">
+                      <span> CBSE Chemistry IX</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_44[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_45" class="check-click">
+                      <span> CBSE Maths IX</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_45[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_46" class="check-click">
+                      <span> CBSE Physics X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_46[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_47" class="check-click">
+                      <span> CBSE Chemistry X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_47[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_48" class="check-click">
+                      <span> CBSE Physics XI</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_48[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_46" class="check-click">
+                      <span> CBSE Physics X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_46[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_54" class="check-click">
+                      <span> Wix Club</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_54[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_54[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_54[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_54[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_46" class="check-click">
+                      <span> CBSE Physics X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_46[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_48" class="check-click">
+                      <span> CBSE Physics XI</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_48[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_47" class="check-click">
+                      <span> CBSE Chemistry X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_47[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_46" class="check-click">
+                      <span> CBSE Physics X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_46[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_45" class="check-click">
+                      <span> CBSE Maths IX</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_45[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_image">
+                      <div class="col_check">
+                        <input type="checkbox" name="clubs[]" checked="" value="club_44" class="check-click">
+                        <span> CBSE Chemistry IX</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_44[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_43" class="check-click">
+                      <span> CBSE Physics IX</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_43[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_55" class="check-click">
+                      <span> English Expression</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_55[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_55[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_55[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_55[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="save__btn" type="submit">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
