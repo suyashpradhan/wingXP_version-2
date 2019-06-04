@@ -2329,15 +2329,16 @@ nav {
 }
 
 .navbar {
-    height: 55px !important;
-    background: rgb(153, 152, 152);
+    /*  height: 55px !important;
+    background: rgb(153, 152, 152); */
     padding: 0;
 }
 
 .navbar-shadow {
-    -webkit-box-shadow: 0 10px 6px -6px #777;
+    /* -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777; */
+    border-bottom: 1px solid #ccc;
 }
 
 .nav-main {
@@ -2362,53 +2363,27 @@ nav {
 .bg-gradient2 span,
 .bg-gradient2:before {
     background: #2abfd4;
-    background: linear-gradient(180deg, #2abfd4 0%, #3fc8c9 80%, #3fc8c9 100%);
+
 }
 
 .fancy-button {
     display: inline-block;
     margin: 0 10px 10px 0;
-    font-weight: 500;
     font-size: 16px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    line-height: 24px;
     color: #ffffff;
     position: relative;
 }
 
-.fancy-button:before {
-    content: "";
-    display: inline-block;
-    height: 40px;
-    position: absolute;
-    bottom: -1px;
-    left: 10px;
-    right: 10px;
-    z-index: -1;
-    border-radius: 2em;
-    -webkit-filter: blur(14px) brightness(0.9);
-    filter: blur(14px) brightness(0.9);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    transition: all 0.3s ease-out;
-}
 
 .fancy-button span {
     display: inline-block;
-    padding: 10px 40px;
+    padding: 5px 10px;
     border-radius: 50em;
     position: relative;
     z-index: 2;
-    will-change: transform, filter;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
     transition: all 0.3s ease-out;
 }
 
-.fancy-button.bg-gradient2 {
-    text-shadow: 0px 0px 1px #227270;
-}
 
 .fancy-button:focus {
     color: #ffffff;
@@ -2418,22 +2393,20 @@ nav {
     color: #ffffff;
 }
 
-.fancy-button:hover span {
-    -webkit-filter: brightness(0.9) contrast(1.2);
-    filter: brightness(0.9) contrast(1.2);
-    -webkit-transform: scale(0.96);
-    transform: scale(0.96);
+.vendor_wrapper input[type='radio'] {
+    margin: 0 20px;
+    color:#363636;
+    font-weight: 700;
 }
 
-.fancy-button:hover:before {
-    bottom: 3px;
-    -webkit-filter: blur(6px) brightness(0.8);
-    filter: blur(6px) brightness(0.8);
+.add__btn {
+    background-color: #777;
+    border-radius: 100px;
+    padding: 5px 30px;
 }
 
-.fancy-button:active span {
-    -webkit-filter: brightness(0.75) contrast(1.7);
-    filter: brightness(0.75) contrast(1.7);
+.add__btn span {
+    color: #fff;
 }
 
 .nav__main {
@@ -2588,7 +2561,7 @@ hr {
     height: 150px;
     width: 100%;
     background-color: #17a2b8;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0
 }
 
 .page-description-text {
@@ -4191,9 +4164,10 @@ textarea {
 
 .newnavigationBar_2 {
     display: grid;
-    grid-template-columns: 1fr auto auto auto;
+    grid-template-columns: 1fr auto auto auto !important;
     align-items: center;
     width: 100%;
+    margin-top: 5px;
 }
 
 .topic {
