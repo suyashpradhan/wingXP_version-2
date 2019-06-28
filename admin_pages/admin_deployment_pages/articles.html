@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../admin_update_pages/main.css">
+    <link rel="stylesheet" href="../content_manager_pages/club_coordinator_pages/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <style>
@@ -17,18 +17,23 @@
 </head>
 
 <body style="background: linear-gradient(to left, #6190e8, #a7bfe8);">
-    <div class="navigationBar">
-        <div class="logoBox">
-            <h1 class="logoBox-header"><a href="index.php" style="color:#fff; text-decoration:none">SPACEDTIMES</a></h1>
-        </div>
-        <div class="menu-wrapper">
-            <i class="fas fa-bars" onclick="openNav()"></i>
-        </div>
-        <div id="mySidenav" class="sidenav" style="width: 0px;">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <div class="button-wrapper">
-                <a href="?q=logout">Logout</a>
-                <a href="deployed_activities.php">Deployed Activities</a>
+    <div class="navbar navbar-shadow" style="height: 60px;">
+        <div class="newnavigationBar_2">
+            <a href="index.php">
+                <h1
+                    style="font-size:40px; color:#227270 !important; font-weight:900; text-align:left; text-decoration:none;">
+                    CBSE 360</h1>
+            </a>
+            <div class="menu-wrapper">
+                <a href="?q=logout" class="fancy-button bg-gradient2 logout-nav-link"><span>Logout</span></a>
+            </div>
+            <div class="menu-wrapper">
+                <a href="expert.php" class="fancy-button bg-gradient2 logout-nav-link"><span>
+                        Ask Expert</span></a>
+            </div>
+            <div class="menu-wrapper">
+                <a href="activate_topic.php" class="fancy-button bg-gradient2 logout-nav-link"><span> Activate Topic
+                    </span></a>
             </div>
         </div>
     </div>
@@ -51,36 +56,7 @@
             <tr>
                 <td>art_24 </td>
                 <td>What is Machine Learning ? </td>
-                <td>What is machine learning? Machine learning is the idea that there are generic algorithms that can
-                    tell you something interesting about a set of data without you having to write any custom code
-                    specific to the problem. Instead of writing code, you feed data to the generic algorithm and it
-                    builds its own logic based on the data. For example, one kind of algorithm is a classification
-                    algorithm. It can put data into different groups. The same classification algorithm used to
-                    recognize handwritten numbers could also be used to classify emails into spam and not-spam without
-                    changing a line of code. It’s the same algorithm but it’s fed different training data so it comes
-                    up with different classification logic. This machine learning algorithm is a black box that can be
-                    re-used for lots of different classification problems. “Machine learning” is an umbrella term
-                    covering lots of these kinds of generic algorithms. Two kinds of Machine Learning Algorithms You
-                    can think of machine learning algorithms as falling into one of two main categories — supervised
-                    learning and unsupervised learning. The difference is simple, but really important. Supervised
-                    Learning Let’s say you are a real estate agent. Your business is growing, so you hire a bunch of
-                    new trainee agents to help you out. But there’s a problem — you can glance at a house and have a
-                    pretty good idea of what a house is worth, but your trainees don’t have your experience so they
-                    don’t know how to price their houses. To help your trainees (and maybe free yourself up for a
-                    vacation), you decide to write a little app that can estimate the value of a house in your area
-                    based on it’s size, neighborhood, etc, and what similar houses have sold for. So you write down
-                    every time someone sells a house in your city for 3 months. For each house, you write down a bunch
-                    of details — number of bedrooms, size in square feet, neighborhood, etc. But most importantly, you
-                    write down the final sale price: This is our “training data.” Using that training data, we want to
-                    create a program that can estimate how much any other house in your area is worth: We want to use
-                    the training data to predict the prices of other houses. This is called supervised learning. You
-                    knew how much each house sold for, so in other words, you knew the answer to the problem and could
-                    work backwards from there to figure out the logic. To build your app, you feed your training data
-                    about each house into your machine learning algorithm. The algorithm is trying to figure out what
-                    kind of math needs to be done to make the numbers work out. This kind of like having the answer key
-                    to a math test with all the arithmetic symbols erased: Oh no! A devious student erased the
-                    arithmetic symbols from the teacher’s answer key! From this, can you figure out what kind of math
-                    problems were on the test? You know you are supposed to “do something” with the numbers on the left
+                <td>d to “do something” with the numbers on the left
                     to get each answer on the right. In supervised learning, you are letting the computer work out that
                     relationship for you. And once you know what math was required to solve this specific set of
                     problems, you could answer to any other problem of the same type! </td>
@@ -92,22 +68,24 @@
                 <td><a href="#" class="view-tb-link">View</a></td>
             </tr>
         </table>
-    </div>
-    <div class="footer ">
-        <div class="footerInner ">
-            <h1>SPACEDTIMES</h1>
+        <div class="repo-wrapper">
+            <button class="__btn"><a href="index.php">GO TO REPOSITORY</a></button>
         </div>
     </div>
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.0.10/css/all.css " integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg "
-        crossorigin="anonymous ">
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
+    <div class="footer" style=" position: absolute;
+    width: 100%;
+    height: 60px; 
+    background:#000;">
+        <div class="left-footer" style="padding: 15px; padding: 15px 0;
+        font-size: 20px;
+        color: #fff;
+        float: none;
+        text-align: center;">
+            © Copyright – domain Edutech Pvt Ltd
+        </div>
+    </div>
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.0.10/css/all.css "
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg " crossorigin="anonymous ">
 </body>
 
 </html>
