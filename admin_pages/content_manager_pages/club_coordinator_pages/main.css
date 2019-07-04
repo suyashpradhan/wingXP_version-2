@@ -55,8 +55,8 @@ body {
     left: -1%;
     background: rgba(0, 114, 255, 0.5);
     background: linear-gradient(to right,
-        rgba(0, 114, 255, 0.5) 15%,
-        rgba(0, 91, 204, 0.5) 100%);
+            rgba(0, 114, 255, 0.5) 15%,
+            rgba(0, 91, 204, 0.5) 100%);
     z-index: 10;
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg);
@@ -793,7 +793,7 @@ select {
 }
 
 .main-c {
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
 .card-head {
@@ -1625,10 +1625,10 @@ select {
 
 .btn-sub.grad-btn {
     background-image: linear-gradient(to right,
-        #25aae1,
-        #4481eb,
-        #04befe,
-        #3f86ed);
+            #25aae1,
+            #4481eb,
+            #04befe,
+            #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
@@ -1820,8 +1820,8 @@ body {
     left: -1%;
     background: rgba(0, 114, 255, 0.5);
     background: linear-gradient(to right,
-        rgba(0, 114, 255, 0.5) 15%,
-        rgba(0, 91, 204, 0.5) 100%);
+            rgba(0, 114, 255, 0.5) 15%,
+            rgba(0, 91, 204, 0.5) 100%);
     z-index: 10;
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg);
@@ -3713,10 +3713,10 @@ select {
 
 .btn-sub.grad-btn {
     background-image: linear-gradient(to right,
-        #25aae1,
-        #4481eb,
-        #04befe,
-        #3f86ed);
+            #25aae1,
+            #4481eb,
+            #04befe,
+            #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
@@ -4221,13 +4221,22 @@ select {
 }
 
 .__btn {
-    background-color: #ce1f36;
+    background-color: #17a2b8;
     padding: 15px 40px;
-    border: 1px solid #ce1f36;
+    border: 1px solid #17a2b8;
     font-size: 16px;
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none !important;
 }
 
 .newnavigationBar_2 {
