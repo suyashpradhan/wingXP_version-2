@@ -1,0 +1,7 @@
+Adjust Image Resolution (downsample)
+Stored Procedures 
+Lazy Loading / AJAX 
+Minify all libraries / scripts/ css
+Check CSS code coverage and remove extra CSS
+Horizontal Table Partitioning (Keeping Theme of the month content in one partition and archives in other)
+Vertical Partitioning (Keeping Unused columns in different partition)
