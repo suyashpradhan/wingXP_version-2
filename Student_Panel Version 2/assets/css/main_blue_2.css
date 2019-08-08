@@ -3891,8 +3891,7 @@ textarea.input100 {
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 50px;
-    margin: 30px 0 0 0;
+    margin: 35px 0 0 0;
 }
 
 .inner__cols__two img {
@@ -3920,7 +3919,7 @@ textarea.input100 {
     letter-spacing: 1px;
     margin: 25px 0;
     font-weight: 700;
-    color: #363636;
+    color: #5c5b5b;
     display: block;
 }
 
@@ -4233,16 +4232,17 @@ transition: all 0.25s ease-in-out; */
     font-size: 60px;
     text-align: center;
     padding: 30px 0 10px 0;
-    color: #333;
+    font-weight: 700;
+    color: #999999;
 }
 
 .academic__wrapper--headerSub {
-    background-color: #333;
+    background-color: #999999;
     padding: 5px 0;
     margin: 0 auto;
-    width: 220px;
+    width: fit-content;
+    padding: 10px 30px;
     text-align: center;
     color: #fff;
     font-size: 32px;
-    font-weight: 700;
 }
