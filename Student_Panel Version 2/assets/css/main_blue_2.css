@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 * {
     margin: 0;
@@ -6,20 +7,26 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     max-width: 100%;
-    font-family: "Nunito", sans-serif;
+    /* font-family: "Nunito", sans-serif; */
+    font-family: 'Roboto', sans-serif;
+
 }
 
 html,
 body {
     line-height: 150%;
-    font-family: "Nunito", sans-serif;
+    /*  font-family: "Nunito", sans-serif; */
+    font-family: 'Roboto', sans-serif;
+
     /*   background-color: #f8f8f8; */
     cursor: default;
 
 }
 
 i span {
-    font-family: "Nunito", sans-serif;
+    /* font-family: "Nunito", sans-serif; */
+    font-family: 'Roboto', sans-serif;
+
 }
 
 img {
@@ -165,6 +172,11 @@ img {
     margin: auto;
 }
 
+.page-container-new {
+    max-width: 1100px;
+    margin: auto;
+}
+
 video {
     max-width: 100%;
     height: auto;
@@ -297,7 +309,7 @@ video {
 .section-sub-first {
     font-size: 15px;
     text-align: center;
-    width: 75%;
+    width: fit-content;
     margin: 10px auto;
     padding-bottom: 4px;
     border-bottom: 1px solid #ccc;
@@ -308,7 +320,7 @@ video {
 .section-sub-first-new {
     font-size: 15px;
     text-align: center;
-    width: 75%;
+    width: fit-content;
     margin: 10px auto;
     color: #696969 !important;
     font-weight: 900;
@@ -4245,4 +4257,188 @@ transition: all 0.25s ease-in-out; */
     text-align: center;
     color: #fff;
     font-size: 32px;
+}
+
+
+/*Multiple Clubs*/
+
+.multiple__clubs__section {
+    margin-bottom: 100px;
+}
+
+.clubs__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin: 10px 0 !important;
+}
+
+.page-container-new {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.clubs__col {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.clubs__header {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.clubs {
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 0px 5px 20px;
+}
+
+.inner_clubs__header {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.clubs__list {
+    display: block;
+    margin-bottom: 0 !important;
+}
+
+.clubs__list li {
+    list-style: none;
+    color: #4f4c4d;
+    padding: 1px 0;
+}
+
+.more {
+    color: #4a65ad !important;
+    font-weight: 700;
+}
+
+.clubs__diff {
+    background-color: #a1c155;
+    font-size: 20px;
+    padding: 3px 5px;
+    border-radius: 100px;
+    border: 1px solid #a1c155;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 900;
+}
+
+.k-12-span {
+    grid-column: span 2 !important;
+}
+
+.k-12-middle {
+    background-color: #fecd33 !important;
+    padding-right: 10px;
+
+}
+
+.k-12__header {
+    background-color: #2f689b;
+    margin: 10px auto;
+    width: fit-content;
+    text-align: center;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+.inner_clubs--grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.grid--header {
+    font-size: 90px;
+    font-weight: 900;
+    margin: -20px 0 0 0;
+    padding: 0;
+}
+
+.grid--header span {
+    font-size: 40px !important;
+    display: block;
+    text-align: center;
+    margin-top: -5px
+}
+
+.grid-para {
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    margin: -30px 0 0 0;
+}
+
+@media screen and (max-width:900px) and (min-width:768px) {
+    .clubs__row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:526px) {
+    .clubs__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-width:525px) and (min-width:350px) {
+    .clubs__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 5px;
+    }
+
+    .clubs__col {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .clubs__list li {
+        font-size: 14px !important;
+    }
+
+    .k-12__header {
+        font-size: 30px !important;
+    }
+
+    .clubs__diff {
+        font-size: 18px !important;
+    }
+
+    .inner_clubs__header {
+        font-size: 16px !important;
+    }
+
+    .grid--header {
+        font-size: 50px !important;
+    }
+
+    .grid--header span {
+        font-size: 30px !important;
+    }
+
+    .grid-para {
+        margin: 0 !important;
+        font-size: 12px !important;
+    }
+
+    .k-12-span {
+        margin: 15px 0 !important;
+    }
 }
