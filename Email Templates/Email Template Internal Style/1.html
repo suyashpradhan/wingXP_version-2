@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+body {
+	Margin: 0!important;
+	padding: 15px;
+	background-color: #FFF;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+}
+.wrapper-inner {
+	width: 100%;
+	background-color: #eee;
+	max-width: 670px;
+	margin: 0 auto;
+}
+table {
+	border-spacing: 0;
+	font-family: sans-serif;
+	color: #727f80;
+}
+.outer-table {
+	width: 100%;
+	max-width: 670px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+td {
+    padding: 0;
+}
+.header {
+    background-color: #C2C1C1;
+    border-bottom: 3px solid #81B9C3;
+}
+p {
+    Margin:0;
+}
+.header p {
+    text-align: center;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+a {
+    color: #F1F1F1;
+    text-decoration: none;
+}
+/*--- End Outer Table 1 --*/
+.main-table-first {
+	width: 100%;
+	max-width: 610px;
+	Margin: 0 auto;
+	background-color: #FFF;
+	border-radius: 6px;
+	margin-top: 25px;
+}
+/*--- Start Two Column Sections --*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+    padding: 5px 0 10px 0;
+}
+.two-column .section {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .content {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+}
+.content {
+    width: 100%;
+    padding-top: 20px;
+}
+.center {
+    display: table;
+    margin: 0 auto;
+}
+img {
+    border: 0;
+}
+img.logo {
+    float: left;
+    Margin-left: 5%;
+    max-width: 200px!important;
+}
+#callout {
+    float: right;
+    Margin: 4% 5% 2% 0;
+    height: auto;
+    overflow: hidden;
+}
+#callout img {
+    max-width: 20px;
+}
+.social {
+    list-style-type: none;
+    Margin-top: 1%;
+    padding: 0;
+}
+.social li {
+    display: inline-block;
+}
+.social li img {
+    max-width: 15px;
+    Margin-bottom: 0;
+    padding-bottom: 0;
+}
+.image img {
+    width: 100%;
+    max-width: 670px;
+    height: auto;
+}
+.main-table {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-radius: 6px;
+}
+.one-column .inner-td {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+}
+.inner-td {
+    padding: 10px;
+}
+.h2 {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 45px;
+    Margin: 12px;
+    color: #4A4A4A;
+}
+p.center {
+    text-align: center;
+    max-width: 580px;
+    line-height: 24px;
+}
+.button-holder-center {
+    text-align: center;
+    Margin: 5% 2% 3% 0;
+}
+.button-holder {
+    float: right;
+    Margin: 5% 0 3% 0;
+}
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    background: #81BAC6;
+    color: #FFF;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 28px;
+}
+.two-column img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+.two-column .text {
+    padding: 10px 0;
+}
+.outer-table-2 {
+	width: 100%;
+	max-width: 670px;
+	margin: 22px auto;
+	background-color: #C2C1C1;
+    border-bottom: 3px solid #81B9C3;
+    border-top: 3px solid #81B9C3;
+}
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding: 10px 0 30px 0;
+}
+.three-column .section {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .content {
+    font-size: 16px;
+    line-height: 20px;
+}
+.three-column img {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+}
+.outer-table-2 p {
+	margin-top: 6px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23px;
+}
+.outer-table-3 {
+    width: 100%;
+    max-width: 670px;
+    margin: 22px auto;
+    background-color: #C2C1C1;
+    border-top: 3px solid #81B9C3;
+}
+.h3 {
+	text-align: center;
+	font-size: 21px;
+	font-weight: 600;
+	Margin-bottom: 8px;
+	color: #4A4A4A;
+}
+.inner-bottom {
+	padding: 22px;
+}
+.h1 {
+    text-align: center!important;
+    font-size: 25px!important;
+    font-weight: 600;
+    line-height: 45px;
+    Margin: 12px 0 20px 0;
+    color: #4A4A4A;
+}
+.inner-bottom p {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: justify;
+}
+.footer {
+	width: 100%;
+	background-color: #C2C1C1;
+	Margin: 0 auto;
+    color: #FFF;
+}
+.footer  img {
+	max-width: 135px;
+	Margin: 0 auto;
+	display: block;
+	padding: 4% 0 1% 0;
+}
+p.footer {
+	text-align: center;
+	color: #FFF!important;
+	line-height: 30px;
+	padding-bottom: 4%;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 400px) {
+	.h1 {
+		font-size: 22px;
+	}
+	.two-column .column, .three-column .column {
+		max-width: 100%!important;
+	}
+	.two-column img {
+		width: 100%!important;
+	}
+	.three-column img {
+		max-width: 60%!important;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 400px) {
+
+	.two-column .column {
+		max-width: 50%!important;
+	}
+	.three-column .column {
+		max-width: 33%!important;
+}
+}
+@media screen and (max-width:768px) {
+img.logo {
+	float:none !important;
+	margin-left:0% !important;
+	max-width: 200px!important;
+}
+
+#callout {
+	float:none !important;
+	margin: 0% 0% 0% 0;
+	height: auto;
+	text-align:center;
+	overflow: hidden;
+}
+#callout img {
+    max-width:26px !important; 
+}
+.two-column .section {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.two-column img {
+	width: 100% !important;
+ 	height: auto !important;
+}
+img.img-responsive {
+    width:100% !important;
+    height:auto !important;
+    max-width:100% !important;
+}
+.content {
+	width: 100%;
+	padding-top:0px !important;
+}
+}
+</style>
+ </head>
+<body style="padding: 15px;background-color: #FFF;margin: 0!important;">
+    <div class="wrapper" style="width: 100%;table-layout: fixed;">
+    	<div class="wrapper-inner" style="width: 100%;background-color: #eee;max-width: 670px;margin: 0 auto;">
+    		<table class="outer-table" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 670px;margin: 0 auto;background-color: #FFF;">
+            </table> <!--- End Outer Table -->
+            <table class="main-table-first" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;margin-top: 25px;">
+                <tr>
+                    <td class="two-column" style="padding: 5px 0 10px 0;text-align: center;font-size: 0;">
+                        <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+                            <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                <tr>
+                                    <td class="inner-td" style="padding: 10px;">
+                                        <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+                                            <tr>
+                                                <td align="center" style="padding: 0;">
+                                                    <img src="w3newbie-logo.png" class="logo" style="border: 0;float: left;margin-left: 5%;width: 100%;max-width: 200px!important;height: auto;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+                            <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                <tr>
+                                    <td class="inner-td" style="padding: 10px;">
+                                        <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+                                            <tr>
+                                                <td style="padding: 0;">
+                                                    <div id="callout" style="float: right;margin: 4% 5% 2% 0;height: auto;overflow: hidden;">
+                                                        <ul class="social" style="list-style-type: none;margin-top: 1%;padding: 0;">
+                                                            <li style="display: inline-block;"><a href="index.html#" target="_blank" style="color: #F1F1F1;text-decoration: none;"><img src="facebook.png" style="border: 0;width: 100%;max-width: 20px;height: auto;margin-bottom: 0;padding-bottom: 0;"></a></li>
+                                                            <li style="display: inline-block;"><a href="index.html#" target="_blank" style="color: #F1F1F1;text-decoration: none;"><img src="googleplus.png" style="border: 0;width: 100%;max-width: 20px;height: auto;margin-bottom: 0;padding-bottom: 0;"></a></li>
+                                                            <li style="display: inline-block;"><a href="index.html#" target="_blank" style="color: #F1F1F1;text-decoration: none;"><img src="twitter.png" style="border: 0;width: 100%;max-width: 20px;height: auto;margin-bottom: 0;padding-bottom: 0;"></a></li>
+                                                            <li style="display: inline-block;"><a href="index.html#" target="_blank" style="color: #F1F1F1;text-decoration: none;"><img src="youtube.png" style="border: 0;width: 100%;max-width: 20px;height: auto;margin-bottom: 0;padding-bottom: 0;"></a></li>
+                                                            <li style="display: inline-block;"><a href="index.html#" target="_blank" style="color: #F1F1F1;text-decoration: none;"><img src="instagram.png" style="border: 0;width: 100%;max-width: 20px;height: auto;margin-bottom: 0;padding-bottom: 0;"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> 
+                    </td>
+                </tr> 
+                </table>
+            <table class="main-table" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;">
+    			<tr>
+    				<td class="one-column" style="padding: 0;">
+    					<table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+    						<tr>
+    							<td class="inner-td" style="padding: 10px;font-size: 16px;line-height: 20px;text-align: justify;">
+    								<p class="h2" style="margin: 12px;text-align: center;font-size: 23px;font-weight: 600;line-height: 45px;color: #4A4A4A;">Weekly Newsletter</p>
+    								<p class="center" style="margin: 0 auto;display: table;text-align: center;max-width: 580px;line-height: 24px;">This week we'll learn how to use HTML and CSS to create really awesome newsletters for our websites! We're going to use HTML tables in order to give the email layouts it's responsiveness and mobile-friendly version as well as have cross-email-client compatilibility.</p>
+    								<p class="button-holder-center" style="margin: 5% 2% 3% 0;text-align: center;">
+    									<a class="btn" href="#" style="color: #FFF;text-decoration: none;font-size: 15px;font-weight: 600;background: #81BAC6;padding: 9px 16px;border-radius: 28px;">Learn more</a>
+    								</p>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="two-column" style="padding: 5px 0 10px 0;text-align: center;font-size: 0;">
+    					<div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+    						<table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+    							<tr>
+    								<td class="inner-td" style="padding: 10px;">
+    									<table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+    										<tr>
+    											<td style="padding: 0;">
+    												<img src="search.png" class="img-responsive" style="border: 0;width: 100%;max-width: 280px;height: auto;">
+    											</td>
+    										</tr>
+    										<tr>
+    											<td class="text" style="padding: 10px 0;">
+    												<p style="margin: 0;">Make your emails stand-out in the crowd of other messages in the inbox your readers search through with a compelling design!</p>
+    											</td>
+    										</tr>
+    									</table>
+    								</td>
+    							</tr>
+    						</table>
+    					</div> <!--- End First Column of Two Columns -->
+    					<div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+    						<table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+    							<tr>
+    								<td class="inner-td" style="padding: 10px;">
+    									<table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+    										<tr>
+    											<td style="padding: 0;">
+    												<img src="chat.png" class="img-responsive" style="border: 0;width: 100%;max-width: 280px;height: auto;">
+    											</td>
+    										</tr>
+    										<tr>
+    											<td class="text" style="padding: 10px 0;">
+    												<p style="margin: 0;">Get the conversation started with your readers and respond to their messages for the better email open-rates when engaging your list.</p>
+    											</td>
+    										</tr>
+    									</table>
+    								</td>
+    							</tr>
+    						</table>
+    					</div> <!--- End Second Column of Two Columns -->
+    				</td>
+    			</tr> <!--- End Two Column Section -->
+            </table> <!--- End Main Table -->
+            <table class="outer-table-2" style="background-color: #C2C1C1;border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 670px;margin: 22px auto;border-bottom: 3px solid #81B9C3;border-top: 3px solid #81B9C3;">
+    			<tr>
+    				<td class="three-column" style="padding: 10px 0 30px 0;text-align: center;font-size: 0;">
+    					<div class="section" style="width: 100%;max-width: 200px;display: inline-block;vertical-align: top;">
+    						<table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+    							<tr>
+    								<td class="inner-td" style="padding: 10px;">
+    									<table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;">
+    										<tr>
+    											<td style="padding: 0;">
+    												<img src="mouse.png" style="border: 0;width: 100%;max-width: 125px;height: auto;">
+    											</td>
+    										</tr>
+    										<tr>
+    											<td class="text" style="padding: 0;">
+    												<p style="margin: 0;margin-top: 6px;color: #FFF;font-size: 18px;font-weight: 500;line-height: 23px;">View emails on your mobile phone or tablet device.</p>
+    											</td>
+    										</tr>
+    									</table>
+    								</td>
+    							</tr>
+    						</table>
+    					</div> <!--- End First Column of Three Columns -->
+    					<div class="section" style="width: 100%;max-width: 200px;display: inline-block;vertical-align: top;">
+    						<table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+    							<tr>
+    								<td class="inner-td" style="padding: 10px;">
+    									<table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;">
+    										<tr>
+    											<td style="padding: 0;">
+    												<img src="mac.png" style="border: 0;width: 100%;max-width: 125px;height: auto;">
+    											</td>
+    										</tr>
+    										<tr>
+    											<td class="text" style="padding: 0;">
+    												<p style="margin: 0;margin-top: 6px;color: #FFF;font-size: 18px;font-weight: 500;line-height: 23px;">View emails on your mobile phone or tablet device.</p>
+    											</td>
+    										</tr>
+    									</table>
+    								</td>
+    							</tr>
+    						</table>
+    					</div> <!--- End Second Column of Three Columns -->
+    					<div class="section" style="width: 100%;max-width: 200px;display: inline-block;vertical-align: top;">
+    						<table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+    							<tr>
+    								<td class="inner-td" style="padding: 10px;">
+    									<table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;">
+    										<tr>
+    											<td style="padding: 0;">
+    												<img src="phone.png" style="border: 0;width: 100%;max-width: 125px;height: auto;">
+    											</td>
+    										</tr>
+    										<tr>
+    											<td class="text" style="padding: 0;">
+    												<p style="margin: 0;margin-top: 6px;color: #FFF;font-size: 18px;font-weight: 500;line-height: 23px;">View emails on your mobile phone or tablet device.</p>
+    											</td>
+    										</tr>
+    									</table>
+    								</td>
+    							</tr>
+    						</table>
+    					</div> 
+    				</td>
+    			</tr> 
+            </table>
+            <table class="main-table" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;">
+                <tr>
+                    <td class="two-column" style="padding: 5px 0 10px 0;text-align: center;font-size: 0;">
+                        <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+                            <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                <tr>
+                                    <td class="inner-td" style="padding: 10px;">
+                                        <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+                                            <tr>
+                                                <td style="padding: 0;">
+                                                    <img src="pie-chart.png" class="img-responsive" style="border: 0;width: 100%;max-width: 280px;height: auto;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text" style="padding: 10px 0;">
+                                                    <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #4A4A4A;">Article Content</p>
+                                                    <p style="margin: 0;">Get the conversation started with your readers and respond to their messages for the better email open-rates when engaging your list.</p>
+                                                    <br>
+                                                    <p style="margin: 0;">Get the conversation started with your readers and respond to their messages for the better email open-rates when engaging your list.</p>
+                                                    <br>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> <!--- End First Column of Two Columns -->
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top">
+                        <![endif]-->
+                        <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+                            <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                                <tr>
+                                    <td class="inner-td" style="padding: 10px;">
+                                        <table class="content" style="border-spacing: 0;font-family: sans-serif;color: #727f80;width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
+                                            <tr>
+                                                <td class="text" style="padding: 10px 0;">
+                                                    <p class="h3" style="margin: 0;text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 8px;color: #4A4A4A;">Article Content</p>
+                                                    <p style="margin: 0;">Get the conversation started with your readers and respond to their messages for the better email open-rates when engaging your list.</p>
+                                                    <br>
+                                                    <p style="margin: 0;">Get the conversation started with your readers and respond to their messages for the better email open-rates when engaging your list.</p>
+                                                    <br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0;">
+                                                    <img src="users.png" class="img-responsive" style="border: 0;width: 100%;max-width: 280px;height: auto;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> 
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="one-column" style="padding: 0;">
+                        <table width="100%" style="border-spacing: 0;font-family: sans-serif;color: #727f80;">
+                            <tr>
+                                <td class="inner-bottom" style="padding: 22px;">
+                                    <p class="h1" style="margin: 12px 0 20px 0;font-weight: 600;line-height: 24px;color: #4A4A4A;font-size: 25px!important;text-align: center!important;">The Real Story</p>
+                                    <p style="margin: 0;font-size: 16px;line-height: 24px;text-align: justify;">Email marketing is the act of sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing.  Email marketing is the act of sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing</p>
+                                    <br>
+                                    <p style="margin: 0;font-size: 16px;line-height: 24px;text-align: justify;">Email marketing is the act of sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing</p>
+                                    <div class="button-holder" style="float: right;margin: 5% 0 3% 0;">
+                                        <a class="btn" href="#" style="color: #FFF;text-decoration: none;font-size: 15px;font-weight: 600;background: #81BAC6;padding: 9px 16px;border-radius: 28px;">Learn more</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table> 
+    	</div>
+    </div>
+</body>
+</html>
