@@ -151,7 +151,7 @@
     </div>
 
     <div class="container">
-        <div class="sections owl-theme " id="two">
+        <div class="sections owl-theme owl-carousel" id="two">
             <div class="common">
                 <div class="img-section">
                     <img src="assets/images/design-min.png">
@@ -303,11 +303,9 @@
         <div class="container">
             <h1 class="academic__wrapper--header">ACADEMIC CLUBS</h1>
             <h1 class="academic__wrapper--headerSub">Class 9-12</h1>
-        </div>
-        <div class="row">
-            <div class="curations__wrap col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 page-container">
-                <div class="col_curations">
-                    <div class="__two">
+            <div class="row">
+                <div class="curations__wrap col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col_curations">
                         <div class="inner__cols">
                             <div class="inner_cols--one">
                                 <h1 class="inner__cols--header">Populate</h1>
@@ -789,7 +787,7 @@
         </div>
     </div>
 
-    <!-- <nav class="navbar fixed-bottom navbar-light bg-light"
+    <nav class="navbar fixed-bottom navbar-light bg-light"
         style="height: 60px;padding: 0; box-shadow: 0 -2px 5px -2px #333;">
         <div class="container">
             <div class="sticky__nav">
@@ -812,7 +810,7 @@
                 <h1 class="sticky__nav--headerSub"><a href="#">See Demo</a></h1>
             </div>
         </div>
-    </nav> -->
+    </nav>
 
     <div class="modal fade" id="exampleModalCenter-N1" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -893,6 +891,33 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
 
+
+    <script>
+        function postsCarousel() {
+            var checkWidth = $(window).width();
+            var owlPost = $("#two");
+            if (checkWidth > 500) {
+                if (typeof owlPost.data('owl.carousel') != 'undefined') {
+                    owlPost.data('owl.carousel').destroy();
+                }
+                owlPost.removeClass('owl-carousel');
+            } else if (checkWidth < 501) {
+                owlPost.addClass('owl-carousel');
+                owlPost.owlCarousel({
+                    items: 1,
+                    slideSpeed: 500,
+                    stagePadding: 25,
+                    touchDrag: true,
+                    mouseDrag: true,
+                    dots: true,
+                    loop: true
+                });
+            }
+        }
+        postsCarousel();
+        $(window).resize(postsCarousel);
+    </script>
+
     <script>
         $('.carouselExampleControls').carousel({
             interval: 2000,
@@ -909,6 +934,8 @@
             }
         });
     </script>
+
+
 </body>
 
 </html>

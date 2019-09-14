@@ -1249,13 +1249,13 @@
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
@@ -1318,31 +1318,6 @@
         }
     </script>
 
-    <script>
-        function postsCarousel() {
-            var checkWidth = $(window).width();
-            var owlPost = $("#one");
-            if (checkWidth > 501) {
-                if (typeof owlPost.data('owl.carousel') != 'undefined') {
-                    owlPost.data('owl.carousel').destroy();
-                }
-                owlPost.removeClass('owl-carousel');
-            } else if (checkWidth < 500) {
-                owlPost.addClass('owl-carousel');
-                owlPost.owlCarousel({
-                    items: 1,
-                    slideSpeed: 500,
-                    stagePadding: 25,
-                    dots: true,
-                    margin: 0,
-                    loop: true
-                });
-            }
-        }
-
-        postsCarousel();
-        $(window).resize(postsCarousel);
-    </script>
 
 
     <script>
@@ -1364,31 +1339,6 @@
                     mouseDrag: true,
                     dots: true,
                     loop: true
-                });
-            }
-        }
-
-        postsCarousel();
-        $(window).resize(postsCarousel);
-    </script>
-
-    <script>
-        function postsCarousel() {
-            var checkWidth = $(window).width();
-            var owlPost = $("#three");
-            if (checkWidth > 501) {
-                if (typeof owlPost.data('owl.carousel') != 'undefined') {
-                    owlPost.data('owl.carousel').destroy();
-                }
-                owlPost.removeClass('owl-carousel');
-            } else if (checkWidth < 500) {
-                owlPost.addClass('owl-carousel');
-                owlPost.owlCarousel({
-                    items: 1,
-                    slideSpeed: 500,
-                    dots: true,
-                    loop: true,
-                    stagePadding: 50,
                 });
             }
         }

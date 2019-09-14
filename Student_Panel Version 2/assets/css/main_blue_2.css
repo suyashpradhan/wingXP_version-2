@@ -6,7 +6,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 100%;
+    /*  max-width: 100%; */
     /* font-family: "Nunito", sans-serif; */
     font-family: 'Roboto', sans-serif;
 
@@ -351,14 +351,13 @@ video {
 
 .section--link {
     text-align: center;
-    background-color: #fddf65;
+    background-color: #006666 !important;
     font-size: 14px;
     text-decoration: none;
-    color: #363636;
-    padding: 5px 5px;
+    color: #fff !important;
+    padding: 5px 15px;
     text-transform: uppercase;
     margin: 10px 0;
-    font-weight: 900;
     letter-spacing: 2px;
     transition: all 1s ease;
 }
@@ -1119,8 +1118,8 @@ a.bttn-dark:focus {
 
 @media screen and (max-width: 500px) and (min-width: 0px) {
     .sections {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
     }
 
     .sections_last {
@@ -1131,11 +1130,11 @@ a.bttn-dark:focus {
 
 @media screen and (max-width: 636px) and (min-width: 501px) {
     .sections {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .sections_last {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
@@ -1154,9 +1153,15 @@ a.bttn-dark:focus {
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 837px) {
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
     .sections {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1001px) and (min-width: 837px) {
+    .sections {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .button-wrapper {
@@ -1165,11 +1170,11 @@ a.bttn-dark:focus {
     }
 
     .section--header {
-        font-size: 22px;
+        font-size: 17px;
     }
 
     .section-sub-first {
-        font-size: 11px;
+        font-size: 13px;
         width: 50%;
     }
 
@@ -1179,7 +1184,7 @@ a.bttn-dark:focus {
     }
 
     .section--link {
-        font-size: 30px;
+        font-size: 14px;
     }
 }
 
@@ -3803,16 +3808,13 @@ textarea.input100 {
 .curations__wrap {
     /*  border: 2px solid #dadada; */
     /*   margin: 20px auto; */
-    padding: 0 20px 20px 20px;
+    padding: 0;
 }
 
 
 .col_curations {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 20px;
-    justify-items: center;
-    align-items: center;
+    margin-top: 30px;
+
 }
 
 .__one {
@@ -3892,8 +3894,9 @@ textarea.input100 {
 }
 
 .inner__cols {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
     align-items: center;
     margin: 20px 0;
 }
@@ -3919,9 +3922,7 @@ textarea.input100 {
     color: #fff;
     padding: 5px 20px;
     text-align: center;
-    width: 310px;
     letter-spacing: 1px;
-    margin: 0 35px;
 }
 
 .inner__cols--headerSub {
@@ -3936,11 +3937,6 @@ textarea.input100 {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 801px) {
-
-    .col_curations {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-    }
 
     .col_grid {
         display: grid;
@@ -3959,7 +3955,7 @@ textarea.input100 {
 
     .inner__cols {
         display: grid !important;
-        grid-template-columns: 150px 150px 150px !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
         grid-gap: 10px;
         width: 100% !important;
     }
@@ -3982,10 +3978,6 @@ textarea.input100 {
 
 
 @media screen and (max-width: 800px) and (min-width: 651px) {
-    .col_curations {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-    }
 
     .col_grid {
         display: grid;
@@ -4008,7 +4000,7 @@ textarea.input100 {
 
     .inner__cols {
         display: grid !important;
-        grid-template-columns: 180px 180px 180px !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
         grid-gap: 10px;
         width: 100% !important;
     }
@@ -4028,12 +4020,6 @@ textarea.input100 {
 
 @media screen and (max-width: 650px) and (min-width: 430px) {
 
-
-    .col_curations {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-    }
-
     .curations__wrap {
         /*    border: 2px solid #dadada; */
         padding: 10px;
@@ -4052,6 +4038,14 @@ textarea.input100 {
         padding: 15px 0 0 0;
     }
 
+    .academic__wrapper--header {
+        font-size: 30px !important;
+    }
+
+    .academic__wrapper--headerSub {
+        font-size: 22px !important;
+    }
+
     .two__subHeader {
         font-size: 20px;
         text-align: center;
@@ -4059,14 +4053,11 @@ textarea.input100 {
 
     .inner__cols {
         display: grid !important;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
-        width: 100% !important;
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 
     .inner__cols--header {
-        width: auto !important;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .inner__cols__two {
@@ -4079,23 +4070,9 @@ textarea.input100 {
 
 @media screen and (max-width: 431px) and (min-width: 300px) {
 
-
-    .col_curations {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-    }
-
     .curations__wrap {
         /* border: 2px solid #dadada; */
         padding: 10px;
-    }
-
-
-    .col_grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 60px 60px;
-        grid-gap: 30px;
     }
 
     .two__header {
@@ -4122,6 +4099,15 @@ textarea.input100 {
         text-align: center;
         padding: 5px;
     }
+
+    .academic__wrapper--header {
+        font-size: 26px !important;
+    }
+
+    .academic__wrapper--headerSub {
+        font-size: 18px !important;
+    }
+
 
     .inner__cols__two {
         display: grid !important;
@@ -4221,6 +4207,7 @@ textarea.input100 {
 .academic__wrapper {
     background-color: #fff;
     height: auto;
+
     /* -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
 0 1px 2px rgba(0, 0, 0, 0.24);
 -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
@@ -4236,8 +4223,12 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
 -ms-transition: all 0.25s ease-in-out;
 -o-transition: all 0.25s ease-in-out;
 transition: all 0.25s ease-in-out; */
-    width: 100% !important;
     margin: 30px auto 10px auto;
+}
+
+.col_curations {
+    width: 100% !important;
+    max-width: 200% !important;
 }
 
 .academic__wrapper--header {
