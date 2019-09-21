@@ -2529,7 +2529,7 @@ a.bttn-dark:focus {
     margin: 0 auto !important;
     display: block;
     padding: 10px 0 0 0;
-    height: 100px;
+    height: 80px;
     width: auto !important;
 }
 
@@ -3516,7 +3516,6 @@ textarea.input100 {
     font-size: 28px;
     margin: 10px 0 0 10px;
     color: #5c5b5b;
-    font-weight: 900
 }
 
 .sticky__navInner {
@@ -3770,7 +3769,7 @@ textarea.input100 {
 }
 
 .navbar {
-    height: 40px;
+    padding: .2rem 1rem !important;
 }
 
 .input100::-webkit-input-placeholder {
@@ -4386,7 +4385,20 @@ transition: all 0.25s ease-in-out; */
         display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
     }
+
+    .dropdown-content {
+        margin-left: 0 !important;
+    }
 }
+
+
+@media screen and (max-width:991px) and (min-width:100px) {
+
+    .dropdown-content {
+        margin-left: 0 !important;
+    }
+}
+
 
 @media screen and (max-width:525px) and (min-width:350px) {
     .clubs__row {
@@ -4431,5 +4443,9 @@ transition: all 0.25s ease-in-out; */
 
     .k-12-span {
         margin: 15px 0 !important;
+    }
+
+    .dropdown-content {
+        margin-left: 0 !important;
     }
 }

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 html {
@@ -15,7 +16,7 @@ body {
   font-size: 100%;
   font-weight: 400;
   line-height: 1.4;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Roboto', sans-serif !important;
   overflow-x: hidden;
   position: relative;
   margin: 0;
@@ -2650,11 +2651,11 @@ header {
 
 .sc-btn {
   position: relative;
-  background: #Fff;
-  border: 1px solid currentColor;
-  font-size: 1.1rem;
-  color: #696969;
-  margin: 1rem 0;
+  background: #11679a;
+  border: 1px solid #11679a;
+  font-size: 1rem;
+  color: #fff;
+  display: block;
   padding: 0.75rem 3rem;
   cursor: pointer;
   -webkit-transition: background-color 0.28s ease, color 0.28s ease,
@@ -2665,7 +2666,7 @@ header {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   display: block;
-  margin: 10px auto 0 auto;
+  margin: 10px auto 10px auto;
 }
 
 .sc-btn span {
@@ -2674,40 +2675,14 @@ header {
   z-index: 1;
 }
 
-.sc-btn::before {
-  content: "";
-  position: absolute;
-  background: #071017;
-  border: 50vh solid #17a2b8;
-  width: 30vh;
-  height: 30vh;
-  border-radius: 50%;
-  display: block;
-  top: 50%;
-  left: 50%;
-  z-index: 0;
-  opacity: 1;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-  transform: translate(-50%, -50%) scale(0);
-}
 
 .sc-btn:hover {
-  color: #17b2ca;
+  background-color: #11639d;
+  color: #fff;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
     0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
-.sc-btn:active::before,
-.sc-btn:focus::before {
-  -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
-  transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
-  transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
-  transition: transform 1.12s ease, opacity 0.28s ease 0.364s,
-    -webkit-transform 1.12s ease;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 0;
-}
 
 .sc-btn:focus {
   outline: none;
@@ -3927,25 +3902,25 @@ header {
   position: absolute;
   z-index: 1;
   background: -moz-linear-gradient(top,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.7) 100%);
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.7) 100%);
   background: -webkit-gradient(linear,
-    left top,
-    left bottom,
-    color-stop(40%, rgba(0, 0, 0, 0)),
-    color-stop(100%, rgba(0, 0, 0, 0.7)));
+      left top,
+      left bottom,
+      color-stop(40%, rgba(0, 0, 0, 0)),
+      color-stop(100%, rgba(0, 0, 0, 0.7)));
   background: -webkit-linear-gradient(top,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.7) 100%);
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.7) 100%);
   background: -o-linear-gradient(top,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.7) 100%);
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.7) 100%);
   background: -ms-linear-gradient(top,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.7) 100%);
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.7) 100%);
   background: linear-gradient(to bottom,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.7) 100%);
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.7) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
 }
 
@@ -3960,9 +3935,9 @@ header {
   background: #0016be;
   background: -moz-linear-gradient(20deg, #0016be 0%, #2aec74 100%);
   background: -webkit-gradient(left bottom,
-    right top,
-    color-stop(0%, #0016be),
-    color-stop(100%, #2aec74));
+      right top,
+      color-stop(0%, #0016be),
+      color-stop(100%, #2aec74));
   background: -webkit-linear-gradient(20deg, #0016be 0%, #2aec74 100%);
   background: -o-linear-gradient(20deg, #0016be 0%, #2aec74 100%);
   background: -ms-linear-gradient(20deg, #0016be 0%, #2aec74 100%);
@@ -4270,6 +4245,8 @@ header {
 
 .login100-form-title {
   font-family: "Nunito", sans-serif;
+  font-family: 'Roboto',
+    sans-serif !important;
   font-size: 28px;
   color: #fff;
   line-height: 1.2;
@@ -4300,8 +4277,9 @@ header {
 }
 
 .webinar_main--head {
-  color: #fff;
-  font-size: 36px;
+  color: #363636;
+  font-size: 50px;
+  margin: 5px 0 15px 0;
   text-align: center;
 }
 
@@ -4375,7 +4353,8 @@ header {
 
 .webinar_second-head {
   padding: 20px 0 10px 20px;
-  color: #fff;
+  color: #363636;
+  text-decoration: underline;
   font-size: 32px;
   letter-spacing: 1px;
   font-weight: 900;
@@ -4415,10 +4394,13 @@ header {
 
 .webinar_info--row {
   display: grid;
-  grid-template-columns: 1fr 250px;
+  grid-template-columns: 1fr 1fr;
   background-color: #fff;
-  padding: 20px;
+  padding: 5px 20px;
+  grid-gap: 10px;
   width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0px 5px 0 #54504c;
 }
 
 .webinar_info-head {
@@ -4443,12 +4425,15 @@ header {
   margin-left: 20px;
 }
 
-.webinar_info--one {
-  border-right: 1px solid #696969;
-}
-
 .webinar_info--two {
-  margin-left: 20px;
+  border-left: 2px solid #696969;
+  padding-left: 5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .webinar_info--two-date {
@@ -4468,18 +4453,19 @@ header {
 
 .webinar_info--two-number {
   font-size: 16px;
-  color: #777;
+  color: #5b5b5b;
   text-align: center;
-  padding: 3px 0;
+  padding: 5px 30px;
   background-color: #fff;
   border: 2px solid #696969;
   border-radius: 100px;
   margin-top: 8px;
+  width: fit-content;
 }
 
 .webinar_info--two-info {
   color: #a02c45;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   padding: 5px 0;
 }
@@ -4624,20 +4610,20 @@ header {
 
 .inner_form-new {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 15px;
   width: 100%;
-  justify-items: center;
   align-items: center;
   padding: 5px 0;
   margin: 0;
 }
 
 .inner_form-head {
-  font-size: 20px;
+  font-size: 26px;
   color: #696969;
   font-weight: 900;
-  margin-top: 20px;
+  margin: 2px 0 0 0;
+  padding: 0;
 }
 
 .sc-btn_link {
@@ -4788,22 +4774,20 @@ header {
     font-size: 28px;
   }
 
-  .webinar_info--row {
-    grid-template-columns: 1fr;
-  }
-
   .webinar_info--one {
     text-align: justify;
     border-right: none;
-    border-bottom: 1px solid #696969;
+
   }
 
   .webinar_info--two {
-    margin: 0;
+    margin: 20px 0 !important;
+    border-left: none !important;
+    display: block !important;
   }
 
   .webinar_info--two-number {
-    width: 73%;
+    width: fit-content !important;
     margin: 0 auto;
     font-size: 14px;
   }
@@ -4835,22 +4819,31 @@ header {
   }
 }
 
+@media screen and (max-width:600px) and (min-width:100px) {
+  .webinar_info--row {
+    grid-template-columns: 1fr;
+  }
+
+  .webinar_info--one {
+    border-bottom: 1px solid #696969 !important;
+  }
+
+  .webinar_info--two {
+    border-left: none !important;
+  }
+}
+
 @media screen and (max-width:736px) and (min-width:527px) {
   .inner_form-head {
     display: block;
-    grid-column: span 2;
-    font-size: 32px;
+    font-size: 26px !important;
   }
 
   .inner_form-new {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr !important;
     grid-gap: 15px;
-    width: 100%;
-    justify-items: flex-start;
-    align-items: center;
-    padding: 5px 0;
-    margin: 0;
+
   }
 
   .form-group {
@@ -4858,7 +4851,7 @@ header {
   }
 }
 
-@media screen and (max-width:1000000000px) and (min-width:767px) {
+/* @media screen and (max-width:1000000000px) and (min-width:767px) {
   .form-none {
     display: none;
   }
@@ -4866,7 +4859,7 @@ header {
 
 .form_new-wrapper {
   width: 100%;
-}
+} */
 
 .sr-no {
   font-size: 24px;
@@ -4910,25 +4903,25 @@ header {
   position: absolute;
   z-index: 1;
   background: -moz-linear-gradient(top,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.7) 100%);
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.7) 100%);
   background: -webkit-gradient(linear,
-    left top,
-    left bottom,
-    color-stop(40%, rgba(0, 0, 0, 0)),
-    color-stop(100%, rgba(0, 0, 0, 0.7)));
+      left top,
+      left bottom,
+      color-stop(40%, rgba(0, 0, 0, 0)),
+      color-stop(100%, rgba(0, 0, 0, 0.7)));
   background: -webkit-linear-gradient(top,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.7) 100%);
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.7) 100%);
   background: -o-linear-gradient(top,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.7) 100%);
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.7) 100%);
   background: -ms-linear-gradient(top,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.7) 100%);
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.7) 100%);
   background: linear-gradient(to bottom,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.7) 100%);
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.7) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
 }
 
