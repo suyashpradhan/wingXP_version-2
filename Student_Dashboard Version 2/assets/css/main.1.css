@@ -2531,7 +2531,7 @@ header {
 
 .form-group {
   position: relative;
-  margin: 25px 0;
+  /* margin: 25px 0; */
 }
 
 .form-inline>.form-group,
@@ -2549,10 +2549,10 @@ header {
   padding-top: 0.25rem;
   margin-top: -1rem;
 }
-
+/* 
 .form-group input {
   height: 1.9rem;
-}
+} */
 
 .form-group .control-label {
   position: absolute;
@@ -4466,7 +4466,7 @@ header {
 
 .form-group {
   position: relative;
-  margin: 25px 0;
+ /*  margin: 25px 0; */
 }
 
 .form-inline>.form-group,
@@ -4485,9 +4485,6 @@ header {
   margin-top: -1rem;
 }
 
-.form-group input {
-  height: 1.9rem;
-}
 
 .form-group .control-label {
   position: absolute;
@@ -5477,4 +5474,12 @@ header {
   .mob-hide {
     display: none !important;
   }
+}
+
+.form-control{
+  border:1px solid #ccc !important;
+  padding: .375rem .75rem !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  color: #333 !important;
 }
