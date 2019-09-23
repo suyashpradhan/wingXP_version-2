@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -16,7 +14,7 @@ body {
   font-size: 100%;
   font-weight: 400;
   line-height: 1.4;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Fira Sans', sans-serif !important;
   overflow-x: hidden;
   position: relative;
   margin: 0;
@@ -4221,8 +4219,6 @@ header {
 
 .wrap-login100_one {
   width: 1068px;
-  /*   background: #981a35;
- */
   border-radius: 10px;
   overflow: hidden;
   display: -webkit-box;
@@ -4230,9 +4226,9 @@ header {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding-bottom: 30px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 30px 20px !important;
 }
 
 .login100-pic {
@@ -4244,9 +4240,6 @@ header {
 } */
 
 .login100-form-title {
-  font-family: "Nunito", sans-serif;
-  font-family: 'Roboto',
-    sans-serif !important;
   font-size: 28px;
   color: #fff;
   line-height: 1.2;
@@ -4848,6 +4841,10 @@ header {
 
   .form-group {
     width: 100%;
+  }
+
+  .webinar-header-sub{
+    font-size: 16px !important;
   }
 }
 

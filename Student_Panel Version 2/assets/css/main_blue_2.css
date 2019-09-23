@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito");
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
 
 * {
     margin: 0;
@@ -7,26 +7,19 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     /*  max-width: 100%; */
-    /* font-family: "Nunito", sans-serif; */
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Fira Sans', sans-serif;
 }
 
 html,
 body {
     line-height: 150%;
-    /*  font-family: "Nunito", sans-serif; */
-    font-family: 'Roboto', sans-serif;
-
     /*   background-color: #f8f8f8; */
     cursor: default;
-
+    font-family: 'Fira Sans', sans-serif;
 }
 
 i span {
-    /* font-family: "Nunito", sans-serif; */
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Fira Sans', sans-serif;
 }
 
 img {
@@ -522,7 +515,6 @@ video {
     color: #363636;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit;
     margin: 0;
 }
 
