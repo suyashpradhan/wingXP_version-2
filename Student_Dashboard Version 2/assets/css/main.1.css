@@ -2705,6 +2705,25 @@ header {
   padding: 0 0.5rem;
 }
 
+.or_2 {
+  display: flex;
+  flex-direction: row;
+  margin:0;
+  align-items: center;
+}
+
+._bar_2 {
+  flex: auto;
+  border: none;
+  height: 2px;
+  background-color: #5c5b5b;
+}
+
+.or_2 span {
+  color: #555454;
+  padding: 0 0.5rem;
+}
+
 .create-wrapper {
   width: auto;
   height: 45px;
