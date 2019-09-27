@@ -4467,11 +4467,14 @@ transition: all 0.25s ease-in-out; */
 }
 
 .webinar-para{
-    background-color: #fff;
-    padding: 5px 3px;
-    font-size: 26px;
-    margin: 7px 55px;
-    width: fit-content
+    background-color: #326667;
+    color: #fff;
+    padding: 2px 5px !important;
+    font-size: 23px !important;
+    margin: 7px 55px !important;
+    width: fit-content !important;
+    line-height: 1.1 !important;
+    border-radius: 2px !important;
 }
 
 .webinar-col{
@@ -4645,11 +4648,24 @@ transition: all 0.25s ease-in-out; */
     margin: 20px 50px;
 }
 
+.form-divWrap{
+    height: 50px;
+}
+
+
 .form-divField{
     padding: 8px 10px;
     border-radius: 3px;
+    width: 100% !important;
     border: 1px solid #ccc;
 }
+
+@media screen and (max-width:525px) and (min-width:100px) {
+    .form-divWrap{
+        height: 100% !important;
+    }
+}
+
 
 .form-divField ::placeholder{
     color: #5c5b5b !important;
@@ -4678,7 +4694,6 @@ transition: all 0.25s ease-in-out; */
     color: #75c9b3 !important;
     margin: 0 55px;
     padding: 10px 0;
-
 }
 
 .faq-q{
@@ -4807,7 +4822,14 @@ transition: all 0.25s ease-in-out; */
     padding: 0 0 0 24px;
     cursor: pointer;
     font-size: 20px;
+   
   }
+
+.radio__label{
+    margin: 0 !important;
+    color: #696969 !important;
+}
+
   .radio__label:before {
     content: '';
     position: absolute;
@@ -4842,12 +4864,13 @@ transition: all 0.25s ease-in-out; */
   }
 
 
-.preffered-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    grid-gap: 5px;
-}
+/* .preffered-form{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    align-items: center !important;
+    grid-gap: 15px !important;
+} */
+
 
 .preferred-field{
     padding: 4px 8px;
@@ -4863,8 +4886,10 @@ transition: all 0.25s ease-in-out; */
     border-radius: 3px;
     transition: all .3s ease-in;
     text-align: center;
+    margin: 0 auto !important;
+    width: 150px !important;
+    display: block !important;
 }
-
 
 .preferred-link:hover{
     background-color: #2f689b;
@@ -5094,3 +5119,4 @@ transition: all 0.25s ease-in-out; */
     height: 400px;
 
 }
+

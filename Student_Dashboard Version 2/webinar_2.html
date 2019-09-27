@@ -9,6 +9,13 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.1.css">
     <link rel="stylesheet" href="../Student_Panel Version 2/assets/css/main_blue_2.css">
+
+
+    <style>
+        .bounce {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -59,8 +66,8 @@
     <div style="background-color: #fdcc09;width: 100%;padding: 25px 0;" id="divOne">
         <div class="pageContainer">
             <h1 class="webinar-head">SCHOOL WEBINAR</h1>
-            <p class="webinar-para">Using Free Technology Platforms Targeted at Empowering </p>
-            <p class="webinar-para">Schools to reduce Costs and Improve Education</p>
+            <p class="webinar-para">Using Free Technology Platforms Targeted at Empowering Schools <br>
+                to reduce Costs and Improve Education</p>
             <div class="webinarRow">
                 <div class="webinar-col">
                     <h1 class="webinar-col-head">
@@ -125,6 +132,7 @@
                     <div>
                         <h1 class="duration">Date</h1>
                         <h1 class="duration-sub">Oct,2019</h1>
+                        <h1 class="duration-time" style="opacity: 0">11 AM to 12 PM</h1>
                     </div>
                 </div>
             </div>
@@ -147,13 +155,24 @@
             <span class="speaker-name">Swapnil Ajmera</span>
             <div class="webinar-form">
                 <h1 class="webinar-formHead">School Registration</h1>
-                <div class="form-div">
-                    <input type="text" placeholder="Name" class="form-divField">
-                    <input type="text" placeholder="School Name" class="form-divField">
-                    <input type="email" placeholder="Mobile Number" class="form-divField">
-                    <input type="text" placeholder="Email ID" class="form-divField">
+                <form action="" method="post" class="form-div">
+                    <div class="form-divWrap">
+                        <input type="text" placeholder="Name" class="form-divField">
+                    </div>
+                    <div class="form-divWrap">
+                        <input type="text" placeholder="School Name" class="form-divField">
+                    </div>
+                    <div class="form-divWrap">
+                        <input type="text" placeholder="Mobile Number" class="form-divField">
+                        <span
+                            style="color: #ce1f36; font-size: 15px; font-weight: 600; padding: 4px 0px !important;display: block;"
+                            id="school_no_text">Enter Valid Mobile Number</span>
+                    </div>
+                    <div class="form-divWrap">
+                        <input type="text" placeholder="Email ID" class="form-divField">
+                    </div>
                     <a href="#" class="submit-btn">Submit</a>
-                </div>
+                </form>
             </div>
             <h1 class="faq-head">FAQs</h1>
             <a class="faq-q faq-one" href="#" data-toggle="modal" data-target="#faqModalOne">How will I attend
@@ -207,12 +226,14 @@
                             <div class="radio">
                                 <input type="radio" name="radio" id="radio1" class="radio__input" checked>
                                 <label for="radio1" class="radio__label">Tuesday 11 AM</label>
+                                <label for="radio1" class="radio__label">1st October</label>
                             </div>
                         </div>
                         <div class="slot-one">
                             <div class="radio">
                                 <input type="radio" name="radio" id="radio2" class="radio__input" checked>
                                 <label for="radio2" class="radio__label">Thursday 4 PM</label>
+                                <label for="radio2" class="radio__label">3rd October</label>
                             </div>
                         </div>
                     </div>
@@ -222,9 +243,26 @@
                         <hr class="_bar_2">
                     </div>
                     <p class="faq-answer">Share you preferred Date & time. </p>
-                    <form action="#" class="preffered-form">
-                        <input type="text" placeholder="Select Time" class="preferred-field">
-                        <input type="date" placeholder="Select Date" class="preferred-field">
+                    <form action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="" placeholder="Select Time">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="date" class="form-control" id="" placeholder="Select Date">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="" placeholder="Name">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="" placeholder="Email Address">
+                            </div>
+                        </div>
                         <a href="#" class="preferred-link">Submit</a>
                     </form>
                 </div>
