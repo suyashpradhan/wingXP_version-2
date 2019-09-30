@@ -345,9 +345,48 @@
                             class="fas fa-phone sticky__icons"></i></a>
                 </div>
                 <h1 class="sticky__nav--headerSub"><a data-toggle="modal" data-target="#info">Request Demo</a></h1>
+                <h1 class="sticky__nav--headerSub" style="background-color: #fdcc09;color:#181818"><a
+                        data-toggle="modal" data-target="#req_webinar">Request
+                        Webinar</a>
+                </h1>
             </div>
         </div>
     </nav>
+
+    <!--Request Webinar Modal-->
+    <div class="modal fade" id="req_webinar" tabindex="-1" role="dialog" aria-labelledby="req_webinar"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Request Webinar </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="form-div" style="margin: 0;grid-gap: 15px;">
+                        <div class="form-divWrap">
+                            <input type="text" placeholder="Name" class="form-divField">
+                        </div>
+                        <div class="form-divWrap">
+                            <input type="text" placeholder="School Name" class="form-divField">
+                        </div>
+                        <div class="form-divWrap">
+                            <input type="text" placeholder="Mobile Number" class="form-divField">
+                            <span
+                                style="color: #ce1f36; font-size: 15px; font-weight: 600; padding: 4px 0px !important;display: block;"
+                                id="school_no_text">Enter Valid Mobile Number</span>
+                        </div>
+                        <div class="form-divWrap">
+                            <input type="text" placeholder="Email ID" class="form-divField">
+                        </div>
+                        <a href="#" class="submit-btn" style="margin: 20px auto 0 auto;">Submit</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">

@@ -3506,9 +3506,10 @@ textarea.input100 {
 
 .sticky__nav--headerSub {
     font-size: 28px;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 10px !important;
     color: #5c5b5b;
 }
+
 
 .sticky__navInner {
     text-decoration: none;
@@ -3564,6 +3565,7 @@ textarea.input100 {
     cursor: pointer;
     /*   animation-name: shakeAnim; */
 }
+
 
 .sticky__nav--headerSub a {
     text-decoration: none;
