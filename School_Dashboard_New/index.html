@@ -1405,22 +1405,69 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-12" id='s1'>
+        <div class="timeline_card">
+          <h4><span>Stage Two:</span> Create Student Logins
+            &<br>
+            Parent Communication</h4>
+          <div class="timeline_card-first">
+
+            <p>School to upload the student
+              information by logging in the
+              school dashboard.<br>
+              Welcome note
+              Launch Date
+              link with complete information
+              on what to expect etc...</p>
+          </div>
+        </div>
+        <div class="timeline_card">
+          <h4 style="font-size: 26px;margin: 10px 0;color: #11639d">Add A Student</h4>
+          <form action="" id="form_manual" enctype="multipart/form-data">
+            <div class="tab-content-form">
+              <input type="text" name="roll" placeholder="Roll No" class="tab-content-form_fields" />
+              <input type="text" name="name" placeholder="Name" class="tab-content-form_fields" />
+              <input type="text" name="phone" placeholder="Phone" class="tab-content-form_fields" />
+              <input type="text" name="p_name" placeholder="Parent Name" class="tab-content-form_fields" />
+              <input type="text" name="p_phone" placeholder="Parent Phone" class="tab-content-form_fields" />
+              <input type="email" name="email" placeholder="Email" class="tab-content-form_fields" />
+              <select name="class_man" id="school_class" onchange="get_batch()">
+                <option value="">Choose Class</option>
+                <option value='INST_362_6'>6</option>
+                <option value='INST_362_7'>7</option>
+                <option value='INST_362_8'>8</option>
+                <option value='INST_362_9'>9</option>
+                <option value='INST_362_10'>10</option>
+                <option value='INST_362_11'>11</option>
+                <option value='INST_362_12'>12</option>
+              </select>
+              <select name="batch" id="batch">
+                <option>Select Batch</option>
+              </select>
+            </div>
+            <button class="tab-content-form_btn" type="button" onclick="save();">
+              <span>Submit</span>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="footer_section" style="margin-top: 20px">
-    <span>Powered by wingxp.com</span>
-  </div>
-  <link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous "></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
-  </script>
-  <script src="assets/js/script.js"></script>
+
+    <div class="footer_section" style="margin-top: 20px">
+      <span>Powered by wingxp.com</span>
+    </div>
+    <link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js "
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
+    </script>
+    <script src="assets/js/script.js"></script>
 
 
 </body>
