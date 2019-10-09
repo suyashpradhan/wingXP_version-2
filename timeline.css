@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial;
+    margin: 1em 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: Dosis;
+    color: #03415f;
+    text-align: center;
+    font-size: 3em;
+}
+
+h1 i {
+    color: #98dbfc;
+}
+
+.pre-timeline {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -105px;
+    top: 120px;
+    background-color: #006666;
+    padding: 3px 25px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.post-timeline {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: -130px;
+    top: 120px;
+    background-color: #006666;
+    padding: 3px 25px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.timeline-wrapper {
+    position: relative;
+}
+
+.timeline-wrapper::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    transition: 0.75s ease-out;
+    background: #67cafa;
+    width: 0px;
+    z-index: 0 !important;
+    left: 0;
+    bottom: 0px;
+}
+
+.timeline {
+    display: flex;
+    transition: all 0.3s;
+    justify-content: center;
+    padding-bottom: 30px;
+    border-bottom: 10px solid #4d4d4d;
+    margin: 0 0 50px 0;
+}
+
+.timeline .event {
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    color: #03415f;
+    text-align: center;
+}
+
+.timeline .event h2 {
+    font-family: Dosis;
+    z-index: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.timeline-one {
+    position: absolute;
+    top: 180px;
+}
+
+.timeline .event * {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline .event::after {
+    margin: 0 auto;
+    position: relative;
+    bottom: -80px;
+    content: "1";
+    display: block;
+    border-radius: 15px;
+    height: 60px;
+    text-align: center;
+    width: 60px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    background: #fecd08;
+    border: 1px solid #fecd08;
+    transition: all 0.25s;
+    z-index: 2;
+}
+
+.event-one {
+    bottom: -60px;
+}

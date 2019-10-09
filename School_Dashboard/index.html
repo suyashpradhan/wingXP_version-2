@@ -1,107 +1,1475 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="../admin_pages/content_manager_pages/club_coordinator_pages/main.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="navbar navbar-shadow" style="height: 110px;">
-      <div class="newnavigationBar">
-        <a href="inst_dashboard.php">
-          <img src="logo.png" alt="" style="margin:10px;height: 90px;"
-        /></a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../Club Coordinator/main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
 
-        <div class="menu-wrapper">
-          <a href="#" class="fancy-button bg-gradient2 logout-nav-link"
-            ><span>Logout</span></a
-          >
+</head>
+
+<body>
+  <div class="page-container__new">
+    <div class="sidebar-menu">
+      <div class="sidebar-header">
+        <div class="logo">
+          <a href="inst_dashboard.php">
+            wingxp</a>
+        </div>
+      </div>
+      <div class="side-nav-wrapper">
+        <ul class="side-nav_list">
+          <li>
+            <i class="fas fa-graduation-cap side-icons fa-fw"></i>
+            <a href="#" class="side-nav_links"> Clubs Management </a>
+          </li>
+          <li>
+            <i class="fas fa-user side-icons fa-fw"></i>
+            <a href="#" class="side-nav_links"> Users Management </a>
+          </li>
+          <li>
+            <i class="fas fa-cog side-icons fa-fw"></i>
+            <a href="#" class="side-nav_links">Settings</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-wrap">
+        <h1 class="copy-text">
+          Copyright &copy; iClubs 2018 .All rights reserved
+        </h1>
+        <a href="#">Privacy Policy</a> <span>|</span> <a href="#">Feedback</a>
+      </div>
+    </div>
+    <div class="main-content" style="min-height: 100vh;">
+      <div class="right_topNav">
+        <div class="inner-topNav">
+          <div class="row no-gutters ">
+            <div class="col-10">
+              <div class="icon-wrap">
+                <h1 class="topNav_first">
+                  ST. XAVIER'S HIGH SCHOOL <span> DASHBOARD </span>
+                </h1>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="icon-wrap">
+                <a href="#" class="btn_logout indigo wave">Logout</a>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-container">
+        <div class="header-row">
+          <h1 class="header-text"><span style="text-transform: lowercase;">wing</span>XP</h1>
+          <hr class="hr_under_one">
+        </div>
+        <div class="sections">
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/design.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">DIGITAL DESIGN</h1>
+
+              <div class="section-link-wrapper">
+                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N1">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/tech.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">TECH TALK</h1>
+
+              <div class="section-link-wrapper">
+                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N2">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/creative.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">SMARTER MINDS</h1>
+
+              <div class="section-link-wrapper">
+                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N3">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/environment.jpg">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">ENVIRONMENT</h1>
+
+              <div class="section-link-wrapper">
+                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N4">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/coding.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">CODING</h1>
+
+              <div class="section-link-wrapper">
+                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N5">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/astro.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">ASTRONOMY</h1>
+
+              <div class="section-link-wrapper">
+                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N6">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/english.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">ENGLISH EXPRESSION</h1>
+
+              <div class="section-link-wrapper">
+                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N7">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/news.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">UNDERSTANDING NEWS</h1>
+
+              <div class="section-link-wrapper">
+                <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N8">Enter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="header-row">
+          <h1 class="header-text">School Clubs</h1>
+          <hr class="hr_under_one">
+        </div>
+        <div class="info__new-wrap sub">
+          <h1>No School have been created, click <a href="#" class="btn-text">here</a> to create one!</h1>
+        </div>
+        <div class="info__new-wrap sub">
+          <h1>No Coordinator Created. Please create a Coordinator <a href="#" class="btn-text">here</a></h1>
+        </div>
+        <div class="sections">
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/school.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">SciFi</h1>
+              <div class="section-link-wrapper">
+                <a href="school_club_report.php?id=school_club_28" class="section--link">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/school.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">Mathemagic</h1>
+              <div class="section-link-wrapper">
+                <a href="school_club_report.php?id=school_club_29" class="section--link">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/school.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">Hist Story </h1>
+              <div class="section-link-wrapper">
+                <a href="school_club_report.php?id=school_club_30" class="section--link">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="common">
+            <div class="img-section">
+              <img src="assets/images/school.png">
+            </div>
+            <div class="section-info">
+              <h1 class="section--header">Jio Graphy</h1>
+              <div class="section-link-wrapper">
+                <a href="school_club_report.php?id=school_club_31" class="section--link">Enter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row_timeline">
+          <div class="column column_1">
+            <h1 class="column_head">School<br> Sign-up</h1>
+          </div>
+          <div class="column column_2">
+            <h1 class="column_head-sub">Stage 1 <br>Onboarding Starts </h1>
+
+          </div>
+          <div class="column column_3">
+            <h1 class="column_head-sub">Stage 2<br>
+              Vision Syncing</h1>
+
+          </div>
+          <div class="column column_4">
+            <h1 class="column_head-sub">Stage 3<br>
+              Club Selection &<br>
+              Launch Date</h1>
+
+          </div>
+          <div class="column column_5">
+            <h1 class="column_head-sub">Stage 4<br>
+              Club Managers
+              Identification & Session</h1>
+
+          </div>
+          <div class="column column_6">
+            <h1 class="column_head-sub">Stage 5<br>
+              Create Student Logins <br>
+              & Parent Communication</h1>
+            </p>
+          </div>
+          <div class="column column_7">
+            <h1 class="column_head_last">Clubs Roll out as <br>per
+              the launch date</h1>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="timeline_card">
+                <h4><span>Stage One :</span> Onboarding Starts</h4>
+                <div class="timeline_card-first">
+                  <p>Greetings from WingXP!
+                    Lets get you onboarded on
+                    World's best Co-curricular
+                    Platform.
+                    To begin with please
+                    complete the onbarding form
+                    to have better future
+                    engagements.</p>
+                  <div class="timeline_button-wrapper">
+                    <button class="pulse-button" data-toggle="modal" data-target="#exampleModalCenter">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="timeline_card">
+                <h4><span>Stage Two :</span> Vision Syncing</h4>
+                <div class="timeline_card-first">
+                  <p>Management & Principal
+                    Session.
+                    Agreement.
+                    Speak with WingXP Head -
+                    what to expect from this
+                    session.</p>
+                  <div class="timeline_button-wrapper">
+                    <button class="pulse-button" data-toggle="modal"
+                      data-target="#exampleModalCenter-3">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="timeline_card">
+                <h4><span>Stage Three :</span> Club Selection &
+                  Launch Date</h4>
+                <div class="timeline_card-first">
+                  <p>Form to be filled by the
+                    school's Appointed Club
+                    Admin.<br>
+                    We will guide you to
+                    select which clubs are
+                    suitable for your school
+                    (already covered in
+                    previous stage - vision
+                    syncing).</p>
+                  <div class="timeline_button-wrapper">
+                    <button class="pulse-button" data-toggle="modal"
+                      data-target="#exampleModalCenter-2">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="timeline_card">
+                <h4><span>Stage Four :</span> Club Managers
+                  Identification & Session</h4>
+                <div class="timeline_card-first">
+                  <p>Identification form.
+                    Club Managers Session.</p>
+                  <div class="timeline_button-wrapper">
+                    <button class="pulse-button">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="timeline_card">
+                <h4><span>Stage Five :</span> Create Student Logins
+                  &<br>
+                  Parent Communication</h4>
+                <div class="timeline_card-first">
+
+                  <p>School to upload the student
+                    information by logging in the
+                    school dashboard.<br>
+                    Welcome note
+                    Launch Date
+                    link with complete information
+                    on what to expect etc...</p>
+                  <div class="timeline_button-wrapper">
+                    <button class="pulse-button">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Onboarding-->
+          <div class="timeline_card">
+            <span class="required">* Required Field</span>
+            <h1 class="modal__header">Welcome to WingXP! Please fill the form and help us serve you better.</h1>
+            <h1 class="modal__head-sub">School Owner </h1><i class="fas fa-info-circle info-icon info-tooltip">
+              <span class="tooltiptext tooltip-right">For understanding the School's Vision. For expectation setting for
+                this partnership</span>
+            </i>
+            <br>
+            <div class="row">
+              <div class="col-4">
+                <label for="">Owner Name</label>
+                <input type="text" class="modal__fields">
+              </div>
+              <div class="col-4">
+                <label for="">Owner Phone Number</label>
+                <input type="text" class="modal__fields">
+              </div>
+              <div class="col-4">
+                <label for="">Owner Email</label>
+                <input type="text" class="modal__fields">
+              </div>
+            </div>
+            <h1 class="modal__head-sub">Principal</h1><i class="fas fa-info-circle info-icon info-tooltip">
+              <span class="tooltiptext tooltip-right">For overall monitoring and support. For Selection of clubs that
+                will be offered to Students. For appointing a Master Co-ordinator to foresee Implementation and
+                Service.</span>
+            </i><br>
+            <div class="row">
+              <div class="col-4">
+                <label for="">Principal Name</label>
+                <input type="text" class="modal__fields">
+              </div>
+              <div class="col-4">
+                <label for="">Principal Mobile No</label>
+                <input type="text" class="modal__fields">
+              </div>
+              <div class="col-4">
+                <label for="">Principal Email Id</label>
+                <input type="text" class="modal__fields">
+              </div>
+            </div>
+            <h1 class="modal__head-sub">Coordinator</h1><i class="fas fa-info-circle info-icon info-tooltip">
+              <span class="tooltiptext tooltip-right">For overall execution of the program. For Co-ordination between
+                School and WingXP. For Onboarding of Students on Platform and roll-out of Clubs.</span>
+            </i>
+            <div class="row">
+              <div class="col-4">
+                <label for="">Coordinator Name</label>
+                <input type="text" class="modal__fields">
+              </div>
+              <div class="col-4">
+                <label for="">Coordinator Mobile No</label>
+                <input type="text" class="modal__fields">
+              </div>
+              <div class="col-4">
+                <label for="">Coordinator Email Id</label>
+                <input type="text" class="modal__fields">
+              </div>
+            </div>
+            <p class="modal__para">Why? For a healthy beginning we would like to know you and your team better.
+              So
+              what
+              happens next..<br><br>
+              A. Warm Welcome : We would like to extend a warm welcome on behalf of team WingXP<br>
+              B. School's Vision : We would like to understand the School's Vision and sync with WingXP's Vision
+              to
+              establish a transparent and healthy long lasting relationship.<br>
+              C. Expectation Setting: To understand the expectations from WingXP and agree on what to expect in
+              return?
+            </p>
+            <div class="row">
+              <div class="col-3">
+                <label for="">Address</label>
+                <input type="text" class="modal__fields">
+              </div>
+              <div class="col-3">
+                <label for="">City</label>
+                <input type="text" class="modal__fields">
+              </div>
+              <div class="col-3">
+                <label for="">State</label>
+
+                <input type="text" class="modal__fields">
+              </div>
+              <div class="col-3">
+                <label for="">Pin code</label>
+                <input type="text" class="modal__fields">
+              </div>
+              <div class="col-3">
+                <label for="">Select Board</label>
+                <select name="" class="modal__fields">
+                  <option value="1">Board</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="col-3">
+                <label for="">Session 2018-19 End Date</label>
+                <input type="text" placeholder="Session 2018-19 End Date" class="modal__fields">
+              </div>
+              <div class="col-3">
+                <label for="">Session 2018-19 Start Date</label>
+                <input type="text" class="modal__fields">
+              </div>
+
+              <div class="col-3">
+                <label for="">Launch Date</label>
+                <select name="" class="modal__fields">
+                  <option value="1">WingXP Club Launch Date</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="col-3">
+                <label for="">Current Student Count</label>
+                <input type="text" placeholder="" class="modal__fields">
+              </div>
+            </div>
+            <button class="save__btn">Save</button>
+          </div>
+
+          <!--Vision Syncing-->
+          <div class="timeline_card">
+            <h1 class="modal__header" style="margin:10px 0;">Welcome to WingXP! Please Select Following Slots For
+              Webinar.</h1>
+            <div class="grid__new">
+              <div class="option grid__new-first">
+                <div class="modal__body-card">
+                  <h1 class="webinar__header">Webinar On <span>IOT</span></h1>
+                  <p class="webinar__agenda">The Internet of things is the network of devices such as vehicles,
+                    and
+                    home
+                    appliances that contain electronics...</p>
+                  <div class="info__wrap">
+                    <div class="first__wrap">
+                      <h1 class="info__wrap-head">Date : <span>09/03/2019</span></h1>
+                    </div>
+                    <div class="second__wrap">
+                      <h1 class="info__wrap-head">Time : <span>11.00 am</span></h1>
+                    </div>
+                    <div class="third__wrap">
+                      <h1 class="info__wrap-head">Duration : <span>2 Hours</span></h1>
+                    </div>
+                  </div>
+                  <div class="select__wrap">
+                    <div class="md-radio">
+                      <input id="1" type="radio" name="g" checked>
+                      <label for="1">Select Webinar</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="option grid__new-second">
+                <div class="modal__body-card">
+                  <h1 class="webinar__header">Webinar On <span>IOT</span></h1>
+                  <p class="webinar__agenda">The Internet of things is the network of devices such as vehicles,
+                    and
+                    home
+                    appliances that contain electronics...</p>
+                  <div class="info__wrap">
+                    <div class="first__wrap">
+                      <h1 class="info__wrap-head">Date : <span>09/03/2019</span></h1>
+                    </div>
+                    <div class="second__wrap">
+                      <h1 class="info__wrap-head">Time : <span>11.00 am</span></h1>
+                    </div>
+                    <div class="third__wrap">
+                      <h1 class="info__wrap-head">Duration : <span>2 Hours</span></h1>
+                    </div>
+                  </div>
+                  <div class="select__wrap">
+                    <div class="md-radio">
+                      <input id="2" type="radio" name="g">
+                      <label for="2">Select Webinar</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="save__btn">Save</button>
+          </div>
+
+          <!--Club Selection-->
+          <div class="timeline_card">
+            <span class="required">* Required Field</span>
+            <h1 class="modal__header">Please select the clubs to chose from WingXP iclubs and mention the
+              existing
+              clubs
+              you would like to take online on WingXP Platform.</h1>
+            <div class="row">
+              <div class="col-6">
+                <input type="text" placeholder="Email address *" class="modal__fields">
+              </div>
+              <div class="col-6">
+                <input type="text" placeholder="School Name *" class="modal__fields">
+              </div>
+            </div>
+            <h1 class="modal__header">Please select from the below mentioned 8 WingXP iclubs. *</h1>
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <div class="col_image ">
+                  <img src="assets/images/design.png" alt="">
+                  <div class="col_check">
+                    <input type="checkbox" class="check-click">
+                    <span>1. Digital Design</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col_image">
+                  <img src="assets/images/tech.png" alt="">
+                  <div class="col_check">
+                    <input type="checkbox" class="check-click">
+                    <span>2. Tech Talk</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col_image">
+                  <img src="assets/images/creative.png" alt="">
+                  <div class="col_check">
+                    <input type="checkbox" class="check-click">
+                    <span>3. Smarter Minds</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col_image">
+                  <img src="assets/images/environment.jpg" alt="">
+                  <div class="col_check">
+                    <input type="checkbox" class="check-click">
+                    <span>4. Environment</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col_image">
+                  <img src="assets/images/coding.png" alt="">
+                  <div class="col_check">
+                    <input type="checkbox" class="check-click">
+                    <span>5. Coding</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col_image">
+                  <img src="assets/images/astro.png" alt="">
+                  <div class="col_check">
+                    <input type="checkbox" class="check-click">
+                    <span>6. Astronomy</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col_image">
+                  <img src="assets/images/english.png" alt="">
+                  <div class="col_check">
+                    <input type="checkbox" class="check-click">
+                    <span>7. English Expression</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col_image">
+                  <img src="assets/images/news.png" alt="">
+                  <div class="col_check">
+                    <input type="checkbox" class="check-click">
+                    <span>8. Understanding News</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="save__btn">Save</button>
+          </div>
+          <div class="timeline_card">
+            <div class="timeline_cardHeader">
+              <h1>WORLD CLASS CO-CURRICULAR FRAMEWORK</h1>
+            </div>
+            <div class="timeline_cardHeaderSub">
+              <h1>Webinar For Educators</h1>
+            </div>
+            <div class="timeline__desciption">
+              <h1>Objective</h1>
+              <p>The challenge for educators today is to design and education framework that keep peace with new world
+                order,empowering students with modern day tools & techniques of expression . Core academics is
+                necessity,but it may not be all encompassing.
+                <br><br>
+                <span> Can Co-Curriculars bridge the gap? </span>
+                <span> OR </span>
+                The boundaries of core Curriculum framework and Co-Curricular framework must be assessed,aligned and
+                merged.
+              </p>
+            </div>
+            <div class="row timeline_row" style="margin: 0;">
+              <div class="col-6">
+                <h1>AGENDA</h1>
+                <div class="row__grid">
+                  <div class="row__grid_img">
+                    <img src="assets/images/newspaper.png" alt="">
+                  </div>
+                  <ul class="row__grid_list">
+                    <li>1.Introduction</li>
+                    <li>2.New-Age Expressions & Untapped Potential of Co-curricular</li>
+                    <li>3.Challenge for Schools & Students</li>
+                    <li>4.Solution-Expert-led Co-curricular Clubs</li>
+                    <li>5.Benefits for your School,Students & Teachers <br>
+                      Followed by feedback and Q & A</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 new__col">
+                <h1>OBJECTIVE</h1>
+                <h2>A Webinar for School Leaders for</h2>
+                <ul class="row__grid_listNew">
+                  <li>Vision Syncing and Expectation Setting</li>
+                  <li>Understanding What comprises of World Class Co-Curricular framework?</li>
+                  <li>A briefing on the Product and its features</li>
+                  <li>4.Solution-Expert-led Co-curricular Clubs</li>
+                  <li>Roles And Responsibilities of Wing XP and that of School Co-ordinator<br>
+                  </li>
+                  <li>Power of expression to the students</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row timeline_rowSub" style="margin: 0;">
+              <div class="col-2">
+                <div class="first__inner-row">
+                  <h1>who<br>should<br>attend?</h1>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="second__inner-row">
+                  <h1>The Webinar is for WingXP Sign-up Schools:</h1>
+                  <ul>
+                    <li>School Management</li>
+                    <li>School Coordinator</li>
+                    <li>SPOC between School & WingXP</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="third__inner-row">
+                  <select name="web_id" id="web_schedule">
+                    <option data-time-start="09 AM" data-time-end="11 AM" value="web_7">26 Mar 2019</option>
+                  </select>
+                  <h2>11 AM-11:45 AM</h2>
+                  <a href="#">REGISTER NOW</a>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row timeline_rowSub" style="margin: 0;">
+              <div class="col-2">
+                <div class="first__inner-row">
+                  <h1>who<br>should<br>attend?</h1>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="second__inner-row">
+                  <h1>The Webinar is for WingXP Sign-up Schools:</h1>
+                  <ul>
+                    <li>School Management</li>
+                    <li>School Coordinator</li>
+                    <li>SPOC between School & WingXP</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="third__inner-row">
+                  <h1><span style="font-size: 1.2rem">A link will appear soon and <br> your session will start in</span>
+                  </h1>
+                  <a href="#" style="width: 250px !important;margin: .5rem auto">Click Here To Attend</a>
+                  <a href="#" style="width: 250px !important;margin: .5rem auto">Already Attended ?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12" id="s1" style="display:none;">
+            <div class="timeline_card">
+              <h4><span>Stage One :</span> Onboarding Starts</h4>
+              <div class="timeline_card-first">
+                <p>Greetings from WingXP!
+                  Lets get you onboarded on
+                  World's best Co-curricular
+                  Platform.
+                  To begin with please
+                  complete the onbarding form
+                  to have better future
+                  engagements.</p>
+                <!-- <div class="timeline_button-wrapper">
+                  <button class="pulse-button" data-toggle="modal" data-target="#exampleModalCenter">Proceed</button>
+                </div> -->
+              </div>
+            </div>
+            <!--Onboarding Form start-->
+            <div class="timeline_card">
+              <span class="required">* Required Field</span>
+              <h1 class="modal__header">Welcome to WingXP! Please fill the form and help us serve you better.</h1>
+              <h1 class="modal__head-sub">School Owner </h1><i class="fas fa-info-circle info-icon info-tooltip">
+                <span class="tooltiptext tooltip-right">For understanding the School's Vision. For expectation setting
+                  for this partnership</span>
+              </i>
+              <br>
+              <form id="stage-1-form" action="index.php" method="POST">
+                <div class="row">
+                  <div class="col-4">
+                    <label for="">Owner Name</label>
+                    <input type="text" name="owner_name" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Owner Phone Number</label>
+                    <input type="text" name="owner_phone" class="modal__fields" maxlength="10" required=""
+                      autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Owner Email</label>
+                    <input type="email" name="owner_email" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                </div>
+                <h1 class="modal__head-sub">Principal</h1><i class="fas fa-info-circle info-icon info-tooltip">
+                  <span class="tooltiptext tooltip-right">For overall monitoring and support. For Selection of clubs
+                    that will be offered to Students. For appointing a Master Co-ordinator to foresee Implementation and
+                    Service.</span>
+                </i><br>
+                <div class="row">
+                  <div class="col-4">
+                    <label for="">Principal Name</label>
+                    <input type="text" name="principal_name" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Principal Mobile No</label>
+                    <input type="text" maxlength="10" name="principal_phone" class="modal__fields" required=""
+                      autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Principal Email Id</label>
+                    <input type="email" name="principal_email" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                </div>
+                <h1 class="modal__head-sub">Coordinator</h1><i class="fas fa-info-circle info-icon info-tooltip">
+                  <span class="tooltiptext tooltip-right">For overall execution of the program. For Co-ordination
+                    between School and WingXP. For Onboarding of Students on Platform and roll-out of Clubs.</span>
+                </i>
+                <div class="row">
+                  <div class="col-4">
+                    <label for="">Coordinator Name</label>
+                    <input type="text" name="coordinator_name" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Coordinator Mobile No</label>
+                    <input type="text" maxlength="10" name="coordinator_phone" class="modal__fields" required=""
+                      autocomplete="none">
+                  </div>
+                  <div class="col-4">
+                    <label for="">Coordinator Email Id</label>
+                    <input type="email" name="coordinator_email" class="modal__fields" required="" autocomplete="none">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <label for="">Address</label>
+                    <textarea type="text" name="address2" class="modal__fields" required=""></textarea>
+                  </div>
+                  <div class="col-3">
+                    <label for="">City</label>
+                    <input type="text" name="city" class="modal__fields" required="">
+                  </div>
+                  <div class="col-3">
+                    <label for="">State</label>
+                    <input type="text" name="state" class="modal__fields" required="">
+                  </div>
+                  <div class="col-3">
+                    <label for="">Pin code</label>
+                    <input type="number" name="pincode" class="modal__fields" required="">
+                  </div>
+                  <div class="col-3">
+                    <label for="">Select Board</label>
+                    <select name="board" class="modal__fields" required="" autocomplete="none">
+                      <option value="cbse">CBSE</option>
+                      <option value="icse">ICSE</option>
+                      <option value="state">STATE</option>
+                    </select>
+                  </div>
+                  <div class="col-3">
+                    <label for="">Session 2019-20 End Date</label>
+
+                    <input type="date" name="sess_end_date" placeholder="Session 2019-20 End Date" class="modal__fields"
+                      required="" autocomplete="none">
+                  </div>
+                  <div class="col-3">
+                    <label for="">Session 2019-20 Start Date</label>
+
+                    <input type="date" name="sess_start_date" class="modal__fields" required="" autocomplete="none">
+                  </div>
+
+                  <div class="col-3">
+                    <label for="">Launch Date</label>
+                    <select name="club_launch_date" class="modal__fields" required="" autocomplete="none">
+                      <option value="2019-04-01">1st April</option>
+                      <option value="2019-05-01">1st May</option>
+                      <option value="2019-06-01">1st June</option>
+                    </select>
+                  </div>
+                  <div class="col-3">
+                    <label for="">Current Student Count</label>
+                    <input type="number" name="student_count" placeholder="" class="modal__fields" required=""
+                      autocomplete="none">
+                  </div>
+                </div>
+                <button type="submit" class="save__btn">Save</button>
+              </form>
+            </div>
+            <!--Onboarding Form end-->
+
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-12" id="s2" style="display:none;">
+            <div class="timeline_card">
+              <h4><span>Stage Two :</span> Vision Syncing</h4>
+              <div class="timeline_card-first">
+                <p>Management &amp; Principal
+                  Session.
+                  Agreement.
+                  Speak with WingXP Head -
+                  what to expect from this
+                  session.</p>
+                <div class="timeline_button-wrapper">
+                  <!-- <button class="pulse-button" data-toggle="modal" data-toggle="modal" data-target="#exampleModalCenter-3">Already Attended ?</button> -->
+                  <!-- <button class="pulse-button" data-toggle="modal" data-target="#exampleModalCenter-3">Proceed</button> -->
+
+                </div>
+              </div>
+            </div>
+            <!--Vision Syncing Form Start-->
+            <!--Vision Syncing-->
+            <div class="timeline_card">
+              <div class="timeline_card">
+                <div class="timeline_cardHeader">
+                  <h1>WORLD CLASS CO-CURRICULAR FRAMEWORK</h1>
+                </div>
+                <div class="timeline_cardHeaderSub">
+                  <h1>Webinar For Educators</h1>
+                </div>
+                <div class="timeline__desciption">
+                  <h1>Objective</h1>
+                  <p>The challenge for educators today is to design and education framework that keep peace with new
+                    world order,empowering students with modern day tools &amp; techniques of expression . Core
+                    academics is necessity,but it may not be all encompassing.
+                    <br><br>
+                    <span> Can Co-Curriculars bridge the gap? </span>
+                    <span> OR </span>
+                    The boundaries of core Curriculum framework and Co-Curricular framework must be assessed,aligned and
+                    merged.
+                  </p>
+                </div>
+                <div class="row timeline_row" style="margin: 0;">
+                  <div class="col-6">
+                    <h1>AGENDA</h1>
+                    <div class="row__grid">
+                      <div class="row__grid_img">
+                        <img src="assets/images/newspaper.png" alt="">
+                      </div>
+                      <ul class="row__grid_list">
+                        <li>1.Introduction</li>
+                        <li>2.New-Age Expressions &amp; Untapped Potential of Co-curricular</li>
+                        <li>3.Challenge for Schools &amp; Students</li>
+                        <li>4.Solution-Expert-led Co-curricular Clubs</li>
+                        <li>5.Benefits for your School,Students &amp; Teachers <br>
+                          Followed by feedback and Q &amp; A</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6 new__col">
+                    <h1>OBJECTIVE</h1>
+                    <h2>A Webinar for School Leaders for</h2>
+                    <ul class="row__grid_listNew">
+                      <li>Vision Syncing and Expectation Setting</li>
+                      <li>Understanding What comprises of World Class Co-Curricular framework?</li>
+                      <li>A briefing on the Product and its features</li>
+                      <li>4.Solution-Expert-led Co-curricular Clubs</li>
+                      <li>Roles And Responsibilities of Wing XP and that of School Co-ordinator<br>
+                      </li>
+                      <li>Power of expression to the students</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row timeline_rowSub" style="margin: 0;">
+                  <div class="col-2">
+                    <div class="first__inner-row">
+                      <h1>who<br>should<br>attend?</h1>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="second__inner-row">
+                      <h1>The Webinar is for WingXP Sign-up Schools:</h1>
+                      <ul>
+                        <li>School Management</li>
+                        <li>School Coordinator</li>
+                        <li>SPOC between School &amp; WingXP</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="third__inner-row">
+                      <form id="stage-2-form">
+
+                        <select name="web_id" id="web_schedule">
+                        </select>
+                        <h2 class="pl-3" style="display:flex;"><span id="web_start_time_span"></span><span
+                            style="margin:0em 5px 0em 5px;">-</span><span id="web_end_time_span"></span></h2>
+                        <button type="submit">REGISTER NOW</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--Vision Syncing Form End-->
+        </div>
+        <div class="col-md-12" id="s3">
+          <div class="timeline_card">
+            <h4><span>Stage Three :</span> Club Selection &amp;
+              Class Assign</h4>
+            <div class="timeline_card-first">
+              <p>Form to be filled by the
+                school's Appointed Club
+                Admin.<br>
+                We will guide you to
+                select which clubs are
+                suitable for your school
+                (already covered in
+                previous stage - vision
+                syncing).</p>
+              <div class="timeline_button-wrapper">
+                <!-- <button class="pulse-button" data-toggle="modal" data-target="#exampleModalCenter-2">Proceed</button> -->
+              </div>
+            </div>
+          </div>
+          <!--Club Selection-->
+          <div class="timeline_card">
+            <span class="required">* Required Field</span>
+            <h1 class="modal__header">Please select the clubs to chose from WingXP iclubs and mention the
+              existing
+              clubs
+              you would like to take online on WingXP Platform.</h1>
+            <h1 class="modal__header">Please select from the below mentioned 8 WingXP iclubs. *</h1>
+            <form id="stage-3-form">
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_43" class="check-click">
+                      <span> CBSE Physics IX</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_43[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_44" class="check-click">
+                      <span> CBSE Chemistry IX</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_44[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_45" class="check-click">
+                      <span> CBSE Maths IX</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_45[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_46" class="check-click">
+                      <span> CBSE Physics X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_46[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_47" class="check-click">
+                      <span> CBSE Chemistry X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_47[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_48" class="check-click">
+                      <span> CBSE Physics XI</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_48[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_46" class="check-click">
+                      <span> CBSE Physics X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_46[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_54" class="check-click">
+                      <span> Wix Club</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_54[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_54[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_54[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_54[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_46" class="check-click">
+                      <span> CBSE Physics X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_46[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_48" class="check-click">
+                      <span> CBSE Physics XI</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_48[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_48[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_47" class="check-click">
+                      <span> CBSE Chemistry X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_47[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_47[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_46" class="check-click">
+                      <span> CBSE Physics X</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_46[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_46[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_45" class="check-click">
+                      <span> CBSE Maths IX</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_45[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_45[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_image">
+                      <div class="col_check">
+                        <input type="checkbox" name="clubs[]" checked="" value="club_44" class="check-click">
+                        <span> CBSE Chemistry IX</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_44[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_44[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_43" class="check-click">
+                      <span> CBSE Physics IX</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_43[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_43[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col__grid__batch card__batch card__batch__effect">
+                <div class="col__one ">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="clubs[]" checked="" value="club_55" class="check-click">
+                      <span> English Expression</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__two">
+                  <div class="col_image">
+                    <div class="col_check">
+                      <input type="checkbox" name="club_55[]" value="IX" class="check-click">
+                      <span>09</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_55[]" value="X" class="check-click">
+                      <span>10</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_55[]" value="XI" class="check-click">
+                      <span>11</span> &nbsp;&nbsp;&nbsp;
+                      <input type="checkbox" name="club_55[]" value="XII" class="check-click">
+                      <span>12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="save__btn" type="submit">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12" id='s1'>
+        <div class="timeline_card">
+          <h4><span>Stage Two:</span> Create Student Logins
+            &<br>
+            Parent Communication</h4>
+          <div class="timeline_card-first">
+
+            <p>School to upload the student
+              information by logging in the
+              school dashboard.<br>
+              Welcome note
+              Launch Date
+              link with complete information
+              on what to expect etc...</p>
+          </div>
+        </div>
+        <div class="timeline_card">
+          <h4 style="font-size: 26px;margin: 10px 0;color: #11639d">Add A Student</h4>
+          <form action="" id="form_manual" enctype="multipart/form-data">
+            <div class="tab-content-form">
+              <input type="text" name="roll" placeholder="Roll No" class="tab-content-form_fields" />
+              <input type="text" name="name" placeholder="Name" class="tab-content-form_fields" />
+              <input type="text" name="phone" placeholder="Phone" class="tab-content-form_fields" />
+              <input type="text" name="p_name" placeholder="Parent Name" class="tab-content-form_fields" />
+              <input type="text" name="p_phone" placeholder="Parent Phone" class="tab-content-form_fields" />
+              <input type="email" name="email" placeholder="Email" class="tab-content-form_fields" />
+              <select name="class_man" id="school_class" onchange="get_batch()">
+                <option value="">Choose Class</option>
+                <option value='INST_362_6'>6</option>
+                <option value='INST_362_7'>7</option>
+                <option value='INST_362_8'>8</option>
+                <option value='INST_362_9'>9</option>
+                <option value='INST_362_10'>10</option>
+                <option value='INST_362_11'>11</option>
+                <option value='INST_362_12'>12</option>
+              </select>
+              <select name="batch" id="batch">
+                <option>Select Batch</option>
+              </select>
+            </div>
+            <button class="tab-content-form_btn" type="button" onclick="save();">
+              <span>Submit</span>
+            </button>
+          </form>
         </div>
       </div>
     </div>
-    <div class="page-lay-new">
-      <h1 class="main-page-head">Create Club Coordinator</h1>
-      <div class="club-cb-section">
-        <div><h1 class="club-cb-head">Club Coordinator</h1></div>
-        <div class="club-cb-section-sub">
-          <a href="#" class="club-cb-link"><i class="fas fa-plus"></i> Add</a>
-        </div>
-      </div>
-      <div style="overflow-x:auto;overflow-y: auto;max-height: 300px;">
-        <div class="club-cb-desc club-cb-effect">
-          <ul class="club-cb-desc-list">
-            <li>Suyash Pradhan</li>
-            <li>Username : Suyash</li>
-            <li>Password : suyash123</li>
-            <li>Role : Coordinator</li>
-          </ul>
-          <h1 class="club-cb-add">Club Registered For</h1>
-          <a href="#" class="club-cd-add-link"
-            ><i class="fas fa-plus"></i> Add Club</a
-          >
-          <ul class="club-cb-desc-add-list">
-            <li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
-            <li>Web Design</li>
-            <li>Web Development</li>
-            <li>History</li>
-            <li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
-            <li>Web Design</li>
-            <li>Web Development</li>
-            <li>History</li>
-            <li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
-            <li>Web Design</li>
-            <li>Web Development</li>
-            <li>History</li>
-            <li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
-            <li>Web Design</li>
-            <li>Web Development</li>
-            <li>History</li>
-          </ul>
-        </div>
-      </div>
+
+    <div class="footer_section" style="margin-top: 20px">
+      <span>Powered by wingxp.com</span>
     </div>
-    <div
-      class="footer"
-      style=" position: absolute;
-    width: 100%;
-    height: 60px; 
-    background:#000;"
-    >
-      <div
-        class="left-footer"
-        style="padding: 15px; padding: 15px 0;
-        font-size: 20px;
-        color: #fff;
-        float: none;
-        text-align: center;"
-      >
-        © Copyright – iCLUBS 2018
-      </div>
-    </div>
-    <script src="script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js "
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous "
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-  </body>
+    <link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js "
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
+    </script>
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
 </html>
