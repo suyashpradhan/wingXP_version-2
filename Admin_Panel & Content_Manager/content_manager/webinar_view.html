@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navigationBar">
+        <div class="logoBox">
+            <h1 class="logoBox-header">SPACEDTIMES
+        </div>
+        <div class="menu-wrapper">
+            <i class="fas fa-bars" onclick="openNav()"></i>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="button-wrapper">
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="card card-new inner-card">
+            <h1 class="inner__card-text">View Webinar Details</h1>
+        </div>
+        <div style="overflow-x:auto;overflow-y:auto;">
+            <table id="page-table">
+                <thead>
+                    <tr>
+                        <th>Sno</th>
+                        <th>Title</th>
+                        <th>Speaker</th>
+                        <th>Description</th>
+                        <th>Duration</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>App Development Webinar</td>
+                        <td>Kiran</td>
+                        <td>App Development Without Coding</td>
+                        <td>45 Minutes</td>
+                        <td>01/09/2018</td>
+                        <td>10:00 AM</td>
+                        <td>Rs 2500</td>
+                        <td><a href="" class="action__table">Update</a> <a href="#" class="action__table">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css " integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg "
+        crossorigin="anonymous">
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px ";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0 ";
+        }
+    </script>
+</body>
+
+</html>

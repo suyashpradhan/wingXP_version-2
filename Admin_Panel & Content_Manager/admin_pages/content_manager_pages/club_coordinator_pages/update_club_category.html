@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body style="background: none;">
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login100 p-t-55 p-b-55">
+          <h1 class="update-form-header">Update Club Category</h1>
+          <form action="" id="fileUploadForm" enctype="multipart/form-data">
+            <input
+              type="text"
+              placeholder="Club Category Name"
+              value="Technology"
+              name="club_category_name"
+              id="club_category_name"
+              class="diff-fields"
+              required="true"
+            /><br />
+            <textarea
+              type="text"
+              placeholder="Description"
+              style="margin-bottom:10px; min-height:100px;"
+              name="desc"
+              id="desc"
+              class="diff-fields-textarea"
+              required="true"
+            >Technology 12</textarea>
+            <br />
+            <input
+              style="min-height:30px;"
+              type="button"
+              name="submit"
+              value="SUBMIT"
+              class="update__btn-new"
+              id="sub"
+              name="sub"
+              onclick="check_form()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

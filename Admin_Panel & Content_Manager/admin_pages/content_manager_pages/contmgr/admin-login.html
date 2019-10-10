@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Google+Sans:400|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+    <link rel="stylesheet" href="../../../admin_pages/main.css">
+</head>
+<div class="navbar navbar-shadow" style="height: 100px;margin: 0">
+    <div class="newnavigationBar">
+        <a href="inst_dashboard.php">
+            <img src="../../../Student_Dashboard Version 2/assets/images/logo.png" alt=""
+                style="margin:10px;height: 70px;"></a>
+    </div>
+</div>
+
+<body>
+    <div class="admin-form">
+        <h2 class="admin-head">Admin Login</h2>
+        <p type="Admin Username:" class="field-name"><input placeholder="Enter your username here.." class="admin-field"
+                type="text" id="username" name="username" required class="required"></input></p>
+        <p type="Admin Password:" class="field-name"><input placeholder="Enter your password here.." class="admin-field"
+                type="password" id="password" name="password" required class="required"></input></p>
+        <button class="admin-submit" onclick="login();">Login</button>
+    </div>
+</body>
+
+<div class="footer" style=" position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; 
+    background:#000;">
+    <div class="left-footer" style="padding: 15px; padding: 15px 0;
+        font-size: 20px;
+        color: #fff;
+        float: none;
+        text-align: center;">
+        &copy; Copyright – iCLUBS 2018
+    </div>
+</div>
+<script language="javascript">
+    $("#password").keyup(function (event) {
+        if (event.keyCode == 13) {
+            login();
+        }
+    });
+
+    function login() {
+        var user = $.trim($('#username').val());
+        var pass = $.trim($('#password').val());
+        if (user == '' || pass == '') {
+            alert('Please enter the username & password');
+        } else {
+            $.ajax({
+                type: 'POST',
+                url: 'assets/login_check.php',
+                data: {
+                    username: user,
+                    password: pass,
+                    logintype: ''
+                },
+                beforeSend: function () {},
+                success: function (response) {
+                    if (response == 'store') {
+                        window.location = "store_manager/index.php";
+                    } else if (response == 'logical') {
+                        window.location = "content_manager/index.php";
+                    } else {
+                        alert("Incorrect username & password");
+                    }
+                }
+            });
+        }
+    }
+</script>
+
+</html>

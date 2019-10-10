@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../admin_pages/content_manager_pages/club_coordinator_pages/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navbar " style="height: 100px;">
+        <div class="newnavigationBar">
+            <a href="inst_dashboard.php">
+                <img src="../logo.png" alt="" style="margin:10px;height: 70px;"></a>
+            <div class="menu-wrapper">
+                <a href=" ?q=logout" class="fancy-button bg-gradient2 logout-nav-link"><span>Logout</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="page-description-header">
+        <div class="page-container">
+            <h1 class="page-description-text">View/Update School Detail</h1>
+        </div>
+    </div>
+    <div class="page-container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                    aria-selected="true">Schools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                    aria-selected="false">Pending Schools</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="page-container">
+                    <div style="overflow-x:auto;overflow-y:auto">
+                        <table id="page-table">
+                            <thead>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>School Id</th>
+                                    <th>School Name</th>
+                                    <th>Details</th>
+                                    <th>Address</th>
+                                    <th>Email Id </th>
+                                    <th>Phone Number</th>
+                                    <th>Username</th>
+                                    <th>Status</th>
+                                    <th>Add Club</th>
+                                    <th>Add Course</th>
+                                    <th>Update</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        1 </td>
+                                    <td>
+                                        Institute_1200 </td>
+                                    <td>
+                                        Testune Technology pvt Ltd </td>
+                                    <td>
+                                        Online Exam Based Platform </td>
+                                    <td>
+                                        Kota </td>
+                                    <td>
+                                        contact@domain-education.com </td>
+                                    <td>
+                                        9460394714 </td>
+                                    <td>
+                                        ankush6789 </td>
+                                    <td>
+                                        true </td>
+                                    <td><a href="add_club.php?id=Institute_1200" class="view_faculty_detail"> Add</td>
+                                    <td><a href="add_course.php?id=Institute_1200" class="view_faculty_detail"> Add</td>
+                                    <td><a href="update_school_detail.php?id=Institute_1200" class="view_faculty_detail">
+                                            Update</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div style="overflow-x:auto;overflow-y:auto">
+                    <table id="page-table">
+                        <thead>
+                            <tr>
+                                <th>Sno</th>
+                                <th>School Id</th>
+                                <th>School Name</th>
+                                <th>Details</th>
+                                <th>Address</th>
+                                <th>Email Id </th>
+                                <th>Phone Number</th>
+                                <th>Username</th>
+                                <th>Status</th>
+                                <th>Add Club</th>
+                                <th>Add Course</th>
+                                <th>Update</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    1 </td>
+                                <td>
+                                    Institute_1200 </td>
+                                <td>
+                                    Testune Technology pvt Ltd </td>
+                                <td>
+                                    Online Exam Based Platform </td>
+                                <td>
+                                    Kota </td>
+                                <td>
+                                    contact@domain-education.com </td>
+                                <td>
+                                    9460394714 </td>
+                                <td>
+                                    ankush6789 </td>
+                                <td>
+                                    true </td>
+                                <td><a href="add_club.php?id=Institute_1200" class="view_faculty_detail"> Add</td>
+                                <td><a href="add_course.php?id=Institute_1200" class="view_faculty_detail"> Add</td>
+                                <td><a href="update_school_detail.php?id=Institute_1200" class="view_faculty_detail">
+                                        Update</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="home_link">Home</a>
+    </div>
+    <div class="footer" style=" position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; 
+    background:#000;">
+        <div class="left-footer" style="padding: 15px">
+            &copy; Copyright – iCLUBS 2018
+        </div>
+        <div class="right-footer">
+            <ul class="footer-inner" style="padding: 15px">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Domain</li>
+            </ul>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
+</body>
+
+</html>
