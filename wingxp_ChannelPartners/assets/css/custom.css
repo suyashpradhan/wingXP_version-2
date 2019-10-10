@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+.channel-list {
+  list-style: none;
+  margin: 0;
+  vertical-align: top;
+}
+
+.channel-list li {
+  margin: 25px 15px;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  grid-gap: 15px;
+  align-items: center;
+}
+
+.who-channel-text {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  text-align: justify;
+  color: #7f7585;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.note {
+  font-size: 20px;
+  color: #444;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin: 40px 15px 0 15px;
+}
+
+.benefit-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.benefit-card {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  padding: 25px 15px !important;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: default;
+}
+
+.benefit-card:hover {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  border-color: #fff;
+}
+
+.benefit-img {
+  height: 60px;
+  margin: 10px auto;
+  display: block;
+}
+
+.benefit-card-head {
+  font-size: 24px;
+  color: #444;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.benefit-card-para {
+  font-size: 16px;
+  line-height: 26px;
+  color: #777;
+  margin: 20px 0 0 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}

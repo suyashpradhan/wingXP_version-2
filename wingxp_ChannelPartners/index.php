@@ -9,18 +9,19 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
     <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="assets/css/open-iconic-bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/open-iconic-bootstrap.min.css"> -->
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+   <!--  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/ionicons.min.css"> -->
     <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="assets/css/jquery.timepicker.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/icomoon.css">
+   <!--  <link rel="stylesheet" href="assets/css/flaticon.css"> -->
+   <!--  <link rel="stylesheet" href="assets/css/icomoon.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body>
@@ -318,7 +319,67 @@
         </div>
     </div>
 
-    <div class="ftco-section bg-light">
+    <div class="ftco-section">
+        <div class="col-md-12 text-center " data-aos="fade-down">
+            <h2 class="mb-5 pb-5 text-center">Who can become a Channel Partner</h2>
+                <div class="row">
+                    <div class="img-fluid col-sm-12 col-md-6 aos-init aos-animate" style="background-image: url('assets/images/image_5.jpg');background-position: center center;
+    background-size: cover;background-repeat:no-repeat;height:400px;"
+                    data-aos="fade-right">
+                        
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <ul class="channel-list">
+                            <li> <img src="assets/images/checked.svg" alt="" style="height:20px;">
+                        <h1 class="who-channel-text">Passionate about education and latest technology trends in edtech.</h1>
+                    </li>
+                            <li><img src="assets/images/checked.svg" alt="" style="height:20px;">
+                        <h1 class="who-channel-text">Have an existing network with Schools in the designated Territory.</h1>
+                    </li>
+                    <li><img src="assets/images/checked.svg" alt="" style="height:20px;">
+                        <h1 class="who-channel-text">You should be able to on board schools end to end according to WingXP policy.</h1>
+                    </li>
+                    <li><img src="assets/images/checked.svg" alt="" style="height:20px;">
+                        <h1 class="who-channel-text">Ability to handle multiple products and can wear a consultant hat.</h1>
+                    </li>
+                        </ul>
+                        <p class="note">If you demonstrate the above listed attributes, an excellent opportunity awaits you. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="ftco-section bg-light">
+    <div class="col-md-12 text-center " data-aos="fade-up">
+        <h2 class="mb-5 pb-5 text-center">Benefits for Channel Partner</h2>
+            <div class="container">
+                <div class="benefit-wrapper">
+                    <div class="benefit-card">
+                        <img src="assets/images/promotion.svg" alt="" class="benefit-img">
+                        <h1 class="benefit-card-head">Marketing</h1>
+                        <p class="benefit-card-para">Is the color of gold, butter and ripe lemons. In the spectrum of visible light, yellow is found between green and orange.</p>
+                    </div>
+                    <div class="benefit-card">
+                    <img src="assets/images/mobile-app.svg" alt="" class="benefit-img">
+                        <h1 class="benefit-card-head">Sales</h1>
+                        <p class="benefit-card-para">Is the color of gold, butter and ripe lemons. In the spectrum of visible light, yellow is found between green and orange.</p>
+
+                    </div>
+                    <div class="benefit-card">
+                    <img src="assets/images/solution.svg" alt="" class="benefit-img">
+                        <h1 class="benefit-card-head">Technology</h1>
+                        <p class="benefit-card-para">Is the color of gold, butter and ripe lemons. In the spectrum of visible light, yellow is found between green and orange.</p>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+    
+
+    <div class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center" data-aos="fade-up">
@@ -329,7 +390,7 @@
                 <div class="col-sm-6 col-md-6" data-aos="fade-up">
                     <div class="block-10">
                         <div class="person-info mb-3">
-                            <span class="name">SWAPNIL AJMERA, Co-founder</span>
+                            <span class="name">SWAPNIL AJMERA </span><span>Co-founder</span> 
                             <span class="position">Business Development and Customer Acquisition professional with over
                                 10 years experience with E-learning,<br> Publishing & Edtech Products and Services.
                             </span>
@@ -340,7 +401,7 @@
                 <div class="col-sm-6 col-md-6" data-aos="fade-up">
                     <div class="block-10">
                         <div class="person-info mb-3">
-                            <span class="name">ABHISHEK JAIN, Founder </span>
+                            <span class="name">ABHISHEK JAIN</span> <span>Founder</span>
                             <span class="position">An IITian with 20 years of experience in the Education Industry.
                                 <br>Abhishek in the past has launched various EdTech Start-up, Online Platforms and
                                 Physical Education. </span> </div> <img src="assets/images/person_3.jpg" alt=""
@@ -351,7 +412,7 @@
         </div>
     </div>
 
-    <div class="ftco-section">
+    <div class="ftco-section bg-light">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center" data-aos="fade-up">
@@ -392,7 +453,7 @@
         </div>
     </div>
 
-    <div class="ftco-section bg-light">
+    <div class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center" data-aos="fade-up">
