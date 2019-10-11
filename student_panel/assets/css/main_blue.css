@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 * {
     margin: 0;
@@ -7,7 +7,9 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     /*  max-width: 100%; */
-    font-family: 'Fira Sans', sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
+    font-family: "Nunito", sans-serif;
+
 }
 
 html,
@@ -15,11 +17,15 @@ body {
     line-height: 150%;
     /*   background-color: #f8f8f8; */
     cursor: default;
-    font-family: 'Fira Sans', sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
+    font-family: "Nunito", sans-serif;
+
 }
 
 i span {
-    font-family: 'Fira Sans', sans-serif;
+   /*  font-family: 'Fira Sans', sans-serif; */
+    font-family: "Nunito", sans-serif;
+
 }
 
 img {

@@ -32,7 +32,7 @@
             <a class="navbar-brand" href="index.html"> WingXP</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
+                <i class="fas fa-bars menu-icon"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="ftco-nav">
@@ -227,7 +227,7 @@
 
 
     <div class="ftco-section testimony-img" id="ftco-testimony"
-        style="background-image: url(assets/images/image_8.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        style="background-image: url(assets/images/image_8.jpg);display:none" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center heading" data-aos="fade-up">
@@ -319,16 +319,35 @@
         </div>
     </div>
 
-    <div class="ftco-section">
+    <div class="ftco-section bg-light">
         <div class="col-md-12 text-center " data-aos="fade-down">
             <h2 class="mb-5 pb-5 text-center">Who can become a Channel Partner</h2>
+            <div class="container">
                 <div class="row">
-                    <div class="img-fluid col-sm-12 col-md-6 aos-init aos-animate" style="background-image: url('assets/images/image_5.jpg');background-position: center center;
-    background-size: cover;background-repeat:no-repeat;height:400px;"
-                    data-aos="fade-right">
-                        
+                    <div class="col-md-6 pr-md-5">
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Mobile Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Website/Linkedin URL:">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="7" class="form-control"
+                                    placeholder="Brief about you:"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Send message" class="btn btn-primary">
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-md-6 about-channel-card">
                         <ul class="channel-list">
                             <li> <img src="assets/images/checked.svg" alt="" style="height:20px;">
                         <h1 class="who-channel-text">Passionate about education and latest technology trends in edtech.</h1>
@@ -349,9 +368,9 @@
             </div>
         </div>
     </div>
+</div>
 
-
-<div class="ftco-section bg-light">
+<div class="ftco-section ">
     <div class="col-md-12 text-center " data-aos="fade-up">
         <h2 class="mb-5 pb-5 text-center">Benefits for Channel Partner</h2>
             <div class="container">
@@ -379,7 +398,7 @@
 </div>
     
 
-    <div class="ftco-section">
+    <div class="ftco-section bg-light">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center" data-aos="fade-up">
@@ -412,7 +431,7 @@
         </div>
     </div>
 
-    <div class="ftco-section bg-light">
+    <div class="ftco-section" style="display:none">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center" data-aos="fade-up">
@@ -453,7 +472,7 @@
         </div>
     </div>
 
-    <div class="ftco-section">
+    <div class="ftco-section bg-light" style="display:none">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center" data-aos="fade-up">

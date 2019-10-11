@@ -16,11 +16,23 @@
         }
      
         ::placeholder {
-            font-size: 15px;
+			font-size: 15px;
+			font-weight:500 !important;
         }
          .form-group {
             margin: 15px 0 !important;
-        }
+		}
+		
+		.__btn {
+			margin: 15px 0 0 0;
+			width: 100%;
+			height: 40px;
+			font-weight:500;
+		}
+
+		.inner_sc-form{
+			font-weight:500;
+		}
        </style>
         </head>
 <body style="background-color: #006666;
@@ -31,7 +43,7 @@
 <nav class="navbar navbar-expand-lg navbar-light navbar__mobile-hide" id="navbar-hide" style="background-color:#006666;">
             <a class="navbar-brand" href="http://www.wingxp.com">
                 <span
-                    style="font-weight:1000; font-size: 26px;margin: 0;padding: 0; color:#66cc33">wing<span style="color:#ffcc00; font-size: 26px;">xp<span></span></a>
+                    style="font-weight:500; font-size: 26px;margin: 0;padding: 0; color:#66cc33">wing<span style="color:#ffcc00; font-size: 26px;font-weight:500">xp<span></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
