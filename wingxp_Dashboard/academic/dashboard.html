@@ -14,10 +14,11 @@
 
 <body style=" background: #fafafa;position: relative;padding-bottom: 50px;
 min-height: 100vh;">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#17a2b8;">
-        <a class="navbar-brand" href="">
-            <span
-                style="color: #fff !important; font-weight:1000; font-size: 26px;margin: 0;padding: 0;">wingxp</span></a>
+    <nav class="navbar navbar-expand-lg navbar-light navbar__mobile-hide" id="navbar-hide"
+        style="background-color:#006666;">
+        <a class="navbar-brand" href="http://www.wingxp.com">
+            <span style="font-weight:1000; font-size: 26px;margin: 0;padding: 0; color:#66cc33">wing<span
+                    style="color:#ffcc00; font-size: 26px;">xp<span></span></span></span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -67,19 +68,18 @@ min-height: 100vh;">
         </div>
     </nav>
     <div class="topic__wrapper">
-        <div class="select_wrap">
-            <select id="class" class="select_topic to_be_resized">
-                <option value="phy">Physics XI</option>
-                <option value="chem">Chemistry XII</option>
-                <option value="math">Mathematics XI</option>
-            </select>
+        <div class="change_club select_wrap">
+            <div class="dropdown">
+                <a class="dropdown-toggle select_topic to_be_resized" data-toggle="dropdown" style="color: #fff;">
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Chemistry XI</a></li>
+                </ul>
+            </div>
         </div>
         <div class="select_wrap">
             <select id="topics" class="select_topic to_be_resized">
                 <option value="">Force And Laws Of Motion</option>
-                <option value="">Light</option>
-                <option value="">Aerodynamics</option>
-                <option value="">Speed</option>
             </select>
         </div>
     </div>
@@ -250,26 +250,40 @@ min-height: 100vh;">
         <div class="owl-carousel owl-theme" id="videoCarousel">
             <div class="videoCarouselInner">
                 <div class="videoCarouselHeader">
-                    <div>
+                    <div class="video-actions-div">
                         <i class="far fa-comment-alt videoCarouselIcons" data-toggle="modal"
                             data-target="#commentModal"></i>
-                        <i class="far fa-heart videoCarouselIcons" id="heart"></i>
+                        <label class="rif ripple">
+                            <input class="rif-checkbox" type="checkbox">
+                            <span class="rif-font">
+                                <i class="fa fa-heart"></i>
+                                <span class="ripple-spread"></span>
+                            </span>
+                        </label>
                     </div>
-                    <div>
+                    <div class="video-time-div">
                         <span style="background-color: #484848;padding:3px;color:
                                 #fff;border-radius: 2px;font-size: 13px;letter-spacing: 1px;">
                             01:04:30</span>
                     </div>
                 </div>
-                <iframe src="https://www.youtube.com/embed/-0asTLcK5S0" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <div class="video-div">
+                    <iframe src="https://www.youtube.com/embed/-0asTLcK5S0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
             <div class="videoCarouselIh1nner">
                 <div class="videoCarouselHeader">
                     <div>
                         <i class="far fa-comment-alt videoCarouselIcons"></i>
-                        <i class="far fa-heart videoCarouselIcons" id="heart"></i>
+                        <label class="rif ripple">
+                            <input class="rif-checkbox" type="checkbox">
+                            <span class="rif-font">
+                                <i class="fa fa-heart"></i>
+                                <span class="ripple-spread"></span>
+                            </span>
+                        </label>
                     </div>
                     <div>
                         <span
@@ -284,7 +298,13 @@ min-height: 100vh;">
                 <div class="videoCarouselHeader">
                     <div>
                         <i class="far fa-comment-alt videoCarouselIcons"></i>
-                        <i class="far fa-heart videoCarouselIcons" id="heart"></i>
+                        <label class="rif ripple">
+                            <input class="rif-checkbox" type="checkbox">
+                            <span class="rif-font">
+                                <i class="fa fa-heart"></i>
+                                <span class="ripple-spread"></span>
+                            </span>
+                        </label>
                     </div>
                     <div>
                         <span
@@ -295,8 +315,6 @@ min-height: 100vh;">
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-        </div>
-        <div class="owl-theme">
             <div class="owl-controls">
                 <div class="custom-nav owl-nav"></div>
             </div>
@@ -313,6 +331,10 @@ min-height: 100vh;">
                     </button>
                 </div>
                 <div class="modal-body">
+                    <section class="discussion">
+                        <span class="comment-date">2019-10-16</span>
+                        <div class="chat recipient chat_info">First Comment Added</div>
+                    </section>
                     <form action="#">
                         <div class="form-group">
                             <input type="text" name="" id="" class="form-control" placeholder="Comment">
@@ -323,140 +345,57 @@ min-height: 100vh;">
             </div>
         </div>
     </div>
-    <hr style="color:#696969;margin: 20px 0 0 0 ">
+    <hr style="color:#696969;margin: 0 ">
     <div class="wrapper">
         <section class="container-fluid main-content" style="padding: 15px;">
             <h1 class="section__header">WebRef</h1>
-            <div class="">
-                <div class="product-carousel owl-carousel owl-theme" id="articleCarousel">
-                    <div class="product-top">
+            <div class="product-carousel owl-carousel owl-theme" id="articleCarousel">
+                <div class="product-top">
+                    <a href="">
                         <div class="product-image"
                             style="background-image: linear-gradient(to bottom, #ffffff00 0, #000 100%),url(../assets/images/physics-1.jpg);background-size: cover;height: 220px;width: auto;background-repeat: no-repeat">
                         </div>
                         <div class="click">
                             <i class="far fa-comment-alt videoCarouselIcons"></i>
-                            <i class="far fa-heart videoCarouselIcons" id="heart"></i>
+                            <label class="rif ripple">
+                                <input class="rif-checkbox" type="checkbox">
+                                <span class="rif-font">
+                                    <i class="fa fa-heart"></i>
+                                    <span class="ripple-spread"></span>
+                                </span>
+                            </label>
                         </div>
                         <div class="inner_product">
                             <h1 class="inner_productTitle">Force And Laws Of Motion</h1>
                             <p class="inner_productDescription">What Is Force?</p>
                         </div>
-                    </div>
-                    <div class="product">
-                        <div class="product-top">
-                            <div class="product-image"
-                                style="background-image: linear-gradient(to bottom, #ffffff00 0, #181818 100%),url(../assets/images/physics-2.jpg);background-size: cover;height: 220px;width: auto;background-repeat: no-repeat">
-                            </div>
-                            <div class="click">
-                                <i class="far fa-comment-alt videoCarouselIcons"></i>
-                                <i class="far fa-heart videoCarouselIcons" id="heart"></i>
-                            </div>
-                            <div class="inner_product">
-                                <h1 class="inner_productTitle">Force And Laws Of Motion</h1>
-                                <p class="inner_productDescription">What Is Motion?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='product'>
-                        <div class="product-top">
-                            <div class="product-image"
-                                style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(../assets/images/physics-3.jpg);background-size: cover;height: 220px;width: 100%;background-repeat: no-repeat">
-                            </div>
-                            <div class="click">
-                                <i class="far fa-comment-alt videoCarouselIcons"></i>
-                                <i class="far fa-heart videoCarouselIcons" id="heart"></i>
-                            </div>
-                            <div class="inner_product">
-                                <h1 class="inner_productTitle">Force And Laws Of Motion</h1>
-                                <p class="inner_productDescription">What Are Laws Of Motion?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product-top">
-                            <div class="product-image"
-                                style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #181818 100%),url(../assets/images/physics-4.jpg);background-size: cover;height: 220px;width: 100%;background-repeat: no-repeat">
-                            </div>
-                            <div class="click">
-                                <i class="far fa-comment-alt videoCarouselIcons"></i>
-                                <i class="far fa-heart videoCarouselIcons" id="heart"></i>
-                            </div>
-                            <div class="inner_product">
-                                <h1 class="inner_productTitle">Force And Laws Of Motion</h1>
-                                <p class="inner_productDescription">What Is Physics?</p>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
     </div>
 
-    <hr style="color:#696969;margin: 20px 0 0 0 ">
+    <hr style="color:#696969;margin: 0 ">
     <div class="wrapper">
         <section class="container-fluid main-content" style="padding: 15px;">
             <h1 class="section__header">Activities</h1>
             <div class="product-carousel owl-carousel owl-theme " id="quizCarousel">
                 <div class='product'>
-                    <div class='product-top'>
-                        <div class='product-image' style='background-color:#ffa323 ;height: 120px;width: auto' />
-                        <div class="product_info">
-                            <h1>Subjective Test</h1>
-                            <div class="div_start">
-                                <h2>Force</h2>
+                    <a href="">
+                        <div class="product-top">
+                            <div class="product-image" style="background-color:#ffa323 ;height: 120px;width: auto">
+                                <div class="product_info">
+                                    <h1>Subjective Test</h1>
+                                    <div class="div_start">
+                                        <h2>Force</h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class='product' onclick="location.href='https://www.google.com'">
-                <div class='product-top'>
-                    <div class='product-image' style='background-color:#ffa323 ;height: 120px;width: auto' />
-                    <div class="product_info">
-                        <h1>Generic Activity</h1>
-                        <div class="div_start">
-                            <h2>Motion</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <div class='product'>
-        <div class='product-top'>
-            <div class='product-image' style='background-color:#ffa323 ;height: 120px;width: auto' />
-            <div class="product_info">
-                <h1>Subjective Test</h1>
-                <div class="div_start">
-                    <h2>Light</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class='product'>
-        <div class='product-top'>
-            <div class='product-image' style='background-color:#ffa323 ;height: 120px;width: auto' />
-            <div class="product_info">
-                <h1>Generic Activity</h1>
-                <div class="div_start">
-                    <h2>Aerodynamics</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class='product'>
-        <div class='product-top'>
-            <div class='product-image' style='background-color:#ffa323 ;height: 120px;width: auto' />
-            <div class="product_info">
-                <h1>Subjective Test</h1>
-                <div class="div_start">
-                    <h2>Gravity</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+        </section>
     </div>
 
     <br><br>
@@ -486,11 +425,11 @@ min-height: 100vh;">
                 center: true,
                 loop: true,
                 margin: 10,
+                nav: true,
                 navText: [
                     '<i class="fas fa-chevron-left" aria-hidden="true"></i>',
                     '<i class="fas fa-chevron-right" aria-hidden="true"></i>',
                 ],
-                dots: false,
                 navContainer: '.main-content .custom-nav',
                 responsive: {
                     1200: {
@@ -509,12 +448,13 @@ min-height: 100vh;">
             });
             two.owlCarousel({
                 loop: true,
-                margin: 15,
-                dots: false,
-                navigationText: [
-                    '<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>',
-                    '<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'
+                margin: 10,
+                nav: true,
+                navText: [
+                    '<i class="fas fa-chevron-left" aria-hidden="true"></i>',
+                    '<i class="fas fa-chevron-right" aria-hidden="true"></i>',
                 ],
+                navContainer: '.main-content .custom-nav',
                 responsive: {
                     4000: {
                         items: 7,
@@ -549,7 +489,7 @@ min-height: 100vh;">
             three.owlCarousel({
                 loop: true,
                 margin: 10,
-                dots: false,
+                nav: true,
                 responsive: {
                     2000: {
                         items: 8,
@@ -581,18 +521,6 @@ min-height: 100vh;">
         $("#class").on("change", function () {
             $modal = $('#changeClassModal');
             if ($(this).val() === 'phy') {
-                $modal.modal('show');
-            }
-        });
-        $("#class").on("change", function () {
-            $modal = $('#changeClassModal-2');
-            if ($(this).val() === 'chem') {
-                $modal.modal('show');
-            }
-        });
-        $("#class").on("change", function () {
-            $modal = $('#changeClassModal-3');
-            if ($(this).val() === 'math') {
                 $modal.modal('show');
             }
         });
