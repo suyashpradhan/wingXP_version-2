@@ -376,8 +376,8 @@ img {
   transition: 0.2s ease all;
 }
 
-.select-text:focus ~ .select-label,
-.select-text:valid ~ .select-label {
+.select-text:focus~.select-label,
+.select-text:valid~.select-label {
   color: #181818;
   top: -20px;
   transition: 0.2s ease all;
@@ -409,8 +409,8 @@ img {
   right: 50%;
 }
 
-.select-text:focus ~ .select-bar:before,
-.select-text:focus ~ .select-bar:after {
+.select-text:focus~.select-bar:before,
+.select-text:focus~.select-bar:after {
   width: 50%;
 }
 
@@ -618,11 +618,9 @@ iframe {
 .product-carousel .product {
   box-sizing: border-box;
   text-align: center;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0,
-    #181818 100%
-  );
+  background-image: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0,
+      #181818 100%);
   border-radius: 10px;
 }
 
@@ -711,6 +709,10 @@ iframe {
   width: 100%;
 }
 
+.product_info a {
+  text-decoration: none !important;
+}
+
 .product_info h1 {
   font-size: 14px;
   background-color: #fff;
@@ -721,6 +723,33 @@ iframe {
   display: inline-block;
   margin-top: 15px;
   border-radius: 100px;
+}
+
+.activity-head {
+  font-size: 24px;
+  color: #4d4d4d;
+  font-weight: 900;
+}
+
+.activity-desc {
+  font-size: 16px;
+  color: #5c5c5c;
+  font-weight: 600;
+}
+
+.btn-upload {
+  background-color: #ffa323;
+  padding: 8px 15px !important;
+  border-radius: 10px !important;
+  font-size: 20px !important;
+  color: #fff !important;
+  border: 1px solid #ffa323;
+  margin: 0 auto 20px auto !important;
+  display: block !important;
+}
+
+.upload-icon {
+  margin-left: 10px;
 }
 
 .click {
@@ -749,12 +778,10 @@ iframe {
   content: "";
   width: 90px;
   height: 90px;
-  background-image: radial-gradient(
-    circle at 100% 0,
-    rgba(0, 0, 0, 0.9) 5%,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0)
-  );
+  background-image: radial-gradient(circle at 100% 0,
+      rgba(0, 0, 0, 0.9) 5%,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0));
   z-index: -1;
   display: block;
   position: absolute;
@@ -864,11 +891,11 @@ iframe {
   display: none;
 }
 
-.rif-checkbox:checked + .rif-font {
+.rif-checkbox:checked+.rif-font {
   color: #990000;
 }
 
-.rif-checkbox:checked + .rif-font i {
+.rif-checkbox:checked+.rif-font i {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-animation-name: beat;
@@ -946,8 +973,8 @@ hr {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   justify-content: center;
-  align-items: center;
   padding: 15px;
   background: transparent;
   position: relative;
@@ -1308,4 +1335,48 @@ input.input100 {
   font-weight: 600;
   cursor: default;
   margin-right: 5px;
+}
+
+.video_frame_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.video_frame_wrap {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  margin: 5px 0;
+}
+
+.activity_iframe_videos {
+  height: 100px;
+  width: 160px;
+}
+
+.video_iframe_info h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4d4d4d;
+  display: block !important;
+}
+
+.video_iframe_info span {
+  background-color: #484848;
+  padding: 3px;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: block;
+  margin: 5px 0;
+  width: fit-content;
+}
+
+.feedback-submit-btn {
+  background-color: #ffa422 !important;
+  border: 1px solid #ffa422 !important;
+  color: #fff !important;
+  padding: 4px 15px !important;
+  font-size: 20px !important;
 }
