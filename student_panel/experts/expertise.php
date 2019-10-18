@@ -10,11 +10,32 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <title>WingXP Expertise - Personal Detail</title>
-    <link rel="stylesheet" href="../assets/css/main.css">
-        <link rel="stylesheet" href="../assets/css/main_blue.css">
-       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/css/main.1.css">
+    <link rel="stylesheet" href="../assets/css/main_blue.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <style>
+        .bounce {
+            display: none !important;
+        }
+     
+        ::placeholder {
+			font-size: 16px;
+			font-weight:500 !important;
+        }
+         .form-group {
+            margin: 15px 0 !important;
+        }
+        .__btn {
+			margin: 6px 0 0 0;
+			width: 100%;
+			height: 40px;
+			font-weight:500;
+		}
+  
+  </style>
  
 <script type="text/javascript">
 $(function() {
@@ -25,14 +46,22 @@ defaultDate: new Date('1950','01','00'),
  }).val();
 }); 
 </script>
+<style>
+    .bounce {
+            display: none !important;
+       }
+    .carousel-caption {
+            display: none !important; 
+       }
+</style>
 </head>
 
 <body>
-
    <nav class="navbar navbar-expand-lg navbar-light navbar__mobile-hide" id="navbar-hide" style="background-color:#006666;">
-            <a class="navbar-brand" href="http://www.wingxp.com">
+           <a class="navbar-brand" href="http://www.wingxp.com">
                 <span
-                    style="font-weight:1000; font-size: 26px;margin: 0;padding: 0; color:#66cc33">wing<span style="color:#ffcc00; font-size: 26px;">xp<span></span></a>
+                    style="font-weight:500; font-size: 26px;margin: 0;padding: 0; color:#66cc33">wing<span style="color:#ffcc00; font-size: 26px;font-weight:500">xp<span></span></a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,7 +69,7 @@ defaultDate: new Date('1950','01','00'),
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto" style="color:#fff;">
                     <li class="nav-item active">
-                        <a class="nav-link" href="http://www.wingxp.com" style="color:#66cc33;
+                        <a class="nav-link" href="https://www.wingxp.com" style="color:#66cc33;
                         font-size: 18px;
                         font-weight: 400;">Home
                             <span class="sr-only">(current)</span>
@@ -57,7 +86,6 @@ defaultDate: new Date('1950','01','00'),
                             </div>
                         </div>
                     </li>
-
                     <li class="nav-item">
                         <div class="dropdown">
                             <a class="nav-link dropbtn" href="#" style="color: #66cc33;
@@ -75,7 +103,7 @@ defaultDate: new Date('1950','01','00'),
                         font-size: 18px;
                         font-weight: 400;">Student </a>
                            <div class="dropdown-content">
-                           <a href="https://www.wingxp.com/login/">Login</a>
+                           <a href="https://www.wingxp.com/login/student_login.php">Login</a>
                         </div>
                        </div>
                     </li>
@@ -85,11 +113,17 @@ defaultDate: new Date('1950','01','00'),
         <div class="carousel-indicators arrow bounce">
             <a href="#new_two" class=""><i class="fa fa-arrow-down fa-2x arrow-icon"></i></a>
         </div>
+       <div class="carousel-caption">
+            <h5 class="caption-heading-one">An Online Co-curricular Platform  for students to express themselves </h5>
+           <!--  <p class="caption-heading-two">in their field of 
+Interest, Choice and Flair.</p> -->
+        </div>
     </div>
+
     <nav class="navbar navbar-expand-lg navbar-light navbar__mobile-show" id="navbar-hide" style="color:#fff;">
-        <a class="navbar-brand" href="http://www.wingxp.com">
-            <span style="font-weight:1000; font-size: 26px;margin: 0;padding: 0; color:#66cc33">wing<span style="color:#ffcc00; font-size: 26px;">xp<span></span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive_1"
+       <a class="navbar-brand" href="http://www.wingxp.com">
+                <span style="font-weight:500; font-size: 26px;margin: 0;padding: 0; color:#66cc33">wing<span style="color:#ffcc00; font-size: 26px;font-weight:500">xp<span></span></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive_1"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -137,11 +171,7 @@ defaultDate: new Date('1950','01','00'),
             </ul>
         </div>
     </nav>
-    <div class="carousel-indicators arrow bounce">
-        <a href="#new_two" class=""><i class="fa fa-arrow-down fa-2x arrow-icon"></i></a>
-    </div>
-</div>
-    <div class="limiter">
+</div>     <div class="limiter">
         <div class="container-login100_two">
             <div class="wrap-login100_two">
                 <div class="top_nav">
@@ -153,53 +183,68 @@ defaultDate: new Date('1950','01','00'),
                     </div>
                  </div>
                 <h1 class="common-head">Personal Details
-                    <span>
-                        <hr class="common-hr"></span>
+                   
                 </h1>
                 <form action="experience.php" method="POST" enctype="multipart/form-data" >
                   <div class="form__card">
                         <div class="form-row">
-                            <div class="col">
+                            <div class="col-md-4 col-lg-4 col-xs-12">
                                 <input type="text" name="fname" class="form-control" placeholder="First name"
-                                    required="">
+                                    required="" style="border: 1px solid #ccc;
+                                                    padding: 5px 8px;
+                                                    height: 40px;
+                                                    border-radius: 0;
+                                                    background-color: #fff;
+                                                    color: black;">
                             </div>
-                            <div class="col">
-                                <input type="text" name="lname" class="form-control" placeholder="Last name">
+                            <div class="col-md-4 col-lg-4 col-xs-12">
+                                <input type="text" name="lname" class="form-control" placeholder="Last name" style="border: 1px solid #ccc;
+                                                    padding: 5px 8px;
+                                                    height: 40px;
+                                                    border-radius: 0;
+                                                    background-color: #fff;
+                                                    color: black;">
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xs-12">
+                                <input type="text" name="dob" id="dob" class="form-control"
+                                    placeholder="Date Of Birth DD-MM-YYYY" required="" style="border: 1px solid #ccc;
+                                                    padding: 5px 8px;
+                                                    height: 40px;
+                                                    border-radius: 0;
+                                                    background-color: #fff;
+                                                    color: black;">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col">
-                                <input type="text" name="dob" id="dob" class="form-control"
-                                    placeholder="Date Of Birth DD-MM-YYYY" required="">
-                            </div>
-                            <div class="col">
+                            <div class="col-md-4 col-lg-4 col-xs-12">
                                 <div class="md-radio">
-                                    <span style="font-size: 18px;color:#696969;">Gender :</span>
+                                    <span style="font-size: 18px;color:#fff;">Gender :</span>
                                     <input id="1" type="radio" value="m" name="gender" checked="">
                                     <label for="1">Male</label>
                                     <input id="2" type="radio" value="f" name="gender">
                                     <label for="2">Female</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col">
-                                <span style="font-size: 18px;color:#696969;">Upload Your Photo :</span>
-                                <input type="file" name="file" class="form-control-file" id="exampleFormControlFile1">
+                            <div class="col-md-4 col-lg-4 col-xs-12">
+                                <span style="font-size: 18px;color:#fff;">Upload Your Photo :</span>
+                                <input type="file" name="file" class="form-control-file" id="exampleFormControlFile1" >
                             </div>
                         </div>
                     </div>
                     <h1 class="common-head">Contact Details
-                        <span>
-                            <hr class="common-hr"></span>
                     </h1>
                     <div class="form__card">
                         <div class="form-row">
-                            <div class="col-6">
-                                <input type="text" name="address" class="form-control" placeholder="Address">
+                            <div class="col-md-4 col-lg-4 col-xs-1">
+                                <input type="text" name="address" class="form-control" placeholder="Address" style="border: 1px solid #ccc;
+                                                    padding: 5px 8px;
+                                                    height: 40px;
+                                                    border-radius: 0;
+                                                    background-color: #fff;
+                                                    color: black;">
                             </div>
-                            <div class="col">
-                                <select class="form-control" name="country" id="sel1">
+                            <div class="col-md-4 col-lg-4 col-xs-1">
+                                <select class="form-control" name="country" id="sel1" style="border-radius:0">
                                     <option value="ad" data-image="images/msdropdown/icons/blank.gif"
                                         data-imagecss="flag ad" data-title="Andorra">Andorra</option>
                                     <option value="ae" data-image="images/msdropdown/icons/blank.gif"
@@ -732,16 +777,26 @@ defaultDate: new Date('1950','01','00'),
                                         data-imagecss="flag zw" data-title="Zimbabwe">Zimbabwe</option>
                                 </select>
                             </div>
-                            <div class="col">
-                                <input type="text" name="pincode" class="form-control" placeholder="Pincode">
+                            <div class="col-md-4 col-lg-4 col-xs-1">
+                                <input type="text" name="pincode" class="form-control" placeholder="Pincode" style="border: 1px solid #ccc;
+                                                    padding: 5px 8px;
+                                                    height: 40px;
+                                                    border-radius: 0;
+                                                    background-color: #fff;
+                                                    color: black;">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col">
+                            <div class="col-md-4 col-lg-4 col-xs-1">
                                 <input type="text" name="phone1" class="form-control" placeholder="Primary Phone Number"
-                                    required="">
+                                    required="" style="border: 1px solid #ccc;
+                                                    padding: 5px 8px;
+                                                    height: 40px;
+                                                    border-radius: 0;
+                                                    background-color: #fff;
+                                                    color: black;">
                             </div>
-                            <div class="col">
+                            <div class="col-md-4 col-lg-4 col-xs-1">
                                <button class="__btn" onclick="get_otp()" type="button" >
 														<i class="fas fa-external-link-square-alt"></i> <span>Send OTP</span>
 													</button>
@@ -749,22 +804,36 @@ defaultDate: new Date('1950','01','00'),
                         </div>
                     </div>
                     <h1 class="common-head">Login Details
-                        <span>
-                            <hr class="common-hr"></span>
+                        
                     </h1>
                     <div class="form__card">
                         <div class="form-row">
-                            <div class="col">
+                            <div class="col-4 col-xs-12">
                                 <input type="text" name="email" class="form-control" placeholder="Email Address"
-                                    required="">
+                                    required="" style="border: 1px solid #ccc;
+                                                    padding: 5px 8px;
+                                                    height: 40px;
+                                                    border-radius: 0;
+                                                    background-color: #fff;
+                                                    color: black;">
                             </div>
-                            <div class="col">
+                            <div class="col-4 col-xs-12">
                                 <input type="password" name="password" id="password" class="form-control"
-                                    placeholder="Password" minlength="6" required="">
+                                    placeholder="Password" minlength="6" required="" style="border: 1px solid #ccc;
+                                                    padding: 5px 8px;
+                                                    height: 40px;
+                                                    border-radius: 0;
+                                                    background-color: #fff;
+                                                    color: black;">
                             </div>
-                            <div class="col">
+                            <div class="col-4 col-xs-12">
                                 <input type="password" class="form-control" id="confirm_password"
-                                    placeholder="Confirm Password">
+                                    placeholder="Confirm Password" style="border: 1px solid #ccc;
+                                                    padding: 5px 8px;
+                                                    height: 40px;
+                                                    border-radius: 0;
+                                                    background-color: #fff;
+                                                    color: black;">
                             </div>
                         </div>
                         <span style="color:#ce1f36;font-size: 18px;"># Username would be your Email ID</span>
@@ -819,26 +888,6 @@ defaultDate: new Date('1950','01','00'),
         </div>
     </div>
 
-
-<nav class="navbar fixed-bottom navbar-light bg-light"
-        style="height: 60px;padding: 0; box-shadow: 0 -2px 5px -2px #333;">
-        <div class="container">
-            <div class="sticky__nav">
-                <h1 class="sticky__nav--header">Reach Us</h1>
-                <div class="sticky__navInner">
-                    <a href="https://wa.me/919326075258" class="sticky__navInnerOne" target="_blank"><i class="fab fa-whatsapp sticky__icons"></i>
-                    </a>
-                </div>
-                <div class="sticky__navInner">
-                    <a href="mailto:contact@wingxp.com" class="sticky__navInnerTwo"><i class="fas fa-envelope sticky__icons"></i></a>
-                </div>
-                <div class="sticky__navInner">
-                    <a href="tel:+919326075258" class="sticky__navInnerThree"><i class="fas fa-phone sticky__icons"></i></a>
-               </div>
-               <h1 class="sticky__nav--headerSub"><a data-toggle="modal" data-target="#info">Request Demo</a></h1>
-            </div>
-        </div>
-    </nav>
 
 <script>
         var prevScrollpos = window.pageYOffset;
