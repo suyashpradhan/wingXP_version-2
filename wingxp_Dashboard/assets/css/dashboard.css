@@ -17,8 +17,9 @@ body {
   line-height: 150%;
   background: #fafafa;
   position: relative;
-  padding-bottom: 50px;
-  height: 100vh !important;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 
 img {
@@ -88,8 +89,8 @@ img {
 }
 
 .flex_wrap {
-  height: 60vh;
-  padding-top: 100px;
+  height: 50vh;
+  padding-top: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,14 +167,13 @@ img {
 }
 
 .footer__section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
+  right: 0;
   bottom: 0;
-  width: 100%;
-  height: 50px;
+  left: 0;
+  padding: 10px 0;
   background-color: #777;
+  text-align: center;
 }
 
 .footer__section span {
@@ -376,8 +376,8 @@ img {
   transition: 0.2s ease all;
 }
 
-.select-text:focus~.select-label,
-.select-text:valid~.select-label {
+.select-text:focus ~ .select-label,
+.select-text:valid ~ .select-label {
   color: #181818;
   top: -20px;
   transition: 0.2s ease all;
@@ -409,8 +409,8 @@ img {
   right: 50%;
 }
 
-.select-text:focus~.select-bar:before,
-.select-text:focus~.select-bar:after {
+.select-text:focus ~ .select-bar:before,
+.select-text:focus ~ .select-bar:after {
   width: 50%;
 }
 
@@ -544,7 +544,7 @@ iframe {
 .main-content .owl-theme .custom-nav .owl-prev,
 .main-content .owl-theme .custom-nav .owl-next {
   position: absolute;
-  height: 353px;
+  height: 355px;
   color: inherit;
   background-color: rgba(0, 0, 0, 0.2);
   border: none;
@@ -618,9 +618,11 @@ iframe {
 .product-carousel .product {
   box-sizing: border-box;
   text-align: center;
-  background-image: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0) 0,
-      #181818 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0,
+    #181818 100%
+  );
   border-radius: 10px;
 }
 
@@ -776,12 +778,14 @@ iframe {
 
 .click:before {
   content: "";
-  width: 90px;
-  height: 90px;
-  background-image: radial-gradient(circle at 100% 0,
-      rgba(0, 0, 0, 0.9) 5%,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0));
+  width: 80px;
+  height: 60px;
+  background-image: radial-gradient(
+    circle at 100% 0,
+    rgba(0, 0, 0, 0.9) 5%,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
   z-index: -1;
   display: block;
   position: absolute;
@@ -891,11 +895,11 @@ iframe {
   display: none;
 }
 
-.rif-checkbox:checked+.rif-font {
+.rif-checkbox:checked + .rif-font {
   color: #990000;
 }
 
-.rif-checkbox:checked+.rif-font i {
+.rif-checkbox:checked + .rif-font i {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-animation-name: beat;
