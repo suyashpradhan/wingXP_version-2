@@ -2511,7 +2511,7 @@ a.bttn-dark:focus {
 } */
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url("../assets/images/banner.png") !important;
+    background-image: url("../assets/images/list-menu.png") !important;
 }
 
 .navbar-light .navbar-toggler {

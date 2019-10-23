@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>School Co-ordinator Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#006666;">
+        <a class="navbar-brand" href="http://www.wingxp.com" style="background-color:#006666;">
+            <span style=" font-weight:500; font-size: 26px;margin: 0;padding: 0; color:#66cc33">wing<span
+                    style="color:#ffcc00; font-size: 26px;font-weight:500">xp<span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <span>Modern English High School <span style="color:#ffcc00">Dashboard</span></span>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <a class="nav-link" href="http://www.wingxp.com" style="color:#66cc33;
+                                        font-size: 20px;
+                                        font-weight: 500;">Profile
+                    <span class="sr-only">(current)</span>
+                </a>
+            </span>
+            <span class="navbar-text">
+                <a class="nav-link" href="http://www.wingxp.com" style="color:#66cc33;
+                                            font-size: 20px;
+                                            font-weight: 500;">Logout
+                    <span class="sr-only">(current)</span>
+                </a>
+            </span>
+        </div>
+    </nav>
+
+    <div class="page-container">
+        <div id="dashboard-wrap">
+            <div class="dashboard dashboard-card">
+                <h1 class="dashboard-header">Welcome, <span>Ankush Aggarwal</span> </h1>
+                <p class="dashboard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eaque
+                    animi exercitationem
+                    tempora voluptatum laudantium perspiciatis quasi libero, quaerat sunt sint nobis ullam, quam
+                    obcaecati cumque sed iure odit tenetur.</p>
+            </div>
+        </div>
+        <div id="dashboar-main-wrap">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <div class="dashboard-left-wrap dashboard-main-card">
+                        <h1 class="dashboard-main-card-header">Dashboard Actions</h1>
+                        <div class="dashboard-main-card-inner-wrap select-wrap">
+                            <h1 class="dashboard-main-card-inner-wrap-header">Select Club & Topic</h1>
+                            <div class="select">
+                                <select name="club" id="" class="custom-select club-select" placeholder="Select Club">
+                                    <option value="">Physics</option>
+                                    <option value="">Chemistry</option>
+                                    <option value="">Mathematics</option>
+                                </select>
+                                <select name="" id="" class="custom-select topic-select" placeholder="Select Topic">
+                                    <option value="">Motion</option>
+                                    <option value="">Force</option>
+                                    <option value="">Gravitation</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="dashboard-main-card-inner-wrap">
+                            <a href="#" class="btn btn-dark">Upload Items</a>
+                        </div>
+                        <div class="dashboard-main-card-inner-wrap">
+                            <div class="upload-card-wrap">
+                                <h1 class="dashboard-main-card-inner-wrap-header">Item One</h1>
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                                        <div class="card shadow--sm">
+                                            <div class="card--body">
+                                                <img src="assets/images/video.svg" alt="">
+                                                <p class="card--text card--size-state">Video</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                                        <div class="card shadow--sm">
+                                            <div class="card--body">
+                                                <img src="assets/images/writing.svg" alt="">
+                                                <p class="card--text card--size-state">WebRef</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                                        <div class="card shadow--sm">
+                                            <div class="card--body">
+                                                <img src="assets/images/test.svg" alt="">
+
+                                                <p class="card--text card--size-state">Test</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                                        <div class="card shadow--sm">
+                                            <div class="card--body">
+                                                <img src="assets/images/activity.svg" alt="">
+
+                                                <p class="card--text card--size-state">Activity</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-main-card-inner-wrap">
+                            <a href="#" class="action submit-btn">Submit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="dashboard-right-wrap dashboard-main-card">
+                        <h1 class="dashboard-main-card-header">Dashboard Preview</h1>
+                        <div class="video-preview">
+                            <div class="dashboard-main-card-inner-wrap ">
+                                <h1 class="dashboard-main-card-inner-wrap-header">Video</h1>
+                                <div class="card shadow--sm">
+                                    <div class="card--body">
+                                        <img src="assets/images/video.svg" alt="">
+                                        <p class="card--text card--size-state">Video</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="webref-preview">
+                            <div class="dashboard-main-card-inner-wrap ">
+                                <h1 class="dashboard-main-card-inner-wrap-header">WebRef</h1>
+                                <div class="card shadow--sm">
+                                    <div class="card--body">
+                                        <img src="assets/images/writing.svg" alt="">
+                                        <p class="card--text card--size-state">WebRef</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test-preview">
+                            <div class="dashboard-main-card-inner-wrap ">
+                                <h1 class="dashboard-main-card-inner-wrap-header">Test</h1>
+                                <div class="card shadow--sm">
+                                    <div class="card--body">
+                                        <img src="assets/images/test.svg" alt="">
+                                        <p class="card--text card--size-state">Test</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity-preview">
+                            <div class="dashboard-main-card-inner-wrap ">
+                                <h1 class="dashboard-main-card-inner-wrap-header">Activity</h1>
+                                <div class="card shadow--sm">
+                                    <div class="card--body">
+                                        <img src="assets/images/activity.svg" alt="">
+                                        <p class="card--text card--size-state">Activity</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-main-card-inner-wrap">
+                            <a href="#" class="action submit-btn">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_section">
+        <span>Powered by wingxp.com</span>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
