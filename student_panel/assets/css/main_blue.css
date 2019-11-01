@@ -2517,12 +2517,12 @@ a.bttn-dark:focus {
 .navbar-light .navbar-toggler {
     color: #FFF;
     cursor: pointer;
-    border:1px solid  rgba(196, 194, 194, 0.1) !important;
+    border: 1px solid rgba(196, 194, 194, 0.1) !important;
 }
 
 .navbar-toggler:active,
 .navbar-toggler:focus {
-    outline:none !important;
+    outline: none !important;
 }
 
 /* .carousel-control-prev-icon {
@@ -5379,8 +5379,8 @@ textarea.input100 {
         font-size: 40px !important;
     }
 
-    .co-curricular__wrap--header{
-        font-size: 24px !important; 
+    .co-curricular__wrap--header {
+        font-size: 24px !important;
     }
 
 }
@@ -5436,3 +5436,188 @@ textarea.input100 {
     font-size: 18px !important;
 
 }
+
+/*Xpert Page*/
+.page-intro-header {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: auto;
+    margin: 30px 0;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.page-intro-header p {
+    font-size: 18px;
+    color: #5c5b5b;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.intro-sub{
+    font-size: 28px;
+    margin: 0;
+    color:#006666;
+    font-weight:600;
+}
+
+.info-graph-div{
+    margin: 0;
+    position: relative;
+    margin-bottom: -50px;
+    margin-top: -20px;
+}
+
+.info-one{
+    background-color: #006666;
+    clip-path: polygon(0% 20%, 60% 20%, 88% 20%, 100% 50%, 88% 81%, 0 81%, 0% 80%);
+    padding: 10px;
+}
+
+.info-inner{
+    display: grid;
+    grid-template-columns:80px 1fr auto;
+    align-items: center;
+    height: 240px;
+    justify-items: center;
+    padding: 10px 80px 10px 20px;
+    grid-gap: 20px;
+    position: relative;
+}
+
+.info-inner-one{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.info-inner-one img{
+    vertical-align: middle;
+}
+
+.info-inner-one img{
+    z-index: 99999;
+}
+
+.info-header{
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.info-para{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+    color: #66cc33
+}
+
+.info-count{
+    border:1px solid #66cc33;
+    padding: 3px 8px;
+    color: #f5f6f7;
+    position: relative;
+    margin: 5px 0 0 0 ;
+}
+
+.table-info-wrap{
+    margin: 50px 0 10px 0;
+}
+
+
+.table-info-wrap h1{
+    font-size: 28px;
+    margin: 0;
+    color:#006666;
+    font-weight:600;
+}
+
+.activity-table{
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+.activity-table th{
+    border:none !important;
+    text-align: center;
+    color:#5c5b5b;
+    font-weight: 700;
+    font-size: 20px;   
+}
+
+.activity-table td{
+    border:none;
+    font-size: 18px;
+    color:#5c5b5b;
+    font-weight: 700;
+    text-align: center;
+}
+
+@keyframes ripple {
+    0% {
+      box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0);
+    }
+    50% {
+      box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+      box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0);
+    }
+  }
+  .md-radio {
+    margin: 0;
+  }
+  .md-radio.md-radio-inline {
+    display: inline-block;
+  }
+  .md-radio input[type="radio"] {
+    display: none;
+  }
+  .md-radio input[type="radio"]:checked + label:before {
+    border-color: #006666;
+    animation: ripple 0.2s linear forwards;
+  }
+  .md-radio input[type="radio"]:checked + label:after {
+    transform: scale(1);
+  }
+  .md-radio label {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    padding: 0 0 0 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+    vertical-align: bottom;
+  }
+  .md-radio label:before, .md-radio label:after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    transition: all .3s ease;
+    transition-property: transform, border-color;
+  }
+  .md-radio label:before {
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.54);
+  }
+  .md-radio label:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    background: #006666;
+  }

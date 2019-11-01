@@ -1349,18 +1349,19 @@ input.input100 {
 
 .video_frame_wrap {
   display: grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 220px 1fr;
+  grid-gap: 10px;
   margin: 5px 0;
 }
 
 .activity_iframe_videos {
-  height: 100px;
-  width: 160px;
+  height: 120px;
+  width: 220px;
 }
 
 .video_iframe_info h1 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   color: #4d4d4d;
   display: block !important;
 }
