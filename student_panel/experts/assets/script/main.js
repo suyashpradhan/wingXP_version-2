@@ -5,7 +5,6 @@ var animating; //flag to prevent quick multi-click glitches
 
 $(".next").click(function () {
 	if (animating) return false;
-	animating = true;
 
 	current_fs = $(this).parent();
 	next_fs = $(this).parent().next();
@@ -35,13 +34,13 @@ $(".next").click(function () {
 				'opacity': opacity
 			});
 		},
-		duration: 800,
+		duration: 1,
 		complete: function () {
 			current_fs.hide();
 			animating = false;
 		},
 		//this comes from the custom easing plugin
-		easing: 'easeInOutBack'
+		/* easing: 'easeInOutBack' */
 	});
 });
 
@@ -77,13 +76,13 @@ $(".previous").click(function () {
 				'opacity': opacity
 			});
 		},
-		duration: 800,
+		duration: 1,
 		complete: function () {
 			current_fs.hide();
 			animating = false;
 		},
 		//this comes from the custom easing plugin
-		easing: 'easeInOutBack'
+		/* easing: 'easeInOutBack' */
 	});
 });
 

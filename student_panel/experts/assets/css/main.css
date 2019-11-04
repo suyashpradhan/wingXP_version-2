@@ -131,43 +131,64 @@ img {
 }
 
 .banner-section h1 {
-  font-size: 60px;
+  font-size: 80px;
+  text-transform: uppercase;
   color: #fff;
   display: block;
 }
 
+.banner-btn-div {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
 .banner-btn {
-  background-color: #006666;
   display: block;
   padding: 10px 40px;
-  border-radius: 100px;
-  color: #fff;
+  border-radius: 3px;
+  color: #363636;
   text-decoration: none;
   transition: all 0.5s ease;
   font-size: 20px;
+  font-weight: 600;
 }
 
 .banner-btn:hover {
   text-decoration: none;
-  color: #fff;
-  background-color: #024444;
+  color: inherit;
   transform: translateY(-2px);
 }
 
 .banner-btn:active {
   text-decoration: none;
-  color: #fff;
-  background-color: #024444;
   transform: translateY(0);
 }
 
-.about-info {}
+.start-btn {
+  background-color: #efcc00;
+}
+
+.learn-btn {
+  background-color: #fff;
+}
+
+.start-btn:hover {
+  background-color: #ffd901;
+}
+
+.about-info {
+  background-color: #e6e6e6;
+}
 
 .about-info-header {
   text-align: center;
   color: #5c5b5b;
   font-weight: 600;
-  font-size: 40px;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 50px;
+  display: block;
 }
 
 .about-info-header:after {
@@ -262,6 +283,10 @@ img {
   margin: -50px auto 0 auto;
 }
 
+.container {
+  max-width: 1200px !important;
+}
+
 .container-login100 {
   max-width: 100%;
   display: -webkit-box;
@@ -274,7 +299,6 @@ img {
 }
 
 .form-wrapper {
-  max-width: 1140px;
   width: 100%;
   text-align: center;
   position: relative;
@@ -395,12 +419,13 @@ img {
 
 .previous {
   background-color: #333;
-  margin: 30px 0 0 0;
+  margin: 30px auto 0 auto;
   padding: 5px 10px;
   color: #fff;
   border-radius: 3px;
   border: 1px solid #333;
   cursor: pointer;
+  display: block;
 }
 
 .common-head {
@@ -534,6 +559,22 @@ img {
   grid-gap: 5px;
   align-items: center;
   justify-items: flex-start;
+}
+
+/*Footer*/
+.footer-distributed {
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center !important;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.footer-left {
+  display: block;
+  text-align: center;
 }
 
 @media screen and (max-width:526px) and (min-width:100px) {
