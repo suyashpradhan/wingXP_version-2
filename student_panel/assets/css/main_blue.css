@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 html,
@@ -14,13 +14,13 @@ body {
     /*   background-color: #f8f8f8; */
     cursor: default;
     /* font-family: 'Fira Sans', sans-serif; */
-    font-family: "PT Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 
 }
 
 i span {
     /*  font-family: 'Fira Sans', sans-serif; */
-    font-family: "PT Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -256,14 +256,16 @@ video {
     border-radius: 35px;
     margin: 0 0 25px 0;
     background-color: #106666;
+    margin: 50px 0;
 }
 
 .co-curricular__wrap--header {
     text-align: center;
     color: #fff;
-    margin: 0;
-    font-weight: 700;
+    margin: 0 0 10px 0;
+    font-weight: 500;
     font-size: 50px;
+    letter-spacing: 1px;
 }
 
 .section-grid {
@@ -321,7 +323,7 @@ video {
     margin: 10px auto;
     padding-bottom: 4px;
     border-bottom: 2px solid #777;
-    color: #9e9d9d !important;
+    color: #696969 !important;
     font-weight: 600;
 }
 
@@ -330,7 +332,7 @@ video {
     text-align: center;
     width: fit-content;
     margin: 10px auto;
-    color: #9e9d9d !important;
+    color: #696969 !important;
     font-weight: 600;
 }
 
@@ -4084,9 +4086,10 @@ textarea.input100 {
 }
 
 .clubs__header {
-    font-size: 40px;
-    font-weight: 700;
-    padding: 10px 0;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0 0 10px 0;
     text-align: center;
     margin: 0;
 }
@@ -4102,6 +4105,7 @@ textarea.input100 {
 
 .inner_clubs__header {
     font-size: 18px;
+    color:#474747;
     font-weight: 900;
     text-align: left;
 }
@@ -4113,7 +4117,8 @@ textarea.input100 {
 
 .clubs__list li {
     list-style: none;
-    color: #4f4c4d;
+    color:#696969;
+    font-weight: 600;
     padding: 1px 0;
 }
 
@@ -4138,14 +4143,14 @@ textarea.input100 {
 }
 
 .k-12-middle {
-    background-color: #fecd33 !important;
+    background-color: #17a2b8 !important;
     padding-right: 10px;
 
 }
 
 .k-12__header {
     background-color: #2f689b;
-    margin: 10px auto;
+    margin: 0 auto;
     width: fit-content;
     text-align: center;
     color: #fff;
@@ -4166,23 +4171,26 @@ textarea.input100 {
 
 .grid--header {
     font-size: 90px;
-    font-weight: 900;
-    margin: -20px 0 0 0;
+    font-weight: 700;
+    margin: -1px 0 0 0;
     padding: 0;
+    color:#fff;
 }
 
 .grid--header span {
     font-size: 40px !important;
     display: block;
     text-align: center;
-    margin-top: -5px
+    margin-top: -5px;
+    color:#fff;
 }
 
 .grid-para {
     text-align: left;
-    font-weight: 700;
-    font-size: 14px;
-    margin: -30px 0 0 0;
+    font-weight: 500;
+    font-size: 16px;
+    margin: -1px 0 0 0;
+    color:#fff;
 }
 
 @media screen and (max-width:900px) and (min-width:768px) {
@@ -5738,4 +5746,5 @@ textarea.input100 {
     background-color: #fdcc09;
     padding: 15px;
     border-radius: 35px;
+    margin: 50px 0 30px 0;
 }

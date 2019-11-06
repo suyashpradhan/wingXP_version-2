@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html,
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -1384,4 +1384,38 @@ input.input100 {
   color: #fff !important;
   padding: 4px 15px !important;
   font-size: 20px !important;
+}
+
+.videos-grid {
+  width: 100%;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.video-iframe {
+  max-width: 100%;
+  height: 160px;
+}
+
+.video-info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 10px;
+}
+
+.video-info h1 {
+  font-size: 17px;
+  color: #4d4d4d;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.video-info h2 {
+  font-size: 16px;
+  color: #696969;
+  font-weight: 500;
+  margin: 0;
+  padding: 3px 0;
 }
