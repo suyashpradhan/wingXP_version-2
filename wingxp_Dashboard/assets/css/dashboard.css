@@ -739,6 +739,10 @@ iframe {
   font-weight: 600;
 }
 
+#quizCarousel {
+  margin-bottom: 100px !important;
+}
+
 .btn-upload {
   background-color: #ffa323;
   padding: 8px 15px !important;
@@ -874,6 +878,7 @@ iframe {
   height: 1em;
   position: relative;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 .rif label {
@@ -1387,21 +1392,22 @@ input.input100 {
 }
 
 .videos-grid {
-  width: 100%;
   margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
 
 .video-iframe {
   max-width: 100%;
-  height: 160px;
+  min-height: 350px;
+  height: 100%;
 }
 
 .video-info {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 10px;
+  margin: 10px 0;
 }
 
 .video-info h1 {
@@ -1418,4 +1424,209 @@ input.input100 {
   font-weight: 500;
   margin: 0;
   padding: 3px 0;
+}
+
+.first_half {
+  background-color: #096667;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.first_half-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.activity-header {
+  background-color: #2a954a;
+  padding: 3px 6px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.activty-name {
+  color: #fff;
+  font-size: 22px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.activity-description {
+  color: #fff;
+  text-align: justify;
+  padding: 20px 0;
+}
+
+.activity-upload-btn {
+  background-color: #fecd05;
+  padding: 3px 10px;
+  color: #181818;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  transition: all 0.2s ease-in;
+}
+
+.activity-upload-btn:hover {
+  text-decoration: none;
+  background-color: #ffcc33;
+  color: #181818;
+}
+
+.second_half {
+  height: 100%;
+  padding: 20px 0;
+}
+.checkbox-label {
+  display: block;
+  background: #f3f3f3;
+  height: 30px;
+  width: 80px;
+  border-radius: 50px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0 0 2px #dddddd;
+}
+.checkbox-label .on {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  opacity: 1;
+  min-width: 300px;
+  line-height: 50px;
+  opacity: 0;
+  color: #13bf11;
+}
+.checkbox-label .off {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  right: 100px;
+  text-align: right;
+  opacity: 1;
+  min-width: 320px;
+  line-height: 50px;
+  opacity: 1;
+  color: #bbbbbb;
+}
+.checkbox-label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  background: white;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
+}
+
+.checkbox {
+  position: absolute;
+  left: -5000px;
+}
+.checkbox:checked + .checkbox-label {
+  background: #13bf11;
+  box-shadow: 0 0 0 2px #13bf11;
+}
+.checkbox:checked + .checkbox-label .on {
+  left: 100px;
+  opacity: 1;
+}
+.checkbox:checked + .checkbox-label .off {
+  right: 0px;
+  opacity: 0;
+}
+.checkbox:checked + .checkbox-label:before {
+  left: 50px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #27b998;
+}
+
+.checkbox.blue {
+  position: absolute;
+  left: -5000px;
+}
+.checkbox.blue + .checkbox-label .on {
+  color: #27b998;
+}
+.checkbox.blue:checked + .checkbox-label {
+  background: #27b998;
+  box-shadow: 0 0 0 2px #27b998;
+}
+.checkbox.blue:checked + .checkbox-label .on {
+  left: 100px;
+  opacity: 1;
+}
+.checkbox.blue:checked + .checkbox-label .off {
+  right: 0px;
+  opacity: 0;
+}
+.checkbox.blue:checked + .checkbox-label:before {
+  left: 50px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #27b998;
+}
+
+#quizCarousel {
+  margin-bottom: 100px !important;
+}
+
+.toggle_grid {
+  display: grid;
+  max-width: 500px;
+  margin: 20px auto 40px auto;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.toggle-head {
+  font-size: 22px;
+  font-weight: 600;
+  color: #5c5b5b;
+}
+
+.section_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  margin: 50px 0;
+}
+
+.section_wrap_grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: flex-start;
+  grid-gap: 15px;
+}
+
+.section__wrap-img {
+  height: 120px;
+  max-width: 100%;
+}
+.section__wrap-header {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 10px 0;
+  color: #5c5b5c;
+}
+
+.section__wrap-desc {
+  color: #696969;
+  text-align: justify;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.section_iframe {
+  max-width: 100%;
+  min-height: 150px;
+  height: 100%;
 }
