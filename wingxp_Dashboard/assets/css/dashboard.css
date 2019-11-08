@@ -457,7 +457,7 @@ select:hover {
 .topic__wrapper {
   display: grid;
   grid-template-columns: 1fr auto;
-  margin: 0 0 20px 0;
+  /*  margin: 0 0 20px 0; */
   background-color: #484848;
   padding: 5px 15px;
 }
@@ -1399,15 +1399,14 @@ input.input100 {
 
 .video-iframe {
   max-width: 100%;
-  min-height: 350px;
-  height: 100%;
+  height: 350px !important;
 }
 
 .video-info {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 10px;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
 }
 
 .video-info h1 {
@@ -1428,8 +1427,8 @@ input.input100 {
 
 .first_half {
   background-color: #096667;
-  height: 100%;
-  padding: 20px 0;
+  /*  height: 100%; */
+  padding: 40px 0;
 }
 
 .first_half-inner {
@@ -1629,4 +1628,77 @@ input.input100 {
   max-width: 100%;
   min-height: 150px;
   height: 100%;
+}
+
+.owl-carousel {
+  overflow: hidden;
+}
+
+.carousel-main {
+  position: relative;
+}
+
+/* Nav */
+.owl-carousel .owl-nav {
+  margin-top: 0; /* resetting margins for nav buttons */
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  width: 50px;
+  height: 70px;
+  margin: 0; /* removes margins around nav buttons */
+  background: #ecf0f1;
+  border-radius: 0;
+  color: #e74c3c;
+  cursor: pointer;
+  position: absolute;
+  bottom: 200px;
+  z-index: 999;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background: #ecf0f1;
+  color: #34495e;
+}
+
+.owl-nav button.owl-prev {
+  left: -50px; /* starting position */
+}
+
+.owl-nav button.owl-next {
+  right: -50px; /* starting position */
+}
+
+.owl-carousel:hover .owl-nav button.owl-prev {
+  left: 0; /* target position after transition */
+}
+
+.owl-carousel:hover .owl-nav button.owl-next {
+  right: 0; /* target position after transition */
+}
+
+/* Dots */
+.owl-theme .owl-dots {
+  margin-top: 10px; /* restores top margin for dots only */
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #ecf0f1;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #e74c3c; /* for active dot */
+}
+
+/* Other */
+button:focus,
+button:active {
+  outline: none; /* removing blue outline from buttons */
 }

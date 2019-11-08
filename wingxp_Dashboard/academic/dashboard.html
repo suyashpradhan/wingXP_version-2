@@ -350,7 +350,7 @@ min-height: 100vh;">
     <div class="main-content">
         <section class="container-fluid main-content" style="padding: 15px;">
             <h1 class="section__header">Videos</h1>
-            <div class="owl-carousel owl-theme" id="videoCarousel">
+            <div class="owl-carousel owl-theme carousel-main" id="videoCarousel">
                 <div class="video-one">
                     <iframe class="video-iframe" src="https://www.youtube.com/embed/Xa5EU-qAv-I" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -436,7 +436,7 @@ min-height: 100vh;">
         <hr style="color:#696969;margin: 0 ">
         <section class="container-fluid main-content" style="padding: 15px;">
             <h1 class="section__header">WebRef</h1>
-            <div class="owl-carousel owl-theme" id="articleCarousel">
+            <div class="owl-carousel owl-theme carousel-main" id="articleCarousel">
                 <div class="product-top">
                     <a href="">
                         <div class="product-image"
@@ -510,19 +510,18 @@ min-height: 100vh;">
                 loop: true,
                 margin: 15,
                 nav: true,
-                navText: [
-                    '<i class="fas fa-chevron-left" aria-hidden="true"></i>',
-                    '<i class="fas fa-chevron-right" aria-hidden="true"></i>',
+                navText: ['<i class="fas fa-chevron-left fa-3x"></i>',
+                    '<i class="fas fa-chevron-right fa-3x"></i>'
                 ],
                 navContainer: '.main-content .custom-nav',
                 responsive: {
-                    2400: {
+                    3000: {
                         items: 5,
                     },
-                    2000: {
+                    2400: {
                         items: 4,
                     },
-                    1600: {
+                    1800: {
                         items: 3,
                     },
                     1200: {
@@ -532,7 +531,7 @@ min-height: 100vh;">
                         items: 2,
                     },
                     600: {
-                        items: 2,
+                        items: 1,
                     },
                     300: {
                         items: 1,
@@ -543,9 +542,8 @@ min-height: 100vh;">
                 loop: true,
                 margin: 15,
                 nav: true,
-                navText: [
-                    '<i class="fas fa-chevron-left" aria-hidden="true"></i>',
-                    '<i class="fas fa-chevron-right" aria-hidden="true"></i>',
+                navText: ['<span class="fas fa-chevron-left fa-3x"></span>',
+                    '<span class="fas fa-chevron-right fa-3x"></span>'
                 ],
                 navContainer: '.main-content .custom-nav',
                 responsive: {
