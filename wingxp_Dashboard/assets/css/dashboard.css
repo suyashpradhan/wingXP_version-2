@@ -1460,12 +1460,18 @@ input.input100 {
   padding: 20px 0;
 }
 
+input[type="file"] {
+  color: #fff !important;
+}
+
 .activity-upload-btn {
   background-color: #fecd05;
   padding: 3px 10px;
   color: #181818;
   font-size: 20px;
   margin: 0 0 10px 0;
+  cursor: pointer;
+  border: 1px solid #fecd05;
   transition: all 0.2s ease-in;
 }
 
@@ -1595,6 +1601,10 @@ input.input100 {
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
   margin: 50px 0;
+}
+
+#video__wrap {
+  display: none;
 }
 
 .section_wrap_grid {

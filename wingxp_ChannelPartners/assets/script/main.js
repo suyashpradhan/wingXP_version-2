@@ -27,7 +27,7 @@
      };
      loader();
 
-     var carousel = function () {
+     /* var carousel = function () {
          $('.carousel').owlCarousel({
              loop: false,
              items: 1,
@@ -68,7 +68,7 @@
          //    }
          // });
      };
-     carousel();
+     carousel(); */
 
      // scroll
      var scrollWindow = function () {

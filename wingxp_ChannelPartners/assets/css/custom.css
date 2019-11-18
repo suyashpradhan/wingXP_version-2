@@ -114,3 +114,59 @@ button:focus {
   transition: all 0.4s ease;
   cursor: default;
 }
+
+.carousel-item {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mobile__carousel--one {
+  background-image: url("assets/images/slider_one.png");
+  background-size: contain;
+  height: 100vh;
+}
+
+#mobile__carousel--two {
+  background-image: url("assets/images/slider_two.png");
+  background-size: contain;
+  height: 100vh;
+}
+
+#mobile__carousel--three {
+  background-image: url("assets/images/slider_three.png");
+  background-size: contain;
+  height: 100vh;
+}
+
+#mobile__carousel--four {
+  background-image: url("assets/images/slider_four.png");
+  background-size: contain;
+  height: 100vh;
+}
+
+#mobile__carousel--five {
+  background-image: url("assets/images/slider_five.png");
+  background-size: contain;
+  height: 100vh;
+}
+
+#mobile__carousel--six {
+  background-image: url("assets/images/slider_six.png");
+  background-size: contain;
+  height: 100vh;
+}
+
+.caption-heading-one {
+  background-color: #4d4d4db7;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-block;
+  color: #fff;
+}
