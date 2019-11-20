@@ -1,15 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  padding: 0;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -225,12 +227,11 @@ button:focus {
 }
 
 .ftco-navbar-light {
-  background: transparent !important;
   position: absolute;
   left: 0;
   right: 0;
   z-index: 3;
-  top: 10px;
+  /* top: 10px; */
 }
 
 @media (max-width: 991.98px) {
@@ -238,6 +239,19 @@ button:focus {
     background: #000 !important;
     top: 0;
     position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 100px) {
+  .text-inner {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  ol,
+  ul,
+  dl {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -284,7 +298,7 @@ button:focus {
   bottom: 10px;
   left: 0;
   width: 2px;
-  background: rgba(255, 255, 255, 0.05);
+  /*  background: #ffffff0d; */
 }
 
 @media (max-width: 991.98px) {
@@ -419,9 +433,6 @@ button:focus {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
-  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
 }
 
 .ftco-cover.overlay {
@@ -497,9 +508,6 @@ button:focus {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
-  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
 }
 
 @media (max-width: 991.98px) {
