@@ -2457,7 +2457,6 @@ a.bttn-dark:focus {
     background-color: #17a2b8;
     position: fixed;
     bottom: 0;
-    z-index:9999999;
     width: auto;
     right: 25px;
     padding: 10px 25px;
@@ -2484,12 +2483,10 @@ a.bttn-dark:focus {
     display: none;
     font-size: 32px;
     text-decoration: none;
-   
 }
 
-.chat_span-2 img {
-    position: relative;
-    z-index: 99999999 !important;
+.chat_span-2 i {
+    z-index: 999997 !important;
 }
 
 .chat_span-2:hover {
@@ -2502,10 +2499,9 @@ a.bttn-dark:focus {
         display: none;
     }
 
-    .chat_span-2{
+    .chat_span-2 {
         display: block;
     }
-
 
     .block {
         background: none;
@@ -2901,19 +2897,19 @@ a.bttn-dark:focus {
 
 .txt1 {
     font-size: 18px;
-    color: #fff;
-    font-weight: 700;
+    color: #181818;
+    font-weight: 500;
 }
 
 .txt2 {
     font-size: 18px;
-    color: #999
+    color: #363636
 }
 
 .txt3 {
     font-size: 18px;
     line-height: 1.6;
-    color: #999
+    color: #363636
 }
 
 .size1 {
@@ -2942,7 +2938,8 @@ a.bttn-dark:focus {
 
 .wrap-contact100 {
     width: 1120px;
-    background: #e1e1e1;
+    /* background: #e1e1e1; */
+    background-color: rgb(102, 204, 51);
     overflow: hidden;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2974,7 +2971,8 @@ a.bttn-dark:focus {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .8)
+    /* background: rgba(0, 0, 0, 0.7); */
+    background-color: rgb(253, 204, 9,0.6);
 }
 
 .contact100-form {
@@ -3015,7 +3013,8 @@ a.bttn-dark:focus {
 }
 
 .label-input100 {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
     color: #555;
     line-height: 1.5;
     text-transform: uppercase;
@@ -3028,7 +3027,7 @@ a.bttn-dark:focus {
     align-items: center;
     width: 100%;
     min-height: 55px;
-    border: 1px solid #ccc;
+    border: 1px solid #f5f6f7;
     border-bottom: none;
     padding: 10px 25px;
     margin-top: 15px;
@@ -3046,6 +3045,9 @@ a.bttn-dark:focus {
 
 .input100:first-child {
     margin-bottom: 10px;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
 }
 
 input.input100 {
@@ -3245,6 +3247,7 @@ textarea.input100 {
         display: block;
         font-size: 12px !important;
     }
+
 
 }
 
@@ -4061,15 +4064,7 @@ textarea.input100 {
 }
 
 /*Multiple Clubs*/
-.multiple__clubs__wrapper{
-    background-color: #fdcc09;
-    padding: 15px;
-    border-radius: 35px;
-}
 
-/* .multiple__clubs__section {
-    margin-bottom: 100px;
-} */
 
 .clubs__row {
     display: grid;
@@ -5046,7 +5041,7 @@ textarea.input100 {
 } */
 
 .academic__iclubs__wrapper {
-    background-color: #e1e1e1;
+    background-color: #bdbdbd;
     padding: 20px 0;
     border-radius: 35px;
     position: relative;
