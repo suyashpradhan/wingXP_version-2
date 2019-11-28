@@ -1646,13 +1646,13 @@ select {
     width: 300px;
     border-radius: 100px;
     border: 2px solid #777;
-    padding: 15px 40px;
+    padding: 5px 40px;
     color: #fff;
 }
 
 .video_btn:hover {
     background-color: #363636;
-    border: 1px solid #363636;
+    border: 2px solid #363636;
 }
 
 .video_btn:focus {
@@ -6275,4 +6275,21 @@ iframe {
     font-weight: 600;
     text-transform: uppercase;
     padding: 0;
+}
+
+.quiz-headers{
+    color:#4d4d4d;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.end-links{
+    color:#007bff !important;
+    font-weight: 600;
+    display:block;
+    text-align: center !important;
+}
+
+.end-links:hover{
+    text-decoration:none;
 }
