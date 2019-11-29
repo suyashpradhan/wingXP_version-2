@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        section {
+            margin: 50px;
+            max-width: 660px;
+            padding: 0 20px;
+        }
+
+        .review-ribbon {
+            height: 188px;
+            position: relative;
+            margin-bottom: 30px;
+            background: url(https://html5book.ru/wp-content/uploads/2015/10/snow-road.jpg);
+            background-size: cover;
+            text-transform: uppercase;
+            color: white;
+        }
+
+
+        .review-ribbon-1 {
+            width: 250px;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 15px;
+            position: absolute;
+            left: -8px;
+            top: 20px;
+            background: #59324C;
+        }
+
+        .review-ribbon-1:before,
+        .review-ribbon-1:after {
+            content: "";
+            position: absolute;
+        }
+
+        .review-ribbon-1:before {
+            height: 0;
+            width: 0;
+            top: -8.5px;
+            left: 0.1px;
+            border-bottom: 9px solid black;
+            border-left: 9px solid transparent;
+        }
+
+        .review-ribbon-1:after {
+            height: 0;
+            width: 0;
+            right: -14.5px;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-left: 15px solid #59324C;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="review-ribbon">
+            <span class="review-ribbon-1">Video is under review</span>
+        </div>
+    </section>
+</body>
+
+</html>

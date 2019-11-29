@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Content Manager - CBSE 360</title>
+    <script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="navbar navbar-shadow" style="height: 60px;">
+        <div class="newnavigationBar_2">
+            <a href="index.php">
+                <h1
+                    style="font-size:28px; color:#227270 !important; font-weight:900; text-align:left; text-decoration:none;">
+                    CBSE 360</h1>
+            </a>
+            <div class="menu-wrapper">
+                <a href="?q=logout" class="fancy-button bg-gradient2 logout-nav-link"><span>Logout</span></a>
+            </div>
+            <div class="menu-wrapper">
+                <a href="expert.php" class="fancy-button bg-gradient2 logout-nav-link"><span>
+                        Ask Expert</span></a>
+            </div>
+            <div class="menu-wrapper">
+                <a href="activate_topic.php" class="fancy-button bg-gradient2 logout-nav-link"><span> Activate Topic
+                    </span></a>
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="card-main main-c">
+            <h2>View VIDEO Detail </h2>
+        </div>
+
+        <!-- <div class="featured featured-card">
+            <div class="row review-ribbon">
+                <div class="col-12">
+                    <h1 class="review-head">Video is under-review</h1>
+                </div>
+                <div class="col-4">
+                    <img src="1.jpg" alt="" class="video-image">
+                </div>
+                <div class="col-8">
+                    <h1 class="video-text video-title">Ray Optics Test Update</h1>
+                    <h1 class="video-text video-desc">Ray Optics Test Update</h1>
+                    <h1 class="video-text video-duration">Duration: 00:10:00</h1>
+                    <h1 class="video-text video-time-start">Start Time: <span style="color:#ce1f36">00:00:00</span></h1>
+                    <h1 class="video-text video-time-end">End Time <span style="color:#ce1f36">00:00:00</span></h1>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="review-ribbon">
+            <span class="review-ribbon-1">Video is under review</span>
+
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-5">
+                    <img src="1.jpg" alt="" class="video-image">
+                </div>
+                <div class="col-7">
+                    <h1 class="video-text video-title">Ray Optics Test Update</h1>
+                    <h1 class="video-text video-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam,
+                        consequatur?</h1>
+                    <h1 class="video-text video-duration">Duration: 00:10:00</h1>
+                    <h1 class="video-text video-time-start">Start Time: <span style="color:#ce1f36">00:00:00</span></h1>
+                    <h1 class="video-text video-time-end">End Time <span style="color:#ce1f36">00:00:00</span></h1>
+                </div>
+            </div>
+        </div>
+        <table class="deploy-table">
+            <tbody>
+                <tr>
+                    <th>Review</th>
+                    <th>video_id</th>
+                    <th>title</th>
+                    <th>description_line</th>
+                    <th>mrp_price</th>
+                    <th>duration</th>
+                    <th>learning</th>
+                    <th>vendor_id</th>
+                </tr>
+                <tr>
+                    <td><a href="#" data-toggle="modal" data-target="#review-modal"><i class="fas fa-search"></i>
+                            Add to review </a></td>
+                    <td>1</td>
+                    <td>Video</td>
+                    <td>Video Desc</td>
+                    <td>10000</td>
+                    <td>10:00</td>
+                    <td>Learning</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="review-modal" tabindex="-1" role="dialog" aria-labelledby="review-modal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add Video to review</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <input type="text" name="" id="" placeholder="Start Time" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <input type="text" name="" id="" placeholder="End Time" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-success">Add Video</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style=" position: absolute;
+  
+    width: 100%;
+    height: 60px; 
+    background:#000;">
+        <div class="left-footer" style="padding: 15px; padding: 15px 0;
+        font-size: 20px;
+        color: #fff;
+        float: none;
+        text-align: center;">
+            &copy; Copyright – domain Edutech Pvt Ltd
+        </div>
+    </div>
+
+</body>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+
+</html>
