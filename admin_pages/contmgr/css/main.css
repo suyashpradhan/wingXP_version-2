@@ -16,6 +16,11 @@ html {
     height: 100%;
 }
 
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding:0;
+}
+
 body {
     position: relative;
     margin: 0;
@@ -2392,13 +2397,12 @@ nav {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.07em;
-    text-transform: uppercase;
     line-height: 24px;
     color: #ffffff;
     position: relative;
 }
 
-.fancy-button:before {
+/* .fancy-button:before {
     content: "";
     display: inline-block;
     height: 40px;
@@ -2413,12 +2417,12 @@ nav {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: all 0.3s ease-out;
-}
+} */
 
 .fancy-button span {
     display: inline-block;
-    padding: 10px 40px;
-    border-radius: 50em;
+    padding: 5px 10px;
+    border-radius: 3px;
     position: relative;
     z-index: 2;
     will-change: transform, filter;
@@ -2439,7 +2443,7 @@ nav {
     color: #ffffff;
 }
 
-.fancy-button:hover span {
+/* .fancy-button:hover span {
     -webkit-filter: brightness(0.9) contrast(1.2);
     filter: brightness(0.9) contrast(1.2);
     -webkit-transform: scale(0.96);
@@ -2455,7 +2459,7 @@ nav {
 .fancy-button:active span {
     -webkit-filter: brightness(0.75) contrast(1.7);
     filter: brightness(0.75) contrast(1.7);
-}
+} */
 
 .nav__main {
     display: grid;
@@ -4146,7 +4150,7 @@ select {
 
 .newnavigationBar_2 {
     display: grid;
-    grid-template-columns: 1fr auto auto auto;
+    grid-template-columns: 1fr auto auto auto auto;
     align-items: center;
     width: 100%;
 }

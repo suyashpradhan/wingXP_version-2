@@ -2266,7 +2266,8 @@ a.bttn-dark:focus {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5px;
-    width: 100%;
+    width:100%;
+    margin: 0 auto;
 }
 
 .form-name {
@@ -2277,8 +2278,6 @@ a.bttn-dark:focus {
     grid-column: 1/-1;
     grid-row: 3;
 }
-
-
 
 .submit-modal-btn {
     background-color: #17a2b8;
@@ -2892,13 +2891,10 @@ a.bttn-dark:focus {
     }
 }
 
-
-
-
 .txt1 {
     font-size: 18px;
     color: #181818;
-    font-weight: 500;
+    font-weight: 900;
 }
 
 .txt2 {
@@ -2972,7 +2968,7 @@ a.bttn-dark:focus {
     top: 0;
     left: 0;
     /* background: rgba(0, 0, 0, 0.7); */
-    background-color: rgb(253, 204, 9,0.6);
+    background-color: rgb(253, 204, 9,1);
 }
 
 .contact100-form {
@@ -2990,7 +2986,7 @@ a.bttn-dark:focus {
     width: 100%;
     display: block;
     font-size: 30px;
-    color: #333;
+    color: #fff;
     line-height: 1.2;
     text-align: center;
     padding-bottom: 33px
@@ -3014,10 +3010,9 @@ a.bttn-dark:focus {
 
 .label-input100 {
     font-size: 14px;
-    font-weight: 600;
-    color: #555;
+    /* font-weight: 600; */
+    color: #fff;
     line-height: 1.5;
-    text-transform: uppercase;
     letter-spacing: 1px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -3118,22 +3113,27 @@ textarea.input100 {
     min-width: 200px;
     height: 50px;
     border-radius: 2px;
-    background: #17a2b8;
-    border: 1px solid #17a2b8;
+    background: #fdcc09;
+    border: 1px solid #fdcc09;
     cursor: pointer;
-    font-size: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 16px;
+    color: #363636;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     -moz-transition: all .4s;
-    transition: all .4s
+    transition: all .4s;
+    font-weight:600;
 }
 
 .contact100-form-btn:hover {
-    background: #333;
+    background: #66cc33;
+    border: 1px solid #66cc33;
     border: none;
+}
+
+.contact100-form-btn:focus,
+.contact100-form-btn:active{
+    outline:none;
 }
 
 @media(max-width:992px) {
@@ -3519,12 +3519,12 @@ textarea.input100 {
     outline: none;
 }
 
-::placeholder {
+/* ::placeholder {
     color: #181818;
     font-weight: 900;
     font-size: 18px;
 }
-
+ */
 .club__fields ::placeholder {
     color: #181818 !important;
 }
@@ -4551,9 +4551,9 @@ textarea.input100 {
     color: #fff;
 }
 
-::placeholder {
+/* ::placeholder {
     color: #5c5b5b;
-}
+} */
 
 .faq-answer {
     color: #181818;

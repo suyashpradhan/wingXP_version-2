@@ -260,16 +260,18 @@
                 <div class="sections owl-theme" id="two">
                     <div class="common">
                         <div class="img-section">
-                            <img src="assets/c_images/design-min.png">
+                            <img src="assets/images/design-min.png">
                         </div>
                         <div class="section-info" style="background-color:#fff;">
                             <h1 class="section--header">DIGITAL DESIGN</h1>
                             <h2 class="section-sub-first">Visual Communication</h2>
                             <h3 class="section-sub-first">Design Tools</h3>
                             <h4 class="section-sub-first-new">Graphics and Animations</h4>
-                            <!-- <div class="section-link-wrapper">
-                                        <a href="#" class="section--link" data-toggle="modal" data-target="#exampleModalCenter-N111" style="background-color:#006666; color:#fff;">Request Demo</a>
-                                    </div> -->
+                            <div class="section-link-wrapper">
+                                <a href="#" class="section--link" data-toggle="modal"
+                                    data-target="#exampleModalCenter-N111"
+                                    style="background-color:#006666; color:#fff;">Request Demo</a>
+                            </div>
                         </div>
                     </div>
                     <div class="common">
@@ -791,7 +793,7 @@
         <div class="featured__wrapper pd-100">
             <div class="container">
                 <div class="container-contact100">
-                    <div class="wrap-contact100">
+                    <div class="wrap-contact100" style="background-color: #106666;">
                         <form class="contact100-form validate-form" action="#" method="POST">
                             <span class="contact100-form-title">
                                 Send Us A Message
@@ -1099,7 +1101,7 @@
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
-                    <div class="modal-header" style="background: #17a2b8;border-bottom: none">
+                    <div class="modal-header" style="background: #006666;border-bottom: none;padding:0.5rem">
                         <h5 class="mod-title" id="exampleModalLabel">DIGITAL DESIGN</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true" style="font-size: 30px;"><i class="fas fa-times-circle"
@@ -2061,6 +2063,47 @@
                 <div class="modal-footer justify-content-center">
                     <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
                         data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter-Contact" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #17a2b8;border-bottom: none">
+                    <h5 class="mod-title" id="exampleModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="font-size: 30px;"><i class="fas fa-times-circle"
+                                style="margin-top: 15px;  color: #fff;"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <form id="contact_form" action="index.php" method="POST" class="demo_new-wrap">
+                                <div class="form-group form-name">
+                                    <input type="text" placeholder="Name" name="c_name" id="c_name" class="form-control"
+                                        required="" style="width: 100%">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email" name="c_sname" id="c_sname"
+                                        class="form-control" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" placeholder="Phone" name="c_phone" id="c_phone"
+                                        class="form-control" pattern="[1-9]{1}[0-9]{9}"
+                                        title="Enter Valid 10 digit Mobile Number" required>
+                                </div>
+                                <div class="form-group form_textarea">
+                                    <textarea style="width: 100%" id="msg" name="msg" placeholder="Message"
+                                        class="form-control"></textarea>
+                                </div>
+                                <button type="submit" class="submit-modal-btn" id="c_sub" name="c_sub">Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
