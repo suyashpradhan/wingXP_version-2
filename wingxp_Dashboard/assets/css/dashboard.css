@@ -277,13 +277,59 @@ img {
   padding: 5px 0 0 0;
 }
 
-@media screen and (max-width: 600px) and (min-width: 100px) {
+@media screen and (max-width: 400px) and (min-width: 100px) {
   .curricular__wrap {
     grid-template-columns: 1fr !important;
   }
 
   .dropdown-content {
     margin-left: 0 !important;
+  }
+
+  .section_wrap {
+    grid-template-columns: 1fr !important;
+  }
+
+  .activity-header {
+    color: #fecccb;
+    font-size: 75px !important;
+  }
+
+  .activity-info-text {
+    font-size: 16px !important;
+  }
+
+  .section_wrap_grid {
+    grid-template-columns: 1fr !important;
+    grid-gap: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 401px) {
+  .curricular__wrap {
+    grid-template-columns: 1fr !important;
+  }
+
+  .dropdown-content {
+    margin-left: 0 !important;
+  }
+
+  .section_wrap {
+    grid-template-columns: 1fr !important;
+  }
+
+  .activity-header {
+    color: #fecccb;
+    font-size: 90px !important;
+  }
+
+  .activity-info-text {
+    font-size: 19px !important;
+  }
+
+  .section_wrap_grid {
+    grid-template-columns: 1fr !important;
+    grid-gap: 15px;
   }
 }
 
@@ -294,6 +340,10 @@ img {
 
   .dropdown-content {
     margin-left: 0 !important;
+  }
+
+  .section_wrap {
+    grid-template-columns: 1fr !important;
   }
 }
 
@@ -1426,9 +1476,9 @@ input.input100 {
 }
 
 .first_half {
-  background-color: #096667;
+  background-color: #ce1f36;
   /*  height: 100%; */
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
 }
 
 .first_half-inner {
@@ -1439,46 +1489,39 @@ input.input100 {
 }
 
 .activity-header {
-  background-color: #2a954a;
-  padding: 3px 6px;
-  color: #fff;
-  font-size: 24px;
+  color: #fecccb;
+  font-size: 120px;
   text-transform: uppercase;
-  margin: 0 0 10px 0;
-}
-
-.activty-name {
-  color: #fff;
-  font-size: 22px;
-  margin: 10px 0;
+  margin: 0;
   padding: 0;
 }
 
-.activity-description {
-  color: #fff;
-  text-align: justify;
-  padding: 20px 0;
+.activity-info-text {
+  color: #fecccb;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  padding: 3px 5px;
+  font-weight: 300;
+  border-top: 2px solid #fecccb;
+  border-bottom: 2px solid #fecccb;
 }
 
-input[type="file"] {
-  color: #fff !important;
-}
-
-.activity-upload-btn {
-  background-color: #fecd05;
-  padding: 3px 10px;
-  color: #181818;
-  font-size: 20px;
-  margin: 0 0 10px 0;
+.enter-activity-btn {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  margin: 20px 0 0 0;
+  color: #ce1f36;
+  font-weight: 600;
   cursor: pointer;
-  border: 1px solid #fecd05;
-  transition: all 0.2s ease-in;
+  font-size: 19px;
 }
 
-.activity-upload-btn:hover {
-  text-decoration: none;
-  background-color: #ffcc33;
-  color: #181818;
+.span {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .second_half {
@@ -1528,7 +1571,7 @@ input[type="file"] {
   border-radius: 50px;
   height: 30px;
   width: 30px;
-  background: white;
+  background: #ccc;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
 }
 
@@ -1537,8 +1580,7 @@ input[type="file"] {
   left: -5000px;
 }
 .checkbox:checked + .checkbox-label {
-  background: #13bf11;
-  box-shadow: 0 0 0 2px #13bf11;
+  background: #181818;
 }
 .checkbox:checked + .checkbox-label .on {
   left: 100px;
@@ -1550,7 +1592,6 @@ input[type="file"] {
 }
 .checkbox:checked + .checkbox-label:before {
   left: 50px;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #27b998;
 }
 
 .checkbox.blue {
@@ -1558,11 +1599,10 @@ input[type="file"] {
   left: -5000px;
 }
 .checkbox.blue + .checkbox-label .on {
-  color: #27b998;
+  color: #181818;
 }
 .checkbox.blue:checked + .checkbox-label {
-  background: #27b998;
-  box-shadow: 0 0 0 2px #27b998;
+  background: #ccc;
 }
 .checkbox.blue:checked + .checkbox-label .on {
   left: 100px;
@@ -1574,7 +1614,7 @@ input[type="file"] {
 }
 .checkbox.blue:checked + .checkbox-label:before {
   left: 50px;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #27b998;
+  background-color: #181818;
 }
 
 #quizCarousel {
@@ -1711,4 +1751,304 @@ input[type="file"] {
 button:focus,
 button:active {
   outline: none; /* removing blue outline from buttons */
+}
+
+#cover {
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#cover-caption {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.profile-pic {
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-name {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0 10px 0;
+  color: #5c5b5b;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.credits-info {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #696969;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.user-activity-info {
+  margin: 30px 0;
+}
+
+.activity-info {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  color: #5c5b5b;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.activity-text {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #696969;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.add-credits {
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  padding: 10px 15px;
+}
+
+.add-credits:hover {
+  background-color: #cccc;
+}
+
+.credit-img {
+  height: 30px;
+}
+
+.credit-link {
+  font-size: 22px;
+  color: #5c5b5b;
+  font-weight: 600;
+}
+
+.credit-link:hover {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.go-link {
+  font-size: 20px;
+  color: #5c5b5b;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+}
+
+.credit-form-wrap {
+  margin: 20px 0 0 0;
+  display: none;
+}
+
+.credit-btn {
+  background-color: #006666;
+  color: #fff;
+  border-radius: 3px;
+  width: 100%;
+  display: block;
+  padding: 3px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.credit-btn:hover {
+  text-decoration: none;
+  background-color: #014949;
+  color: #fff;
+}
+
+.transaction-head {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 700;
+  color: #5c5b5b;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.transactions-info {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+  color: #696969;
+  margin: 0 0 3px 0;
+  padding: 0;
+}
+
+.transaction-time-info {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: #696969;
+}
+
+.success-transaction-head {
+  font-size: 55px;
+  font-weight: 500;
+  color: #006666;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.success-transaction-info {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5c5c5b;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.back-btn {
+  background-color: #66cc33;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+
+.back-btn:hover {
+  background-color: #68eb27;
+  color: #fff;
+  text-decoration: none;
+}
+@-webkit-keyframes scaleAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 300px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 300px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes drawCheck {
+  0% {
+    stroke-dashoffset: 35px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drawCheck {
+  0% {
+    stroke-dashoffset: 35px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes drawLine {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#successAnimationCircle {
+  stroke-dasharray: 300px 300px;
+  stroke: #006666;
+}
+
+#successAnimationCheck {
+  stroke-dasharray: 35px 35px;
+  stroke: #006666;
+}
+
+#failureAnimationCircle,
+#failureAnimationCheck {
+  stroke: #ce1f36;
+}
+
+#successAnimation.animated,
+#failureAnimation.animated {
+  -webkit-animation: 1s ease-out 0s 1 both scaleAnimation;
+  animation: 1s ease-out 0s 1 both scaleAnimation;
+}
+#successAnimation.animated #successAnimationCircle,
+#successAnimation.animated #failureAnimationCircle,
+#failureAnimation.animated #successAnimationCircle,
+#failureAnimation.animated #failureAnimationCircle {
+  -webkit-animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle;
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle;
+}
+#successAnimation.animated #successAnimationCheck,
+#failureAnimation.animated #successAnimationCheck {
+  -webkit-animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck;
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck;
+}
+#successAnimation.animated .failureAnimationCheckLine,
+#failureAnimation.animated .failureAnimationCheckLine {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  -webkit-animation: drawLine 1s cubic-bezier(1, 0.2, 0.1, 1) forwards;
+  animation: drawLine 1s cubic-bezier(1, 0.2, 0.1, 1) forwards;
 }
