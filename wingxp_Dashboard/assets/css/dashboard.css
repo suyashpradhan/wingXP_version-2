@@ -1865,9 +1865,10 @@ button:active {
 }
 
 .credit-btn {
-  background-color: #006666;
-  color: #fff;
+  background-color: #006666 !important;
+  color: #fff !important;
   border-radius: 3px;
+  cursor: pointer;
   width: 100%;
   display: block;
   padding: 3px;
@@ -1935,11 +1936,28 @@ button:active {
   transition: all 0.5s ease-in;
 }
 
-.back-btn:hover {
-  background-color: #68eb27;
-  color: #fff;
-  text-decoration: none;
+.transaction-div {
+  display: grid;
+  grid-template-columns: 250px 1fr;
 }
+
+.transaction-head {
+  color: #4d4d4d;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.transaction-body {
+  color: #696969;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  text-align: left;
+  padding: 0;
+}
+
 @-webkit-keyframes scaleAnimation {
   0% {
     opacity: 0;
@@ -2051,4 +2069,141 @@ button:active {
   stroke-dashoffset: 100;
   -webkit-animation: drawLine 1s cubic-bezier(1, 0.2, 0.1, 1) forwards;
   animation: drawLine 1s cubic-bezier(1, 0.2, 0.1, 1) forwards;
+}
+
+.div-one {
+  margin: 30px 0;
+}
+
+.div-head {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 3px 0;
+  padding: 0;
+}
+
+.div-card {
+  position: relative;
+  overflow: hidden;
+  background-color: #fafafa;
+  height: 250px;
+  width: 100%;
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.37);
+  padding: 15px 0;
+}
+
+.inner-text {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.primary-text {
+  background-color: #333333;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 2px 7px;
+  color: #fff;
+}
+
+.secondary-main {
+  color: #666666;
+  padding: 0 0 5px 0;
+}
+
+.tertiary-text {
+  color: #666666;
+}
+
+.div-bottom {
+  background-color: #999999;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0 15px 0;
+}
+
+.works-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.works-text {
+  color: #fff;
+  font-size: 16px;
+}
+
+.take-test-text {
+  color: #fff;
+  font-size: 20px;
+  margin: 35px 0 0 0;
+  padding: 0;
+}
+
+.add-btn {
+  background-color: #ff9933;
+  text-align: center;
+  padding: 1px 20px;
+  color: #181818;
+  text-decoration: none;
+  border-radius: 15px;
+  display: block;
+  width: fit-content;
+  margin: 20px 0 0 50px;
+  border: 5px solid #666666;
+  font-weight: 600;
+}
+
+.add-btn:hover {
+  text-decoration: none;
+  color: #181818;
+}
+
+.full-test-wrap {
+  background-color: #181818;
+  padding: 20px 0;
+}
+
+.full-test-text {
+  color: #ff9933;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.full-test-btn {
+  background-color: #ff9933;
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin: 0 0 0 10px;
+  font-size: 25px;
+}
+
+.full-test-btn:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.middle-head {
+  font-size: 28px;
+  color: #696969;
+  font-weight: 500;
+  margin: 40px 0 0 0;
+  text-align: center;
+  margin: 0;
+}
+
+.middle-body {
+  padding: 20px 0 0 0;
+  font-size: 40px;
+  color: #777;
+  text-align: center;
 }
