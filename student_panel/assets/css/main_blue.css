@@ -804,7 +804,7 @@ video {
 
 .navbar-brand span {
     color: #ce1f36;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 24px;
     padding-top: 10px;
 }
@@ -2509,14 +2509,14 @@ a.bttn-dark:focus {
   padding: 0;
 } */
 
-.navbar-light .navbar-toggler-icon {
-    background-image: url("../assets/images/list-menu.png") !important;
-}
+/* .navbar-light .navbar-toggler-icon {
+    background-image: url(../assets/images/list-menu.png) !important;
+} */
 
 .navbar-light .navbar-toggler {
     color: #FFF;
     cursor: pointer;
-    border: 1px solid rgba(196, 194, 194, 0.1) !important;
+    border: 1px solid #FFf !important;
 }
 
 .navbar-toggler:active,
@@ -9965,9 +9965,9 @@ header {
         height: 25px !important;
     }
 
-    .navbar {
+    /* .navbar {
         display: none !important;
-    }
+    } */
 
     .td_block_wrap {
         display: none;
@@ -9997,3 +9997,90 @@ header {
     display: none;
 }
 
+/*Sign Up*/
+.section-form {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #006666;
+}
+
+.card-form {
+    width: 600px;
+    border-radius: 10px;
+    background: #66cc33;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card-form .form-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #181818;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight:500;
+}
+
+.card-form .form-body {
+    padding: 10px 15px;
+}
+
+.card-form .rule {
+    height: 2px;
+    background: #e8ebed;
+    margin: 0px 10px;
+}
+
+.card-form .form-footer {
+    padding: 20px 10px;
+}
+
+.form-body {
+    padding: 10px 30px;
+}
+
+.form-select {
+    background-color: #fff;
+    border: none;
+    padding: 10px 2px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    color: #777;
+}
+
+.form-select:focus {
+    outline: none;
+    border: none;
+}
+
+.have-acc {
+    margin: 20px 0;
+    color: #181818;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.have-acc:hover {
+    color: #363636;
+    text-decoration: none;
+}
+
+.submit-signup-btn{
+    background-color: #333;
+    border: 1px solid #333;
+    color: #fff;
+    margin: 10px auto 10px auto;
+    display: block;
+    padding: 8px 40px;
+    cursor: pointer;
+    width:fit-content;
+}
+
+.submit-signup-btn:hover{
+    text-decoration:none;
+    color: #fff;
+}

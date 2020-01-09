@@ -78,13 +78,48 @@ min-height: 100vh;">
                     Ask Experts
                 </span>
                 <div class="textareaWrapper wrap-input100 ">
-                    <input type="text" class="input100" name="message" placeholder="Write Us A Message">
-                    <!-- <a href="#" class="textareaWrapperBtn">ASK</a> -->
-                    <button class="textareaWrapperBtn">ASK</button>
+                    <label for="" class="input100-label">Write Us A Message</label>
+                    <textarea name="" id="" class="input100"></textarea>
+                    <button class="textareaWrapperBtn" data-toggle="modal" type="button"
+                        data-target="#exampleModalCenter">ASK</button>
                 </div>
-                <!-- <a href="#" class="prevBtn">PREVIOUS QUESTIONS</a> -->
                 <button class="prevBtn">PREVIOUS QUESTIONS</button>
             </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Ask Expert</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="available-credits-div">
+                        <h1 class="credit-info-text"><span>50 Credits</span> Will Be Deducted From Your Account. Are You
+                            Sure You Want To
+                            Continue?</h1>
+                        <a href="#" class="btn-continue btn btn-primary">Continue</a>
+                        <a href="#" class="btn-continue btn btn-warning">Cancel</a>
+                    </div>
+                    <div class="add-credits-div">
+                        <h1 class="credit-info-text"><span>Not Enough Credits<br></span> Available Credits In Your
+                            Account Is : <span> 5 </span><br>
+                            Please Add More Credits To Continue</h1>
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="text" name="" id="" placeholder="Add Credits" class="form-control">
+                                <a href="#" class="add-credit-link">Add Credits</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer__section">

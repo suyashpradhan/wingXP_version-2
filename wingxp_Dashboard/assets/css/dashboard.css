@@ -1138,10 +1138,17 @@ hr {
   text-align: center;
 }
 
-input.input100 {
-  height: 310px;
-  padding: 0 20px 0 25px;
+.input100-label {
+  padding: 20px 0 0 30px !important;
+  margin: 0 !important;
+}
+
+textarea.input100 {
+  height: 250px;
+  resize: none;
+  padding: 20px 20px 0 25px;
   font-size: 18px;
+  cursor: default;
 }
 
 .textareaWrapperBtn {
@@ -1158,7 +1165,7 @@ input.input100 {
   width: 150px;
   font-size: 18px;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   transition: all 0.5s ease;
   cursor: pointer;
 }
@@ -1528,6 +1535,7 @@ input.input100 {
   height: 100%;
   padding: 20px 0;
 }
+
 .checkbox-label {
   display: block;
   background: #f3f3f3;
@@ -1538,6 +1546,7 @@ input.input100 {
   position: relative;
   box-shadow: 0 0 0 2px #dddddd;
 }
+
 .checkbox-label .on {
   display: block;
   position: absolute;
@@ -1549,6 +1558,7 @@ input.input100 {
   opacity: 0;
   color: #13bf11;
 }
+
 .checkbox-label .off {
   display: block;
   position: absolute;
@@ -1561,6 +1571,7 @@ input.input100 {
   opacity: 1;
   color: #bbbbbb;
 }
+
 .checkbox-label:before {
   content: "";
   display: block;
@@ -1579,17 +1590,21 @@ input.input100 {
   position: absolute;
   left: -5000px;
 }
+
 .checkbox:checked + .checkbox-label {
   background: #181818;
 }
+
 .checkbox:checked + .checkbox-label .on {
   left: 100px;
   opacity: 1;
 }
+
 .checkbox:checked + .checkbox-label .off {
   right: 0px;
   opacity: 0;
 }
+
 .checkbox:checked + .checkbox-label:before {
   left: 50px;
 }
@@ -1598,20 +1613,25 @@ input.input100 {
   position: absolute;
   left: -5000px;
 }
+
 .checkbox.blue + .checkbox-label .on {
   color: #181818;
 }
+
 .checkbox.blue:checked + .checkbox-label {
   background: #ccc;
 }
+
 .checkbox.blue:checked + .checkbox-label .on {
   left: 100px;
   opacity: 1;
 }
+
 .checkbox.blue:checked + .checkbox-label .off {
   right: 0px;
   opacity: 0;
 }
+
 .checkbox.blue:checked + .checkbox-label:before {
   left: 50px;
   background-color: #181818;
@@ -1658,6 +1678,7 @@ input.input100 {
   height: 120px;
   max-width: 100%;
 }
+
 .section__wrap-header {
   font-size: 20px;
   font-weight: 600;
@@ -1690,14 +1711,16 @@ input.input100 {
 
 /* Nav */
 .owl-carousel .owl-nav {
-  margin-top: 0; /* resetting margins for nav buttons */
+  margin-top: 0;
+  /* resetting margins for nav buttons */
 }
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
   width: 50px;
   height: 70px;
-  margin: 0; /* removes margins around nav buttons */
+  margin: 0;
+  /* removes margins around nav buttons */
   background: #ecf0f1;
   border-radius: 0;
   color: #e74c3c;
@@ -1718,24 +1741,29 @@ input.input100 {
 }
 
 .owl-nav button.owl-prev {
-  left: -50px; /* starting position */
+  left: -50px;
+  /* starting position */
 }
 
 .owl-nav button.owl-next {
-  right: -50px; /* starting position */
+  right: -50px;
+  /* starting position */
 }
 
 .owl-carousel:hover .owl-nav button.owl-prev {
-  left: 0; /* target position after transition */
+  left: 0;
+  /* target position after transition */
 }
 
 .owl-carousel:hover .owl-nav button.owl-next {
-  right: 0; /* target position after transition */
+  right: 0;
+  /* target position after transition */
 }
 
 /* Dots */
 .owl-theme .owl-dots {
-  margin-top: 10px; /* restores top margin for dots only */
+  margin-top: 10px;
+  /* restores top margin for dots only */
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -1744,13 +1772,15 @@ input.input100 {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #e74c3c; /* for active dot */
+  background-color: #e74c3c;
+  /* for active dot */
 }
 
 /* Other */
 button:focus,
 button:active {
-  outline: none; /* removing blue outline from buttons */
+  outline: none;
+  /* removing blue outline from buttons */
 }
 
 #cover {
@@ -1964,6 +1994,7 @@ button:active {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -1977,60 +2008,74 @@ button:active {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
+
 @-webkit-keyframes drawCircle {
   0% {
     stroke-dashoffset: 300px;
   }
+
   100% {
     stroke-dashoffset: 0;
   }
 }
+
 @keyframes drawCircle {
   0% {
     stroke-dashoffset: 300px;
   }
+
   100% {
     stroke-dashoffset: 0;
   }
 }
+
 @-webkit-keyframes drawCheck {
   0% {
     stroke-dashoffset: 35px;
   }
+
   100% {
     stroke-dashoffset: 0;
   }
 }
+
 @keyframes drawCheck {
   0% {
     stroke-dashoffset: 35px;
   }
+
   100% {
     stroke-dashoffset: 0;
   }
 }
+
 @-webkit-keyframes drawLine {
   from {
     stroke-dashoffset: 100;
   }
+
   to {
     stroke-dashoffset: 0;
   }
 }
+
 @keyframes drawLine {
   from {
     stroke-dashoffset: 100;
   }
+
   to {
     stroke-dashoffset: 0;
   }
 }
+
 #successAnimationCircle {
   stroke-dasharray: 300px 300px;
   stroke: #006666;
@@ -2051,6 +2096,7 @@ button:active {
   -webkit-animation: 1s ease-out 0s 1 both scaleAnimation;
   animation: 1s ease-out 0s 1 both scaleAnimation;
 }
+
 #successAnimation.animated #successAnimationCircle,
 #successAnimation.animated #failureAnimationCircle,
 #failureAnimation.animated #successAnimationCircle,
@@ -2058,11 +2104,13 @@ button:active {
   -webkit-animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle;
   animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle;
 }
+
 #successAnimation.animated #successAnimationCheck,
 #failureAnimation.animated #successAnimationCheck {
   -webkit-animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck;
   animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck;
 }
+
 #successAnimation.animated .failureAnimationCheckLine,
 #failureAnimation.animated .failureAnimationCheckLine {
   stroke-dasharray: 100;
@@ -2206,4 +2254,125 @@ button:active {
   font-size: 40px;
   color: #777;
   text-align: center;
+}
+
+.credit-info-text {
+  color: #014949;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.credit-info-text span {
+  color: #ce1f36 !important;
+  font-weight: 700;
+}
+
+.available-credits-div {
+  margin: 0 0 30px 0;
+}
+
+.add-credit-link {
+  background-color: #014949;
+  color: #fff;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px 0 0 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.add-credit-link:hover {
+  background-color: #023f3f;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.co-first-half {
+  background-color: #fdac39 !important;
+  padding: 70px 0 !important;
+}
+
+.club-activity-info-text {
+  text-align: left;
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.co-second-half {
+  background-color: #0d6636;
+  padding: 20px 0 20px 0;
+  height: 100vh !important;
+}
+
+.co-second-half-text {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.cols {
+  background-color: #3ab54a;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 12px 10px;
+  align-items: center;
+  margin: 20px 0 0 0;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.23);
+}
+
+.cols:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16), 0 5px 6px rgba(0, 0, 0, 0.23);
+}
+
+.cols-head {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.cols-sub {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #181818;
+}
+
+.cols-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 0.5s ease-in;
+}
+
+.cols-two i {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.self-btn {
+  margin: 180px auto 40px auto;
+  width: fit-content;
+  background-color: #17a2b8;
+  color: #fff;
+  padding: 8px 40px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.self-btn:hover {
+  background-color: #1290a3;
+  color: #fff !important;
+  text-decoration: none;
 }
