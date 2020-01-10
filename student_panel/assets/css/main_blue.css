@@ -2379,8 +2379,7 @@ a.bttn-dark:focus {
     width: 800px;
     background: #fff;
     position: relative;
-    padding: 40px;
-
+    padding: 10px 30px;
     /* box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3); */
     margin: 25px 0 25px 0;
 }
@@ -2393,7 +2392,7 @@ a.bttn-dark:focus {
 }
 
 .p-b-55 {
-    padding-bottom: 25px;
+    padding-bottom: 5px !important;
 }
 
 .p-t-55 {
@@ -5074,12 +5073,11 @@ textarea.input100 {
 }
 
 .or span {
-    color: #181818;
-    background-color: #9fccc5;
-    font-size: 26px;
+    color: #363636;
+    font-size: 18px;
     text-transform: uppercase;
     padding: 10px 15px;
-    font-weight: 900;
+    font-weight: 500;
     letter-spacing: 1px;
 }
 
@@ -8501,7 +8499,7 @@ header {
     font-size: 1.1rem;
     color: #696969;
     margin: 1rem 0;
-    padding: 0.75rem 3rem;
+    padding: 0.55rem 3rem;
     cursor: pointer;
     -webkit-transition: background-color 0.28s ease, color 0.28s ease,
         box-shadow 0.28s ease;
@@ -8511,8 +8509,10 @@ header {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
         0 1px 5px 0 rgba(0, 0, 0, 0.12);
     display: block;
-    margin: 10px auto 0 auto;
+    margin: 10px auto 20px auto;
+    width: fit-content;
 }
+
 
 .sc-btn span {
     color: #17a2b8;
@@ -8524,6 +8524,7 @@ header {
     color: #17b2ca;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
         0 3px 5px -1px rgba(0, 0, 0, 0.2);
+        text-decoration:none;
 }
 
 .sc-btn:focus {
@@ -8541,14 +8542,14 @@ header {
     flex: auto;
     border: none;
     height: 2px;
-    background-color: #fff;
+    background-color: #363636;
 }
 
-.or span {
+/* .or span {
     color: #fff;
     padding: 0 0.5rem;
 }
-
+ */
 .create-wrapper {
     width: auto;
     height: 45px;
@@ -10083,4 +10084,19 @@ header {
 .submit-signup-btn:hover{
     text-decoration:none;
     color: #fff;
+}
+
+.sign-up-link{
+    color:#363636;
+    font-weight:500;
+    text-align:center;
+    font-size:18px;
+    margin: 20px 0;
+    display:block;
+}
+
+.sign-up-link:hover{
+    color:#181818;
+    font-weight:500;
+    text-decoration: none;
 }
