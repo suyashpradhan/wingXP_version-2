@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -901,7 +901,9 @@ iframe {
 
 /*Co-Curricular CSS*/
 .co-card {
-  height: 130px;
+  /* height: auto; */
+  margin-bottom: 10px !important;
+  padding: 5px;
 }
 
 .co-header {
@@ -1538,13 +1540,14 @@ textarea.input100 {
 
 .checkbox-label {
   display: block;
-  background: #f3f3f3;
+  background: #f5f6f7;
   height: 30px;
   width: 80px;
   border-radius: 50px;
   margin: 0 auto;
   position: relative;
-  box-shadow: 0 0 0 2px #dddddd;
+  border: 1px solid #ccc;
+  /* box-shadow: 0 0 0 2px #dddddd; */
 }
 
 .checkbox-label .on {
@@ -1652,8 +1655,13 @@ textarea.input100 {
 
 .toggle-head {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   color: #5c5b5b;
+}
+
+.toggle-free {
+  color: #fff;
+  font-size: 28px !important;
 }
 
 .section_wrap {
@@ -1664,6 +1672,10 @@ textarea.input100 {
 }
 
 #video__wrap {
+  display: none;
+}
+
+#premium__wrap {
   display: none;
 }
 
@@ -2127,7 +2139,7 @@ button:active {
   font-size: 26px;
   text-transform: uppercase;
   color: #fff;
-  margin: 0 0 3px 0;
+  margin: 20px 0 3px 0;
   padding: 0;
 }
 
@@ -2215,6 +2227,7 @@ button:active {
 .full-test-wrap {
   background-color: #181818;
   padding: 20px 0;
+  margin: 30px 0;
 }
 
 .full-test-text {
@@ -2375,4 +2388,253 @@ button:active {
   background-color: #1290a3;
   color: #fff !important;
   text-decoration: none;
+}
+
+.inactive-card .right__curricular--header {
+  color: #a09f9f;
+}
+
+.inactive-card .right__curricular--para {
+  color: #a09f9f;
+}
+
+.nav-tabs {
+  max-width: 240px;
+  margin: auto;
+}
+
+.nav-tabs li {
+  padding: 4px 20px;
+  text-align: center;
+  display: block;
+  border: 3px solid #696969;
+  width: 50%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.nav-tabs li a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.nav-tabs .active {
+  color: #17a2b8 !important;
+  font-weight: 600;
+}
+
+/*Accordion*/
+.accordion {
+  margin: 40px auto;
+  width: 1240px;
+}
+
+.accordion input {
+  display: none;
+}
+
+.box {
+  position: relative;
+  height: auto;
+  border-bottom: 1px solid #0000002e;
+  margin: 0 0 10px 0;
+  transition: all 0.15s ease-in-out;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.box-content {
+  width: 100%;
+  padding: 0;
+  font-size: 11pt;
+  color: rgba(0, 0, 0, 0.54);
+  display: none;
+}
+
+.box-close {
+  position: absolute;
+  height: 37px;
+  margin-bottom: 0 !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+input:checked + .box {
+  height: auto;
+  /* margin: 16px 0; */
+  /*  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32); */
+}
+
+input:checked + .box .box-title {
+  border-bottom: 1px solid #0000002e;
+}
+
+input:checked + .box .box-content,
+input:checked + .box .box-close {
+  display: inline-block;
+}
+
+.arrows section .box-title {
+  padding: 0 0 8px 60px;
+  width: 100%;
+  font-size: 24px;
+  color: #4d4d4d;
+  margin: 0;
+  cursor: pointer;
+}
+
+.arrows section .box-title:before {
+  position: absolute;
+  display: block;
+  /* content: "\203a"; */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  font-size: 22px;
+  left: 20px;
+  font-weight: 900;
+  top: 2px;
+  transition: transform 0.4s ease-in-out;
+  color: #a8a8a8;
+}
+
+input:checked + section.box .box-title:before {
+  transform: rotate(180deg);
+}
+
+.open-content li {
+  padding: 9px 0 9px 60px;
+  list-style: none;
+  color: #181818;
+  font-size: 17px;
+  margin: 0 0 3px 0;
+  border-bottom: 1px solid #0000002e;
+}
+
+.open-content li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.open-links {
+  color: #181818;
+}
+
+.open-links:hover {
+  color: #181818;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+.open-links-inactive {
+  color: #a8a8a8;
+}
+
+.open-links-inactive:hover {
+  font-weight: unset;
+  color: #a8a8a8;
+}
+
+.notification-header {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 20px 0;
+  padding: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.notification-card {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  padding: 15px 20px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.notification-card h3 {
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+.notification-card p {
+  color: #696969;
+  font-size: 18px;
+  padding: 0 45px 15px 0;
+  margin: 0;
+}
+
+@media (max-width: 990px) {
+  .notification-card {
+    margin: 20px;
+  }
+}
+
+.notification-date {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #181818;
+  font-weight: 500;
+}
+
+.balance-btn {
+  background-color: #006666;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 20px auto;
+  border: 1px solid #006666;
+  color: #fff;
+  display: block;
+}
+
+.balance-btn:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.notification-icon {
+  margin: 5px 0 0 0;
+  font-size: 22px;
+  color: #fff !important;
+  font-weight: 100;
+}
+
+.notification-icon:hover {
+  color: #ccc !important;
+}
+
+.signout-btn {
+  background: #cc3433 !important;
+  color: #fff !important;
+  border-radius: 2px;
+  padding: 5px 20px !important;
+  text-transform: uppercase !important;
+  margin: 12px 0 10px 20px !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.signout-btn:hover {
+  background: #ce1f36;
 }

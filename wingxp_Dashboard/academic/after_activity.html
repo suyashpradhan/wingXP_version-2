@@ -74,7 +74,20 @@ min-height: 100vh;">
         </div>
     </div>
     <div class="container">
-        <div class="div-one">
+        <div class="toggle_grid">
+            <div class="toggle-two">
+                <span class="toggle-head toggle-free">Free</span>
+            </div>
+            <div class="toggle-one">
+                <input type="checkbox" class="checkbox blue toggle-box" id="toggle" onclick="myFunction()" />
+                <label for="toggle" class="checkbox-label">
+                </label>
+            </div>
+            <div class="toggle-three">
+                <span class="toggle-head toggle-free">Premium</span>
+            </div>
+        </div>
+        <div class="div-one" id="free__wrap">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <h1 class="div-head subjective-head">Subjective Test</h1>
@@ -122,6 +135,83 @@ min-height: 100vh;">
                             <div class="col-4">
                                 <h1 class="inner-text secondary-main">Photosynthesis</h1>
                                 <h1 class="inner-text secondary-main">Time: 50 Min</h1>
+                            </div>
+                            <div class="col-4">
+                                <h1 class="inner-text tertiary-text">Class 12th</h1>
+                            </div>
+                        </div>
+                        <div class="div-bottom">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h1 class="inner-text works-text">Works On:</h1>
+                                    <div class="works-div">
+                                        <span style="background-color: #fff;height: 40px;width:40px;border-radius: 100px;text-align: center;
+                                        display: inline-block;color:#fff">.</span>
+                                        <span style="background-color: #fff;height: 40px;width:40px;border-radius: 100px;text-align: center;
+                                   display: inline-block;color:#fff;margin-left: 10px;">.</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <h1 class="inner-text take-test-text">How To Take Test</h1>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="add-btn">Add</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-two" id="premium__wrap">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <h1 class="div-head subjective-head">Subjective Test</h1>
+                    <div class="div-card subjective-card">
+                        <div class="row">
+                            <div class="col-4">
+                                <h1 class="inner-text primary-text">Premium</h1>
+                            </div>
+                            <div class="col-4">
+                                <h1 class="inner-text secondary-main">Laws Of Motion</h1>
+                                <h1 class="inner-text secondary-main">Time: 40 Min</h1>
+                            </div>
+                            <div class="col-4">
+                                <h1 class="inner-text tertiary-text">Class 11th</h1>
+                            </div>
+                        </div>
+                        <div class="div-bottom">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h1 class="inner-text works-text">Works On:</h1>
+                                    <div class="works-div">
+                                        <span style="background-color: #fff;height: 40px;width:40px;border-radius: 100px;text-align: center;
+                                        display: inline-block;color:#fff">.</span>
+                                        <span style="background-color: #fff;height: 40px;width:40px;border-radius: 100px;text-align: center;
+                                   display: inline-block;color:#fff;margin-left: 10px;">.</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <h1 class="inner-text take-test-text">How To Take Test</h1>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="add-btn">Add</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+                    <h1 class="div-head subjective-head">Subjective Test</h1>
+                    <div class="div-card subjective-card">
+                        <div class="row">
+                            <div class="col-4">
+                                <h1 class="inner-text primary-text">Premium</h1>
+                            </div>
+                            <div class="col-4">
+                                <h1 class="inner-text secondary-main">Light</h1>
+                                <h1 class="inner-text secondary-main">Time: 70 Min</h1>
                             </div>
                             <div class="col-4">
                                 <h1 class="inner-text tertiary-text">Class 12th</h1>
@@ -206,5 +296,26 @@ min-height: 100vh;">
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
 </script>
 
+<script>
+    function myFunction() {
+        // Get the checkbox
+        var checkBox = document.getElementById("toggle");
+
+        // Get the free div
+        var free__wrap = document.getElementById("free__wrap");
+
+        // Get the premium div
+        var premium__wrap = document.getElementById("premium__wrap");
+
+        // If the checkbox is checked, display the div
+        if (checkBox.checked == true) {
+            premium__wrap.style.display = "block";
+            free__wrap.style.display = "none";
+        } else {
+            free__wrap.style.display = "block";
+            premium__wrap.style.display = "none";
+        }
+    }
+</script>
 
 </html>
