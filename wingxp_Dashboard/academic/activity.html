@@ -58,14 +58,22 @@ min-height: 100vh;">
         </div>
     </nav>
     <div class="topic__wrapper">
-        <div class="change_club select_wrap">
-            <div class="dropdown">
-                <a class="dropdown-toggle select_topic to_be_resized" data-toggle="dropdown" style="color: #fff;">
-                    <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Chemistry XI</a></li>
-                </ul>
-            </div>
+        <div class="select_wrap">
+            <select id="clubNav" class="select_topic to_be_resized" onchange="change_club()">
+                <option value="club_118">Biology XII</option>
+                <option value="club_43">Physics IX</option>
+                <option value="club_44">Chemistry IX</option>
+                <option value="club_46">Physics X</option>
+                <option value="club_47">Chemistry X</option>
+                <option value="club_48">Physics XI</option>
+                <option value="club_49">Chemistry XI</option>
+                <option value="club_50">Maths XI</option>
+                <option value="club_51">Physics XII</option>
+                <option value="club_52">Chemistry XII</option>
+                <option value="club_53">Maths XII</option>
+                <option value="club_59">Biology IX</option>
+                <option value="club_60">Biology X</option>
+            </select>
         </div>
         <div class="select_wrap">
             <select id="topics" class="select_topic to_be_resized">
@@ -140,6 +148,26 @@ min-height: 100vh;">
                     <div class="section_wrap_grid_info">
                         <h1 class="section__wrap-header">Newton's First Law Of Motion</h1>
                         <p class="section__wrap-desc"> Web References</p>
+
+                        <div class="section_wrap-icons">
+                            <div class="comment-icon">
+                                <a href="" class="section__wrap-link" data-toggle="modal" data-target="#commentModal"><i
+                                        class="far fa-comment-alt comment-icon"></i>Add
+                                    Comment</a>
+                            </div>
+                            <div class="favourite-icon">
+                                <a href="" class="section__wrap-link">
+                                    <label class="rif ripple">
+                                        <input class="rif-checkbox" type="checkbox">
+                                        <span class="rif-font">
+                                            <i class="fa fa-heart heart-icon"></i>
+                                            <span class="ripple-spread"></span>
+                                        </span>
+                                    </label>
+                                    Add to Favourites
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="section_wrap_grid">
