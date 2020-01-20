@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+</head>
+
+<body>
+
+    <body style="background: #eeeeee;position: relative;padding-bottom: 50px;
+min-height: 100vh;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#006666;"> <a class="navbar-brand"
+                href="http://www.wingxp.com">
+                <span
+                    style="color: #fff !important; font-weight:500; font-size: 26px;margin: 0;padding: 0;">wingxp</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto" style="color:#fff;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://www.wingxp.com" style="color: #fff;
+                        font-size: 20px;
+                        font-weight: 500;">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="" style="color: #fff;
+                            font-size: 20px;
+                            font-weight: 500;">Expert</a>
+                            <div class="dropdown-content">
+                                <a href="#">Login</a>
+                                <a href="#">Join Us</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="" style="color: #fff;
+                            font-size: 20px;
+                            font-weight: 500;">School</a>
+                            <div class="dropdown-content">
+                                <a href="#">Contact Us</a>
+                                <a href="#">Login </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="topic__wrapper">
+            <div class="select_wrap">
+                <select id="clubNav" class="select_topic to_be_resized" onchange="change_club()">
+                    <option value="club_118">Biology XII</option>
+                    <option value="club_43">Physics IX</option>
+                    <option value="club_44">Chemistry IX</option>
+                    <option value="club_46">Physics X</option>
+                </select>
+            </div>
+            <div class="select_wrap">
+                <select id="topics" class="select_topic to_be_resized">
+                    <option value="">Force And Laws Of Motion</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="head-div">
+            <div class="container">
+                <h1>Crack the Exam without stress</h1>
+                <h2>Strategy/Tips/Motivation/Relaxation</h2>
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="toggle_grid mt-5">
+                <div class="toggle-two">
+                    <span class="toggle-head">Web References</span>
+                </div>
+                <div class="toggle-one">
+                    <input type="checkbox" class="checkbox blue toggle-box" id="toggle" onclick="myFunction()" />
+                    <label for="toggle" class="checkbox-label">
+                    </label>
+                </div>
+                <div class="toggle-three">
+                    <span class="toggle-head">Videos</span>
+                </div>
+            </div>
+
+            <!--Web Reference Div-->
+            <div class="section_wrap" id="webRef__wrap">
+                <div class="section_wrap_grid section_wrap_grid_2">
+                    <div class="section_wrap_grid_image">
+                        <img src="../assets/images/physics-1.jpg" alt="" class="section__wrap-img section__wrap-img_2">
+                    </div>
+                    <div class="section_wrap_grid_info">
+                        <h1 class="section__wrap-header">Newton's First Law Of Motion</h1>
+                        <p class="section__wrap-desc"> Web References</p>
+
+                        <div class="section_wrap-icons">
+                            <div class="comment-icon">
+                                <a href="" class="section__wrap-link" data-toggle="modal" data-target="#commentModal"><i
+                                        class="far fa-comment-alt comment-icon"></i>Add
+                                    Comment</a>
+                            </div>
+                            <div class="favourite-icon">
+                                <a href="" class="section__wrap-link">
+                                    <label class="rif ripple">
+                                        <input class="rif-checkbox" type="checkbox">
+                                        <span class="rif-font">
+                                            <i class="fa fa-heart heart-icon"></i>
+                                            <span class="ripple-spread"></span>
+                                        </span>
+                                    </label>
+                                    Add to Favourites
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_wrap_grid section_wrap_grid_2">
+                    <div class="section_wrap_grid_image">
+                        <img src="../assets/images/physics-2.jpg" alt="" class="section__wrap-img section__wrap-img_2">
+                    </div>
+                    <div class="section_wrap_grid_info">
+                        <h1 class="section__wrap-header">Newton's Second Law Of Motion</h1>
+                        <p class="section__wrap-desc"> Web References</p>
+
+                        <div class="section_wrap-icons">
+                            <div class="comment-icon">
+                                <a href="" class="section__wrap-link" data-toggle="modal" data-target="#commentModal"><i
+                                        class="far fa-comment-alt comment-icon"></i>Add
+                                    Comment</a>
+                            </div>
+                            <div class="favourite-icon">
+                                <a href="" class="section__wrap-link">
+                                    <label class="rif ripple">
+                                        <input class="rif-checkbox" type="checkbox">
+                                        <span class="rif-font">
+                                            <i class="fa fa-heart heart-icon"></i>
+                                            <span class="ripple-spread"></span>
+                                        </span>
+                                    </label>
+                                    Add to Favourites
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_wrap_grid section_wrap_grid_2">
+                    <div class="section_wrap_grid_image">
+                        <img src="../assets/images/physics-3.jpg" alt="" class="section__wrap-img section__wrap-img_2">
+                    </div>
+                    <div class="section_wrap_grid_info">
+                        <h1 class="section__wrap-header">Newton's Third Law Of Motion</h1>
+                        <p class="section__wrap-desc"> Web References</p>
+
+                        <div class="section_wrap-icons">
+                            <div class="comment-icon">
+                                <a href="" class="section__wrap-link" data-toggle="modal" data-target="#commentModal"><i
+                                        class="far fa-comment-alt comment-icon"></i>Add
+                                    Comment</a>
+                            </div>
+                            <div class="favourite-icon">
+                                <a href="" class="section__wrap-link">
+                                    <label class="rif ripple">
+                                        <input class="rif-checkbox" type="checkbox">
+                                        <span class="rif-font">
+                                            <i class="fa fa-heart heart-icon"></i>
+                                            <span class="ripple-spread"></span>
+                                        </span>
+                                    </label>
+                                    Add to Favourites
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_wrap" id="video__wrap">
+                <div class="section_wrap_grid">
+                    <div class="section_wrap_grid_video">
+                        <iframe class="section_iframe section_iframe_2" src="https://www.youtube.com/embed/Xa5EU-qAv-I"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="section_wrap_grid_info">
+                        <h1 class="section__wrap-header">VSCode Keyboard Shortcuts For Productivity</h1>
+                        <h2 class="section__wrap-desc">Traversy Media</h2>
+                        <div class="section_wrap-icons">
+                            <div class="comment-icon">
+                                <a href="" class="section__wrap-link" data-toggle="modal" data-target="#commentModal"><i
+                                        class="far fa-comment-alt comment-icon"></i>Add
+                                    Comment</a>
+                            </div>
+                            <div class="favourite-icon">
+                                <a href="" class="section__wrap-link">
+                                    <label class="rif ripple">
+                                        <input class="rif-checkbox" type="checkbox">
+                                        <span class="rif-font">
+                                            <i class="fa fa-heart heart-icon"></i>
+                                            <span class="ripple-spread"></span>
+                                        </span>
+                                    </label>
+                                    Add to Favourites
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section_wrap_grid">
+                    <div class="section_wrap_grid_video">
+                        <iframe class="section_iframe section_iframe_2" src="https://www.youtube.com/embed/-LeV_c1zG-s"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> </div>
+                    <div class="section_wrap_grid_info">
+                        <h1 class="section__wrap-header">What is Docker? Easy way
+                        </h1>
+                        <h2 class="section__wrap-desc">Hitesh Choudhary</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic_learn_wrap">
+            <div class="container">
+                <h1 class="topic_learn-text">What Topic do you want to learn?</h1>
+                <form action="">
+                    <div class="topic_learn_grid">
+                        <select name="" id="" class="select subject-topic-select">
+                            <option value="1" disabled>Subject</option>
+                            <option value="2">Physics</option>
+                            <option value="3">Chemistry</option>
+                        </select>
+                        <select name="" id="" class="select topic-select">
+                            <option value="1" disabled>Topic</option>
+                            <option value="2">Light</option>
+                            <option value="3">Aerodynamics</option>
+                        </select>
+                    </div>
+                    <a href="" class="topic_learn_btn">Enter</a>
+                </form>
+            </div>
+
+        </div>
+        <div class="footer__section">
+            <span>Powered By wingxp.com</span>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+    <script>
+        function myFunction() {
+            // Get the checkbox
+            var checkBox = document.getElementById("toggle");
+
+            // Get the article div
+            var webRef = document.getElementById("webRef__wrap");
+
+            // Get the video div
+            var video = document.getElementById("video__wrap");
+
+            // If the checkbox is checked, display the div
+            if (checkBox.checked == true) {
+                video.style.display = "grid";
+                webRef.style.display = "none";
+            } else {
+                video.style.display = "none";
+                webRef.style.display = "grid";
+            }
+        }
+    </script>
+
+</html>
