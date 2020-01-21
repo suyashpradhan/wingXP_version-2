@@ -2502,7 +2502,7 @@ button:active {
   cursor: default;
 }
 
-.cols {
+/* .cols {
   background-color: #3ab54a;
   border-radius: 10px;
   display: grid;
@@ -2513,18 +2513,18 @@ button:active {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.23);
   height: 95px;
 }
-
+ */
 .cols:hover {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16), 0 5px 6px rgba(0, 0, 0, 0.23);
 }
 
-.cols-head {
+/* .cols-head {
   font-size: 20px;
   margin: 0 0 5px 0;
   padding: 0;
   color: #fff;
   font-weight: 500;
-}
+} */
 
 .cols-sub {
   font-size: 18px;
@@ -3305,4 +3305,201 @@ input:checked + section.box .box-title:before {
 
 .fixed-bottom {
   height: 200px !important;
+}
+
+.fixed-top {
+  padding: 15px 0 !important;
+  top: 110px;
+  height: 180px;
+}
+
+.club-img {
+  height: 150px;
+  max-width: 100%;
+  padding: 5px 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.club-description {
+  color: #676764;
+  padding: 15px 0;
+  line-height: 1.7;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 18px;
+  margin: 0;
+}
+
+.club-self-learn-btn {
+  background-color: #72b2f3;
+  border: 1px solid #72b2f3;
+  color: #fff;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0 0 30px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.club-self-learn-btn:hover {
+  text-decoration: none;
+  background-color: #17a2b8;
+  border: 1px solid #17a2b8;
+  color: #fff;
+}
+
+.activities-div {
+  background-color: #fce38a;
+  padding: 3px 16px;
+  position: relative;
+  top: 185px;
+}
+
+.activities-div-head {
+  color: #6d6e71;
+  padding: 3px 0;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.activities-info-link {
+  color: #898576;
+  padding: 8px 0 0 0;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.activities-info-link:hover {
+  color: #6d6e71;
+  text-decoration: none;
+}
+
+.absolute-div-2 {
+  position: absolute;
+  top: 320px;
+}
+
+.fixed-div-2 {
+  position: fixed;
+  overflow-y: auto;
+  height: 50vh;
+  width: 100%;
+  padding: 10px 30px 30px 0;
+}
+
+.cols {
+  background-color: #fff;
+  border: 2px solid #888a8d;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 1px 8px;
+  align-items: center;
+  margin: 20px 0 0 0;
+  height: 95px;
+}
+
+.cols-head {
+  font-size: 22px;
+  margin: 0 0 5px 0;
+  padding: 0;
+  color: #727374;
+  text-align: center;
+  font-weight: 500;
+}
+
+.activity-details {
+  padding: 3px 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-details span {
+  color: #87888a;
+  font-size: 16px;
+}
+
+.activities-main-select {
+  background: #fff;
+  border: 1px solid #cc0033;
+  width: 300px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  margin: 0 20px 0 0 !important;
+  display: inline-block;
+}
+
+.activities-main-select:active,
+.activities-main-select:focus {
+  outline: none !important;
+}
+
+.activities-fixed-top {
+  padding: 0 !important;
+  top: 130px;
+  height: 300px;
+  background-color: #cc0033;
+}
+
+.main-head-big {
+  font-size: 120px;
+  margin: 10px auto 10px auto;
+  display: block !important;
+  text-align: center;
+  color: #fff;
+}
+
+.text-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-wrap h1 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.enter-activity-link {
+  background-color: #fb763c;
+  margin: 20px auto 20px auto;
+  display: block;
+  width: fit-content;
+  padding: 15px 100px;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.enter-activity-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.toggle-grid-position {
+  position: relative;
+  top: 350px;
+}
+
+.section_wrap-absolute {
+  position: absolute;
+  top: 130px;
+}
+
+
+.fixed-div {
+  position: fixed;
+  overflow: auto;
+  height: 45vh;
+  padding: 10px 30px 0 0;
 }
