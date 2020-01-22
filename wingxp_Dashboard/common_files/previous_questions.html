@@ -12,7 +12,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 </head>
 
-<body>
+<body style=" background: #eeeeee;position: relative;padding-bottom: 50px;
+min-height: 100vh;">
     <nav class="navbar navbar-expand-lg navbar-light navbar__mobile-hide" id="navbar-hide"
         style="background-color:#006666;">
         <a class="navbar-brand" href="http://www.wingxp.com">
@@ -69,36 +70,65 @@
     <div class="wrapper container">
         <h1 class="page__header"><span>Previously Asked Questions</span></h1>
         <div class="card__wrapper">
-            <div class="common--card">
-                <h1 class="question_head">Test</h1>
-                <span class="question_topic">Motion</span>
-                <div class="question_wrap">
-                    <span class="question_status">pending...</span>
-                    <span class="question_date"> Asked on 2019-08-15</span>
+            <a href="#" data-toggle="modal" data-target="#answerModal">
+                <div class=" common--card">
+                    <h1 class="question_head">What Is Wix?</h1>
+                    <span class="question_topic">Web Development</span>
+                    <div class="question_wrap">
+                        <span class="question_status">Submitted</span>
+                        <span class="question_date"> Asked on 2019-08-15</span>
+                    </div>
                 </div>
-            </div>
-            <div class="common--card">
-                <h1 class="question_head">Test</h1>
-                <span class="question_topic">Light</span>
-                <div class="question_wrap">
-                    <span class="question_status">pending...</span>
-                    <span class="question_date"> Asked on 2019-07-15</span>
+            </a>
+            <a href="">
+                <div class="common--card">
+                    <h1 class="question_head">Test</h1>
+                    <span class="question_topic">Light</span>
+                    <div class="question_wrap">
+                        <span class="question_status">pending...</span>
+                        <span class="question_date"> Asked on 2019-07-15</span>
+                    </div>
                 </div>
-            </div>
-            <div class="common--card">
-                <h1 class="question_head">Test</h1>
-                <span class="question_topic">Aerodynamics</span>
-                <div class="question_wrap">
-                    <span class="question_status">pending...</span>
-                    <span class="question_date"> Asked on 2019-01-14</span>
+            </a>
+            <a href="">
+                <div class="common--card">
+                    <h1 class="question_head">Test</h1>
+                    <span class="question_topic">Aerodynamics</span>
+                    <div class="question_wrap">
+                        <span class="question_status">pending...</span>
+                        <span class="question_date"> Asked on 2019-01-14</span>
+                    </div>
                 </div>
-            </div>
-            <div class="common--card">
-                <h1 class="question_head">Test</h1>
-                <span class="question_topic">Aerodynamics</span>
-                <div class="question_wrap">
-                    <span class="question_status">pending...</span>
-                    <span class="question_date"> Asked on 2019-01-14</span>
+            </a>
+            <a href="">
+                <div class="common--card">
+                    <h1 class="question_head">Test</h1>
+                    <span class="question_topic">Aerodynamics</span>
+                    <div class="question_wrap">
+                        <span class="question_status">pending...</span>
+                        <span class="question_date"> Asked on 2019-01-14</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="answerModal" tabindex="-1" role="dialog" aria-labelledby="answerModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">What Is Wix?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="answer-p">Wix.com Ltd. is a cloud-based web development platform that was first developed
+                        and popularised
+                        by the Israeli company also called Wix. It allows users to create HTML5 websites and mobile
+                        sites through the use of online drag and drop tools.</p>
                 </div>
             </div>
         </div>

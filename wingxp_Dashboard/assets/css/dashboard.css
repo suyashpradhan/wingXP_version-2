@@ -43,7 +43,7 @@ img {
   min-width: 200px;
   margin-left: -130px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 999;
+  z-index: 99999999;
 }
 
 .dropdown_mobile {
@@ -342,6 +342,9 @@ img {
   .activity-info-text {
     font-size: 16px !important;
   }
+  .card__wrapper {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @media screen and (max-width: 600px) and (min-width: 401px) {
@@ -387,6 +390,10 @@ img {
     grid-template-columns: 1fr !important;
     grid-gap: 15px;
   }
+
+  .card__wrapper {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @media screen and (max-width: 800px) and (min-width: 601px) {
@@ -413,6 +420,10 @@ img {
 
   .curricular__wrap--card {
     margin: 0 10px 20px 10px;
+  }
+
+  .card__wrapper {
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 
@@ -1311,13 +1322,18 @@ textarea.input100 {
   align-items: center;
 }
 
+.card__wrapper a {
+  text-decoration: none !important;
+}
+
 .common--card {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   transition: box-shadow 0.35s cubic-bezier(0.4, 0, 1, 1);
   margin: 0 0 10px 0;
   padding: 10px 20px;
-  height: auto;
+  height: 100%;
+  cursor: pointer;
 }
 
 .common--card:hover {
@@ -1408,19 +1424,19 @@ textarea.input100 {
 
 .question_head {
   font-size: 24px;
-  font-weight: 900;
-  color: #363636;
+  font-weight: 700;
+  color: #5c5b5b;
   margin: 0 0 10px 0;
 }
 
 .question_topic {
-  background-color: #2f99cd;
-  padding: 5px;
-  font-size: 14px;
+  background-color: #ddd;
+  padding: 5px 8px;
+  font-size: 16px;
   font-weight: 500;
-  color: #fff;
+  color: #777;
   display: inline-block;
-  margin: 0 0 3px 0;
+  margin: 0 0 8px 0;
   border-radius: 5px;
 }
 
@@ -1432,7 +1448,7 @@ textarea.input100 {
 
 .question_status {
   font-size: 18px;
-  color: #28a745;
+  color: #006666;
   font-weight: 600;
   margin: 0;
 }
@@ -1440,15 +1456,23 @@ textarea.input100 {
 .question_date {
   width: 100%;
   text-align: right;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
-  color: #363636;
+  color: #696969;
   margin: 0;
+}
+
+.answer-p {
+  color: #5c5b5b;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
 }
 
 .color_wrap {
   background-color: #ffcc33 !important;
-  height: 100vh;
+  height: 100vh !important;
 }
 
 .color_wrap_none {
@@ -2314,6 +2338,16 @@ button:active {
   text-align: center;
 }
 
+.coming-text {
+  font-size: 18px;
+  padding: 0;
+  margin: 40px 25px 0 25px;
+  display: block;
+  font-weight: 500;
+  color: #5c5b5b;
+  text-align: center;
+}
+
 .primary-text {
   background-color: #a57b52;
   width: fit-content;
@@ -2458,7 +2492,7 @@ button:active {
 
 .add-credit-link {
   background-color: #014949;
-  color: #fff;
+  color: #fff !important;
   border-radius: 5px;
   width: fit-content;
   padding: 5px 10px;
@@ -3244,6 +3278,9 @@ input:checked + section.box .box-title:before {
   margin: 5px 16px;
 }
 
+.content-wrap-position {
+}
+
 .link-main {
   color: #cc0033;
   text-decoration: none;
@@ -3309,7 +3346,7 @@ input:checked + section.box .box-title:before {
 
 .fixed-top {
   padding: 15px 0 !important;
-  top: 110px;
+  top: 100px;
   height: 180px;
 }
 
@@ -3354,7 +3391,7 @@ input:checked + section.box .box-title:before {
   background-color: #fce38a;
   padding: 3px 16px;
   position: relative;
-  top: 185px;
+  top: 180px;
 }
 
 .activities-div-head {
@@ -3444,13 +3481,14 @@ input:checked + section.box .box-title:before {
 .activities-fixed-top {
   padding: 0 !important;
   top: 130px;
-  height: 300px;
+  margin: -10px 0 0 0;
+  height: 260px;
   background-color: #cc0033;
 }
 
 .main-head-big {
-  font-size: 120px;
-  margin: 10px auto 10px auto;
+  font-size: 100px;
+  margin: 5px auto 10px auto;
   display: block !important;
   text-align: center;
   color: #fff;
@@ -3458,12 +3496,12 @@ input:checked + section.box .box-title:before {
 
 .text-wrap {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .text-wrap h1 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -3471,7 +3509,7 @@ input:checked + section.box .box-title:before {
 
 .enter-activity-link {
   background-color: #fb763c;
-  margin: 20px auto 20px auto;
+  margin: 20px auto 0 auto;
   display: block;
   width: fit-content;
   padding: 15px 100px;
@@ -3486,16 +3524,10 @@ input:checked + section.box .box-title:before {
   color: #fff;
 }
 
-.toggle-grid-position {
-  position: relative;
-  top: 350px;
-}
-
 .section_wrap-absolute {
   position: absolute;
   top: 130px;
 }
-
 
 .fixed-div {
   position: fixed;
