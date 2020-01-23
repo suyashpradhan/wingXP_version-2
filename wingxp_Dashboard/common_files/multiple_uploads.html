@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/filepond.css">
+    <script src="../assets/filepond.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <style>
+        .filepond--root {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+                'Segoe UI Symbol';
+        }
+
+        .filepond--file-action-button {
+            cursor: pointer;
+        }
+
+        /* the text color of the drop label*/
+        .filepond--drop-label {
+            color: #555;
+        }
+
+        /* underline color for "Browse" button */
+        .filepond--label-action {
+            text-decoration-color: #aaa;
+        }
+
+        /* the background color of the filepond drop area */
+        .filepond--panel-root {
+            background-color: #eee;
+        }
+
+        /* the border radius of the drop area */
+        .filepond--panel-root {
+            border-radius: 0.5em;
+        }
+
+        /* the border radius of the file item */
+        .filepond--item-panel {
+            border-radius: 0.5em;
+        }
+
+        /* the background color of the file and file panel (used when dropping an image) */
+        .filepond--item-panel {
+            background-color: #555;
+        }
+
+        /* the background color of the drop circle */
+        .filepond--drip-blob {
+            background-color: #999;
+        }
+
+        /* the background color of the black action buttons */
+        .filepond--file-action-button {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* the icon color of the black action buttons */
+        .filepond--file-action-button {
+            color: white;
+        }
+
+        /* the color of the focus ring */
+        .filepond--file-action-button:hover,
+        .filepond--file-action-button:focus {
+            box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.9);
+        }
+
+        /* the text color of the file status and info labels */
+        .filepond--file {
+            color: white;
+        }
+
+        /* error state color */
+        [data-filepond-item-state*='error'] .filepond--item-panel,
+        [data-filepond-item-state*='invalid'] .filepond--item-panel {
+            background-color: red;
+        }
+
+        [data-filepond-item-state='processing-complete'] .filepond--item-panel {
+            background-color: green;
+        }
+
+        /* bordered drop area */
+        .filepond--panel-root {
+            background-color: transparent;
+            border: 2px dashed #696969;
+        }
+
+
+        /**
+ * Page Styles
+ */
+        html {
+            padding: 30vh 0 0;
+        }
+
+        body {
+            max-width: 20em;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="file" class="filepond" name="filepond" multiple data-max-file-size="3MB" data-max-files="5" />
+
+    <a href="#" class="btn btn-success btn-block">Submit</a>
+
+    <script>
+        const inputElement = document.querySelector('input[type="file"]');
+        const pond = FilePond.create(inputElement);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

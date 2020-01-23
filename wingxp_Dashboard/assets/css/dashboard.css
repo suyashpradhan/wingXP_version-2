@@ -1597,7 +1597,7 @@ textarea.input100 {
 .first_half {
   background-color: #ce1f36;
   /*  height: 100%; */
-  padding: 40px 0 20px 0;
+  padding: 20px 0 40px 0;
 }
 
 .first_half-inner {
@@ -1642,6 +1642,41 @@ textarea.input100 {
 .span {
   display: flex;
   justify-content: flex-end;
+}
+
+.first_half-second {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 650px;
+  margin: 10px auto 30px auto;
+}
+
+.first_half-secondOne {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border: 1px solid #f6f7f8;
+  border-radius: 100px;
+}
+
+.first_half-secondOneText {
+  text-align: center;
+  margin: 34px 0;
+  font-size: 26px;
+  font-weight: 650;
+  padding: 0;
+  color: #5c5b5b;
+}
+
+.institute-name {
+  margin: 0;
+  font-size: 14px;
+  position: relative;
+  top:15px;
+  color: #fff;
+  padding: 0;
+  text-align: center;
 }
 
 .second_half {
