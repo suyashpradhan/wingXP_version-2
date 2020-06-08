@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Content Manager - CBSE 360</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
+    <!-- <script language="javascript" src="ckeditor/ckeditor.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <script type="text/javascript" src="../fancybox/jquery.min.js"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            }
+        });
+        MathJax.Hub.Config({
+            jax: ["input/TeX", "output/HTML-CSS"],
+            displayAlign: "left"
+        });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                dateFormat: "yy-mm-dd"
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="navbar navbar-shadow" style="height: 60px;">
+        <div class="newnavigationBar_2">
+            <a href="index.php">
+                <h1
+                    style="font-size:28px; color:#227270 !important; font-weight:900; text-align:left; text-decoration:none;">
+                    CBSE 360</h1>
+            </a>
+            <div class="menu-wrapper">
+                <a href="?q=logout" class="fancy-button bg-gradient2 logout-nav-link"><span>Logout</span></a>
+            </div>
+            <div class="menu-wrapper">
+                <a href="expert.php" class="fancy-button bg-gradient2 logout-nav-link"><span>
+                        Ask Expert</span></a>
+            </div>
+            <div class="menu-wrapper">
+                <a href="activate_topic.php" class="fancy-button bg-gradient2 logout-nav-link"><span> Activate Topic
+                    </span></a>
+            </div>
+            <div class="menu-wrapper">
+                <a href="sample_work_submission.php" class="fancy-button bg-gradient2 logout-nav-link"><span> Student
+                        Sample Work </span></a>
+            </div>
+        </div>
+    </div>
+    <a href="test.php" class="pop"> </a>
+    <style>
+        table td {
+            height: 100px;
+        }
+    </style>
+
+    <body>
+        <div class="page-container">
+            <div class="card-main main-c">
+                <h1 class="card-head">
+                    <h2>View VIDEO Detail </h2>
+                </h1>
+            </div>
+            <div class="modal fade" id="sub-topic-modal" tabindex="-1" role="dialog" aria-labelledby="review-modal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Add Sub-Topic</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="hidden" name="sub_video_id" id="sub_video_id" value="" />
+                                            <select name="sub_topic" id="sub_topic" required>
+                                                <option disabled selected>Select Sub Topic</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="submit" name="sub_sub_topic" id="sub_sub_topic" value="Update Sub Topic"
+                                    class="btn btn-success" />
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="review-ribbon-grid">
+                <div class="review-ribbon">
+                    <span class="review-ribbon-1">Video Id: vid_119</span>
+                    <div class="row" style="margin-top: 70px;">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-4">
+                            <iframe src="https://www.youtube.com/embed/ZULojo3MDcs" frameborder="0" encrypted-media
+                                allowfullscreen allow="autoplay"></iframe>
+                            <select name="sub_topic_vid_119" id="sub_topic_vid_119"
+                                onchange="update_sub_topic('vid_119')">
+                                <option selected disabled>Select Sub Topic</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-4">
+                            <a href='video.php?id=vid_119'>Update</a>&nbsp; &nbsp; <a
+                                href='view_video.php?id=vid_119'>View</a>
+                            <h1 class="video-text video-title">Electricity in Our Daily Life</h1>
+                            <h1 class="video-text video-desc">
+                                <p>Electricity is what makes our modern lives possible&nbsp;because nearly all of the
+                                    things
+                                    we use daily like clothes, computers, cell phones, lights etc.&nbsp;require
+                                    electricity.
+                                </p>
+                            </h1>
+                            <h1 class="video-text video-duration">Duration:00:02:19</h1>
+                            <h1 class="video-text video-time-start">Youtube Channel: <span style="color:#ce1f36">Switch
+                                    Energy Alliance</span></h1>
+                            <h1 class="video-text video-time-end">Sub Title: <span style="color:#ce1f36"
+                                    id="sub_vid_119"></span></h1>
+                            <h1 class="video-text video-time-end">Status: <span style="color:#ce1f36">1</span></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-ribbon">
+                    <span class="review-ribbon-1">Video Id: vid_120</span>
+                    <div class="row" style="margin-top: 70px;">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-4">
+                            <iframe src="https://www.youtube.com/embed/s8LzYzYRMOk" frameborder="0" encrypted-media
+                                allowfullscreen allow="autoplay"></iframe>
+                            <select name="sub_topic_vid_120" id="sub_topic_vid_120"
+                                onchange="update_sub_topic('vid_120')">
+                                <option selected disabled>Select Sub Topic</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-4">
+                            <a href='video.php?id=vid_120'>Update</a>&nbsp; &nbsp; <a
+                                href='view_video.php?id=vid_120'>View</a>
+                            <h1 class="video-text video-title">How Electricity Reaches Our Homes</h1>
+                            <h1 class="video-text video-desc">
+                                <p>Electricity is generated in power stations with help of mechanical energy provided
+                                    by&nbsp;various energy sources. The mechanical energy is converted into electrical
+                                    energy with&nbsp;help of electric generators provided in power stations. The
+                                    electric
+                                    power which is&nbsp;generated is stepped up to a higher voltage at which it connects
+                                    to
+                                    the electric power&nbsp;&nbsp;transmission network. The bulk power transmission
+                                    network
+                                    will move the power long&nbsp;&nbsp;distances, sometimes across international
+                                    boundaries, until it reaches its wholesale&nbsp;customer (usually the company that
+                                    owns
+                                    the local electric power distribution&nbsp;network). On arrival at a substation, the
+                                    power will be stepped down from a&nbsp;&nbsp;transmission level voltage to a
+                                    distribution level voltage. As it exits the substation, it&nbsp;&nbsp;enters the
+                                    distribution wiring. Finally, upon arrival at the service location, the power
+                                    is&nbsp;stepped down again from the distribution voltage to the required service
+                                    voltage(s).</p>
+                            </h1>
+                            <h1 class="video-text video-duration">Duration:00:01:49</h1>
+                            <h1 class="video-text video-time-start">Youtube Channel: <span style="color:#ce1f36">Cine
+                                    Kids</span></h1>
+                            <h1 class="video-text video-time-end">Sub Title: <span style="color:#ce1f36"
+                                    id="sub_vid_120"></span></h1>
+                            <h1 class="video-text video-time-end">Status: <span style="color:#ce1f36">1</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </table>
+
+            <div class="modal fade" id="review-modal" tabindex="-1" role="dialog" aria-labelledby="review-modal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Add Video to review</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input type="hidden" name="video_id" id="video_id" value="" />
+                                            <input type="text" name="start_date" id="start_date"
+                                                placeholder="Start Date" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input type="text" name="end_date" id="end_date" placeholder="End Date"
+                                                class="form-control" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="submit" name="sub" id="sub" value="Add Video" class="btn btn-success" />
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal_assign" tabindex="-1" role="dialog" aria-labelledby="modal_assign"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Assign Video</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="video_activity_body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer" style=" position: absolute;
+  
+    width: 100%;
+    height: 60px; 
+    background:#000;">
+                <div class="left-footer" style="padding: 15px; padding: 15px 0;
+        font-size: 20px;
+        color: #fff;
+        float: none;
+        text-align: center;">
+                    &copy; Copyright – domain Edutech Pvt Ltd
+                </div>
+            </div>
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+                integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+                crossorigin="anonymous">
+
+            <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+
+            <script>
+                CKEDITOR.replace('editor1');
+            </script>
+            <script>
+                CKEDITOR.replace('editor2');
+            </script>
+            <script>
+                CKEDITOR.replace('editor3');
+                CKEDITOR.replace('editor4');
+                CKEDITOR.replace('editor5');
+                CKEDITOR.replace('editor6');
+                CKEDITOR.replace('editor7');
+            </script>
+
+
+
+            <p align="center"><a href="index.php">Back</a></p>
+
+            <script language='javascript'>
+                function update_sub_topic(p) {
+                    var sub_topic = $('#sub_topic_' + p).val();
+                    var sub_title = $("#sub_topic_" + p + " option:selected").text();
+                    $.ajax({
+                        type: 'POST',
+                        url: 'update_sub_topic.php?video_id=' + p + '&sub_topic_id=' + sub_topic,
+                        data: '',
+                        beforeSend: function () {},
+                        success: function (response) {
+                            $('#sub_' + p).html(sub_title);
+                        }
+                    });
+                }
+
+                function video_modal(p) {
+                    $('#video_id').val(p);
+                    $('#review-modal').modal({
+                        show: true
+                    });
+                }
+
+                function sub_topic_modal(p) {
+                    $('#sub_video_id').val(p);
+                    $('#sub-topic-modal').modal({
+                        show: true
+                    });
+                }
+
+
+                function assign_video_article(p) {
+                    $('#video_activity_body').load('get_video_activity.php?act_id=' + p, function () {
+                        $('#modal_assign').modal({
+                            show: true
+                        });
+                    });
+                }
+            </script>
